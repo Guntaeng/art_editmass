@@ -15,7 +15,7 @@ Library    DebugLibrary
 
 
 *** Variables ***
-${path_file_csv}    C:/Automate_WEB/Create_Article_automate/resources/edit_mass_2.csv
+${path_file_csv}    resources/edit_mass_2.csv   
 
 
 *** Keywords ***
@@ -96,7 +96,7 @@ Get Data From CSV
         ${index}=    Evaluate    (${index} % 5) + 1
     END
 
-
+*** Test Cases ***
 Get Data From CSV2
     ${result}=    Get Row    ${path_file_csv}
     ${x_rows}=    Get From Dictionary    ${result}    x_rows   

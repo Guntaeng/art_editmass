@@ -1,17 +1,11 @@
 import csv
 
-def get_row(file_path):
-    x_count = 0
-    x_rows = []  # ใช้เก็บแถวที่มี 'X' ในคอลัมน์ที่สอง
-    
+def read_csv(file_path):
+    data = []
     with open(file_path, mode='r', encoding='utf-8') as file:
-        reader = csv.reader(file)
-        
+        reader = csv.DictReader(file)
         for row in reader:
-            # ตรวจสอบว่ามีคอลัมน์ที่ 2 (index 1) และค่าในคอลัมน์นั้นคือ 'X'
-            if len(row) > 1 and row[0] == 'A2':
-                x_count += 1
-                x_rows.append(row)  # เพิ่มแถวที่มี 'X' ลงใน x_rows
-    
-    # ส่งค่ากลับเป็น dictionary ที่มี x_count และ x_rows
-    return {"x_count": x_count, "x_rows": x_rows}
+            # ลบ `${}` ออกจากคีย์ในแต่ละแถว
+            row = {key.strip('${}'): value for key, value in row.items()}
+            data.append(row)
+    return data

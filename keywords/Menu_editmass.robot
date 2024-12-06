@@ -11,7 +11,7 @@ Library    String
 Library    DebugLibrary
 
 *** Variables ***
-${path_file_csv}    C:/Automate_WEB/Create_Article_automate/resources/edit_mass_2.csv
+${path_file_csv}    resources/edit_mass_2.csv
 ${mark_2}
 ${field_2}
 
@@ -19,28 +19,6 @@ ${field_2}
 
 
 *** Keywords ***
-Login dohome and click web art(Edit Mass)
-    #Open browser web url    ${url_dohome}    headlesschrome
-    Open browser web url    ${url_dohome}    chrome             
-    #Set Window Size    1920    1080
-    Maximize Browser Window
-    Wait until keyword succeeds    5x   2s    Wait Until Element Contains    //button[text()='เข้าสู่ระบบ']    เข้าสู่ระบบ       
-    Wait until keyword succeeds    5x   2s    Click Element with Delay    //button[text()='เข้าสู่ระบบ']
-    Wait until keyword succeeds    5x   2s    Wait Until Element Contains   //*[@class="text-2xl text-primary font-bold"]     เข้าสู่ระบบ
-    Wait until keyword succeeds    5x   2s    Click Element with Delay    //input[@name="username"] 
-    Wait until keyword succeeds    5x   2s    Input Text with Delay    //input[@name="username"]     ${user_editmass}
-    Wait until keyword succeeds    5x   2s    Click Element with Delay    //input[@name="password"]
-    Wait until keyword succeeds    5x   2s    Input Text with Delay   //input[@name="password"]    ${pass}
-    Wait until keyword succeeds    5x   2s    Click Element with Delay    //button[@type="submit"][ text()='เข้าสู่ระบบ']
-    Wait until keyword succeeds    5x   2s    Click Element with Delay    //*[@aria-label="ระบบจัดการข้อมูลสินค้า"]
-    Wait until keyword succeeds    5x   2s    Switch Window    New
-    Maximize Browser Window
-    #Set Window Size    1920    1080    
-    Wait until keyword succeeds    5x   2s    Wait Until Element Is Visible    //h3[text()="Article Master"]
-    Wait And Click Element    //p[text()='จัดการสินค้า']
-    Wait And Click Element    //p[text()='ขอเปลี่ยนแปลงข้อมูลสินค้า']/parent::span//parent::a[@href="/app/edit-mass-information"]
-    Wait And Wait Until Element Is Visible    //input[@name="purchaser_group_no"]/following-sibling::div/div/input
-
 Search by article
     [Arguments]    @{articles}
     Wait And Click Element    //input[@name="article_id"]
@@ -97,25 +75,13 @@ Get Data
     END
     
 
-Edit field 1-5
-    IF    '${round_1}' == 'X1' 
-        Input text editmass row 1
-    ELSE IF    '${round_2}' == 'X1'    
-        Input text editmass row 2
-    ELSE IF    '${round_3}' == 'X1' 
-        Input text editmass row 3
-    ELSE IF    '${round_4}' == 'X1' 
-        Input text editmass row 4
-    ELSE IF    '${round_5}' == 'X1' 
-        Input text editmass row 5
-    END
-
 
 
 
 Edit field 1
     [Arguments]    ${run}
-    IF    '${field_1}' == 'ชื่อสินค้า Commercial (ภาษาอังกฤษ)' and '${round_1}' == 'X1' and '${run}' == "1" 
+    ${run_code}    Set Variable    ${run}
+    IF    '${field_1}' == 'ชื่อสินค้า Commercial (ภาษาอังกฤษ)' and '${round_1}' == 'X1' and '${run_code}' == '1' 
         Input text editmass row 1
     ELSE IF    '${field_1}' == 'จุดเด่นจุดขาย' and '${round_1}' == 'X2'
         Input text editmass row 1 (section14)        
