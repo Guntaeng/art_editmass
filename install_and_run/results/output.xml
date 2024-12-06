@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.11.5 on win32)" generated="2024-10-11T09:43:58.753488" rpa="false" schemaversion="5">
+<suite id="s1" name="Test file" source="C:\Automate_WEB\Test_copy_path\testcases\Test_file.robot">
+<test id="s1-t1" name="Login dohome DataDriver" line="16">
+<kw name="Login dohome">
+<kw name="Open browser web url" owner="common">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-10-11T09:43:59.040586" level="INFO">Opening browser 'chrome' to base url 'https://web-dohome-center-uat.dohome.technology/app/home'.</msg>
+<arg>${url}</arg>
+<arg>browser=${browserName}</arg>
+<arg>options=binary_location=r"C:\\chrome-win64\\chrome.exe"</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-10-11T09:43:59.040586" elapsed="2.038579"/>
+</kw>
+<arg>${url_dohome}</arg>
+<arg>chrome</arg>
+<status status="PASS" start="2024-10-11T09:43:59.040586" elapsed="2.038579"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-10-11T09:44:01.080563" elapsed="0.027278"/>
+</kw>
+<kw name="Wait And Wait Until Element Is Visible" owner="common">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-10-11T09:44:01.108844" elapsed="0.660574"/>
+</kw>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Wait Until Element Is Visible</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2024-10-11T09:44:01.108844" elapsed="0.660574"/>
+</kw>
+<arg>//button[text()='เข้าสู่ระบบ']</arg>
+<status status="PASS" start="2024-10-11T09:44:01.107841" elapsed="0.662903"/>
+</kw>
+<kw name="Wait And Click Element" owner="common">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element with Delay" owner="common">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-11T09:44:01.771748" level="INFO">Clicking element '//button[text()='เข้าสู่ระบบ']'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-11T09:44:01.771748" elapsed="0.350397"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-11T09:44:03.122395" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-11T09:44:02.122145" elapsed="1.000250"/>
+</kw>
+<arg>${locator}</arg>
+<status status="PASS" start="2024-10-11T09:44:01.771748" elapsed="1.350647"/>
+</kw>
+<arg>3x</arg>
+<arg>2s</arg>
+<arg>Click Element with Delay</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2024-10-11T09:44:01.770744" elapsed="1.351651"/>
+</kw>
+<arg>//button[text()='เข้าสู่ระบบ']</arg>
+<status status="PASS" start="2024-10-11T09:44:01.770744" elapsed="1.351651"/>
+</kw>
+<kw name="Wait And Click Element" owner="common">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element with Delay" owner="common">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-11T09:44:03.124516" level="INFO">Clicking element '//input[@name="username"]'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-11T09:44:03.123512" elapsed="0.058179"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-11T09:44:04.183171" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-11T09:44:03.182692" elapsed="1.000479"/>
+</kw>
+<arg>${locator}</arg>
+<status status="PASS" start="2024-10-11T09:44:03.123512" elapsed="1.059659"/>
+</kw>
+<arg>3x</arg>
+<arg>2s</arg>
+<arg>Click Element with Delay</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2024-10-11T09:44:03.123512" elapsed="1.059659"/>
+</kw>
+<arg>//input[@name="username"]</arg>
+<status status="PASS" start="2024-10-11T09:44:03.122395" elapsed="1.060776"/>
+</kw>
+<kw name="Wait And Input Text with Delay" owner="common">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input Text with Delay" owner="common">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-11T09:44:04.184440" level="INFO">Typing text '1046813' into text field '//input[@name="username"]'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-11T09:44:04.184440" elapsed="0.057989"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-11T09:44:05.743985" level="INFO">Slept 1 second 500 milliseconds.</msg>
+<arg>1.5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-11T09:44:04.242429" elapsed="1.501556"/>
+</kw>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<status status="PASS" start="2024-10-11T09:44:04.183171" elapsed="1.560814"/>
+</kw>
+<arg>3x</arg>
+<arg>2s</arg>
+<arg>Input Text with Delay</arg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2024-10-11T09:44:04.183171" elapsed="1.560814"/>
+</kw>
+<arg>//input[@name="username"]</arg>
+<arg>${username}</arg>
+<status status="PASS" start="2024-10-11T09:44:04.183171" elapsed="1.560814"/>
+</kw>
+<kw name="Wait And Click Element" owner="common">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element with Delay" owner="common">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-11T09:44:05.745155" level="INFO">Clicking element '//input[@name="password"]'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-11T09:44:05.745155" elapsed="0.038996"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-11T09:44:06.784393" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-11T09:44:05.784151" elapsed="1.000242"/>
+</kw>
+<arg>${locator}</arg>
+<status status="PASS" start="2024-10-11T09:44:05.745155" elapsed="1.039238"/>
+</kw>
+<arg>3x</arg>
+<arg>2s</arg>
+<arg>Click Element with Delay</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2024-10-11T09:44:05.743985" elapsed="1.040408"/>
+</kw>
+<arg>//input[@name="password"]</arg>
+<status status="PASS" start="2024-10-11T09:44:05.743985" elapsed="1.040408"/>
+</kw>
+<kw name="Wait And Input Text with Delay" owner="common">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input Text with Delay" owner="common">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-11T09:44:06.784917" level="INFO">Typing text 'D0h0me*1' into text field '//input[@name="password"]'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-11T09:44:06.784917" elapsed="0.056111"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-11T09:44:08.341346" level="INFO">Slept 1 second 500 milliseconds.</msg>
+<arg>1.5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-11T09:44:06.841028" elapsed="1.500318"/>
+</kw>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<status status="PASS" start="2024-10-11T09:44:06.784917" elapsed="1.556429"/>
+</kw>
+<arg>3x</arg>
+<arg>2s</arg>
+<arg>Input Text with Delay</arg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2024-10-11T09:44:06.784917" elapsed="1.556429"/>
+</kw>
+<arg>//input[@name="password"]</arg>
+<arg>${password}</arg>
+<status status="PASS" start="2024-10-11T09:44:06.784393" elapsed="1.556953"/>
+</kw>
+<kw name="Wait And Click Element" owner="common">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element with Delay" owner="common">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-11T09:44:08.342622" level="INFO">Clicking element '//button[@type="submit"][ text()='เข้าสู่ระบบ']'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-11T09:44:08.342622" elapsed="0.046202"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-11T09:44:09.389130" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-11T09:44:08.388824" elapsed="1.000306"/>
+</kw>
+<arg>${locator}</arg>
+<status status="PASS" start="2024-10-11T09:44:08.341346" elapsed="1.047784"/>
+</kw>
+<arg>3x</arg>
+<arg>2s</arg>
+<arg>Click Element with Delay</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2024-10-11T09:44:08.341346" elapsed="1.047784"/>
+</kw>
+<arg>//button[@type="submit"][ text()='เข้าสู่ระบบ']</arg>
+<status status="PASS" start="2024-10-11T09:44:08.341346" elapsed="1.047784"/>
+</kw>
+<kw name="Wait And Wait Until Element Contains" owner="common">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Wait Until Element Contains" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Waits until the element ``locator`` contains ``text``.</doc>
+<status status="PASS" start="2024-10-11T09:44:09.390138" elapsed="1.582045"/>
+</kw>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Wait Until Element Contains</arg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2024-10-11T09:44:09.389130" elapsed="1.583053"/>
+</kw>
+<arg>//span[text()='${username}']</arg>
+<arg>${username}</arg>
+<status status="PASS" start="2024-10-11T09:44:09.389130" elapsed="1.583053"/>
+</kw>
+<kw name="Pass Execution" owner="BuiltIn">
+<msg time="2024-10-11T09:44:10.973298" level="INFO">Execution passed with message:
+End Test</msg>
+<arg>End Test</arg>
+<doc>Skips rest of the current test, setup, or teardown with PASS status.</doc>
+<status status="PASS" start="2024-10-11T09:44:10.973298" elapsed="0.000000">End Test</status>
+</kw>
+<arg>username=1046813</arg>
+<arg>password=D0h0me*1</arg>
+<status status="PASS" start="2024-10-11T09:43:59.039596" elapsed="11.933702">End Test</status>
+</kw>
+<kw name="Close All Browsers" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2024-10-11T09:44:10.974298" elapsed="6.339843"/>
+</kw>
+<status status="PASS" start="2024-10-11T09:43:59.038586" elapsed="18.275555">End Test</status>
+</test>
+<test id="s1-t2" name="Login dohome DataDriver" line="16">
+<kw name="Login dohome">
+<kw name="Open browser web url" owner="common">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-10-11T09:44:17.317132" level="INFO">Opening browser 'chrome' to base url 'https://web-dohome-center-uat.dohome.technology/app/home'.</msg>
+<arg>${url}</arg>
+<arg>browser=${browserName}</arg>
+<arg>options=binary_location=r"C:\\chrome-win64\\chrome.exe"</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-10-11T09:44:17.317132" elapsed="1.863723"/>
+</kw>
+<arg>${url_dohome}</arg>
+<arg>chrome</arg>
+<status status="PASS" start="2024-10-11T09:44:17.316132" elapsed="1.864723"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-10-11T09:44:19.180855" elapsed="0.032145"/>
+</kw>
+<kw name="Wait And Wait Until Element Is Visible" owner="common">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-10-11T09:44:19.214003" elapsed="1.057227"/>
+</kw>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Wait Until Element Is Visible</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2024-10-11T09:44:19.214003" elapsed="1.057227"/>
+</kw>
+<arg>//button[text()='เข้าสู่ระบบ']</arg>
+<status status="PASS" start="2024-10-11T09:44:19.213000" elapsed="1.058230"/>
+</kw>
+<kw name="Wait And Click Element" owner="common">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element with Delay" owner="common">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-11T09:44:20.272230" level="INFO">Clicking element '//button[text()='เข้าสู่ระบบ']'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-11T09:44:20.272230" elapsed="0.456521"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-11T09:44:21.730048" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-11T09:44:20.729750" elapsed="1.000298"/>
+</kw>
+<arg>${locator}</arg>
+<status status="PASS" start="2024-10-11T09:44:20.272230" elapsed="1.457818"/>
+</kw>
+<arg>3x</arg>
+<arg>2s</arg>
+<arg>Click Element with Delay</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2024-10-11T09:44:20.272230" elapsed="1.457818"/>
+</kw>
+<arg>//button[text()='เข้าสู่ระบบ']</arg>
+<status status="PASS" start="2024-10-11T09:44:20.271230" elapsed="1.458818"/>
+</kw>
+<kw name="Wait And Click Element" owner="common">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element with Delay" owner="common">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-11T09:44:21.732417" level="INFO">Clicking element '//input[@name="username"]'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-11T09:44:21.731417" elapsed="0.050313"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-11T09:44:22.782035" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-11T09:44:21.781730" elapsed="1.000305"/>
+</kw>
+<arg>${locator}</arg>
+<status status="PASS" start="2024-10-11T09:44:21.731417" elapsed="1.050618"/>
+</kw>
+<arg>3x</arg>
+<arg>2s</arg>
+<arg>Click Element with Delay</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2024-10-11T09:44:21.731417" elapsed="1.050618"/>
+</kw>
+<arg>//input[@name="username"]</arg>
+<status status="PASS" start="2024-10-11T09:44:21.730048" elapsed="1.051987"/>
+</kw>
+<kw name="Wait And Input Text with Delay" owner="common">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input Text with Delay" owner="common">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-11T09:44:22.784067" level="INFO">Typing text '123456' into text field '//input[@name="username"]'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-11T09:44:22.784067" elapsed="0.054271"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-11T09:44:24.338773" level="INFO">Slept 1 second 500 milliseconds.</msg>
+<arg>1.5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-11T09:44:22.838338" elapsed="1.500435"/>
+</kw>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<status status="PASS" start="2024-10-11T09:44:22.783074" elapsed="1.555699"/>
+</kw>
+<arg>3x</arg>
+<arg>2s</arg>
+<arg>Input Text with Delay</arg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2024-10-11T09:44:22.783074" elapsed="1.555699"/>
+</kw>
+<arg>//input[@name="username"]</arg>
+<arg>${username}</arg>
+<status status="PASS" start="2024-10-11T09:44:22.783074" elapsed="1.555699"/>
+</kw>
+<kw name="Wait And Click Element" owner="common">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element with Delay" owner="common">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-11T09:44:24.339869" level="INFO">Clicking element '//input[@name="password"]'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-11T09:44:24.339869" elapsed="0.040726"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-11T09:44:25.380708" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-11T09:44:24.380595" elapsed="1.000113"/>
+</kw>
+<arg>${locator}</arg>
+<status status="PASS" start="2024-10-11T09:44:24.339869" elapsed="1.040839"/>
+</kw>
+<arg>3x</arg>
+<arg>2s</arg>
+<arg>Click Element with Delay</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2024-10-11T09:44:24.339869" elapsed="1.040839"/>
+</kw>
+<arg>//input[@name="password"]</arg>
+<status status="PASS" start="2024-10-11T09:44:24.338773" elapsed="1.041935"/>
+</kw>
+<kw name="Wait And Input Text with Delay" owner="common">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input Text with Delay" owner="common">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-11T09:44:25.381235" level="INFO">Typing text 'D0h0me*1' into text field '//input[@name="password"]'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-11T09:44:25.381235" elapsed="0.055264"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-11T09:44:26.936769" level="INFO">Slept 1 second 500 milliseconds.</msg>
+<arg>1.5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-11T09:44:25.436499" elapsed="1.500270"/>
+</kw>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<status status="PASS" start="2024-10-11T09:44:25.381235" elapsed="1.555534"/>
+</kw>
+<arg>3x</arg>
+<arg>2s</arg>
+<arg>Input Text with Delay</arg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2024-10-11T09:44:25.381235" elapsed="1.555534"/>
+</kw>
+<arg>//input[@name="password"]</arg>
+<arg>${password}</arg>
+<status status="PASS" start="2024-10-11T09:44:25.381235" elapsed="1.555534"/>
+</kw>
+<kw name="Wait And Click Element" owner="common">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element with Delay" owner="common">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-11T09:44:26.937775" level="INFO">Clicking element '//button[@type="submit"][ text()='เข้าสู่ระบบ']'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-11T09:44:26.937775" elapsed="0.043727"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-11T09:44:27.981847" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-11T09:44:26.981502" elapsed="1.000345"/>
+</kw>
+<arg>${locator}</arg>
+<status status="PASS" start="2024-10-11T09:44:26.936769" elapsed="1.045078"/>
+</kw>
+<arg>3x</arg>
+<arg>2s</arg>
+<arg>Click Element with Delay</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2024-10-11T09:44:26.936769" elapsed="1.045078"/>
+</kw>
+<arg>//button[@type="submit"][ text()='เข้าสู่ระบบ']</arg>
+<status status="PASS" start="2024-10-11T09:44:26.936769" elapsed="1.045078"/>
+</kw>
+<kw name="Wait And Wait Until Element Contains" owner="common">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Wait Until Element Contains" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Waits until the element ``locator`` contains ``text``.</doc>
+<status status="PASS" start="2024-10-11T09:44:27.981847" elapsed="1.277801"/>
+</kw>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Wait Until Element Contains</arg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2024-10-11T09:44:27.981847" elapsed="1.278981"/>
+</kw>
+<arg>//span[text()='${username}']</arg>
+<arg>${username}</arg>
+<status status="PASS" start="2024-10-11T09:44:27.981847" elapsed="1.278981"/>
+</kw>
+<kw name="Pass Execution" owner="BuiltIn">
+<msg time="2024-10-11T09:44:29.262046" level="INFO">Execution passed with message:
+End Test</msg>
+<arg>End Test</arg>
+<doc>Skips rest of the current test, setup, or teardown with PASS status.</doc>
+<status status="PASS" start="2024-10-11T09:44:29.260828" elapsed="0.001218">End Test</status>
+</kw>
+<arg>username=123456</arg>
+<arg>password=D0h0me*1</arg>
+<status status="PASS" start="2024-10-11T09:44:17.316132" elapsed="11.945914">End Test</status>
+</kw>
+<kw name="Close All Browsers" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2024-10-11T09:44:29.262046" elapsed="6.308286"/>
+</kw>
+<status status="PASS" start="2024-10-11T09:44:17.315135" elapsed="18.256113">End Test</status>
+</test>
+<status status="PASS" start="2024-10-11T09:43:58.754491" elapsed="36.817756"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Test file">Test file</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-10-11T09:44:17.315135" level="WARN">Multiple tests with name 'Login dohome DataDriver' executed in suite 'Test file'.</msg>
+</errors>
+</robot>

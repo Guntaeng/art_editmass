@@ -1,0 +1,91 @@
+ข้อมูลส่วนหัว
+${vendor_no} = ข้อมูล vendor*
+${new_name_th} = ชื่อสินค้าภาษาไทย (Thai Name)* 40 digit ตัวอย่าง UAT-รองเท้าใส่ในบ้าน สก็อต 38-39 RIPP ชพ
+${row['name_en']} = ชื่อสินค้าภาษาอังกฤษ (Eng Name) 40 digit ตัวอย่าง UAT-Mosquito  HW-208A
+
+1. รายละเอียดเกี่ยวกับตัวสินค้า
+${row['article_category']} = หมวดหมู่สินค้า (Article category) * ตัวอย่าง 00: Single article
+${row['merc_category_MC2']} = MC level 2 * ใส่เฉพาะตัวอักษร 3 ตัวแรก เช่น DTB
+${new_MC5} = กลุ่ม MC Level 5 (mdse catagory) *ใส่เฉพาะตัวอักษร เช่น DTB300101
+${row['division_type']} = Division * ตัวอย่าง 00: Common Division
+${row['artl_statistics_grp']} = ผังการลงบัญชีสินค้า * ตัวอย่าง 1: 
+${row['astmt_list_type']} = Astmt List Type * ตัวอย่าง 1: SAP reference object หรือ 2: Do home 
+${row['material_type']} = ประเภทสินค้า (Material Type) * ตัวอย่าง ZAWA: Trading Goods DoHome
+${row['valuation_class']} = ประเภทสินค้าทางบัญชี (valuation class) * ตัวอย่าง 3100: Trading goods
+${row['e_comm_name_th']} = ชื่อ Ecommerce (ECM Name) * ตัวอย่าง UAT-DECOS รองเท้าใส่ในบ้าน ไซส์ 38-39 รุ 
+${row['search_word']} = ชื่อค้นหาสินค้า (Search Name) * ตัวอย่าง UAT-รท-สนบ-สต-38-39-RIPP-ชพ-DC
+${row['search_remark']} = หมายเหตุการขาย * ตัวอย่าง UAT-สำหรับซ้อมกีฬา สำหรับผู้หญิง 
+${row['product_model']} = รุ่นของสินค้า * ตัวอย่าง ตู้เย็น 1.7Q GR-A706CI  กรณีไม่ต้องการกรอก สามารถใส่ - ได้
+${row['brand_id']} = ชื่อแบรนด์สินค้า(ยี่ห้อ) (Brand) * ตัวอย่าง D010: Decos
+${row['old_article']} = รหัสสินค้าเดิมที่ยกเลิกขาย ถ้าไม่มีสามารถเว้นว่างไว้ได้
+${row['repack']} = สินค้าต้องrepack/ติดบาร์โค๊ด (repack) ระบบ default 03: ไม่ต้อง pack  ให้ สามารถแก้ไขได้ 
+${row['product_transform']} = สินค้าต้องแปรสภาพ * ระบบ default 03: ไม่ต้องแปรสภาพ ให้ สามารถแก้ไขได้  
+${row['country_of_region']} = ประเทศต้นทางนำเข้า (Ctry of origin) * ตัวอย่าง TH: ประเทศไทย
+${row['hb_nonhb']} = HB/Non HB * ตัวอย่าง 02: House Brand
+${row['production']} = HB ในประเทศ/ต่างประเทศ (Production) * ตัวอย่าง Z1: ผลิตในประเทศ
+${row['tradmark']} = เครื่องหมายการค้า (Tradmark) * ตัวอย่าง HBTM: สินค้า HB มี Trademark
+
+2. ข้อมูลเกี่ยวกับสินค้ามีอายุ
+${row['tot_shelf_life']} = อายุสินค้าทั้งหมด (total shelf life) กรณีต้องการสร้างสินค้ามีอายุ สามารถระบุลงไปได้
+${row['rem_shelf_life']} = อายุสินค้าที่รับสินค้าได้ (remaining shelf life) กรณีต้องการสร้างสินค้ามีอายุ สามารถระบุลงไปได้
+
+3. ข้อมูลเกี่ยวกับ Indicator สินค้า
+${row['product_status']} = สถานะสินค้า Active / Inactive (Item Status) * ระบบ default A: Active ให้ สามารถแก้ไขได้
+${row['abc_indicator']} = การจัดกลุ่มสินค้า (Item indicator) * ระบบ default 8: สินค้าใหม่ สามารถแก้ไขได้
+${row['product_role']} = กลุ่มสินค้า Core หลัก /เสริม (Product Role) * ตัวอย่าง 01: Core
+${row['product_sub_role']} = กลุ่มย่อยของ Product Role * ตัวอย่าง 04: สินค้าแฟร์ชั่น 
+${row['product_trend']} = Product trends * ตัวอย่าง 05: ไม่มีเทรน
+
+4. ข้อมูลเกี่ยวกับกลุ่มจัดซื้อและผู้ดูแลการสั่งซื้อ
+${row['head_purchaser_group_no']} = หัวหน้าทีมจัดซื้อในประเทศ * ใส่เฉพาะรหัสพนักงาน ตัวอย่าง 1000034
+${row['purchaser_group_no']} = กลุ่มจัดซื้อในประเทศ (Purch. Group) * ใส่เฉพาะรหัสกลุ่มจัดซื้อ ตัวอย่าง 134
+
+5. ข้อมูลการจัดหาสต็อกสินค้าภาพรวม
+${row['avail_check']} = การตรวจสอบความพอเพียง (Avail. Check) * ตัวอย่าง 02: Individ.requirements
+${row['gen_item_cat_grp']} = กลุ่มวัสดุ-ลงบัญชีขาย (Gen. item cat. grp) * ตัวอย่าง NORM: Standard item
+${row['tax_class']} = ประเภทภาษีขาย (Tax class.) * ตัวอย่าง 1: Full tax
+${row['serial_number_profile']} = สินค้าที่ต้องระบุ serial (Serial Number Profile) กรณีเป็นสินค้ามี serial สามารถระบุลงไปได้ ตัวอย่าง ZSD1: Serial SD Sell only
+${row['stor_condition']} = ที่จัดจ่ายสินค้า Basic (Stor.conditions) * ตัวอย่าง Z1: 1010 คลังรวม / R
+${row['loading_group']} = คลังจัดเก็บ (Loading Group) * ตัวอย่าง 0001: Store ค้าปลีก
+${mark_batch} = สินค้าที่ต้องระบุ batch (Batch management ) กรณีที่ต้องการสร้างสินค้า batch ให้ มาร์ค X ลงไป
+
+6. หน่วยสินค้า , ขนาด,บาร์โค๊ด รวมแพคกิ้ง
+${row['units_id_s6_u1']} = หน่วยที่ 1 * ชื่อหน่วย (Base) * ตัวอย่าง MC: เครื่อง
+${row['rate_unit_base_s6_u1']} = จำนวนชิ้นบรรจุต่อหน่วยเบสยูนิต (Y) * ตัวอย่าง 1
+${row['rate_unit_code_s6_u1']} = จำนวนชิ้นบรรจุต่อหน่วย ( หน่วยผันแปร: X) * ตัวอย่าง 1
+${row['barcode_no_s6_u1']} = บาร์โค้ดสินค้า (Barcode) * ตัวอย่าง 1902000684992
+${row['width_base_s6_u1']} = ความกว้าง cm. Width cm. (packing) * ตัวอย่าง 120
+${row['long_base_s6_u1']} = ความยาว cm. (Length cm.(packing)) * ตัวอย่าง 9
+${row['high_base_s6_u1']} = ความสูง cm. (Height(packing)) * ตัวอย่าง 110
+${row['weight_base_s6_u1']} = น้ำหนัก Kg. (Gross weight) * ตัวอย่าง 25
+${add_unit2} - ${add_unit5} = ถ้าต้องการสร้างมากกว่า 1 หน่วยให้ mark X ในฟิลด์ add_unit และใส่ 
+${row['rate_unit_code_s6_ux']},${row['barcode_no_s6_ux']},${row['width_base_s6_ux']},${row['long_base_s6_ux']},${row['high_base_s6_ux']},${row['weight_base_s6_ux']} ตามลำดับได้เลย
+
+7. หน่วยสินค้า , ขนาด,บาร์โค๊ด ไม่รวมแพคกิ้ง
+${row['width_base_s7_u1']} = ความกว้าง cm. (Width excluding) * ตัวอย่าง 21.5
+${row['long_base_s7_u1']} = ความยาว cm. (Depth not size) * ตัวอย่าง 5.5
+${row['high_base_s7_u1']} = ความสูง/ความลึก cm. (Height) * ตัวอย่าง 37
+${row['weight_base_s7_u1']} = น้ำหนัก Kg. (Net weight) * ตัวอย่าง 14.5
+***กรณีมีมากกว่า 1 หน่วย ให้ใส่ ความกว้าง*ยาว*สูง*น้ำหนักด้วย
+
+12. สถานะสินค้า ใน Tab Basic Data
+${row['first_sale_date']} = วันที่ต้องการที่จะขาย (First Sale Date) * ตัวอย่าง 16/09/2024
+
+14. คุณสมบัติการรับประกัน บำรุงรักษา
+${row['highlight_sell_point']} = จุดเด่นจุดขาย * 
+${row['product_features']} = คุณสมบัติสินค้า * 
+${row['maintenance']} = การบำรุงรักษา *
+${row['warranty_conditions']} = เงื่อนไขการรับประกัน *
+${row['usage']} = การใช้งาน *
+${row['precautions']} = ข้อควรระวัง *
+
+17. รูปภาพสินค้า
+${path_pic} = จำนวนรูปภาพที่ต้องการ upload
+${path_pic_1} - ${path_pic_50} = path ที่เก็บรูปภาพที่ต้องการ upload ตัวอย่าง C:/Automate_WEB/Create_Article_automate/pictures/not_value.png
+
+Tab : Purchasing
+${row['lead_time']} = ระยะเวลาการรับสินค้า (Lead time) * ตัวอย่าง 15
+${row['return_defective']} = ส่งคืน (RTV) กรณีชำรุด * ตัวอย่าง D: คืนไม่ได้-หักเงินไม่ได้
+${row['tax_code_vendor']} = ประเภทภาษีซื้อ (Tax Code) * ตัวอย่าง VX: Purchase Tax rate 0% (สินค้าเกษตร)
+${row['net_cost_price']} = ราคาทุน ไม่รวมภาษี (Net Price) * ตัวอย่าง 9.6
+${row['currency']} = สกุลเงินของต้นทุน * ตัวอย่าง THB: Thailand Baht
