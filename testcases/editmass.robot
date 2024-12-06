@@ -13,7 +13,7 @@ Test Teardown    Refresh page
 *** Test Cases ***
 Article Edit mass round 1
     Process CSV Rows
-    Search by article    10337961
+    Search by article    55000219
     Click check box all article
     Click button edit field    
     Edit field 1    Run 1
@@ -21,12 +21,12 @@ Article Edit mass round 1
     Edit field 3    Run 1
     Edit field 4    Run 1
     Edit field 5    Run 1
-    #Click button Confirm edit field
-#     Click button Approve edit field
+    Click button Confirm edit field
+    Click button Approve edit field
 
 Article Edit mass round 2
     Process CSV Rows
-    Search by article    10337961
+    Search by article    19999124
     Click check box all article
     Click button edit field    
     Edit field 1    Run 2
@@ -34,12 +34,12 @@ Article Edit mass round 2
     Edit field 3    Run 2
     Edit field 4    Run 2
     Edit field 5    Run 2
-    #Click button Confirm edit field
-#     Click button Approve edit field
+    Click button Confirm edit field
+    Click button Approve edit field
 
 Article Edit mass round 3
     Process CSV Rows
-    Search by article    10337961
+    Search by article    81000075
     Click check box all article
     Click button edit field    
     Edit field 1    Run 3
@@ -47,6 +47,6 @@ Article Edit mass round 3
     Edit field 3    Run 3
     Edit field 4    Run 3
     # Edit field 5    Run 3
-    #Click button Confirm edit field
-#     Click button Approve edit field
+    Click button Confirm edit field
+    Click button Approve edit field
 

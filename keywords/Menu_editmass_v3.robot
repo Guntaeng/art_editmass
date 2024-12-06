@@ -67,7 +67,7 @@ Click button Confirm edit field
 
 Click button Approve edit field
     Wait And Click Element    //span[text()="ขออนุมัติแก้ไข"]/parent::button
-    Wait And Click Element    //span[text()="ขออนุมัติแก้ไข"]/parent::button
+    Wait And Click Element    //span[text()="ยกเลิก"]/ancestor::div[2]/following-sibling::div//button
     Wait And Click Element    //span[text()="ยืนยัน"]/parent::button
     Wait Until Page Contains    อนุมัติแก้ไขสำเร็จ    timeout=10s
 
@@ -87,7 +87,11 @@ Edit field 1
     ELSE IF    '${round_11}' == 'X3' and '${run}' == 'Run 3'
         ${master_tabcols_id}    Set Variable    ${field_11}
         ${values_new}    Set Variable    ${value_11}
-        Input text editmass row 1 (day warranty)    ${master_tabcols_id}    ${values_new}          
+        Input text editmass row 1 (day warranty)    ${master_tabcols_id}    ${values_new}
+    ELSE IF    '${round_15}' == 'X4' and '${run}' == 'Run 4'    ###A3
+        ${master_tabcols_id}    Set Variable    ${field_15}
+        ${values_new}    Set Variable    ${value_15}
+        Dropdown row 1    ${master_tabcols_id}    ${values_new}
     END
 
 
@@ -107,7 +111,12 @@ Edit field 2
         ${master_tabcols_id}    Set Variable    ${field_12} 
         ${values_new}    Set Variable    ${value_12} 
         ${new_uuid}    Set Variable    ${uuid_12} 
-        Dropdown row 2    ${master_tabcols_id}    ${values_new}    ${new_uuid}        
+        Dropdown row 2    ${master_tabcols_id}    ${values_new}    ${new_uuid}
+    ELSE IF    '${round_16}' == 'X4' and '${run}' == 'Run 4'
+        ${master_tabcols_id}    Set Variable    ${field_16} 
+        ${values_new}    Set Variable    ${value_16} 
+        ${new_uuid}    Set Variable    ${uuid_16} 
+        Dropdown row 2    ${master_tabcols_id}    ${values_new}    ${new_uuid}                
     END
 
 
@@ -147,7 +156,7 @@ Edit field 4
         ${master_tabcols_id}    Set Variable    ${field_14} 
         ${values_new}    Set Variable    ${value_14} 
         ${new_uuid}    Set Variable    ${uuid_14}  
-        Dropdown row 4    ${master_tabcols_id}    ${values_new}    ${new_uuid}        
+        Dropdown row 1 (c1,c2,c3)    ${master_tabcols_id}    ${values_new}    ${new_uuid}        
     END
 
 
@@ -429,6 +438,22 @@ Dropdown row 5 (type warranty)
     Wait And Click Element    //*[@name="master_tabcols_id" and @value="${new_uuid}"]/ancestor::div[6]/following-sibling::div[1]/descendant::input[@class="dx-texteditor-input"]
     Wait And Input Text with Delay    //*[@name="master_tabcols_id" and @value="${new_uuid}"]/ancestor::div[6]/following-sibling::div[1]/descendant::input[@class="dx-texteditor-input"]    ${values_new} 
     Wait And Press Keys    //*[@name="master_tabcols_id" and @value="${new_uuid}"]/ancestor::div[6]/following-sibling::div[1]/descendant::input[@class="dx-texteditor-input"]    \\13    
+
+
+
+Dropdown row 1 (c1,c2,c3)     #กำหนดรูปแบบการรับประกัน
+    [Arguments]    ${master_tabcols_id}    ${values_new}    ${new_uuid}
+    Wait And Click Element    //*[text()=" เพิ่ม"]
+    Wait And Click Element    //div[@data-dx_placeholder="เลือกฟิลด์" and @class="dx-placeholder"]/preceding-sibling::input
+    Wait And Input Text with Delay    //div[@data-dx_placeholder="เลือกฟิลด์" and @class="dx-placeholder"]/preceding-sibling::input    ${master_tabcols_id} 
+    Wait And Press Keys    xpath=//div[6]/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div[2]/div/div/div/div/div/div/div/input      \\13
+    Wait And Click Element    //*[@name="master_tabcols_id" and @value="${new_uuid}"]/ancestor::div[6]/following-sibling::div[1]/descendant::input[@class="dx-texteditor-input"]
+    Wait And Input Text with Delay    //*[@name="master_tabcols_id" and @value="${new_uuid}"]/ancestor::div[6]/following-sibling::div[1]/descendant::input[@class="dx-texteditor-input"]    ${values_new} 
+    Wait And Press Keys    //*[@name="master_tabcols_id" and @value="${new_uuid}"]/ancestor::div[6]/following-sibling::div[1]/descendant::input[@class="dx-texteditor-input"]    \\13    
+    Wait And Click Element    //*[@name="master_tabcols_id" and @value="${new_uuid}"]/ancestor::div[6]/following-sibling::div//select/..
+    Wait And Click Element    //*[text()='C1: DoHome/Retail']/ancestor::div[2]//div[@class="dx-list-select-all-label"]
+    Wait And Click Element    //*[text()='OK']
+
 
 #input text
 #ชื่อสินค้า Commercial (ภาษาอังกฤษ) 
