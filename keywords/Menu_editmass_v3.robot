@@ -441,7 +441,7 @@ Dropdown row 5 (type warranty)
 
 
 
-Dropdown row 1 (c1,c2,c3)     #กำหนดรูปแบบการรับประกัน
+Dropdown row 1 (c1,c2,c3)     #กำหนดรูปแบบการรับประกัน เพ่ิ่ม req. C1,c2,c3
     [Arguments]    ${master_tabcols_id}    ${values_new}    ${new_uuid}
     Wait And Click Element    //*[text()=" เพิ่ม"]
     Wait And Click Element    //div[@data-dx_placeholder="เลือกฟิลด์" and @class="dx-placeholder"]/preceding-sibling::input

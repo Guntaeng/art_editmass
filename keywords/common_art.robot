@@ -56,32 +56,32 @@ Conditional Wait And Scroll Element Into View
 
 Wait And Scroll Element Into View    #require
     [Arguments]    ${locator}
-    Wait Until Keyword Succeeds    3x    2s    Scroll Element Into View    ${locator}
+    Wait Until Keyword Succeeds    3x    0.5s    Scroll Element Into View    ${locator}
 
 Wait And Clear Element Text    #require
     [Arguments]    ${locator}
-    Wait Until Keyword Succeeds    3x    2s    Clear Element Text    ${locator}
+    Wait Until Keyword Succeeds    3x    0.5s    Clear Element Text    ${locator}
 
 Wait And Input Text with Delay    #require
     [Arguments]    ${locator}    ${text}
-    Wait Until Keyword Succeeds    5x    2.5s    Input Text with Delay    ${locator}    ${text}
+    Wait Until Keyword Succeeds    3x    0.5s    Input Text with Delay    ${locator}    ${text}
 
 Wait And Press Keys    #require
     [Arguments]    ${locator}    ${keys}
-    Wait Until Keyword Succeeds    5x    2.5s    Press Key    ${locator}    ${keys}
+    Wait Until Keyword Succeeds    3x    0.5s    Press Key    ${locator}    ${keys}
 
 Wait And Click Element     #require
     [Arguments]    ${locator}
-    Wait Until Keyword Succeeds    3x    2s    Click Element with Delay    ${locator}
+    Wait Until Keyword Succeeds    3x    0.5s    Click Element with Delay    ${locator}
 
 
 Wait And Wait Until Element Is Visible    
     [Arguments]    ${locator}
-    Wait Until Keyword Succeeds    5x    2s    Wait Until Element Is Visible    ${locator}
+    Wait Until Keyword Succeeds    3x    1s    Wait Until Element Is Visible    ${locator}
 
 Wait And Wait Until Element Contains    
     [Arguments]    ${locator}    ${text}
-    Wait Until Keyword Succeeds    3x    2s    Wait And Wait Until Element Contains    ${locator}    ${text}    
+    Wait Until Keyword Succeeds    3x    1s    Wait And Wait Until Element Contains    ${locator}    ${text}    
 
 
 Open browser web url	#ชื่อที่จะนำไปใช้
