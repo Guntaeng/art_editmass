@@ -26,11 +26,11 @@ Process CSV Rows
     # วนลูปข้อมูลใน ${x_rows}
     FOR    ${row}    IN    @{x_rows}
         # ดึงค่าจาก dictionary โดยใช้คีย์ที่มี ${}
-        ${level_approve}=    Get From Dictionary    ${row}    level_approve
-        ${round}=            Get From Dictionary    ${row}    round
-        ${field}=            Get From Dictionary    ${row}    field
-        ${value}=            Get From Dictionary    ${row}    value
-        ${uuid}=             Get From Dictionary    ${row}    uuid
+        ${level_approve}=    Get From Dictionary    ${row}    level_approve    default=Not Found
+        ${round}=            Get From Dictionary    ${row}    round    default=Not Found
+        ${field}=            Get From Dictionary    ${row}    field    default=Not Found
+        ${value}=            Get From Dictionary    ${row}    value    default=Not Found
+        ${uuid}=             Get From Dictionary    ${row}    uuid    default=Not Found
         # เซ็ตตัวแปรตามลำดับที่ได้จาก index
         Set Suite Variable    ${level_approve_${index}}    ${level_approve}
         Set Suite Variable    ${round_${index}}           ${round}
