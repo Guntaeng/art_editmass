@@ -2,9 +2,10 @@
 Library    SeleniumLibrary
 Resource    ../variables/config_art.robot
 Resource    ../keywords/common_art.robot
-Library    ../resources/csv_ready.py
-Library    ../resources/csv_ready_v2.py
-Library    CSVLibrary
+Resource    ../keywords/Type_field_values/input_text.robot
+Resource    ../keywords/Type_field_values/drop_down.robot
+Resource    ../keywords/Type_field_values/check_box.robot
+Resource    ../keywords/Read_csv/Read_data_csv.robot
 Library    BuiltIn
 Library    OperatingSystem
 Library    Collections
@@ -12,37 +13,8 @@ Library    String
 Library    DebugLibrary
 
 
-*** Variables ***
-${CSV_PATH_B2C}    resources/edit_mass_2.csv  
-${CSV_PATH_NOT_REQ}    resources/editmass_no_req.csv
 
 *** Keywords ***
-Process CSV Rows
-    [Arguments]    ${path}
-    ${result}=    Read Csv    ${path}
-    # กำหนดค่าตัวแปร ${x_rows} เป็น list ที่อ่านจาก CSV
-    ${x_rows}=    Set Variable    ${result}
-    # เริ่มต้นที่ index 1
-    ${index}=    Set Variable    1
-    # วนลูปข้อมูลใน ${x_rows}
-    FOR    ${row}    IN    @{x_rows}
-        # ดึงค่าจาก dictionary โดยใช้คีย์ที่มี ${}
-        ${level_approve}=    Get From Dictionary    ${row}    level_approve    default=Not Found
-        ${round}=            Get From Dictionary    ${row}    round    default=Not Found
-        ${field}=            Get From Dictionary    ${row}    field    default=Not Found
-        ${value}=            Get From Dictionary    ${row}    value    default=Not Found
-        ${uuid}=             Get From Dictionary    ${row}    uuid    default=Not Found
-        # เซ็ตตัวแปรตามลำดับที่ได้จาก index
-        Set Suite Variable    ${level_approve_${index}}    ${level_approve}
-        Set Suite Variable    ${round_${index}}           ${round}
-        Set Suite Variable    ${field_${index}}           ${field}
-        Set Suite Variable    ${value_${index}}           ${value}
-        Set Suite Variable    ${uuid_${index}}            ${uuid}
-        # เพิ่มค่า index และวนกลับไป 1 เมื่อถึง 5
-        ${index}=    Evaluate    (${index}) + 1
-    END
-
-
 Search by article
     [Arguments]    @{articles}
     Wait And Click Element    //input[@name="article_id"]
@@ -65,6 +37,7 @@ Click button edit field
 Click button Confirm edit field
     Wait And Click Element    //span[text()="ยืนยัน"]/parent::button
     Wait And Wait Until Element Is Visible    //span[text()="ขออนุมัติแก้ไข"]/parent::button
+    Sleep    3s
 
 Click button Approve edit field
     Wait And Click Element    //span[text()="ขออนุมัติแก้ไข"]/parent::button
@@ -75,7 +48,7 @@ Click button Approve edit field
 
 
 #การกรอกข้อมูล
-Edit field 1
+Edit field 1 (B2C)
     [Arguments]    ${run}
     IF    '${round_1}' == 'X1' and '${run}' == 'Run 1'
         ${master_tabcols_id}    Set Variable    ${field_1} 
@@ -96,7 +69,7 @@ Edit field 1
     END
 
 
-Edit field 2
+Edit field 2 (B2C)
     [Arguments]    ${run}    
     IF    '${round_2}' == 'X1' and '${run}' == 'Run 1'
         ${master_tabcols_id}    Set Variable    ${field_2} 
@@ -121,7 +94,7 @@ Edit field 2
     END
 
 
-Edit field 3
+Edit field 3 (B2C)
     [Arguments]    ${run}
     IF    '${round_3}' == 'X1' and '${run}' == 'Run 1'
         ${master_tabcols_id}    Set Variable    ${field_3} 
@@ -141,7 +114,7 @@ Edit field 3
     END
 
 
-Edit field 4
+Edit field 4 (B2C)
     [Arguments]    ${run}
     IF    '${round_4}' == 'X1' and '${run}' == 'Run 1'
         ${master_tabcols_id}    Set Variable    ${field_4} 
@@ -161,7 +134,7 @@ Edit field 4
     END
 
 
-Edit field 5
+Edit field 5 (B2C)
     [Arguments]    ${run}
     IF    '${round_5}' == 'X1' and '${run}' == 'Run 1'
         ${master_tabcols_id}    Set Variable    ${field_5} 
@@ -177,292 +150,14 @@ Edit field 5
 
 
 
-Input text editmass row 1
-    [Arguments]    ${master_tabcols_id}    ${values_new}   
-    Wait And Click Element    //input[@name="master_tabcols_id"]/following-sibling::div/div/input
-    Wait And Input Text with Delay    //input[@name="master_tabcols_id"]/following-sibling::div/div/input    ${master_tabcols_id}
-    Wait And Press Keys    //input[@name="master_tabcols_id"]/following-sibling::div/div/input    \\13
-    Wait And Click Element    //input[@name="values_new"]
-    Wait And Input Text with Delay    //input[@name="values_new"]    ${values_new}
-    
-
-Input text editmass row 2
-    [Arguments]    ${master_tabcols_id}    ${values_new}    ${new_uuid}  
-    Wait And Click Element    //*[text()=" เพิ่ม"]
-    Wait And Click Element    //div[@data-dx_placeholder="เลือกฟิลด์" and @class="dx-placeholder"]/preceding-sibling::input
-    Wait And Input Text with Delay    //div[@data-dx_placeholder="เลือกฟิลด์" and @class="dx-placeholder"]/preceding-sibling::input    ${master_tabcols_id}
-    Wait And Press Keys    xpath=//div[4]/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div[2]/div/div/div/div/div/div/div/input       \\13    
-    Wait And Click Element    //*[@name="master_tabcols_id" and @value="${new_uuid}"]/ancestor::div[6]/following-sibling::div[1]/descendant::input[@class="dx-texteditor-input"]
-    Wait And Input Text with Delay    //*[@name="master_tabcols_id" and @value="${new_uuid}"]/ancestor::div[6]/following-sibling::div[1]/descendant::input[@class="dx-texteditor-input"]    ${values_new}
-    
-
-Input text editmass row 3
-    [Arguments]    ${master_tabcols_id}    ${values_new}    ${new_uuid}  
-    Wait And Click Element    //*[text()=" เพิ่ม"]
-    Wait And Click Element    //div[@data-dx_placeholder="เลือกฟิลด์" and @class="dx-placeholder"]/preceding-sibling::input
-    Wait And Input Text with Delay    //div[@data-dx_placeholder="เลือกฟิลด์" and @class="dx-placeholder"]/preceding-sibling::input    ${master_tabcols_id}
-    Wait And Press Keys    xpath=//div[5]/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div[2]/div/div/div/div/div/div/div/input      \\13    
-    Wait And Click Element    //*[@name="master_tabcols_id" and @value="${new_uuid}"]/ancestor::div[6]/following-sibling::div[1]/descendant::input[@class="dx-texteditor-input"]
-    Wait And Input Text with Delay    //*[@name="master_tabcols_id" and @value="${new_uuid}"]/ancestor::div[6]/following-sibling::div[1]/descendant::input[@class="dx-texteditor-input"]    ${values_new}
-    #Wait And Press Keys    //*[@name="master_tabcols_id" and @value="${new_uuid}"]/ancestor::div[6]/following-sibling::div[1]/descendant::input[@class="dx-texteditor-input"]    \\13    
-
-
-Input text editmass row 4
-    [Arguments]    ${master_tabcols_id}    ${values_new}    ${new_uuid}  
-    Wait And Click Element    //*[text()=" เพิ่ม"]
-    Wait And Click Element    //div[@data-dx_placeholder="เลือกฟิลด์" and @class="dx-placeholder"]/preceding-sibling::input
-    Wait And Input Text with Delay    //div[@data-dx_placeholder="เลือกฟิลด์" and @class="dx-placeholder"]/preceding-sibling::input    ${master_tabcols_id}
-    Wait And Press Keys    xpath=//div[6]/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div[2]/div/div/div/div/div/div/div/input       \\13    
-    Wait And Click Element    //*[@name="master_tabcols_id" and @value="${new_uuid}"]/ancestor::div[6]/following-sibling::div[1]/descendant::input[@class="dx-texteditor-input"]
-    Wait And Input Text with Delay    //*[@name="master_tabcols_id" and @value="${new_uuid}"]/ancestor::div[6]/following-sibling::div[1]/descendant::input[@class="dx-texteditor-input"]    ${values_new}
-    #Wait And Press Keys    //*[@name="master_tabcols_id" and @value="${new_uuid}"]/ancestor::div[6]/following-sibling::div[1]/descendant::input[@class="dx-texteditor-input"]    \\13    
-
-
-Input text editmass row 5
-    [Arguments]    ${master_tabcols_id}    ${values_new}    ${new_uuid}  
-    Wait And Scroll Element Into View    //*[text()=" เพิ่ม"]
-    Wait And Click Element    //*[text()=" เพิ่ม"]
-    Wait And Click Element    //div[@data-dx_placeholder="เลือกฟิลด์" and @class="dx-placeholder"]/preceding-sibling::input
-    Wait And Input Text with Delay    //div[@data-dx_placeholder="เลือกฟิลด์" and @class="dx-placeholder"]/preceding-sibling::input    ${master_tabcols_id}
-    Wait And Press Keys    xpath=//div[7]/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div[2]/div/div/div/div/div/div/div/input       \\13    
-    Wait And Click Element    //*[@name="master_tabcols_id" and @value="${new_uuid}"]/ancestor::div[6]/following-sibling::div[1]/descendant::input[@class="dx-texteditor-input"]
-    Wait And Input Text with Delay    //*[@name="master_tabcols_id" and @value="${new_uuid}"]/ancestor::div[6]/following-sibling::div[1]/descendant::input[@class="dx-texteditor-input"]    ${values_new}
-    #Wait And Press Keys    //*[@name="master_tabcols_id" and @value="${new_uuid}"]/ancestor::div[6]/following-sibling::div[1]/descendant::input[@class="dx-texteditor-input"]    \\13 
-
-
-Input text editmass row 1 (section14)
-    [Arguments]    ${master_tabcols_id}    ${values_new}      
-    Wait And Click Element    //input[@name="master_tabcols_id"]/following-sibling::div/div/input
-    Wait And Input Text with Delay    //input[@name="master_tabcols_id"]/following-sibling::div/div/input    ${master_tabcols_id}
-    Wait And Press Keys    //input[@name="master_tabcols_id"]/following-sibling::div/div/input    \\13
-    Wait And Click Element    //*[@data-placeholder="ค่า (Value)"]
-    Wait And Input Text with Delay    //*[@data-placeholder="ค่า (Value)"]    ${values_new}
-
-
-Input text editmass row 2 (section14)
-    [Arguments]    ${master_tabcols_id}    ${values_new}    ${new_uuid}
-    Wait And Click Element    //*[text()=" เพิ่ม"]
-    Wait And Click Element    //div[@data-dx_placeholder="เลือกฟิลด์" and @class="dx-placeholder"]/preceding-sibling::input
-    Wait And Input Text with Delay    //div[@data-dx_placeholder="เลือกฟิลด์" and @class="dx-placeholder"]/preceding-sibling::input    ${master_tabcols_id}
-    Wait And Press Keys    xpath=//div[4]/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div[2]/div/div/div/div/div/div/div/input       \\13    
-    Wait And Click Element    //*[@name="master_tabcols_id" and @value="${new_uuid}"]/ancestor::div[6]/following-sibling::div[1]/descendant::div//*[@data-placeholder="ค่า (Value)"]
-    Wait And Input Text with Delay    //*[@name="master_tabcols_id" and @value="${new_uuid}"]/ancestor::div[6]/following-sibling::div[1]/descendant::div//*[@data-placeholder="ค่า (Value)"]    ${values_new}
-    
-
-Input text editmass row 3 (section14)
-    [Arguments]    ${master_tabcols_id}    ${values_new}    ${new_uuid}
-    Wait And Click Element    //*[text()=" เพิ่ม"]
-    Wait And Click Element    //div[@data-dx_placeholder="เลือกฟิลด์" and @class="dx-placeholder"]/preceding-sibling::input
-    Wait And Input Text with Delay    //div[@data-dx_placeholder="เลือกฟิลด์" and @class="dx-placeholder"]/preceding-sibling::input    ${master_tabcols_id} 
-    Wait And Press Keys    xpath=//div[5]/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div[2]/div/div/div/div/div/div/div/input       \\13    
-    Wait And Click Element    //*[@name="master_tabcols_id" and @value="${new_uuid}"]/ancestor::div[6]/following-sibling::div[1]/descendant::div//*[@data-placeholder="ค่า (Value)"]
-    Wait And Input Text with Delay    //*[@name="master_tabcols_id" and @value="${new_uuid}"]/ancestor::div[6]/following-sibling::div[1]/descendant::div//*[@data-placeholder="ค่า (Value)"]    ${values_new} 
-
-
-Input text editmass row 4 (section14)
-    [Arguments]    ${master_tabcols_id}    ${values_new}    ${new_uuid}
-    Wait And Click Element    //*[text()=" เพิ่ม"]
-    Wait And Click Element    //div[@data-dx_placeholder="เลือกฟิลด์" and @class="dx-placeholder"]/preceding-sibling::input
-    Wait And Input Text with Delay    //div[@data-dx_placeholder="เลือกฟิลด์" and @class="dx-placeholder"]/preceding-sibling::input    ${master_tabcols_id} 
-    Wait And Press Keys    xpath=//div[6]/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div[2]/div/div/div/div/div/div/div/input       \\13    
-    Wait And Click Element    //*[@name="master_tabcols_id" and @value="${new_uuid}"]/ancestor::div[6]/following-sibling::div[1]/descendant::div//*[@data-placeholder="ค่า (Value)"]
-    Wait And Input Text with Delay    //*[@name="master_tabcols_id" and @value="${new_uuid}"]/ancestor::div[6]/following-sibling::div[1]/descendant::div//*[@data-placeholder="ค่า (Value)"]    ${values_new} 
-
-
-Input text editmass row 5 (section14)
-    [Arguments]    ${master_tabcols_id}    ${values_new}    ${new_uuid}
-    Wait And Scroll Element Into View    //*[text()=" เพิ่ม"]
-    Wait And Click Element    //*[text()=" เพิ่ม"]
-    Wait And Click Element    //div[@data-dx_placeholder="เลือกฟิลด์" and @class="dx-placeholder"]/preceding-sibling::input
-    Wait And Input Text with Delay    //div[@data-dx_placeholder="เลือกฟิลด์" and @class="dx-placeholder"]/preceding-sibling::input    ${master_tabcols_id} 
-    Wait And Press Keys    xpath=//div[7]/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div[2]/div/div/div/div/div/div/div/input       \\13    
-    Wait And Click Element    //*[@name="master_tabcols_id" and @value="${new_uuid}"]/ancestor::div[6]/following-sibling::div[1]/descendant::div//*[@data-placeholder="ค่า (Value)"]
-    Wait And Input Text with Delay    //*[@name="master_tabcols_id" and @value="${new_uuid}"]/ancestor::div[6]/following-sibling::div[1]/descendant::div//*[@data-placeholder="ค่า (Value)"]    ${values_new} 
 
 
 
 
 
-Dropdown row 1
-    [Arguments]    ${master_tabcols_id}    ${values_new}    
-    Wait And Click Element    //input[@name="master_tabcols_id"]/following-sibling::div/div/input
-    Wait And Input Text with Delay    //input[@name="master_tabcols_id"]/following-sibling::div/div/input    ${master_tabcols_id} 
-    Wait And Press Keys    //input[@name="master_tabcols_id"]/following-sibling::div/div/input    \\13
-    Wait And Click Element    //input[@name="values_new"]/following-sibling::div/div/input
-    Wait And Input Text with Delay    //input[@name="values_new"]/following-sibling::div/div/input    ${values_new} 
-    Wait And Press Keys    //input[@name="values_new"]/following-sibling::div/div/input    \\13
-
-Dropdown row 2
-    [Arguments]    ${master_tabcols_id}    ${values_new}    ${new_uuid}
-    Wait And Click Element    //*[text()=" เพิ่ม"]
-    Wait And Click Element    //div[@data-dx_placeholder="เลือกฟิลด์" and @class="dx-placeholder"]/preceding-sibling::input
-    Wait And Input Text with Delay    //div[@data-dx_placeholder="เลือกฟิลด์" and @class="dx-placeholder"]/preceding-sibling::input    ${master_tabcols_id} 
-    Wait And Press Keys    xpath=//div[4]/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div[2]/div/div/div/div/div/div/div/input       \\13
-    Wait And Click Element    //*[@name="master_tabcols_id" and @value="${new_uuid}"]/ancestor::div[6]/following-sibling::div[1]/descendant::input[@class="dx-texteditor-input"]
-    Wait And Input Text with Delay    //*[@name="master_tabcols_id" and @value="${new_uuid}"]/ancestor::div[6]/following-sibling::div[1]/descendant::input[@class="dx-texteditor-input"]    ${values_new} 
-    Wait And Press Keys    //*[@name="master_tabcols_id" and @value="${new_uuid}"]/ancestor::div[6]/following-sibling::div[1]/descendant::input[@class="dx-texteditor-input"]    \\13    
-
-Dropdown row 3
-    [Arguments]    ${master_tabcols_id}    ${values_new}    ${new_uuid}
-    Wait And Click Element    //*[text()=" เพิ่ม"]
-    Wait And Click Element    //div[@data-dx_placeholder="เลือกฟิลด์" and @class="dx-placeholder"]/preceding-sibling::input
-    Wait And Input Text with Delay    //div[@data-dx_placeholder="เลือกฟิลด์" and @class="dx-placeholder"]/preceding-sibling::input    ${master_tabcols_id} 
-    Wait And Press Keys    xpath=//div[5]/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div[2]/div/div/div/div/div/div/div/input       \\13
-    Wait And Click Element    //*[@name="master_tabcols_id" and @value="${new_uuid}"]/ancestor::div[6]/following-sibling::div[1]/descendant::input[@class="dx-texteditor-input"]
-    Wait And Input Text with Delay    //*[@name="master_tabcols_id" and @value="${new_uuid}"]/ancestor::div[6]/following-sibling::div[1]/descendant::input[@class="dx-texteditor-input"]    ${values_new} 
-    Wait And Press Keys    //*[@name="master_tabcols_id" and @value="${new_uuid}"]/ancestor::div[6]/following-sibling::div[1]/descendant::input[@class="dx-texteditor-input"]    \\13    
-
-Dropdown row 4
-    [Arguments]    ${master_tabcols_id}    ${values_new}    ${new_uuid}
-    Wait And Click Element    //*[text()=" เพิ่ม"]
-    Wait And Click Element    //div[@data-dx_placeholder="เลือกฟิลด์" and @class="dx-placeholder"]/preceding-sibling::input
-    Wait And Input Text with Delay    //div[@data-dx_placeholder="เลือกฟิลด์" and @class="dx-placeholder"]/preceding-sibling::input    ${master_tabcols_id} 
-    Wait And Press Keys    xpath=//div[6]/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div[2]/div/div/div/div/div/div/div/input      \\13
-    Wait And Click Element    //*[@name="master_tabcols_id" and @value="${new_uuid}"]/ancestor::div[6]/following-sibling::div[1]/descendant::input[@class="dx-texteditor-input"]
-    Wait And Input Text with Delay    //*[@name="master_tabcols_id" and @value="${new_uuid}"]/ancestor::div[6]/following-sibling::div[1]/descendant::input[@class="dx-texteditor-input"]    ${values_new} 
-    Wait And Press Keys    //*[@name="master_tabcols_id" and @value="${new_uuid}"]/ancestor::div[6]/following-sibling::div[1]/descendant::input[@class="dx-texteditor-input"]    \\13    
-
-Dropdown row 5
-    [Arguments]    ${master_tabcols_id}    ${values_new}    ${new_uuid}
-    Wait And Scroll Element Into View    //*[text()=" เพิ่ม"]
-    Wait And Click Element    //*[text()=" เพิ่ม"]
-    Wait And Click Element    //div[@data-dx_placeholder="เลือกฟิลด์" and @class="dx-placeholder"]/preceding-sibling::input
-    Wait And Input Text with Delay    //div[@data-dx_placeholder="เลือกฟิลด์" and @class="dx-placeholder"]/preceding-sibling::input    ${master_tabcols_id} 
-    Wait And Press Keys    xpath=//div[7]/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div[2]/div/div/div/div/div/div/div/input      \\13
-    Wait And Click Element    //*[@name="master_tabcols_id" and @value="${new_uuid}"]/ancestor::div[6]/following-sibling::div[1]/descendant::input[@class="dx-texteditor-input"]
-    Wait And Input Text with Delay    //*[@name="master_tabcols_id" and @value="${new_uuid}"]/ancestor::div[6]/following-sibling::div[1]/descendant::input[@class="dx-texteditor-input"]    ${values_new} 
-    Wait And Press Keys    //*[@name="master_tabcols_id" and @value="${new_uuid}"]/ancestor::div[6]/following-sibling::div[1]/descendant::input[@class="dx-texteditor-input"]    \\13    
-
-Input text editmass row 1 (day warranty)    #จำนวน(วัน) การรับประกัน
-    [Arguments]    ${master_tabcols_id}    ${values_new}    
-    Wait And Click Element    //input[@name="master_tabcols_id"]/following-sibling::div/div/input
-    Wait And Input Text with Delay    //input[@name="master_tabcols_id"]/following-sibling::div/div/input    ${master_tabcols_id} 
-    Wait And Press Keys    //input[@name="master_tabcols_id"]/following-sibling::div/div/input    \\13
-    Wait And Click Element    //input[@name="values_new"]/following-sibling::div/div/input
-    Wait And Input Text with Delay    //input[@name="values_new"]/following-sibling::div/div/input    ${values_new} 
-    
-
-Input text editmass row 2 (day warranty)
-    [Arguments]    ${master_tabcols_id}    ${values_new}    ${new_uuid}
-    Wait And Click Element    //*[text()=" เพิ่ม"]
-    Wait And Click Element    //div[@data-dx_placeholder="เลือกฟิลด์" and @class="dx-placeholder"]/preceding-sibling::input
-    Wait And Input Text with Delay    //div[@data-dx_placeholder="เลือกฟิลด์" and @class="dx-placeholder"]/preceding-sibling::input    ${master_tabcols_id} 
-    Wait And Press Keys    xpath=//div[4]/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div[2]/div/div/div/div/div/div/div/input       \\13    
-    Wait And Click Element    //input[@name="values_new"]/following-sibling::div/div/input
-    Wait And Input Text with Delay    //input[@name="values_new"]/following-sibling::div/div/input    ${values_new} 
-    
-
-Input text editmass row 3 (day warranty)
-    [Arguments]    ${master_tabcols_id}    ${values_new}    ${new_uuid}
-    Wait And Click Element    //*[text()=" เพิ่ม"]
-    Wait And Click Element    //div[@data-dx_placeholder="เลือกฟิลด์" and @class="dx-placeholder"]/preceding-sibling::input
-    Wait And Input Text with Delay    //div[@data-dx_placeholder="เลือกฟิลด์" and @class="dx-placeholder"]/preceding-sibling::input    ${master_tabcols_id} 
-    Wait And Press Keys    xpath=//div[5]/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div[2]/div/div/div/div/div/div/div/input       \\13    
-    Wait And Click Element    //input[@name="values_new"]/following-sibling::div/div/input
-    Wait And Input Text with Delay    //input[@name="values_new"]/following-sibling::div/div/input    ${values_new} 
-
-Input text editmass row 4 (day warranty)
-    [Arguments]    ${master_tabcols_id}    ${values_new}    ${new_uuid}
-    Wait And Click Element    //*[text()=" เพิ่ม"]
-    Wait And Click Element    //div[@data-dx_placeholder="เลือกฟิลด์" and @class="dx-placeholder"]/preceding-sibling::input
-    Wait And Input Text with Delay    //div[@data-dx_placeholder="เลือกฟิลด์" and @class="dx-placeholder"]/preceding-sibling::input    ${master_tabcols_id} 
-    Wait And Press Keys    xpath=//div[6]/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div[2]/div/div/div/div/div/div/div/input       \\13    
-    Wait And Click Element    //input[@name="values_new"]/following-sibling::div/div/input
-    Wait And Input Text with Delay    //input[@name="values_new"]/following-sibling::div/div/input    ${values_new} 
-
-Input text editmass row 5 (day warranty)
-    [Arguments]    ${master_tabcols_id}    ${values_new}    ${new_uuid}
-    Wait And Scroll Element Into View    //*[text()=" เพิ่ม"]
-    Wait And Click Element    //*[text()=" เพิ่ม"]
-    Wait And Click Element    //div[@data-dx_placeholder="เลือกฟิลด์" and @class="dx-placeholder"]/preceding-sibling::input
-    Wait And Input Text with Delay    //div[@data-dx_placeholder="เลือกฟิลด์" and @class="dx-placeholder"]/preceding-sibling::input    ${master_tabcols_id} 
-    Wait And Press Keys    xpath=//div[7]/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div[2]/div/div/div/div/div/div/div/input       \\13    
-    Wait And Click Element    //input[@name="values_new"]/following-sibling::div/div/input
-    Wait And Input Text with Delay    //input[@name="values_new"]/following-sibling::div/div/input    ${values_new} 
-
-
-Dropdown row 1 (type warranty)    #ประเภทของการรับประกัน > preekey down ก่อนค่อย enter
-    [Arguments]    ${master_tabcols_id}    ${values_new}    ${new_uuid}
-    Wait And Click Element    //input[@name="master_tabcols_id"]/following-sibling::div/div/input
-    Wait And Input Text with Delay    //input[@name="master_tabcols_id"]/following-sibling::div/div/input    ${master_tabcols_id} 
-    Wait And Press Keys    //input[@name="master_tabcols_id"]/following-sibling::div/div/input    \ue015
-    Wait And Press Keys    //input[@name="master_tabcols_id"]/following-sibling::div/div/input    \\13
-    Wait And Click Element    //input[@name="values_new"]/following-sibling::div/div/input
-    Wait And Input Text with Delay    //input[@name="values_new"]/following-sibling::div/div/input    ${values_new} 
-    Wait And Press Keys    //input[@name="values_new"]/following-sibling::div/div/input    \\13
-
-
-Dropdown row 2 (type warranty)
-    [Arguments]    ${master_tabcols_id}    ${values_new}    ${new_uuid}
-    Wait And Click Element    //*[text()=" เพิ่ม"]
-    Wait And Click Element    //div[@data-dx_placeholder="เลือกฟิลด์" and @class="dx-placeholder"]/preceding-sibling::input
-    Wait And Input Text with Delay    //div[@data-dx_placeholder="เลือกฟิลด์" and @class="dx-placeholder"]/preceding-sibling::input    ${master_tabcols_id} 
-    Wait And Press Keys    xpath=//div[4]/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div[2]/div/div/div/div/div/div/div/input       \ue015
-    Wait And Press Keys    xpath=//div[4]/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div[2]/div/div/div/div/div/div/div/input       \\13
-    Wait And Click Element    //*[@name="master_tabcols_id" and @value="${new_uuid}"]/ancestor::div[6]/following-sibling::div[1]/descendant::input[@class="dx-texteditor-input"]
-    Wait And Input Text with Delay    //*[@name="master_tabcols_id" and @value="${new_uuid}"]/ancestor::div[6]/following-sibling::div[1]/descendant::input[@class="dx-texteditor-input"]    ${values_new} 
-    Wait And Press Keys    //*[@name="master_tabcols_id" and @value="${new_uuid}"]/ancestor::div[6]/following-sibling::div[1]/descendant::input[@class="dx-texteditor-input"]    \\13    
-
-
-Dropdown row 3 (type warranty)
-    [Arguments]    ${master_tabcols_id}    ${values_new}    ${new_uuid}
-    Wait And Click Element    //*[text()=" เพิ่ม"]
-    Wait And Click Element    //div[@data-dx_placeholder="เลือกฟิลด์" and @class="dx-placeholder"]/preceding-sibling::input
-    Wait And Input Text with Delay    //div[@data-dx_placeholder="เลือกฟิลด์" and @class="dx-placeholder"]/preceding-sibling::input    ${master_tabcols_id} 
-    Wait And Press Keys    xpath=//div[5]/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div[2]/div/div/div/div/div/div/div/input       \ue015
-    Wait And Press Keys    xpath=//div[5]/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div[2]/div/div/div/div/div/div/div/input       \\13
-    Wait And Click Element    //*[@name="master_tabcols_id" and @value="${new_uuid}"]/ancestor::div[6]/following-sibling::div[1]/descendant::input[@class="dx-texteditor-input"]
-    Wait And Input Text with Delay    //*[@name="master_tabcols_id" and @value="${new_uuid}"]/ancestor::div[6]/following-sibling::div[1]/descendant::input[@class="dx-texteditor-input"]    ${values_new} 
-    Wait And Press Keys    //*[@name="master_tabcols_id" and @value="${new_uuid}"]/ancestor::div[6]/following-sibling::div[1]/descendant::input[@class="dx-texteditor-input"]    \\13    
-
-
-Dropdown row 4 (type warranty)
-    [Arguments]    ${master_tabcols_id}    ${values_new}    ${new_uuid}
-    Wait And Click Element    //*[text()=" เพิ่ม"]
-    Wait And Click Element    //div[@data-dx_placeholder="เลือกฟิลด์" and @class="dx-placeholder"]/preceding-sibling::input
-    Wait And Input Text with Delay    //div[@data-dx_placeholder="เลือกฟิลด์" and @class="dx-placeholder"]/preceding-sibling::input    ${master_tabcols_id} 
-    Wait And Press Keys    xpath=//div[6]/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div[2]/div/div/div/div/div/div/div/input       \ue015
-    Wait And Press Keys    xpath=//div[6]/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div[2]/div/div/div/div/div/div/div/input       \\13
-    Wait And Click Element    //*[@name="master_tabcols_id" and @value="${new_uuid}"]/ancestor::div[6]/following-sibling::div[1]/descendant::input[@class="dx-texteditor-input"]
-    Wait And Input Text with Delay    //*[@name="master_tabcols_id" and @value="${new_uuid}"]/ancestor::div[6]/following-sibling::div[1]/descendant::input[@class="dx-texteditor-input"]    ${values_new} 
-    Wait And Press Keys    //*[@name="master_tabcols_id" and @value="${new_uuid}"]/ancestor::div[6]/following-sibling::div[1]/descendant::input[@class="dx-texteditor-input"]    \\13    
-
-
-Dropdown row 5 (type warranty)
-    [Arguments]    ${master_tabcols_id}    ${values_new}    ${new_uuid}
-    Wait And Scroll Element Into View    //*[text()=" เพิ่ม"]
-    Wait And Click Element    //*[text()=" เพิ่ม"]
-    Wait And Click Element    //div[@data-dx_placeholder="เลือกฟิลด์" and @class="dx-placeholder"]/preceding-sibling::input
-    Wait And Input Text with Delay    //div[@data-dx_placeholder="เลือกฟิลด์" and @class="dx-placeholder"]/preceding-sibling::input    ${master_tabcols_id} 
-    Wait And Press Keys    xpath=//div[7]/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div[2]/div/div/div/div/div/div/div/input       \ue015
-    Wait And Press Keys    xpath=//div[7]/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div[2]/div/div/div/div/div/div/div/input       \\13
-    Wait And Click Element    //*[@name="master_tabcols_id" and @value="${new_uuid}"]/ancestor::div[6]/following-sibling::div[1]/descendant::input[@class="dx-texteditor-input"]
-    Wait And Input Text with Delay    //*[@name="master_tabcols_id" and @value="${new_uuid}"]/ancestor::div[6]/following-sibling::div[1]/descendant::input[@class="dx-texteditor-input"]    ${values_new} 
-    Wait And Press Keys    //*[@name="master_tabcols_id" and @value="${new_uuid}"]/ancestor::div[6]/following-sibling::div[1]/descendant::input[@class="dx-texteditor-input"]    \\13    
 
 
 
-Dropdown row 1 (c1,c2,c3)     #กำหนดรูปแบบการรับประกัน เพ่ิ่ม req. C1,c2,c3
-    [Arguments]    ${master_tabcols_id}    ${values_new}    ${new_uuid}
-    Wait And Click Element    //*[text()=" เพิ่ม"]
-    Wait And Click Element    //div[@data-dx_placeholder="เลือกฟิลด์" and @class="dx-placeholder"]/preceding-sibling::input
-    Wait And Input Text with Delay    //div[@data-dx_placeholder="เลือกฟิลด์" and @class="dx-placeholder"]/preceding-sibling::input    ${master_tabcols_id} 
-    Wait And Press Keys    xpath=//div[6]/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div[2]/div/div/div/div/div/div/div/input      \\13
-    Wait And Click Element    //*[@name="master_tabcols_id" and @value="${new_uuid}"]/ancestor::div[6]/following-sibling::div[1]/descendant::input[@class="dx-texteditor-input"]
-    Wait And Input Text with Delay    //*[@name="master_tabcols_id" and @value="${new_uuid}"]/ancestor::div[6]/following-sibling::div[1]/descendant::input[@class="dx-texteditor-input"]    ${values_new} 
-    Wait And Press Keys    //*[@name="master_tabcols_id" and @value="${new_uuid}"]/ancestor::div[6]/following-sibling::div[1]/descendant::input[@class="dx-texteditor-input"]    \\13    
-    Wait And Click Element    //*[@name="master_tabcols_id" and @value="${new_uuid}"]/ancestor::div[6]/following-sibling::div//select/..
-    Wait And Click Element    //*[text()='C1: DoHome/Retail']/ancestor::div[2]//div[@class="dx-list-select-all-label"]
-    Wait And Click Element    //*[text()='OK']
-
-Check box row 3
-    [Arguments]    ${master_tabcols_id}    ${values_new}    ${new_uuid}
-    Wait And Click Element    //*[text()=" เพิ่ม"]
-    Wait And Click Element    //div[@data-dx_placeholder="เลือกฟิลด์" and @class="dx-placeholder"]/preceding-sibling::input
-    Wait And Input Text with Delay    //div[@data-dx_placeholder="เลือกฟิลด์" and @class="dx-placeholder"]/preceding-sibling::input    ${master_tabcols_id} 
-    Wait And Press Keys    xpath=//div[5]/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div[2]/div/div/div/div/div/div/div/input       \\13    
-    Wait And Click Element    //*[@name="master_tabcols_id" and @value="${new_uuid}"]/ancestor::div[6]/following-sibling::div[1]/descendant::div[4]
-    Wait And Input Text with Delay    //*[@name="master_tabcols_id" and @value="${new_uuid}"]/ancestor::div[6]/following-sibling::div[1]/descendant::div//*[@data-placeholder="ค่า (Value)"]    ${values_new} 
 
 
 
