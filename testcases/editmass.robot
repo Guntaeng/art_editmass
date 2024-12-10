@@ -12,8 +12,8 @@ Test Teardown    Refresh page
 
 *** Test Cases ***
 Article Edit mass round 1
-    Process CSV Rows
-    Search by article    55000219
+    Process CSV Rows    ${CSV_PATH_B2C}
+    Search by article    10337950
     Click check box all article
     Click button edit field    
     Edit field 1    Run 1
@@ -25,7 +25,7 @@ Article Edit mass round 1
     Click button Approve edit field
 
 Article Edit mass round 2
-    Process CSV Rows
+    Process CSV Rows    ${CSV_PATH_B2C}
     Search by article    19999124
     Click check box all article
     Click button edit field    
@@ -38,7 +38,7 @@ Article Edit mass round 2
     Click button Approve edit field
 
 Article Edit mass round 3
-    Process CSV Rows
+    Process CSV Rows    ${CSV_PATH_B2C}
     Search by article    81000075
     Click check box all article
     Click button edit field    

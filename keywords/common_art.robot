@@ -2,6 +2,11 @@
 Library    SeleniumLibrary
 Resource    ../variables/config_art.robot
 
+
+*** Variables ***
+${CHROME_PATH}    r"C:\chrome-win64\chrome.exe"  # ใช้ raw string (r"")   
+
+
 *** Keywords ***
 Click Element with Delay   
     [Arguments]    ${locator}
@@ -91,6 +96,11 @@ Open browser web url	#ชื่อที่จะนำไปใช้
     ...    options=binary_location=r"C:\\chrome-win64\\chrome.exe"  
 
 
+Open Browser Web URL v2
+    [Documentation]    เปิดเบราว์เซอร์ด้วย URL และใช้ Chrome binary location ที่กำหนด
+    [Arguments]    ${url}    ${browserName}
+    Open Browser    ${url}    ${browserName}    options=binary_location=${CHROME_PATH}
+
 
 Login dohome and click web art(Create)
     #Open browser web url    ${url_dohome}    headlesschrome
@@ -161,7 +171,7 @@ Refresh page
 
 Login dohome and click web art(Edit Mass)
     #Open browser web url    ${url_dohome}    headlesschrome
-    Open browser   ${url_dohome}    chrome             
+    Open Browser Web URL    ${url_dohome}    chrome             
     #Set Window Size    1920    1080
     Maximize Browser Window
     Wait until keyword succeeds    5x   2s    Wait Until Element Contains    //button[text()='เข้าสู่ระบบ']    เข้าสู่ระบบ       
