@@ -1,4 +1,0 @@
-${no},${level_approve},${round},${field},${value},${uuid},${type_field}
-1,A2,NR1,สินค้าทองคำ,Test,eaeb4bb9-0a23-439a-a642-ba56bf151b06,input text
-2,A2,NR1,ประเภทแบรนด์,01: แบรนด์ของ Vendor,eea0047f-38ea-4ea5-ade3-47f9576782ee,drop down
-3,A2,NR1,สินค้าฤดูกาล (สินค้าที่ขายในช่วงที่เป็นฤดูกาลขายมมากกว่าการขายปกติ),มกราคม,de3f4f40-141e-434f-a1a0-1c1c8ee1c79c,check box

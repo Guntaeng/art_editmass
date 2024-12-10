@@ -169,7 +169,7 @@ Refresh page
     Execute JavaScript    location.reload()
 
 
-Login dohome and click web art(Edit Mass)
+Login dohome and click web art(Edit Mass) A2
     #Open browser web url    ${url_dohome}    headlesschrome
     Open Browser Web URL    ${url_dohome}    chrome             
     #Set Window Size    1920    1080
@@ -178,7 +178,7 @@ Login dohome and click web art(Edit Mass)
     Wait until keyword succeeds    5x   2s    Click Element with Delay    //button[text()='เข้าสู่ระบบ']
     Wait until keyword succeeds    5x   2s    Wait Until Element Contains   //*[@class="text-2xl text-primary font-bold"]     เข้าสู่ระบบ
     Wait until keyword succeeds    5x   2s    Click Element with Delay    //input[@name="username"] 
-    Wait until keyword succeeds    5x   2s    Input Text with Delay    //input[@name="username"]     ${user_editmass}
+    Wait until keyword succeeds    5x   2s    Input Text with Delay    //input[@name="username"]     ${user_editmass_A2}
     Wait until keyword succeeds    5x   2s    Click Element with Delay    //input[@name="password"]
     Wait until keyword succeeds    5x   2s    Input Text with Delay   //input[@name="password"]    ${pass}
     Wait until keyword succeeds    5x   2s    Click Element with Delay    //button[@type="submit"][ text()='เข้าสู่ระบบ']
@@ -192,6 +192,27 @@ Login dohome and click web art(Edit Mass)
     Wait And Wait Until Element Is Visible    //input[@name="purchaser_group_no"]/following-sibling::div/div/input
 
 
+Login dohome and click web art(Edit Mass) A3
+    #Open browser web url    ${url_dohome}    headlesschrome
+    Open Browser Web URL    ${url_dohome}    chrome             
+    #Set Window Size    1920    1080
+    Maximize Browser Window
+    Wait until keyword succeeds    5x   2s    Wait Until Element Contains    //button[text()='เข้าสู่ระบบ']    เข้าสู่ระบบ       
+    Wait until keyword succeeds    5x   2s    Click Element with Delay    //button[text()='เข้าสู่ระบบ']
+    Wait until keyword succeeds    5x   2s    Wait Until Element Contains   //*[@class="text-2xl text-primary font-bold"]     เข้าสู่ระบบ
+    Wait until keyword succeeds    5x   2s    Click Element with Delay    //input[@name="username"] 
+    Wait until keyword succeeds    5x   2s    Input Text with Delay    //input[@name="username"]     ${user_editmass_A3}
+    Wait until keyword succeeds    5x   2s    Click Element with Delay    //input[@name="password"]
+    Wait until keyword succeeds    5x   2s    Input Text with Delay   //input[@name="password"]    ${pass}
+    Wait until keyword succeeds    5x   2s    Click Element with Delay    //button[@type="submit"][ text()='เข้าสู่ระบบ']
+    Wait until keyword succeeds    5x   2s    Click Element with Delay    //*[@aria-label="ระบบจัดการข้อมูลสินค้า"]
+    Wait until keyword succeeds    5x   2s    Switch Window    New
+    Maximize Browser Window
+    #Set Window Size    1920    1080    
+    Wait until keyword succeeds    5x   2s    Wait Until Element Is Visible    //h3[text()="Article Master"]
+    Wait And Click Element    //p[text()='จัดการสินค้า']
+    Wait And Click Element    //p[text()='ขอเปลี่ยนแปลงข้อมูลสินค้า']/parent::span//parent::a[@href="/app/edit-mass-information"]
+    Wait And Wait Until Element Is Visible    //input[@name="purchaser_group_no"]/following-sibling::div/div/input
 
 
 

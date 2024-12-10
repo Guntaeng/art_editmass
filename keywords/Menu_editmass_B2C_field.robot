@@ -47,8 +47,8 @@ Click button Approve edit field
 
 
 
-#การกรอกข้อมูล
-Edit field 1 (B2C)
+### *** การกรอกข้อมูล A2 ################################################################################################################################
+Edit field 1 (B2C) A2
     [Arguments]    ${run}
     IF    '${round_1}' == 'X1' and '${run}' == 'Run 1'
         ${master_tabcols_id}    Set Variable    ${field_1} 
@@ -62,14 +62,10 @@ Edit field 1 (B2C)
         ${master_tabcols_id}    Set Variable    ${field_11}
         ${values_new}    Set Variable    ${value_11}
         Input text editmass row 1 (day warranty)    ${master_tabcols_id}    ${values_new}
-    ELSE IF    '${round_15}' == 'X4' and '${run}' == 'Run 4'    ###A3
-        ${master_tabcols_id}    Set Variable    ${field_15}
-        ${values_new}    Set Variable    ${value_15}
-        Dropdown row 1    ${master_tabcols_id}    ${values_new}
     END
 
 
-Edit field 2 (B2C)
+Edit field 2 (B2C) A2
     [Arguments]    ${run}    
     IF    '${round_2}' == 'X1' and '${run}' == 'Run 1'
         ${master_tabcols_id}    Set Variable    ${field_2} 
@@ -86,15 +82,10 @@ Edit field 2 (B2C)
         ${values_new}    Set Variable    ${value_12} 
         ${new_uuid}    Set Variable    ${uuid_12} 
         Dropdown row 2    ${master_tabcols_id}    ${values_new}    ${new_uuid}
-    ELSE IF    '${round_16}' == 'X4' and '${run}' == 'Run 4'
-        ${master_tabcols_id}    Set Variable    ${field_16} 
-        ${values_new}    Set Variable    ${value_16} 
-        ${new_uuid}    Set Variable    ${uuid_16} 
-        Dropdown row 2    ${master_tabcols_id}    ${values_new}    ${new_uuid}                
     END
 
 
-Edit field 3 (B2C)
+Edit field 3 (B2C) A2
     [Arguments]    ${run}
     IF    '${round_3}' == 'X1' and '${run}' == 'Run 1'
         ${master_tabcols_id}    Set Variable    ${field_3} 
@@ -114,7 +105,7 @@ Edit field 3 (B2C)
     END
 
 
-Edit field 4 (B2C)
+Edit field 4 (B2C) A2
     [Arguments]    ${run}
     IF    '${round_4}' == 'X1' and '${run}' == 'Run 1'
         ${master_tabcols_id}    Set Variable    ${field_4} 
@@ -134,7 +125,7 @@ Edit field 4 (B2C)
     END
 
 
-Edit field 5 (B2C)
+Edit field 5 (B2C) A2
     [Arguments]    ${run}
     IF    '${round_5}' == 'X1' and '${run}' == 'Run 1'
         ${master_tabcols_id}    Set Variable    ${field_5} 
@@ -147,6 +138,66 @@ Edit field 5 (B2C)
         ${new_uuid}    Set Variable    ${uuid_10}  
         Input text editmass row 5 (section14)    ${master_tabcols_id}    ${values_new}    ${new_uuid}         
     END
+
+
+
+
+### *** การกรอกข้อมูล A3 ################################################################################################################################
+
+
+Edit field 1 (B2C) A3
+    [Arguments]    ${run}
+    IF    '${round_1}' == 'X1' and '${run}' == 'Run 1'
+        ${master_tabcols_id}    Set Variable    ${field_1} 
+        ${values_new}    Set Variable    ${value_1} 
+        Dropdown row 1    ${master_tabcols_id}    ${values_new}
+    END
+
+
+Edit field 2 (B2C) A3
+    [Arguments]    ${run}    
+    IF    '${round_2}' == 'X1' and '${run}' == 'Run 1'
+        ${master_tabcols_id}    Set Variable    ${field_2} 
+        ${values_new}    Set Variable    ${value_2} 
+        ${new_uuid}    Set Variable    ${uuid_2} 
+        Dropdown row 2    ${master_tabcols_id}    ${values_new}    ${new_uuid}
+    END
+
+
+Edit field 3 (B2C) A3
+    [Arguments]    ${run}
+    IF    '${round_3}' == 'X1' and '${run}' == 'Run 1'
+        ${master_tabcols_id}    Set Variable    ${field_3} 
+        ${values_new}    Set Variable    ${value_3} 
+        ${new_uuid}    Set Variable    ${uuid_3}  
+        Check box month row 3    ${master_tabcols_id}    ${values_new}    ${new_uuid} 
+    END
+
+
+Edit field 4 (B2C) A3
+    [Arguments]    ${run}
+    IF    '${round_4}' == 'X1' and '${run}' == 'Run 1'
+        ${master_tabcols_id}    Set Variable    ${field_4} 
+        ${values_new}    Set Variable    ${value_4} 
+        ${new_uuid}    Set Variable    ${uuid_4}  
+        Input text editmass row 4    ${master_tabcols_id}    ${values_new}    ${new_uuid}         
+    END
+
+
+Edit field 5 (B2C) A3
+    [Arguments]    ${run}
+    IF    '${round_5}' == 'X1' and '${run}' == 'Run 1'
+        ${master_tabcols_id}    Set Variable    ${field_5} 
+        ${values_new}    Set Variable    ${value_5} 
+        ${new_uuid}    Set Variable    ${uuid_5}  
+        Input text editmass row 5    ${master_tabcols_id}    ${values_new}    ${new_uuid}         
+    END
+
+
+
+
+
+
 
 
 

@@ -8,7 +8,7 @@ Resource    ../keywords/common_art.robot
 Test Teardown    Refresh page
 
 *** Test Cases ***
-Create Article Good Return    
+Create Article Good Return  
 
 *** Keywords ***
 Create Article

@@ -1,3 +1,18 @@
+*** Settings ***
+Library    SeleniumLibrary
+Resource    ../variables/config_art.robot
+Resource    ../keywords/common_art.robot
+Resource    ../keywords/Type_field_values/input_text.robot
+Resource    ../keywords/Type_field_values/drop_down.robot
+Resource    ../keywords/Type_field_values/check_box.robot
+Resource    ../keywords/Read_csv/Read_data_csv.robot
+Library    BuiltIn
+Library    OperatingSystem
+Library    Collections
+Library    String
+Library    DebugLibrary
+
+
 *** Keywords ***
 Edit field 1
     IF    '${mark_1}' == 'X' and '${field_1}' == 'ชื่อสินค้า Commercial (ภาษาอังกฤษ)' and '${round_1}' == 'X1'
