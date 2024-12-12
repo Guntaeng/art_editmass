@@ -45,6 +45,10 @@ Click button Approve edit field
     Wait And Click Element    //span[text()="ยืนยัน"]/parent::button
     Wait Until Page Contains    อนุมัติแก้ไขสำเร็จ    timeout=10s
 
+Check value article
+    [Arguments]    ${article}
+    Wait And Wait Until Element Is Visible    //td[text()='${article}']
+
 
 
 ### *** การกรอกข้อมูล A2 ################################################################################################################################
