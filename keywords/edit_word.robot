@@ -13,6 +13,28 @@ Library    String
 Library    DebugLibrary
 
 
+
+*** Variables ***
+${name}    123
+
+
+*** Keywords ***
+Insert name 
+    [Arguments]    ${name}    
+    Input Text    id=ชื่อเล่น    ${name}    ###ฟิล ชื่อเล่น
+    Input Text    id=ชื่อจริง    ${name}    ###ฟิล ชื่อจริง
+
+
+*** Test Cases ***
+Test
+    Insert name    ${name}    
+    Log To Console    ${name}
+
+
+
+
+
+
 *** Keywords ***
 Edit field 1
     IF    '${mark_1}' == 'X' and '${field_1}' == 'ชื่อสินค้า Commercial (ภาษาอังกฤษ)' and '${round_1}' == 'X1'

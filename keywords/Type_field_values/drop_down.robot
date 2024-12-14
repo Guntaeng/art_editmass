@@ -129,6 +129,7 @@ Dropdown row 1 (c1,c2,c3)     #กำหนดรูปแบบการรั�
     Wait And Click Element    //*[@name="master_tabcols_id" and @value="${new_uuid}"]/ancestor::div[6]/following-sibling::div[1]/descendant::input[@class="dx-texteditor-input"]
     Wait And Input Text with Delay    //*[@name="master_tabcols_id" and @value="${new_uuid}"]/ancestor::div[6]/following-sibling::div[1]/descendant::input[@class="dx-texteditor-input"]    ${values_new} 
     Wait And Press Keys    //*[@name="master_tabcols_id" and @value="${new_uuid}"]/ancestor::div[6]/following-sibling::div[1]/descendant::input[@class="dx-texteditor-input"]    \\13    
+    #Click channel
     Wait And Click Element    //*[@name="master_tabcols_id" and @value="${new_uuid}"]/ancestor::div[6]/following-sibling::div//select/..
     Wait And Click Element    //*[text()='C1: DoHome/Retail']/ancestor::div[2]//div[@class="dx-list-select-all-label"]
     Wait And Click Element    //*[text()='OK']

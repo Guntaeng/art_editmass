@@ -224,7 +224,7 @@ Edit field 5 (default) A2
         ${master_tabcols_id}    Set Variable    ${field_5} 
         ${values_new}    Set Variable    ${value_5} 
         ${new_uuid}    Set Variable    ${uuid_5}  
-        Input text editmass row 5    ${master_tabcols_id}    ${values_new}    ${new_uuid}
+        Dropdown row 5    ${master_tabcols_id}    ${values_new}    ${new_uuid}
     ELSE IF    '${round_10}' == 'NR2' and '${run}' == 'Run 2'
         ${master_tabcols_id}    Set Variable    ${field_10}
         ${values_new}    Set Variable    ${value_10}
@@ -265,4 +265,110 @@ Edit field 5 (default) A2
         ${values_new}    Set Variable    ${value_45}
         ${new_uuid}    Set Variable    ${uuid_45}
         Input text editmass row 5 (day warranty)    ${master_tabcols_id}    ${values_new}     ${new_uuid}               
+    END
+
+
+
+
+
+
+############################## A3 ############################################
+Edit field 1 (default) A3
+    [Arguments]    ${run}
+    IF    '${round_1}' == 'NR1' and '${run}' == 'Run 1'
+        ${master_tabcols_id}    Set Variable    ${field_1} 
+        ${values_new}    Set Variable    ${value_1} 
+        ${new_uuid}    Set Variable    ${uuid_1}
+        Check box and Channel row 1    ${master_tabcols_id}    ${values_new}    ${new_uuid}
+    ELSE IF    '${round_6}' == 'NR2' and '${run}' == 'Run 2'
+        ${master_tabcols_id}    Set Variable    ${field_6}
+        ${values_new}    Set Variable    ${value_6}
+        Dropdown row 1    ${master_tabcols_id}    ${values_new}       
+    ELSE IF    '${round_11}' == 'NR3' and '${run}' == 'Run 3'
+        ${master_tabcols_id}    Set Variable    ${field_11}
+        ${values_new}    Set Variable    ${value_11}
+        Dropdown row 1    ${master_tabcols_id}    ${values_new}       
+    END
+
+
+Edit field 2 (default) A3
+    [Arguments]    ${run}    
+    IF    '${round_2}' == 'NR1' and '${run}' == 'Run 1'
+        ${master_tabcols_id}    Set Variable    ${field_2} 
+        ${values_new}    Set Variable    ${value_2} 
+        ${new_uuid}    Set Variable    ${uuid_2} 
+        Dropdown row 2    ${master_tabcols_id}    ${values_new}    ${new_uuid}
+    ELSE IF    '${round_7}' == 'NR2' and '${run}' == 'Run 2'
+        ${master_tabcols_id}    Set Variable    ${field_7}
+        ${values_new}    Set Variable    ${value_7}
+        ${new_uuid}    Set Variable    ${uuid_7}
+        Dropdown row 2    ${master_tabcols_id}    ${values_new}    ${new_uuid}       
+    ELSE IF    '${round_12}' == 'NR3' and '${run}' == 'Run 3'
+        ${master_tabcols_id}    Set Variable    ${field_12}
+        ${values_new}    Set Variable    ${value_12}
+        ${new_uuid}    Set Variable    ${uuid_12}
+        Dropdown row 2    ${master_tabcols_id}    ${values_new}    ${new_uuid} 
+    END      
+
+
+
+Edit field 3 (default) A3
+    [Arguments]    ${run}
+    IF    '${round_3}' == 'NR1' and '${run}' == 'Run 1'
+        ${master_tabcols_id}    Set Variable    ${field_3} 
+        ${values_new}    Set Variable    ${value_3} 
+        ${new_uuid}    Set Variable    ${uuid_3}  
+        Check box row 3    ${master_tabcols_id}    ${values_new}    ${new_uuid} 
+    ELSE IF    '${round_8}' == 'NR2' and '${run}' == 'Run 2'
+        ${master_tabcols_id}    Set Variable    ${field_8}
+        ${values_new}    Set Variable    ${value_8}
+        ${new_uuid}    Set Variable    ${uuid_8}
+        Dropdown row 3    ${master_tabcols_id}    ${values_new}     ${new_uuid}      
+    ELSE IF    '${round_13}' == 'NR3' and '${run}' == 'Run 3'
+        ${master_tabcols_id}    Set Variable    ${field_13}
+        ${values_new}    Set Variable    ${value_13}
+        ${new_uuid}    Set Variable    ${uuid_13}
+        Dropdown row 3   ${master_tabcols_id}    ${values_new}    ${new_uuid}  
+    END    
+
+
+
+Edit field 4 (default) A3
+    [Arguments]    ${run}
+    IF    '${round_4}' == 'NR1' and '${run}' == 'Run 1'
+        ${master_tabcols_id}    Set Variable    ${field_4} 
+        ${values_new}    Set Variable    ${value_4} 
+        ${new_uuid}    Set Variable    ${uuid_4}  
+        Dropdown row 4    ${master_tabcols_id}    ${values_new}    ${new_uuid}
+    ELSE IF    '${round_9}' == 'NR2' and '${run}' == 'Run 2'
+        ${master_tabcols_id}    Set Variable    ${field_9}
+        ${values_new}    Set Variable    ${value_9}
+        ${new_uuid}    Set Variable    ${uuid_9}
+        Dropdown row 4      ${master_tabcols_id}    ${values_new}     ${new_uuid}      
+    ELSE IF    '${round_14}' == 'NR3' and '${run}' == 'Run 3'
+        ${master_tabcols_id}    Set Variable    ${field_14}
+        ${values_new}    Set Variable    ${value_14}
+        ${new_uuid}    Set Variable    ${uuid_14}
+        Dropdown row 4   ${master_tabcols_id}    ${values_new}    ${new_uuid}   
+    END   
+
+
+
+Edit field 5 (default) A3
+    [Arguments]    ${run}
+    IF    '${round_5}' == 'NR1' and '${run}' == 'Run 1'
+        ${master_tabcols_id}    Set Variable    ${field_5} 
+        ${values_new}    Set Variable    ${value_5} 
+        ${new_uuid}    Set Variable    ${uuid_5}  
+        Dropdown row 5    ${master_tabcols_id}    ${values_new}    ${new_uuid}
+    ELSE IF    '${round_10}' == 'NR2' and '${run}' == 'Run 2'
+        ${master_tabcols_id}    Set Variable    ${field_10}
+        ${values_new}    Set Variable    ${value_10}
+        ${new_uuid}    Set Variable    ${uuid_10}
+        Dropdown row 5    ${master_tabcols_id}    ${values_new}     ${new_uuid}      
+    ELSE IF    '${round_15}' == 'NR3' and '${run}' == 'Run 3'
+        ${master_tabcols_id}    Set Variable    ${field_15}
+        ${values_new}    Set Variable    ${value_15}
+        ${new_uuid}    Set Variable    ${uuid_15}
+        Dropdown row 5    ${master_tabcols_id}    ${values_new}    ${new_uuid}      
     END

@@ -1,0 +1,16 @@
+${no},${level_approve},${round},${field},${value},${uuid},${type_field}
+1,A3,NR1,รับคืนจากลูกค้า,,f028d72d-d555-4d1d-adc7-fff156b65227,"check box, req c1,c2,C3"
+2,A3,NR1,ผังการลงบัญชีสินค้า,1: 'A' Article,c306bc39-c066-43f5-95f4-89496d69246c,drop down
+3,A3,NR1,สินค้าที่สามารถขายได้เมื่อสต็อกติดลบ,,7cdd04b6-ca46-46e1-a4eb-6514ac0a9386,check box
+4,A3,NR1,ลงบัญชีรายได้ (Acct. assignment ),01: Stock Sales,c7941f66-493b-4359-9a04-66d624ec8635,drop down
+5,A3,NR1,กลุ่มการจัดเก็บสต็อก (Artl.),1: 'A' Article,b9838b90-e50e-4bb9-ba00-5551d6d38a41,drop down
+6,A3,NR2,Astmt List Type,1: SAP reference object,8facfe24-3dd0-4738-922e-8048db20afca,drop down
+7,A3,NR2,การตรวจสอบความพอเพียง (Avail. Check),01: Daily requirements,3595f916-c9b2-4984-83cf-3d2e17fb25b5,drop down
+8,A3,NR2,ที่จัดจ่ายสินค้า Basic (Stor.conditions),01: Storage condition 1,d1c71b9a-44d9-473f-bbb3-4b82a8a6736b,drop down
+9,A3,NR2,Division,00: Common Division,d344c07a-8235-4e50-9674-76370451765f,drop down
+10,A3,NR2,ผังการลงบัญชี (Gen. item cat),DIEN: Service w/ Delivery,cd43ac36-9e55-41ee-a0ca-59e2c8f61205,drop down
+11,A3,NR3,กลุ่มวัสดุ-ลงบัญชีขาย (Gen. item cat. grp),DIEN: Service w/ Delivery,c01e3ab3-265f-448b-a1da-b8fcf865b827,drop down
+12,A3,NR3,การรับรู้รายได้ (Item cat),DIEN: Service w/ Delivery,89309c52-97fc-42fb-9c38-55609ae1ab76,drop down
+13,A3,NR3,คลังจัดเก็บ (Loading Group),0001: Store ค้าปลีก,745c5258-93d9-4c5e-8965-d61e9f4a06c7,drop down
+14,A3,NR3,จุดจัดเก็บสินค้า (Loading Group),0001: Store ค้าปลีก,2f8fc29d-473b-4e1b-bd08-d0b3de57ac80,drop down
+15,A3,NR3,ประเภทสินค้าทางบัญชี (valuation class),0710: Equipment 1,570c0d96-d236-451b-b500-79b9fcecfbba,drop down

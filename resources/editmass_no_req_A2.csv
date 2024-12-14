@@ -44,6 +44,6 @@ ${no},${level_approve},${round},${field},${value},${uuid},${type_field}
 43,A2,NR9,หมายเหตุการเลิกขายสินค้า (Sub indicator),L: สินค้าบล็อครุ่น,b0feee85-4b40-45f2-8f26-69b0f39770f1,drop down
 44,A2,NR9,ประเภทภาษีขาย (Tax class.),0: No tax,51282b64-d937-450a-951c-335a4b171c8e,drop down
 45,A2,NR9,อุณหภูมิการเก็บรักษา (Temperature),1234,295a7cd2-a0dc-43dc-a88d-2865383de989,input number
-46,A2,NR10,ชื่อสินค้าภาษาไทย (Thai Name),Test,af65e618-5adb-4fa6-9441-435966341c1c,input text
+46,A2,NR10,ชื่อสินค้าภาษาไทย (Thai Name),Test_QA,af65e618-5adb-4fa6-9441-435966341c1c,input text
 47,A2,NR10,อายุสินค้าทั้งหมด (total shelf life),1234,e6bee95f-3d9a-4731-a928-96ff25933f95,input number
 48,A2,NR10,เครื่องหมายการค้า (Tradmark),HBNTM: สินค้า HB ไม่มี Trademark,2fdd67d8-47f2-41e1-a935-4829e255a876,drop down

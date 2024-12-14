@@ -13,6 +13,7 @@ Library    DebugLibrary
 ${CSV_PATH_B2C(A2)}    resources/edit_mass_A2.csv  
 ${CSV_PATH_NOT_REQ(A2)}    resources/editmass_no_req_A2.csv
 ${CSV_PATH_B2C(A3)}    resources/edit_mass_A3.csv  
+${CSV_PATH_NOT_REQ(A3)}    resources/editmass_no_req_A3.csv
 
 
 *** Keywords ***

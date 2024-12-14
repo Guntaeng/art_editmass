@@ -5,6 +5,9 @@ Resource    ../keywords/common_art.robot
 *** Variables ***
 ${url}    https://www.google.co.th/?hl=th
 
+
+
+
 *** Keywords ***
 
 
@@ -15,7 +18,7 @@ search dohome
     Maximize Browser Window
     Sleep    1s
 
-    Click Element    //textarea[@name='q']
+    Click Element    id=search
     Sleep    10s
 
 
