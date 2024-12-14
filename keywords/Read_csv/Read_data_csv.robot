@@ -1,7 +1,7 @@
 *** Settings ***
 Library    SeleniumLibrary
 Library    ../Create_Article_automate/resources/csv_ready.py
-Library    ../Create_Article_automate/resources/csv_ready_v2.py
+Library    resources/csv_ready_v2.py
 Library    CSVLibrary
 Library    BuiltIn
 Library    OperatingSystem
@@ -10,6 +10,7 @@ Library    String
 Library    DebugLibrary
 
 *** Variables ***
+${CSV_PATH_NOT_REQ(A1)}    resources/editmass_no_req_A1.csv
 ${CSV_PATH_B2C(A2)}    resources/edit_mass_A2.csv  
 ${CSV_PATH_NOT_REQ(A2)}    resources/editmass_no_req_A2.csv
 ${CSV_PATH_B2C(A3)}    resources/edit_mass_A3.csv  

@@ -1,49 +1,34 @@
 ${no},${level_approve},${round},${field},${value},${uuid},${type_field}
-1,A2,NR1,สินค้าทองคำ,Test,eaeb4bb9-0a23-439a-a642-ba56bf151b06,input text
+1,A2,NR1,สินค้าทองคำ,สินค้าทองคำ_editmass,eaeb4bb9-0a23-439a-a642-ba56bf151b06,input text
 2,A2,NR1,ประเภทแบรนด์,01: แบรนด์ของ Vendor,eea0047f-38ea-4ea5-ade3-47f9576782ee,drop down
 3,A2,NR1,สินค้าฤดูกาล (สินค้าที่ขายในช่วงที่เป็นฤดูกาลขายมมากกว่าการขายปกติ),มกราคม,de3f4f40-141e-434f-a1a0-1c1c8ee1c79c,check box
-4,A2,NR1,หมายเหตุการขาย,Test,c4ee0c1f-2489-4a11-ba8b-b010d701945b,input text
+4,A2,NR1,หมายเหตุการขาย,_editmass,c4ee0c1f-2489-4a11-ba8b-b010d701945b,input text
 5,A2,NR1,สินค้าต้องแปรสภาพ,01: แปรสภาพใช้สูตร,5fae4a1f-9dd4-4151-aed2-2af2fc79a6e7,drop down
-6,A2,NR2,คำขยายของตัวสินค้า,Test,00e936a0-4817-4852-84fc-9bde5823df65,input text
+6,A2,NR2,คำขยายของตัวสินค้า,คำขยายของตัวสินค้า_editmass,00e936a0-4817-4852-84fc-9bde5823df65,input text
 7,A2,NR2,ช่วงระยะเวลาที่ขาย (เดือนที่เป็นช่วงการขายของสินค้าเทศกาลนั้นๆ),มกราคม,cbbf7ee2-0b3e-46c1-8598-e2ad37e009c6,check box
-8,A2,NR2,กรรมสิทธิ์ของตัวโชว์,D: ตัวโชว์ Dohome,83c976bf-32e8-42ba-b2ac-17c4e04acae3,drop down
-9,A2,NR2,เงื่อนไขการรับประกัน,Test,24b50355-96f2-4409-ad6b-c57989a1ebc9,inpu text
-10,A2,NR2,กลุ่มจัดซื้อต่างประเทศ,201: คุณหทัยพันธน์,9d5a006a-a64b-45b2-b77d-edb75712b954,drop down
-11,A2,NR3,รหัสสินค้าเดิมที่ยกเลิกขาย,Test,10a463ad-7b70-4d9a-9a8f-618176aa3bb4,input text
-12,A2,NR3,อายุขั้นต่ำที่แนะนำให้รับสินค้า,1234,21fdaede-a880-4520-8a8f-64a395f0998a,input number
-13,A2,NR3,สถานะสินค้า Active / Inactive (Item Status),A: Active,d48870c0-87d0-4278-b860-a4054a6cda69,drop down
-14,A2,NR3,สินค้าที่ต้องระบุ batch (Batch management),,ac424a83-5387-401d-b8e9-78b294901d4b,check box
-15,A2,NR3,พิกัดศุลกากร (Comm./imp. code no.),Test,deb87581-ae77-470e-8f76-517db894722e,input text
-16,A2,NR4,ส่วนประกอบตัวลูกตัวแม่ (components),1234,d00d18d5-af5f-4b79-a87e-7ee3bfea0195,input number
-17,A2,NR4,หน่วยน้ำหนักคู่ขนาน (Content unit),: Inchx,9faa62f5-7482-41b5-9e90-835cab1a2279,drop down
-18,A2,NR4,กลุ่มสินค้า Core หลัก /เสริม (Product Role),01: Core,dcad006c-af57-4226-8e7c-1db348d6930d,drop down
-19,A2,NR4,ประเทศต้นทางนำเข้า (Ctry of origin),AE: ประเทศเอมิเรตส์,12c7c566-75c8-4fdc-9247-60bc40466aba,drop down
-20,A2,NR4,วันที่ต้องการที่จะขาย (First Sale Date),10/12/2024,d13a7611-81be-44d0-8544-de35dbc37fc6,input text
-21,A2,NR5,น้ำหนักต่ำสุด หน่วยคู่ขนาน (Gross contents ),1234,56cbb34b-e291-429a-8fd7-d1db2b6258eb,input number
-22,A2,NR5,เลขที่สำหรับวัตถุอันตราย (Haz. artl no.),Test,fea6397a-24f9-46bd-a5f9-29516495a33c,input text
-23,A2,NR5,HB/Non HB,01: Non House brand,d0504e07-92e9-4a17-8f86-e9b1d52a4a55,drop down
-24,A2,NR5,HB ในประเทศ/ต่างประเทศ (Production),Z1: ผลิตในประเทศ,4c34a311-51f4-4c4c-9bea-d0f11d941bda,drop down
-25,A2,NR5,การจัดกลุ่มสินค้า (Item indicator),4: สินค้าปกติ,7742800e-7944-4251-9e53-b54e7e071a8b,drop down
-26,A2,NR6,รุ่นเหล็ก (Mdes Catary4 ),12อ: แบนรีด 12อ,e85271b4-cbac-480b-a301-ffeb8b8b8e16,drop down
-27,A2,NR6,สินค้าต้องระวังพื้นที่จัดเก็บ(Mdse catgry3),01: สารเคมี,67ffb08f-e775-40be-8356-99dd8708071c,drop down
-28,A2,NR6,น้ำหนักสูงสุด หน่วยคู่ขนาน (Net contents),1234,7867a800-ddf8-4733-890c-556a492df6dd,drop down
-29,A2,NR6,ประเภทหน่วยคู่ขนาน (Price Band Cat.),1: Zinc (สังกะสี),7d2f04cf-e185-4eca-b32e-aa6d3f345288,drop down
-30,A2,NR6,กลุ่มย่อยของ Product Role,01: สินค้าฤดูกาล,ca98953b-03c6-445b-83bd-da790829ccaf,drop down
-31,A2,NR7,Product trends,01: นวัตกรรม,e304c756-65b1-4381-9600-c566e800ac7d,drop down
-32,A2,NR7,กลุ่มจัดซื้อในประเทศ (Purch. Group),101: คุณนาตยา,1dd20e62-1ea3-4026-b6f5-148c690cc301,drop down
-33,A2,NR7,แหล่งกำเนิดสินค้า (Reg. of origin),01: Buenos Aires,87623ec3-48ad-4013-a340-e162e7029ee1,drop down
-34,A2,NR7,อายุสินค้าที่รับสินค้าได้ (remaining shelf life),1234,cd0287b3-cc6b-4e91-94d1-24d3e9eefd90,drop down
-35,A2,NR7,สินค้าต้องrepack/ติดบาร์โค๊ด (repack),01: สินค้าต้อง repack ติดบาร์โค๊ด,28361478-094e-4c36-9ace-84b1a06b9241,drop down
-36,A2,NR8,ชื่อค้นหาสินค้า (Search Name),Test,d108e5f3-811b-4f7b-802c-9cad3fe58fa7,input text
-37,A2,NR8,สินค้าที่ต้องระบุ serial (Serial Number Profile),ZSD1: Serial SD Sell only,d659c2a7-8850-4b8e-8db5-bcb346e122ab,drop down
-38,A2,NR8,พนักงาน Shipping,1036344: จิรารัตน์ อารีย์,fba89cf3-9cc9-472b-865c-0d8edab7a696,drop down
-39,A2,NR8,สถานะราย site (P-S artl status),01: Blocked for procment/whse,466f0303-68e2-4d65-bebe-8582d354417e,drop down
-40,A2,NR8,สถานะซื้อสินค้า (Status purchase),01: Blocked for procment/whse,7665fda3-d881-4d21-aaa5-27800120f303,drop down
-41,A2,NR9,สถานะขายสินค้า (Status Sale),01: Discontd w/o Replace,3c7d536c-0344-4282-baeb-8b8dbb0975c9,drop down
-42,A2,NR9,ต้องมี Stock ตัวโชว์,No: สินค้าไม่ต้องมีตัวโชว์,7987ebf4-57b2-4c79-90be-c53bc955abe2,drop down
-43,A2,NR9,หมายเหตุการเลิกขายสินค้า (Sub indicator),L: สินค้าบล็อครุ่น,b0feee85-4b40-45f2-8f26-69b0f39770f1,drop down
-44,A2,NR9,ประเภทภาษีขาย (Tax class.),0: No tax,51282b64-d937-450a-951c-335a4b171c8e,drop down
-45,A2,NR9,อุณหภูมิการเก็บรักษา (Temperature),1234,295a7cd2-a0dc-43dc-a88d-2865383de989,input number
-46,A2,NR10,ชื่อสินค้าภาษาไทย (Thai Name),Test_QA,af65e618-5adb-4fa6-9441-435966341c1c,input text
-47,A2,NR10,อายุสินค้าทั้งหมด (total shelf life),1234,e6bee95f-3d9a-4731-a928-96ff25933f95,input number
-48,A2,NR10,เครื่องหมายการค้า (Tradmark),HBNTM: สินค้า HB ไม่มี Trademark,2fdd67d8-47f2-41e1-a935-4829e255a876,drop down
+8,A2,NR2,เงื่อนไขการรับประกัน,เงื่อนไขการรับประกัน_editmass,24b50355-96f2-4409-ad6b-c57989a1ebc9,inpu text
+9,A2,NR2,รหัสสินค้าเดิมที่ยกเลิกขาย,รหัสสินค้าเดิมที่ยกเลิกขาย_editmass,10a463ad-7b70-4d9a-9a8f-618176aa3bb4,input text
+10,A2,NR2,อายุขั้นต่ำที่แนะนำให้รับสินค้า,1234,21fdaede-a880-4520-8a8f-64a395f0998a,input number
+11,A2,NR3,พิกัดศุลกากร (Comm./imp. code no.),พิกัดศุลกากร (Comm./imp. code no.)_editmass,deb87581-ae77-470e-8f76-517db894722e,input text
+12,A2,NR3,ส่วนประกอบตัวลูกตัวแม่ (components),1234,d00d18d5-af5f-4b79-a87e-7ee3bfea0195,input number
+13,A2,NR3,หน่วยน้ำหนักคู่ขนาน (Content unit),: Inchx,9faa62f5-7482-41b5-9e90-835cab1a2279,drop down
+14,A2,NR3,ประเทศต้นทางนำเข้า (Ctry of origin),AE: ประเทศเอมิเรตส์,12c7c566-75c8-4fdc-9247-60bc40466aba,drop down
+15,A2,NR3,วันที่ต้องการที่จะขาย (First Sale Date),10/12/2024,d13a7611-81be-44d0-8544-de35dbc37fc6,input text
+16,A2,NR4,น้ำหนักต่ำสุด หน่วยคู่ขนาน (Gross contents ),1234,56cbb34b-e291-429a-8fd7-d1db2b6258eb,input number
+17,A2,NR4,เลขที่สำหรับวัตถุอันตราย (Haz. artl no.),เลขที่สำหรับวัตถุอันตราย (Haz. artl no.)_editmass,fea6397a-24f9-46bd-a5f9-29516495a33c,input text
+18,A2,NR4,HB/Non HB,01: Non House brand,d0504e07-92e9-4a17-8f86-e9b1d52a4a55,drop down
+19,A2,NR4,HB ในประเทศ/ต่างประเทศ (Production),Z1: ผลิตในประเทศ,4c34a311-51f4-4c4c-9bea-d0f11d941bda,drop down
+20,A2,NR4,รุ่นเหล็ก (Mdes Catary4 ),12อ: แบนรีด 12อ,e85271b4-cbac-480b-a301-ffeb8b8b8e16,drop down
+21,A2,NR5,สินค้าต้องระวังพื้นที่จัดเก็บ(Mdse catgry3),01: สารเคมี,67ffb08f-e775-40be-8356-99dd8708071c,drop down
+22,A2,NR5,น้ำหนักสูงสุด หน่วยคู่ขนาน (Net contents),1234,7867a800-ddf8-4733-890c-556a492df6dd,drop down
+23,A2,NR5,ประเภทหน่วยคู่ขนาน (Price Band Cat.),1: Zinc (สังกะสี),7d2f04cf-e185-4eca-b32e-aa6d3f345288,drop down
+24,A2,NR5,แหล่งกำเนิดสินค้า (Reg. of origin),01: Buenos Aires,87623ec3-48ad-4013-a340-e162e7029ee1,drop down
+25,A2,NR5,อายุสินค้าที่รับสินค้าได้ (remaining shelf life),1234,cd0287b3-cc6b-4e91-94d1-24d3e9eefd90,drop down
+26,A2,NR6,สินค้าต้องrepack/ติดบาร์โค๊ด (repack),01: สินค้าต้อง repack ติดบาร์โค๊ด,28361478-094e-4c36-9ace-84b1a06b9241,drop down
+27,A2,NR6,ชื่อค้นหาสินค้า (Search Name),ชื่อค้นหาสินค้า (Search Name)_editmass,d108e5f3-811b-4f7b-802c-9cad3fe58fa7,input text
+28,A2,NR6,สถานะราย site (P-S artl status),01: Blocked for procment/whse,466f0303-68e2-4d65-bebe-8582d354417e,drop down
+29,A2,NR6,ประเภทภาษีขาย (Tax class.),0: No tax,51282b64-d937-450a-951c-335a4b171c8e,drop down
+30,A2,NR6,อุณหภูมิการเก็บรักษา (Temperature),1234,295a7cd2-a0dc-43dc-a88d-2865383de989,input number
+31,A2,NR7,ชื่อสินค้าภาษาไทย (Thai Name),Test_QA_editmass,af65e618-5adb-4fa6-9441-435966341c1c,input text
+32,A2,NR7,อายุสินค้าทั้งหมด (total shelf life),1234,e6bee95f-3d9a-4731-a928-96ff25933f95,input number
+33,A2,NR7,เครื่องหมายการค้า (Tradmark),HBNTM: สินค้า HB ไม่มี Trademark,2fdd67d8-47f2-41e1-a935-4829e255a876,drop down

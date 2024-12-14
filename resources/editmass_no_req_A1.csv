@@ -1,0 +1,16 @@
+${no},${level_approve},${round},${field},${value},${uuid},${type_field}
+1,A1,NR1,กรรมสิทธิ์ของตัวโชว์,D: ตัวโชว์ Dohome,83c976bf-32e8-42ba-b2ac-17c4e04acae3,drop down
+2,A1,NR1,กลุ่มจัดซื้อต่างประเทศ,201: คุณหทัยพันธน์,9d5a006a-a64b-45b2-b77d-edb75712b954,drop down
+3,A1,NR1,สถานะสินค้า Active / Inactive (Item Status),A: Active,d48870c0-87d0-4278-b860-a4054a6cda69,drop down
+4,A1,NR1,สินค้าที่ต้องระบุ batch (Batch management),,ac424a83-5387-401d-b8e9-78b294901d4b,check box
+5,A1,NR1,กลุ่มสินค้า Core หลัก /เสริม (Product Role),01: Core,dcad006c-af57-4226-8e7c-1db348d6930d,drop down
+6,A1,NR2,การจัดกลุ่มสินค้า (Item indicator),4: สินค้าปกติ,7742800e-7944-4251-9e53-b54e7e071a8b,drop down
+7,A1,NR2,กลุ่มย่อยของ Product Role,01: สินค้าฤดูกาล,ca98953b-03c6-445b-83bd-da790829ccaf,drop down
+8,A1,NR2,Product trends,01: นวัตกรรม,e304c756-65b1-4381-9600-c566e800ac7d,drop down
+9,A1,NR2,กลุ่มจัดซื้อในประเทศ (Purch. Group),101: คุณนาตยา,1dd20e62-1ea3-4026-b6f5-148c690cc301,drop down
+10,A1,NR2,สินค้าที่ต้องระบุ serial (Serial Number Profile),ZSD1: Serial SD Sell only,d659c2a7-8850-4b8e-8db5-bcb346e122ab,drop down
+11,A1,NR3,พนักงาน Shipping,1036344: จิรารัตน์ อารีย์,fba89cf3-9cc9-472b-865c-0d8edab7a696,drop down
+12,A1,NR3,สถานะซื้อสินค้า (Status purchase),01: Blocked for procment/whse,7665fda3-d881-4d21-aaa5-27800120f303,drop down
+13,A1,NR3,สถานะขายสินค้า (Status Sale),01: Discontd w/o Replace,3c7d536c-0344-4282-baeb-8b8dbb0975c9,drop down
+14,A1,NR3,ต้องมี Stock ตัวโชว์,No: สินค้าไม่ต้องมีตัวโชว์,7987ebf4-57b2-4c79-90be-c53bc955abe2,drop down
+15,A1,NR3,หมายเหตุการเลิกขายสินค้า (Sub indicator),L: สินค้าบล็อครุ่น,b0feee85-4b40-45f2-8f26-69b0f39770f1,drop down
