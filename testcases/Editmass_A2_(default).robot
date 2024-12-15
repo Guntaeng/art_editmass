@@ -11,7 +11,7 @@ Test Teardown    Refresh page
 *** Test Cases ***
 Article Edit mass round 1 (default)
     Process CSV Rows    ${CSV_PATH_NOT_REQ(A2)}
-    Search by article    10337662
+    Search by article    10337667
     Click check box all article
     Click button edit field    
     Edit field 1 (default) A2    Run 1
@@ -19,12 +19,12 @@ Article Edit mass round 1 (default)
     Edit field 3 (default) A2    Run 1
     Edit field 4 (default) A2    Run 1
     Edit field 5 (default) A2    Run 1
-    # Click button Confirm edit field
-    # Click button Approve edit field
+    Click button Confirm edit field
+    Click button Approve edit field
 
 Article Edit mass round 2 (default)
     Process CSV Rows    ${CSV_PATH_NOT_REQ(A2)}
-    Search by article    10337663
+    Search by article    10337666
     Click check box all article
     Click button edit field    
     Edit field 1 (default) A2    Run 2
@@ -32,12 +32,12 @@ Article Edit mass round 2 (default)
     Edit field 3 (default) A2    Run 2
     Edit field 4 (default) A2    Run 2
     Edit field 5 (default) A2    Run 2
-    # Click button Confirm edit field
-    # Click button Approve edit field
+    Click button Confirm edit field
+    Click button Approve edit field
 
 Article Edit mass round 3 (default)
     Process CSV Rows    ${CSV_PATH_NOT_REQ(A2)}
-    Search by article    10337664
+    Search by article    10337742
     Click check box all article
     Click button edit field    
     Edit field 1 (default) A2    Run 3
@@ -45,12 +45,12 @@ Article Edit mass round 3 (default)
     Edit field 3 (default) A2    Run 3
     Edit field 4 (default) A2    Run 3
     Edit field 5 (default) A2    Run 3
-    # Click button Confirm edit field
-    # Click button Approve edit field
+    Click button Confirm edit field
+    Click button Approve edit field
 
 Article Edit mass round 4 (default)
     Process CSV Rows    ${CSV_PATH_NOT_REQ(A2)}
-    Search by article    10337665
+    Search by article    10337663
     Click check box all article
     Click button edit field    
     Edit field 1 (default) A2    Run 4
@@ -58,12 +58,12 @@ Article Edit mass round 4 (default)
     Edit field 3 (default) A2    Run 4
     Edit field 4 (default) A2    Run 4
     Edit field 5 (default) A2    Run 4
-    # Click button Confirm edit field
-    # Click button Approve edit field
+    Click button Confirm edit field
+    Click button Approve edit field
 
 Article Edit mass round 5 (default)
     Process CSV Rows    ${CSV_PATH_NOT_REQ(A2)}
-    Search by article    10337666
+    Search by article    10337662
     Click check box all article
     Click button edit field    
     Edit field 1 (default) A2    Run 5
@@ -71,12 +71,12 @@ Article Edit mass round 5 (default)
     Edit field 3 (default) A2    Run 5
     Edit field 4 (default) A2    Run 5
     Edit field 5 (default) A2    Run 5
-    # Click button Confirm edit field
-    # Click button Approve edit field
+    Click button Confirm edit field
+    Click button Approve edit field
 
 Article Edit mass round 6 (default)
     Process CSV Rows    ${CSV_PATH_NOT_REQ(A2)}
-    Search by article    10337667
+    Search by article    10337738
     Click check box all article
     Click button edit field    
     Edit field 1 (default) A2    Run 6
@@ -84,12 +84,12 @@ Article Edit mass round 6 (default)
     Edit field 3 (default) A2    Run 6
     Edit field 4 (default) A2    Run 6
     Edit field 5 (default) A2    Run 6
-    # Click button Confirm edit field
-    # Click button Approve edit field
+    Click button Confirm edit field
+    Click button Approve edit field
 
 Article Edit mass round 7 (default)
     Process CSV Rows    ${CSV_PATH_NOT_REQ(A2)}
-    Search by article    10337668
+    Search by article    10337723
     Click check box all article
     Click button edit field    
     Edit field 1 (default) A2    Run 7
@@ -97,8 +97,8 @@ Article Edit mass round 7 (default)
     Edit field 3 (default) A2    Run 7
     # Edit field 4 (default) A2    Run 7
     # Edit field 5 (default) A2    Run 7
-    # Click button Confirm edit field
-    # Click button Approve edit field
+    Click button Confirm edit field
+    Click button Approve edit field
 
 # Article Edit mass round 8 (default)
 #     Process CSV Rows    ${CSV_PATH_NOT_REQ(A2)}

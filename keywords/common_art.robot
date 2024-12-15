@@ -96,10 +96,11 @@ Open browser web url	#ชื่อที่จะนำไปใช้
     ...    options=binary_location=r"C:\\chrome-win64\\chrome.exe"  
 
 
-Open Browser Web URL v2
-    [Documentation]    เปิดเบราว์เซอร์ด้วย URL และใช้ Chrome binary location ที่กำหนด
-    [Arguments]    ${url}    ${browserName}
-    Open Browser    ${url}    ${browserName}    options=binary_location=${CHROME_PATH}
+Open browser web url for mac	#ชื่อที่จะนำไปใช้
+    [Documentation]    
+    [Arguments]    ${url}    ${browserName}    
+    SeleniumLibrary.open browser    ${url}    browser=${browserName}    
+    ...    options=binary_location=r"/usr/local/bin/chrome-mac-x64/Google Chrome for Testing"  
 
 
 Login dohome and click web art(Create)
@@ -171,7 +172,8 @@ Refresh page
 
 Login dohome and click web art(Edit Mass) A2
     #Open browser web url    ${url_dohome}    headlesschrome
-    Open Browser Web URL    ${url_dohome}    chrome             
+    # Open Browser Web URL    ${url_dohome}    chrome
+    Open browser web url for mac    ${url_dohome}    chrome             
     #Set Window Size    1920    1080
     Maximize Browser Window
     Wait until keyword succeeds    5x   2s    Wait Until Element Contains    //button[text()='เข้าสู่ระบบ']    เข้าสู่ระบบ       
@@ -194,7 +196,8 @@ Login dohome and click web art(Edit Mass) A2
 
 Login dohome and click web art(Edit Mass) A3
     #Open browser web url    ${url_dohome}    headlesschrome
-    Open Browser Web URL    ${url_dohome}    chrome             
+    #Open Browser Web URL    ${url_dohome}    chrome 
+    Open browser web url for mac    ${url_dohome}    chrome             
     #Set Window Size    1920    1080
     Maximize Browser Window
     Wait until keyword succeeds    5x   2s    Wait Until Element Contains    //button[text()='เข้าสู่ระบบ']    เข้าสู่ระบบ       
@@ -213,6 +216,7 @@ Login dohome and click web art(Edit Mass) A3
     Wait And Click Element    //p[text()='จัดการสินค้า']
     Wait And Click Element    //p[text()='ขอเปลี่ยนแปลงข้อมูลสินค้า']/parent::span//parent::a[@href="/app/edit-mass-information"]
     Wait And Wait Until Element Is Visible    //input[@name="purchaser_group_no"]/following-sibling::div/div/input
+
 
 
 

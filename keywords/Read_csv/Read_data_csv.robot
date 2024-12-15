@@ -1,6 +1,6 @@
 *** Settings ***
 Library    SeleniumLibrary
-Library    ../Create_Article_automate/resources/csv_ready.py
+#Library    ../Create_Article_automate/resources/csv_ready.py
 Library    resources/csv_ready_v2.py
 Library    CSVLibrary
 Library    BuiltIn
