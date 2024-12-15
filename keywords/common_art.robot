@@ -3,10 +3,6 @@ Library    SeleniumLibrary
 Resource    ../variables/config_art.robot
 
 
-*** Variables ***
-${CHROME_PATH}    r"C:\chrome-win64\chrome.exe"  # ใช้ raw string (r"")   
-
-
 *** Keywords ***
 Click Element with Delay   
     [Arguments]    ${locator}
@@ -86,7 +82,7 @@ Wait And Wait Until Element Is Visible
 
 Wait And Wait Until Element Contains    
     [Arguments]    ${locator}    ${text}
-    Wait Until Keyword Succeeds    3x    1.5s    Wait And Wait Until Element Contains    ${locator}    ${text}    
+    Wait until keyword succeeds    3x   1s    Wait Until Element Contains     ${locator}    ${text}    
 
 
 Open browser web url	#ชื่อที่จะนำไปใช้
@@ -105,90 +101,85 @@ Open browser web url for mac	#ชื่อที่จะนำไปใช้
 
 Login dohome and click web art(Create)
     #Open browser web url    ${url_dohome}    headlesschrome
-    Open browser web url    ${url_dohome}    chrome            
-    #Maximize Browser Window 
-    Set Window Position    1920    0
-    Maximize Browser Window 
-    Set Window Size    1920    1080
-    Wait until keyword succeeds    5x   2s    Wait Until Element Contains    //button[text()='เข้าสู่ระบบ']    เข้าสู่ระบบ      
-    Wait until keyword succeeds    5x   2s    Click Element with Delay    //button[text()='เข้าสู่ระบบ']
-    Wait until keyword succeeds    5x   2s    Wait Until Element Contains   //*[@class="text-2xl text-primary font-bold"]     เข้าสู่ระบบ
-    Wait until keyword succeeds    5x   2s    Click Element with Delay    //input[@name="username"] 
-    Wait until keyword succeeds    5x   2s    Input Text with Delay    //input[@name="username"]     ${user_create}
-    Wait until keyword succeeds    5x   2s    Click Element with Delay    //input[@name="password"]
-    Wait until keyword succeeds    5x   2s    Input Text with Delay   //input[@name="password"]    ${pass}
-    Wait until keyword succeeds    5x   2s    Click Element with Delay    //button[@type="submit"][ text()='เข้าสู่ระบบ']
-    #Wait until keyword succeeds    5x   2s    Wait Until Element Contains    //span[text()='ชัชชญา เครือแวงมล(กุ้ง)']     ชัชชญา เครือแวงมล(กุ้ง)
-    Wait until keyword succeeds    5x   2s    Click Element with Delay    //*[@aria-label="ระบบจัดการข้อมูลสินค้า"]
-    Wait until keyword succeeds    5x   2s    Switch Window    New
-    Maximize Browser Window 
+    Open browser web url for mac             ${url_dohome}                                     chrome             
+    #Set Window Size    1920    1080
+    Maximize Browser Window
+    Wait And Wait Until Element Contains     //button[text()='เข้าสู่ระบบ']                       เข้าสู่ระบบ       
+    Wait And Click Element                   //button[text()='เข้าสู่ระบบ']
+    Wait And Wait Until Element Contains     //*[@class="text-2xl text-primary font-bold"]     เข้าสู่ระบบ
+    Wait And Click Element                   //input[@name="username"] 
+    Wait And Input Text with Delay           //input[@name="username"]                         ${user_create}
+    Wait And Click Element                   //input[@name="password"]
+    Wait And Input Text with Delay           //input[@name="password"]                         ${pass}
+    Wait And Click Element                   //button[@type="submit"][ text()='เข้าสู่ระบบ']
+    Wait And Click Element                   //*[@aria-label="ระบบจัดการข้อมูลสินค้า"]
+    Switch Window    New
+    Maximize Browser Window
     #Set Window Size    1920    1080    
-    Wait until keyword succeeds    5x   2s    Wait Until Element Is Visible    //h3[text()="Article Master"]
+    Wait And Wait Until Element Is Visible    //h3[text()="Article Master"]
 
 
 Login dohome and click web art(Approve avp)
-    Open browser web url    ${url_dohome}    headlesschrome
-    # Open browser web url    ${url_dohome}    chrome             
-    Set Window Size    1920    1080
-    # Maximize Browser Window
-    Wait until keyword succeeds    5x   2s    Wait Until Element Contains    //button[text()='เข้าสู่ระบบ']    เข้าสู่ระบบ       
-    Wait until keyword succeeds    5x   2s    Click Element with Delay    //button[text()='เข้าสู่ระบบ']
-    Wait until keyword succeeds    5x   2s    Wait Until Element Contains   //*[@class="text-2xl text-primary font-bold"]     เข้าสู่ระบบ
-    Wait until keyword succeeds    5x   2s    Click Element with Delay    //input[@name="username"] 
-    Wait until keyword succeeds    5x   2s    Input Text with Delay    //input[@name="username"]     ${user_avp}
-    Wait until keyword succeeds    5x   2s    Click Element with Delay    //input[@name="password"]
-    Wait until keyword succeeds    5x   2s    Input Text with Delay   //input[@name="password"]    ${pass}
-    Wait until keyword succeeds    5x   2s    Click Element with Delay    //button[@type="submit"][ text()='เข้าสู่ระบบ']
-    #Wait until keyword succeeds    5x   2s    Wait Until Element Contains    //span[text()='พงศกร หมาดเส็น']     พงศกร หมาดเส็น
-    Wait until keyword succeeds    5x   2s    Click Element with Delay    //*[@aria-label="ระบบจัดการข้อมูลสินค้า"]
-    Wait until keyword succeeds    5x   2s    Switch Window    New
-    Set Window Size    1920    1080    
-    Wait until keyword succeeds    5x   2s    Wait Until Element Is Visible    //h3[text()="Article Master"]
-
-
-Login dohome and click web art(Approve dm)
-    Open browser web url    ${url_dohome}    headlesschrome
-    # Open browser web url    ${url_dohome}    chrome             
+    #Open browser web url    ${url_dohome}    headlesschrome
+    Open browser web url for mac             ${url_dohome}                                     chrome             
     #Set Window Size    1920    1080
     Maximize Browser Window
-    Wait until keyword succeeds    5x   2s    Wait Until Element Contains    //button[text()='เข้าสู่ระบบ']    เข้าสู่ระบบ       
-    Wait until keyword succeeds    5x   2s    Click Element with Delay    //button[text()='เข้าสู่ระบบ']
-    Wait until keyword succeeds    5x   2s    Wait Until Element Contains   //*[@class="text-2xl text-primary font-bold"]     เข้าสู่ระบบ
-    Wait until keyword succeeds    5x   2s    Click Element with Delay    //input[@name="username"] 
-    Wait until keyword succeeds    5x   2s    Input Text with Delay    //input[@name="username"]     ${user_dm}
-    Wait until keyword succeeds    5x   2s    Click Element with Delay    //input[@name="password"]
-    Wait until keyword succeeds    5x   2s    Input Text with Delay   //input[@name="password"]    ${pass}
-    Wait until keyword succeeds    5x   2s    Click Element with Delay    //button[@type="submit"][ text()='เข้าสู่ระบบ']
-    #Wait until keyword succeeds    5x   2s    Wait Until Element Contains    //span[text()='ศักดิ์นฤน สมทรา(กันต์)']     ศักดิ์นฤน สมทรา(กันต์)
-    Wait until keyword succeeds    5x   2s    Click Element with Delay    //*[@aria-label="ระบบจัดการข้อมูลสินค้า"]
-    Wait until keyword succeeds    5x   2s    Switch Window    New
+    Wait And Wait Until Element Contains     //button[text()='เข้าสู่ระบบ']                       เข้าสู่ระบบ       
+    Wait And Click Element                   //button[text()='เข้าสู่ระบบ']
+    Wait And Wait Until Element Contains     //*[@class="text-2xl text-primary font-bold"]     เข้าสู่ระบบ
+    Wait And Click Element                   //input[@name="username"] 
+    Wait And Input Text with Delay           //input[@name="username"]                         ${user_avp}
+    Wait And Click Element                   //input[@name="password"]
+    Wait And Input Text with Delay           //input[@name="password"]                         ${pass}
+    Wait And Click Element                   //button[@type="submit"][ text()='เข้าสู่ระบบ']
+    Wait And Click Element                   //*[@aria-label="ระบบจัดการข้อมูลสินค้า"]
+    Switch Window    New
     Maximize Browser Window
     #Set Window Size    1920    1080    
-    Wait until keyword succeeds    5x   2s    Wait Until Element Is Visible    //h3[text()="Article Master"]
+    Wait And Wait Until Element Is Visible    //h3[text()="Article Master"]
+    
 
+Login dohome and click web art(Approve dm)
+    #Open browser web url    ${url_dohome}    headlesschrome
+    Open browser web url for mac             ${url_dohome}                                     chrome             
+    #Set Window Size    1920    1080
+    Maximize Browser Window
+    Wait And Wait Until Element Contains     //button[text()='เข้าสู่ระบบ']                       เข้าสู่ระบบ       
+    Wait And Click Element                   //button[text()='เข้าสู่ระบบ']
+    Wait And Wait Until Element Contains     //*[@class="text-2xl text-primary font-bold"]     เข้าสู่ระบบ
+    Wait And Click Element                   //input[@name="username"] 
+    Wait And Input Text with Delay           //input[@name="username"]                         ${user_dm}
+    Wait And Click Element                   //input[@name="password"]
+    Wait And Input Text with Delay           //input[@name="password"]                         ${pass}
+    Wait And Click Element                   //button[@type="submit"][ text()='เข้าสู่ระบบ']
+    Wait And Click Element                   //*[@aria-label="ระบบจัดการข้อมูลสินค้า"]
+    Switch Window    New
+    Maximize Browser Window
+    #Set Window Size    1920    1080    
+    Wait And Wait Until Element Is Visible    //h3[text()="Article Master"]
+    
 Refresh page
     Execute JavaScript    location.reload()
 
 
 Login dohome and click web art(Edit Mass) A2
     #Open browser web url    ${url_dohome}    headlesschrome
-    # Open Browser Web URL    ${url_dohome}    chrome
-    Open browser web url for mac    ${url_dohome}    chrome             
+    Open browser web url for mac             ${url_dohome}                                     chrome             
     #Set Window Size    1920    1080
     Maximize Browser Window
-    Wait until keyword succeeds    5x   2s    Wait Until Element Contains    //button[text()='เข้าสู่ระบบ']    เข้าสู่ระบบ       
-    Wait until keyword succeeds    5x   2s    Click Element with Delay    //button[text()='เข้าสู่ระบบ']
-    Wait until keyword succeeds    5x   2s    Wait Until Element Contains   //*[@class="text-2xl text-primary font-bold"]     เข้าสู่ระบบ
-    Wait until keyword succeeds    5x   2s    Click Element with Delay    //input[@name="username"] 
-    Wait until keyword succeeds    5x   2s    Input Text with Delay    //input[@name="username"]     ${user_editmass_A2}
-    Wait until keyword succeeds    5x   2s    Click Element with Delay    //input[@name="password"]
-    Wait until keyword succeeds    5x   2s    Input Text with Delay   //input[@name="password"]    ${pass}
-    Wait until keyword succeeds    5x   2s    Click Element with Delay    //button[@type="submit"][ text()='เข้าสู่ระบบ']
-    Wait until keyword succeeds    5x   2s    Click Element with Delay    //*[@aria-label="ระบบจัดการข้อมูลสินค้า"]
-    Wait until keyword succeeds    5x   2s    Switch Window    New
+    Wait And Wait Until Element Contains     //button[text()='เข้าสู่ระบบ']                       เข้าสู่ระบบ       
+    Wait And Click Element                   //button[text()='เข้าสู่ระบบ']
+    Wait And Wait Until Element Contains     //*[@class="text-2xl text-primary font-bold"]     เข้าสู่ระบบ
+    Wait And Click Element                   //input[@name="username"] 
+    Wait And Input Text with Delay           //input[@name="username"]                         ${user_editmass_A2}
+    Wait And Click Element                   //input[@name="password"]
+    Wait And Input Text with Delay           //input[@name="password"]                         ${pass}
+    Wait And Click Element                   //button[@type="submit"][ text()='เข้าสู่ระบบ']
+    Wait And Click Element                   //*[@aria-label="ระบบจัดการข้อมูลสินค้า"]
+    Switch Window    New
     Maximize Browser Window
     #Set Window Size    1920    1080    
-    Wait until keyword succeeds    5x   2s    Wait Until Element Is Visible    //h3[text()="Article Master"]
+    Wait And Wait Until Element Is Visible    //h3[text()="Article Master"]
     Wait And Click Element    //p[text()='จัดการสินค้า']
     Wait And Click Element    //p[text()='ขอเปลี่ยนแปลงข้อมูลสินค้า']/parent::span//parent::a[@href="/app/edit-mass-information"]
     Wait And Wait Until Element Is Visible    //input[@name="purchaser_group_no"]/following-sibling::div/div/input
@@ -196,23 +187,22 @@ Login dohome and click web art(Edit Mass) A2
 
 Login dohome and click web art(Edit Mass) A3
     #Open browser web url    ${url_dohome}    headlesschrome
-    #Open Browser Web URL    ${url_dohome}    chrome 
-    Open browser web url for mac    ${url_dohome}    chrome             
+    Open browser web url for mac             ${url_dohome}                                     chrome             
     #Set Window Size    1920    1080
     Maximize Browser Window
-    Wait until keyword succeeds    5x   2s    Wait Until Element Contains    //button[text()='เข้าสู่ระบบ']    เข้าสู่ระบบ       
-    Wait until keyword succeeds    5x   2s    Click Element with Delay    //button[text()='เข้าสู่ระบบ']
-    Wait until keyword succeeds    5x   2s    Wait Until Element Contains   //*[@class="text-2xl text-primary font-bold"]     เข้าสู่ระบบ
-    Wait until keyword succeeds    5x   2s    Click Element with Delay    //input[@name="username"] 
-    Wait until keyword succeeds    5x   2s    Input Text with Delay    //input[@name="username"]     ${user_editmass_A3}
-    Wait until keyword succeeds    5x   2s    Click Element with Delay    //input[@name="password"]
-    Wait until keyword succeeds    5x   2s    Input Text with Delay   //input[@name="password"]    ${pass}
-    Wait until keyword succeeds    5x   2s    Click Element with Delay    //button[@type="submit"][ text()='เข้าสู่ระบบ']
-    Wait until keyword succeeds    5x   2s    Click Element with Delay    //*[@aria-label="ระบบจัดการข้อมูลสินค้า"]
-    Wait until keyword succeeds    5x   2s    Switch Window    New
+    Wait And Wait Until Element Contains     //button[text()='เข้าสู่ระบบ']                       เข้าสู่ระบบ       
+    Wait And Click Element                   //button[text()='เข้าสู่ระบบ']
+    Wait And Wait Until Element Contains     //*[@class="text-2xl text-primary font-bold"]     เข้าสู่ระบบ
+    Wait And Click Element                   //input[@name="username"] 
+    Wait And Input Text with Delay           //input[@name="username"]                         ${user_editmass_A3}
+    Wait And Click Element                   //input[@name="password"]
+    Wait And Input Text with Delay           //input[@name="password"]                         ${pass}
+    Wait And Click Element                   //button[@type="submit"][ text()='เข้าสู่ระบบ']
+    Wait And Click Element                   //*[@aria-label="ระบบจัดการข้อมูลสินค้า"]
+    Switch Window    New
     Maximize Browser Window
     #Set Window Size    1920    1080    
-    Wait until keyword succeeds    5x   2s    Wait Until Element Is Visible    //h3[text()="Article Master"]
+    Wait And Wait Until Element Is Visible    //h3[text()="Article Master"]
     Wait And Click Element    //p[text()='จัดการสินค้า']
     Wait And Click Element    //p[text()='ขอเปลี่ยนแปลงข้อมูลสินค้า']/parent::span//parent::a[@href="/app/edit-mass-information"]
     Wait And Wait Until Element Is Visible    //input[@name="purchaser_group_no"]/following-sibling::div/div/input

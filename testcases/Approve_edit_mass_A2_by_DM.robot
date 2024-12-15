@@ -1,9 +1,8 @@
 *** Settings ***
-Library    SeleniumLibrary
-Library    BuiltIn
-Resource    ../keywords/Menu_approve_edit_mass.robot
-Suite Setup    Login dohome and click web art(Approve Edit Mass DM) 
-Library    DataDriver    file=../resources/article_waiting_approve.csv  dialect=excel    encoding=utf-8
+Library          SeleniumLibrary
+Resource         ../keywords/Menu_approve_edit_mass.robot
+Library          DataDriver    file=../resources/article_waiting_approve.csv  dialect=excel    encoding=utf-8
+Suite Setup      Login dohome and click web art(Approve Edit Mass DM)
 Test Template    Approve Edit mass (DM)
 Test Teardown    Refresh page
 

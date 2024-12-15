@@ -1,10 +1,10 @@
 *** Settings ***
-Library    SeleniumLibrary
-Library    DebugLibrary
-Suite Setup    Login dohome and click web art(Edit Mass) A2
-Resource    ../keywords/common_art.robot
-Resource    ../keywords/Menu_editmass_B2C_field.robot
-Resource    ../keywords/Menu_editmass_default_field.robot
+Library          SeleniumLibrary
+Library          DebugLibrary
+Resource         ../keywords/common_art.robot
+Resource         ../keywords/Menu_editmass_B2C_field.robot
+Resource         ../keywords/Menu_editmass_default_field.robot
+Suite Setup      Login dohome and click web art(Edit Mass) A2
 Test Teardown    Refresh page
 
 
@@ -47,6 +47,9 @@ Article Edit mass round 3 (default)
     Edit field 5 (default) A1    Run 3
     Click button Confirm edit field
     Click button Approve edit field
+
+
+
 
 # Article Edit mass round 4 (default)
 #     Process CSV Rows    ${CSV_PATH_NOT_REQ(A1)}

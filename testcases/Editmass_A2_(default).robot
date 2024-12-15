@@ -1,10 +1,10 @@
 *** Settings ***
-Library    SeleniumLibrary
-Library    DebugLibrary
-Suite Setup    Login dohome and click web art(Edit Mass) A2   
-Resource    ../keywords/common_art.robot
-Resource    ../keywords/Menu_editmass_B2C_field.robot
-Resource    ../keywords/Menu_editmass_default_field.robot
+Library          SeleniumLibrary
+Library          DebugLibrary
+Resource         ../keywords/common_art.robot
+Resource         ../keywords/Menu_editmass_B2C_field.robot
+Resource         ../keywords/Menu_editmass_default_field.robot
+Suite Setup      Login dohome and click web art(Edit Mass) A2
 Test Teardown    Refresh page
 
 

@@ -1,11 +1,11 @@
 *** Settings ***
-Library    SeleniumLibrary
-Library    DebugLibrary
-Suite Setup    Login dohome and click web art(Approve avp) 
-Test Template        Approve art AVP 
-Library    DataDriver    file=../resources/data_Create_Article.csv  dialect=excel    encoding=utf-8
-Resource    ../keywords/common_art.robot
-Test Teardown    Refresh page 
+Library            SeleniumLibrary
+Library            DebugLibrary
+Library            DataDriver    file=../resources/data_Create_Article.csv  dialect=excel    encoding=utf-8
+Resource           ../keywords/common_art.robot
+Suite Setup        Login dohome and click web art(Approve avp) 
+Test Template      Approve art AVP 
+Test Teardown      Refresh page 
 
 *** Test Cases ***
 Approve art AVP    ${new_name_th}
