@@ -17,6 +17,3 @@ Approve Edit mass (DM)
     Filter By Article    ${art}
     Click check all box
     Click Approve
-
-
-

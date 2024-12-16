@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0.1 (Python 3.12.5 on darwin)" generated="2024-12-15T13:34:08.501888" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0.1 (Python 3.12.5 on darwin)" generated="2024-12-16T11:28:56.307825" rpa="false" schemaversion="5">
 <suite id="s1" name="Editmass A1 (default)" source="/Users/guntz/Desktop/editmass/art_editmass/testcases/Editmass_A1_(default).robot">
 <kw name="Login dohome and click web art(Edit Mass) A2" owner="common_art" type="SETUP">
 <kw name="Open browser web url for mac" owner="common_art">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-12-15T13:34:08.847507" level="INFO">Opening browser 'chrome' to base url 'https://web-dohome-center-uat.dohome.technology/app/home'.</msg>
+<msg time="2024-12-16T11:28:57.022834" level="INFO">Opening browser 'chrome' to base url 'https://web-dohome-center-uat.dohome.technology/app/home'.</msg>
 <arg>${url}</arg>
 <arg>browser=${browserName}</arg>
 <arg>options=binary_location=r"/usr/local/bin/chrome-mac-x64/Google Chrome for Testing"</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-12-15T13:34:08.847124" elapsed="1.859306"/>
+<status status="PASS" start="2024-12-16T11:28:57.022300" elapsed="3.368479"/>
 </kw>
 <arg>${url_dohome}</arg>
 <arg>chrome</arg>
-<status status="PASS" start="2024-12-15T13:34:08.846489" elapsed="1.860855"/>
+<status status="PASS" start="2024-12-16T11:28:57.021581" elapsed="3.370541"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-12-15T13:34:10.708219" elapsed="0.344337"/>
+<status status="PASS" start="2024-12-16T11:29:00.393715" elapsed="0.399747"/>
 </kw>
 <kw name="Wait And Wait Until Element Contains" owner="common_art">
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
@@ -25,7 +25,7 @@
 <arg>${locator}</arg>
 <arg>${text}</arg>
 <doc>Waits until the element ``locator`` contains ``text``.</doc>
-<status status="PASS" start="2024-12-15T13:34:11.054216" elapsed="0.667037"/>
+<status status="PASS" start="2024-12-16T11:29:00.796331" elapsed="0.309145"/>
 </kw>
 <arg>3x</arg>
 <arg>1s</arg>
@@ -33,39 +33,39 @@
 <arg>${locator}</arg>
 <arg>${text}</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2024-12-15T13:34:11.053721" elapsed="0.667736"/>
+<status status="PASS" start="2024-12-16T11:29:00.795530" elapsed="0.310250"/>
 </kw>
 <arg>//button[text()='เข้าสู่ระบบ']</arg>
 <arg>เข้าสู่ระบบ</arg>
-<status status="PASS" start="2024-12-15T13:34:11.053133" elapsed="0.668475"/>
+<status status="PASS" start="2024-12-16T11:29:00.794030" elapsed="0.312075"/>
 </kw>
 <kw name="Wait And Click Element" owner="common_art">
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
 <kw name="Click Element with Delay" owner="common_art">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-12-15T13:34:11.723671" level="INFO">Clicking element '//button[text()='เข้าสู่ระบบ']'.</msg>
+<msg time="2024-12-16T11:29:01.108646" level="INFO">Clicking element '//button[text()='เข้าสู่ระบบ']'.</msg>
 <arg>${locator}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-15T13:34:11.723171" elapsed="0.105806"/>
+<status status="PASS" start="2024-12-16T11:29:01.108293" elapsed="0.419904"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-12-15T13:34:12.830470" level="INFO">Slept 1 second.</msg>
+<msg time="2024-12-16T11:29:02.532240" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-12-15T13:34:11.829419" elapsed="1.001464"/>
+<status status="PASS" start="2024-12-16T11:29:01.528768" elapsed="1.003714"/>
 </kw>
 <arg>${locator}</arg>
-<status status="PASS" start="2024-12-15T13:34:11.722729" elapsed="1.108814"/>
+<status status="PASS" start="2024-12-16T11:29:01.107773" elapsed="1.424904"/>
 </kw>
 <arg>3x</arg>
 <arg>0.8s</arg>
 <arg>Click Element with Delay</arg>
 <arg>${locator}</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2024-12-15T13:34:11.722343" elapsed="1.109573"/>
+<status status="PASS" start="2024-12-16T11:29:01.107137" elapsed="1.425652"/>
 </kw>
 <arg>//button[text()='เข้าสู่ระบบ']</arg>
-<status status="PASS" start="2024-12-15T13:34:11.721963" elapsed="1.110380"/>
+<status status="PASS" start="2024-12-16T11:29:01.106547" elapsed="1.426523"/>
 </kw>
 <kw name="Wait And Wait Until Element Contains" owner="common_art">
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
@@ -73,7 +73,7 @@
 <arg>${locator}</arg>
 <arg>${text}</arg>
 <doc>Waits until the element ``locator`` contains ``text``.</doc>
-<status status="PASS" start="2024-12-15T13:34:12.834835" elapsed="0.026203"/>
+<status status="PASS" start="2024-12-16T11:29:02.534403" elapsed="0.025021"/>
 </kw>
 <arg>3x</arg>
 <arg>1s</arg>
@@ -81,59 +81,59 @@
 <arg>${locator}</arg>
 <arg>${text}</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2024-12-15T13:34:12.834092" elapsed="0.027171"/>
+<status status="PASS" start="2024-12-16T11:29:02.533852" elapsed="0.025823"/>
 </kw>
 <arg>//*[@class="text-2xl text-primary font-bold"]</arg>
 <arg>เข้าสู่ระบบ</arg>
-<status status="PASS" start="2024-12-15T13:34:12.832869" elapsed="0.028542"/>
+<status status="PASS" start="2024-12-16T11:29:02.533341" elapsed="0.026529"/>
 </kw>
 <kw name="Wait And Click Element" owner="common_art">
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
 <kw name="Click Element with Delay" owner="common_art">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-12-15T13:34:12.863052" level="INFO">Clicking element '//input[@name="username"]'.</msg>
+<msg time="2024-12-16T11:29:02.561862" level="INFO">Clicking element '//input[@name="username"]'.</msg>
 <arg>${locator}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-15T13:34:12.862802" elapsed="0.123323"/>
+<status status="PASS" start="2024-12-16T11:29:02.561451" elapsed="0.167916"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-12-15T13:34:13.988385" level="INFO">Slept 1 second.</msg>
+<msg time="2024-12-16T11:29:03.733014" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-12-15T13:34:12.986440" elapsed="1.002702"/>
+<status status="PASS" start="2024-12-16T11:29:02.730283" elapsed="1.003115"/>
 </kw>
 <arg>${locator}</arg>
-<status status="PASS" start="2024-12-15T13:34:12.862434" elapsed="1.127291"/>
+<status status="PASS" start="2024-12-16T11:29:02.561060" elapsed="1.172644"/>
 </kw>
 <arg>3x</arg>
 <arg>0.8s</arg>
 <arg>Click Element with Delay</arg>
 <arg>${locator}</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2024-12-15T13:34:12.862088" elapsed="1.128091"/>
+<status status="PASS" start="2024-12-16T11:29:02.560617" elapsed="1.173237"/>
 </kw>
 <arg>//input[@name="username"]</arg>
-<status status="PASS" start="2024-12-15T13:34:12.861681" elapsed="1.128950"/>
+<status status="PASS" start="2024-12-16T11:29:02.560212" elapsed="1.173777"/>
 </kw>
 <kw name="Wait And Input Text with Delay" owner="common_art">
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
 <kw name="Input Text with Delay" owner="common_art">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-12-15T13:34:13.995599" level="INFO">Typing text '1050607' into text field '//input[@name="username"]'.</msg>
+<msg time="2024-12-16T11:29:03.736785" level="INFO">Typing text '1050607' into text field '//input[@name="username"]'.</msg>
 <arg>${locator}</arg>
 <arg>${text}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-15T13:34:13.994727" elapsed="0.163922"/>
+<status status="PASS" start="2024-12-16T11:29:03.735993" elapsed="0.204125"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-12-15T13:34:15.659982" level="INFO">Slept 1 second 500 milliseconds.</msg>
+<msg time="2024-12-16T11:29:05.442696" level="INFO">Slept 1 second 500 milliseconds.</msg>
 <arg>1.5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-12-15T13:34:14.159166" elapsed="1.501509"/>
+<status status="PASS" start="2024-12-16T11:29:03.940494" elapsed="1.502435"/>
 </kw>
 <arg>${locator}</arg>
 <arg>${text}</arg>
-<status status="PASS" start="2024-12-15T13:34:13.993476" elapsed="1.667797"/>
+<status status="PASS" start="2024-12-16T11:29:03.735265" elapsed="1.707839"/>
 </kw>
 <arg>3x</arg>
 <arg>0.8s</arg>
@@ -141,59 +141,59 @@
 <arg>${locator}</arg>
 <arg>${text}</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2024-12-15T13:34:13.992630" elapsed="1.669298"/>
+<status status="PASS" start="2024-12-16T11:29:03.734870" elapsed="1.708364"/>
 </kw>
 <arg>//input[@name="username"]</arg>
 <arg>${user_editmass_A2}</arg>
-<status status="PASS" start="2024-12-15T13:34:13.991433" elapsed="1.670910"/>
+<status status="PASS" start="2024-12-16T11:29:03.734333" elapsed="1.709037"/>
 </kw>
 <kw name="Wait And Click Element" owner="common_art">
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
 <kw name="Click Element with Delay" owner="common_art">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-12-15T13:34:15.667256" level="INFO">Clicking element '//input[@name="password"]'.</msg>
+<msg time="2024-12-16T11:29:05.446851" level="INFO">Clicking element '//input[@name="password"]'.</msg>
 <arg>${locator}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-15T13:34:15.666123" elapsed="0.080682"/>
+<status status="PASS" start="2024-12-16T11:29:05.446209" elapsed="0.079393"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-12-15T13:34:16.748412" level="INFO">Slept 1 second.</msg>
+<msg time="2024-12-16T11:29:06.527254" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-12-15T13:34:15.747093" elapsed="1.001840"/>
+<status status="PASS" start="2024-12-16T11:29:05.526071" elapsed="1.001402"/>
 </kw>
 <arg>${locator}</arg>
-<status status="PASS" start="2024-12-15T13:34:15.664823" elapsed="1.084533"/>
+<status status="PASS" start="2024-12-16T11:29:05.445202" elapsed="1.082493"/>
 </kw>
 <arg>3x</arg>
 <arg>0.8s</arg>
 <arg>Click Element with Delay</arg>
 <arg>${locator}</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2024-12-15T13:34:15.663970" elapsed="1.085916"/>
+<status status="PASS" start="2024-12-16T11:29:05.444670" elapsed="1.083170"/>
 </kw>
 <arg>//input[@name="password"]</arg>
-<status status="PASS" start="2024-12-15T13:34:15.662957" elapsed="1.087333"/>
+<status status="PASS" start="2024-12-16T11:29:05.443837" elapsed="1.084127"/>
 </kw>
 <kw name="Wait And Input Text with Delay" owner="common_art">
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
 <kw name="Input Text with Delay" owner="common_art">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-12-15T13:34:16.754428" level="INFO">Typing text 'D0h0me*1' into text field '//input[@name="password"]'.</msg>
+<msg time="2024-12-16T11:29:06.530409" level="INFO">Typing text 'D0h0me*1' into text field '//input[@name="password"]'.</msg>
 <arg>${locator}</arg>
 <arg>${text}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-15T13:34:16.753888" elapsed="0.077017"/>
+<status status="PASS" start="2024-12-16T11:29:06.530044" elapsed="0.167968"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-12-15T13:34:18.333216" level="INFO">Slept 1 second 500 milliseconds.</msg>
+<msg time="2024-12-16T11:29:08.199929" level="INFO">Slept 1 second 500 milliseconds.</msg>
 <arg>1.5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-12-15T13:34:16.831839" elapsed="1.502050"/>
+<status status="PASS" start="2024-12-16T11:29:06.698779" elapsed="1.501442"/>
 </kw>
 <arg>${locator}</arg>
 <arg>${text}</arg>
-<status status="PASS" start="2024-12-15T13:34:16.753009" elapsed="1.581433"/>
+<status status="PASS" start="2024-12-16T11:29:06.529307" elapsed="1.671088"/>
 </kw>
 <arg>3x</arg>
 <arg>0.8s</arg>
@@ -201,1860 +201,199 @@
 <arg>${locator}</arg>
 <arg>${text}</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2024-12-15T13:34:16.752136" elapsed="1.582750"/>
+<status status="PASS" start="2024-12-16T11:29:06.528780" elapsed="1.671766"/>
 </kw>
 <arg>//input[@name="password"]</arg>
 <arg>${pass}</arg>
-<status status="PASS" start="2024-12-15T13:34:16.750871" elapsed="1.584559"/>
+<status status="PASS" start="2024-12-16T11:29:06.528232" elapsed="1.672452"/>
 </kw>
 <kw name="Wait And Click Element" owner="common_art">
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
 <kw name="Click Element with Delay" owner="common_art">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-12-15T13:34:18.342171" level="INFO">Clicking element '//button[@type="submit"][ text()='เข้าสู่ระบบ']'.</msg>
+<msg time="2024-12-16T11:29:08.202476" level="INFO">Clicking element '//button[@type="submit"][ text()='เข้าสู่ระบบ']'.</msg>
 <arg>${locator}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-15T13:34:18.340968" elapsed="0.084543"/>
+<status status="PASS" start="2024-12-16T11:29:08.202138" elapsed="0.106657"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-12-15T13:34:19.426594" level="INFO">Slept 1 second.</msg>
+<msg time="2024-12-16T11:29:09.314063" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-12-15T13:34:18.425868" elapsed="1.001194"/>
+<status status="PASS" start="2024-12-16T11:29:08.312842" elapsed="1.001700"/>
 </kw>
 <arg>${locator}</arg>
-<status status="PASS" start="2024-12-15T13:34:18.339875" elapsed="1.087490"/>
+<status status="PASS" start="2024-12-16T11:29:08.201720" elapsed="1.113137"/>
 </kw>
 <arg>3x</arg>
 <arg>0.8s</arg>
 <arg>Click Element with Delay</arg>
 <arg>${locator}</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2024-12-15T13:34:18.338217" elapsed="1.089374"/>
+<status status="PASS" start="2024-12-16T11:29:08.201342" elapsed="1.113872"/>
 </kw>
 <arg>//button[@type="submit"][ text()='เข้าสู่ระบบ']</arg>
-<status status="PASS" start="2024-12-15T13:34:18.336666" elapsed="1.091170"/>
+<status status="PASS" start="2024-12-16T11:29:08.200949" elapsed="1.114497"/>
 </kw>
 <kw name="Wait And Click Element" owner="common_art">
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
 <kw name="Click Element with Delay" owner="common_art">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-12-15T13:34:19.431431" level="INFO">Clicking element '//*[@aria-label="ระบบจัดการข้อมูลสินค้า"]'.</msg>
-<msg time="2024-12-15T13:34:21.132939" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-22.png"&gt;&lt;img src="selenium-screenshot-22.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2024-12-15T13:34:21.133555" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a class="relative inline-flex items-center tap-highlight-transparent outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 no-underline hover:opacity-80 active:opacity-disabled transition-opacity text-xs line-clamp-1 text-primary" aria-label="ระบบจัดการข้อมูลสินค้า" role="link" href="https://web-article-master-uat.dohome.technology/?i=a4a6cbcca97322af0d1a0abce6dbe326d0f739161d9ae7b57b470c3d2ddd0297+54s414KXk3mNaq0XQDgYBgy+XVZcyvf/G4QUVdou6AqejjP/xYVP0Vdm6EN3bYXWnXr1DzBUVqscfCbbuILVCkaq2HincgmV4rCpN/T7tEqOySmKFOgOJpfiGM2LJqfahoI6PvgXVxDhSvYZluAWVoJUFAmqT2U7sWVZbTrCUjCR0tpanmqB+VzMaPr5Ki8+oAmek4Slm69ZbXHHBtTn/3+KcYKfjyk5ApKulS847SmNTO9lTDNsTqZd9jBInbqq+qE7ZETsOTykgv9Bz78fbMrdBUZwaR/oDz3TAKCtEkICeVQe5+0iDRHQ9gNum13TvqAuVhbADsFd7h3/WAksssFty7hHlWNmJeZcfMUDTOuQmOjap8ZyS19sIO0cTK80xc6IJZ/B2xT37SBhXFyyBcvThek7cSqp2GOP0yOyKQUaku5p+P5Llfk/+x9hCnK" target="_blank" tabindex="0"&gt;...&lt;/a&gt; is not clickable at point (315, 611). Other element would receive the click: &lt;div class="flex w-screen h-[100dvh] fixed inset-0 z-50 overflow-x-auto justify-center [--scale-enter:100%] [--scale-exit:100%] [--slide-enter:0px] [--slide-exit:80px] sm:[--scale-enter:100%] sm:[--scale-exit:103%] sm:[--slide-enter:0px] sm:[--slide-exit:0px] items-end sm:items-center" style="opacity: 1; transform: translateY(0px) scale(1.00992) translateZ(0px);"&gt;...&lt;/div&gt;
+<msg time="2024-12-16T11:29:09.317825" level="INFO">Clicking element '//*[@aria-label="ระบบจัดการข้อมูลสินค้า"]'.</msg>
+<msg time="2024-12-16T11:29:11.083745" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-12-16T11:29:11.084942" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a class="relative inline-flex items-center tap-highlight-transparent outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 no-underline hover:opacity-80 active:opacity-disabled transition-opacity text-xs line-clamp-1 text-primary" aria-label="ระบบจัดการข้อมูลสินค้า" role="link" href="https://web-article-master-uat.dohome.technology/?i=79c996646e90ec1426f0ba41bd0c8cc7cd8a2f22757501d9ae48b1dd9ecc02478NS79nMbgOjUaB0hb10yWw5VTqRj717iIBTD385UyyCcPTOTwD67lvkKs5iHfRULnWREtw515fZqkwAOKP9aomm0XznFctpTcxi37Uqh36h0bQGwgE5BKTtSGSGMJdeadZoPzOmOXzd9/XVrgPMyvpbzqubtQoXQuiEHO77wORkMOYbqpGFk2+hMk7Yc90PmnJyPXJ8pPSHjRH7ul+hZNHwdMHs/ddwF1v4uBor9JYfSbw74A/8uGWCb4NTRC5ler/+0sfeaKQ1YAqWZLS2leDP12gmQSPaYnDJutVfR2lPysIIqz4sm0EM84OIvTvrEmXTdKzDxJwkocF5aW7oikNdKSWUYs253Oh5h3WV8GGa4I5WTOlFXwS7+GX/k3u+FdaSODw3XMhO2IJOHMCngVSYoYMXEqHHnttvaIkFV7turBGmFvCCFTuBhRl+EegrO" target="_blank" tabindex="0"&gt;...&lt;/a&gt; is not clickable at point (315, 611). Other element would receive the click: &lt;div class="flex w-screen h-[100dvh] fixed inset-0 z-50 overflow-x-auto justify-center [--scale-enter:100%] [--scale-exit:100%] [--slide-enter:0px] [--slide-exit:80px] sm:[--scale-enter:100%] sm:[--scale-exit:103%] sm:[--slide-enter:0px] sm:[--slide-exit:0px] items-end sm:items-center" style="opacity: 1; transform: translateY(0px) scale(1.0038) translateZ(0px);"&gt;...&lt;/div&gt;
   (Session info: chrome=131.0.6778.108)
 Stacktrace:
-0   chromedriver                        0x0000000103d76e12 chromedriver + 6696466
-1   chromedriver                        0x0000000103d6ec2a chromedriver + 6663210
-2   chromedriver                        0x0000000103776e3e chromedriver + 405054
-3   chromedriver                        0x00000001037cefa5 chromedriver + 765861
-4   chromedriver                        0x00000001037ccdd8 chromedriver + 757208
-5   chromedriver                        0x00000001037c9f15 chromedriver + 745237
-6   chromedriver                        0x00000001037c9118 chromedriver + 741656
-7   chromedriver                        0x00000001037bb8c3 chromedriver + 686275
-8   chromedriver                        0x00000001037ec872 chromedriver + 886898
-9   chromedriver                        0x00000001037bb1c8 chromedriver + 684488
-10  chromedriver                        0x00000001037eca2e chromedriver + 887342
-11  chromedriver                        0x000000010380f3f4 chromedriver + 1029108
-12  chromedriver                        0x00000001037ec613 chromedriver + 886291
-13  chromedriver                        0x00000001037b9950 chromedriver + 678224
-14  chromedriver                        0x00000001037ba34e chromedriver + 680782
-15  chromedriver                        0x0000000103d44700 chromedriver + 6489856
-16  chromedriver                        0x0000000103d471a9 chromedriver + 6500777
-17  chromedriver                        0x0000000103d46ccb chromedriver + 6499531
-18  chromedriver                        0x0000000103d47635 chromedriver + 6501941
-19  chromedriver                        0x0000000103d2f4b4 chromedriver + 6403252
-20  chromedriver                        0x0000000103d4791f chromedriver + 6502687
-21  chromedriver                        0x0000000103d208e4 chromedriver + 6342884
-22  chromedriver                        0x0000000103d5f308 chromedriver + 6599432
-23  chromedriver                        0x0000000103d5f4c5 chromedriver + 6599877
-24  chromedriver                        0x0000000103d6e7f8 chromedriver + 6662136
+0   chromedriver                        0x000000010a46de12 chromedriver + 6696466
+1   chromedriver                        0x000000010a465c2a chromedriver + 6663210
+2   chromedriver                        0x0000000109e6de3e chromedriver + 405054
+3   chromedriver                        0x0000000109ec5fa5 chromedriver + 765861
+4   chromedriver                        0x0000000109ec3dd8 chromedriver + 757208
+5   chromedriver                        0x0000000109ec0f15 chromedriver + 745237
+6   chromedriver                        0x0000000109ec0118 chromedriver + 741656
+7   chromedriver                        0x0000000109eb28c3 chromedriver + 686275
+8   chromedriver                        0x0000000109ee3872 chromedriver + 886898
+9   chromedriver                        0x0000000109eb21c8 chromedriver + 684488
+10  chromedriver                        0x0000000109ee3a2e chromedriver + 887342
+11  chromedriver                        0x0000000109f063f4 chromedriver + 1029108
+12  chromedriver                        0x0000000109ee3613 chromedriver + 886291
+13  chromedriver                        0x0000000109eb0950 chromedriver + 678224
+14  chromedriver                        0x0000000109eb134e chromedriver + 680782
+15  chromedriver                        0x000000010a43b700 chromedriver + 6489856
+16  chromedriver                        0x000000010a43e1a9 chromedriver + 6500777
+17  chromedriver                        0x000000010a43dccb chromedriver + 6499531
+18  chromedriver                        0x000000010a43e635 chromedriver + 6501941
+19  chromedriver                        0x000000010a4264b4 chromedriver + 6403252
+20  chromedriver                        0x000000010a43e91f chromedriver + 6502687
+21  chromedriver                        0x000000010a4178e4 chromedriver + 6342884
+22  chromedriver                        0x000000010a456308 chromedriver + 6599432
+23  chromedriver                        0x000000010a4564c5 chromedriver + 6599877
+24  chromedriver                        0x000000010a4657f8 chromedriver + 6662136
 25  libsystem_pthread.dylib             0x00007ff81027d18b _pthread_start + 99
 26  libsystem_pthread.dylib             0x00007ff810278ae3 thread_start + 15
 </msg>
 <arg>${locator}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="FAIL" start="2024-12-15T13:34:19.431001" elapsed="1.706496">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a class="relative inline-flex items-center tap-highlight-transparent outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 no-underline hover:opacity-80 active:opacity-disabled transition-opacity text-xs line-clamp-1 text-primary" aria-label="ระบบจัดการข้อมูลสินค้า" role="link" href="https://web-article-master-uat.dohome.technology/?i=a4a6cbcca97322af0d1a0abce6dbe326d0f739161d9ae7b57b470c3d2ddd0297+54s414KXk3mNaq0XQDgYBgy+XVZcyvf/G4QUVdou6AqejjP/xYVP0Vdm6EN3bYXWnXr1DzBUVqscfCbbuILVCkaq2HincgmV4rCpN/T7tEqOySmKFOgOJpfiGM2LJqfahoI6PvgXVxDhSvYZluAWVoJUFAmqT2U7sWVZbTrCUjCR0tpanmqB+VzMaPr5Ki8+oAmek4Slm69ZbXHHBtTn/3+KcYKfjyk5ApKulS847SmNTO9lTDNsTqZd9jBInbqq+qE7ZETsOTykgv9Bz78fbMrdBUZwaR/oDz3TAKCtEkICeVQe5+0iDRHQ9gNum13TvqAuVhbADsFd7h3/WAksssFty7hHlWNmJeZcfMUDTOuQmOjap8ZyS19sIO0cTK80xc6IJZ/B2xT37SBhXFyyBcvThek7cSqp2GOP0yOyKQUaku5p+P5Llfk/+x9hCnK" target="_blank" tabindex="0"&gt;...&lt;/a&gt; is not clickable at point (315, 611). Other element would receive the click: &lt;div class="flex w-screen h-[100dvh] fixed inset-0 z-50 overflow-x-auto justify-center [--scale-enter:100%] [--scale-exit:100%] [--slide-enter:0px] [--slide-exit:80px] sm:[--scale-enter:100%] sm:[--scale-exit:103%] sm:[--slide-enter:0px] sm:[--slide-exit:0px] items-end sm:items-center" style="opacity: 1; transform: translateY(0px) scale(1.00992) translateZ(0px);"&gt;...&lt;/div&gt;
+<status status="FAIL" start="2024-12-16T11:29:09.317570" elapsed="1.781238">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a class="relative inline-flex items-center tap-highlight-transparent outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 no-underline hover:opacity-80 active:opacity-disabled transition-opacity text-xs line-clamp-1 text-primary" aria-label="ระบบจัดการข้อมูลสินค้า" role="link" href="https://web-article-master-uat.dohome.technology/?i=79c996646e90ec1426f0ba41bd0c8cc7cd8a2f22757501d9ae48b1dd9ecc02478NS79nMbgOjUaB0hb10yWw5VTqRj717iIBTD385UyyCcPTOTwD67lvkKs5iHfRULnWREtw515fZqkwAOKP9aomm0XznFctpTcxi37Uqh36h0bQGwgE5BKTtSGSGMJdeadZoPzOmOXzd9/XVrgPMyvpbzqubtQoXQuiEHO77wORkMOYbqpGFk2+hMk7Yc90PmnJyPXJ8pPSHjRH7ul+hZNHwdMHs/ddwF1v4uBor9JYfSbw74A/8uGWCb4NTRC5ler/+0sfeaKQ1YAqWZLS2leDP12gmQSPaYnDJutVfR2lPysIIqz4sm0EM84OIvTvrEmXTdKzDxJwkocF5aW7oikNdKSWUYs253Oh5h3WV8GGa4I5WTOlFXwS7+GX/k3u+FdaSODw3XMhO2IJOHMCngVSYoYMXEqHHnttvaIkFV7turBGmFvCCFTuBhRl+EegrO" target="_blank" tabindex="0"&gt;...&lt;/a&gt; is not clickable at point (315, 611). Other element would receive the click: &lt;div class="flex w-screen h-[100dvh] fixed inset-0 z-50 overflow-x-auto justify-center [--scale-enter:100%] [--scale-exit:100%] [--slide-enter:0px] [--slide-exit:80px] sm:[--scale-enter:100%] sm:[--scale-exit:103%] sm:[--slide-enter:0px] sm:[--slide-exit:0px] items-end sm:items-center" style="opacity: 1; transform: translateY(0px) scale(1.0038) translateZ(0px);"&gt;...&lt;/div&gt;
     [ Message content over the limit has been removed. ]
-16  chromedriver                        0x0000000103d471a9 chromedriver + 6500777
-17  chromedriver                        0x0000000103d46ccb chromedriver + 6499531
-18  chromedriver                        0x0000000103d47635 chromedriver + 6501941
-19  chromedriver                        0x0000000103d2f4b4 chromedriver + 6403252
-20  chromedriver                        0x0000000103d4791f chromedriver + 6502687
-21  chromedriver                        0x0000000103d208e4 chromedriver + 6342884
-22  chromedriver                        0x0000000103d5f308 chromedriver + 6599432
-23  chromedriver                        0x0000000103d5f4c5 chromedriver + 6599877
-24  chromedriver                        0x0000000103d6e7f8 chromedriver + 6662136
+16  chromedriver                        0x000000010a43e1a9 chromedriver + 6500777
+17  chromedriver                        0x000000010a43dccb chromedriver + 6499531
+18  chromedriver                        0x000000010a43e635 chromedriver + 6501941
+19  chromedriver                        0x000000010a4264b4 chromedriver + 6403252
+20  chromedriver                        0x000000010a43e91f chromedriver + 6502687
+21  chromedriver                        0x000000010a4178e4 chromedriver + 6342884
+22  chromedriver                        0x000000010a456308 chromedriver + 6599432
+23  chromedriver                        0x000000010a4564c5 chromedriver + 6599877
+24  chromedriver                        0x000000010a4657f8 chromedriver + 6662136
 25  libsystem_pthread.dylib             0x00007ff81027d18b _pthread_start + 99
 26  libsystem_pthread.dylib             0x00007ff810278ae3 thread_start + 15</status>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" start="2024-12-15T13:34:21.138034" elapsed="0.000327"/>
+<status status="NOT RUN" start="2024-12-16T11:29:11.099572" elapsed="0.000286"/>
 </kw>
 <arg>${locator}</arg>
-<status status="FAIL" start="2024-12-15T13:34:19.430270" elapsed="1.708431">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a class="relative inline-flex items-center tap-highlight-transparent outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 no-underline hover:opacity-80 active:opacity-disabled transition-opacity text-xs line-clamp-1 text-primary" aria-label="ระบบจัดการข้อมูลสินค้า" role="link" href="https://web-article-master-uat.dohome.technology/?i=a4a6cbcca97322af0d1a0abce6dbe326d0f739161d9ae7b57b470c3d2ddd0297+54s414KXk3mNaq0XQDgYBgy+XVZcyvf/G4QUVdou6AqejjP/xYVP0Vdm6EN3bYXWnXr1DzBUVqscfCbbuILVCkaq2HincgmV4rCpN/T7tEqOySmKFOgOJpfiGM2LJqfahoI6PvgXVxDhSvYZluAWVoJUFAmqT2U7sWVZbTrCUjCR0tpanmqB+VzMaPr5Ki8+oAmek4Slm69ZbXHHBtTn/3+KcYKfjyk5ApKulS847SmNTO9lTDNsTqZd9jBInbqq+qE7ZETsOTykgv9Bz78fbMrdBUZwaR/oDz3TAKCtEkICeVQe5+0iDRHQ9gNum13TvqAuVhbADsFd7h3/WAksssFty7hHlWNmJeZcfMUDTOuQmOjap8ZyS19sIO0cTK80xc6IJZ/B2xT37SBhXFyyBcvThek7cSqp2GOP0yOyKQUaku5p+P5Llfk/+x9hCnK" target="_blank" tabindex="0"&gt;...&lt;/a&gt; is not clickable at point (315, 611). Other element would receive the click: &lt;div class="flex w-screen h-[100dvh] fixed inset-0 z-50 overflow-x-auto justify-center [--scale-enter:100%] [--scale-exit:100%] [--slide-enter:0px] [--slide-exit:80px] sm:[--scale-enter:100%] sm:[--scale-exit:103%] sm:[--slide-enter:0px] sm:[--slide-exit:0px] items-end sm:items-center" style="opacity: 1; transform: translateY(0px) scale(1.00992) translateZ(0px);"&gt;...&lt;/div&gt;
+<status status="FAIL" start="2024-12-16T11:29:09.317231" elapsed="1.783072">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a class="relative inline-flex items-center tap-highlight-transparent outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 no-underline hover:opacity-80 active:opacity-disabled transition-opacity text-xs line-clamp-1 text-primary" aria-label="ระบบจัดการข้อมูลสินค้า" role="link" href="https://web-article-master-uat.dohome.technology/?i=79c996646e90ec1426f0ba41bd0c8cc7cd8a2f22757501d9ae48b1dd9ecc02478NS79nMbgOjUaB0hb10yWw5VTqRj717iIBTD385UyyCcPTOTwD67lvkKs5iHfRULnWREtw515fZqkwAOKP9aomm0XznFctpTcxi37Uqh36h0bQGwgE5BKTtSGSGMJdeadZoPzOmOXzd9/XVrgPMyvpbzqubtQoXQuiEHO77wORkMOYbqpGFk2+hMk7Yc90PmnJyPXJ8pPSHjRH7ul+hZNHwdMHs/ddwF1v4uBor9JYfSbw74A/8uGWCb4NTRC5ler/+0sfeaKQ1YAqWZLS2leDP12gmQSPaYnDJutVfR2lPysIIqz4sm0EM84OIvTvrEmXTdKzDxJwkocF5aW7oikNdKSWUYs253Oh5h3WV8GGa4I5WTOlFXwS7+GX/k3u+FdaSODw3XMhO2IJOHMCngVSYoYMXEqHHnttvaIkFV7turBGmFvCCFTuBhRl+EegrO" target="_blank" tabindex="0"&gt;...&lt;/a&gt; is not clickable at point (315, 611). Other element would receive the click: &lt;div class="flex w-screen h-[100dvh] fixed inset-0 z-50 overflow-x-auto justify-center [--scale-enter:100%] [--scale-exit:100%] [--slide-enter:0px] [--slide-exit:80px] sm:[--scale-enter:100%] sm:[--scale-exit:103%] sm:[--slide-enter:0px] sm:[--slide-exit:0px] items-end sm:items-center" style="opacity: 1; transform: translateY(0px) scale(1.0038) translateZ(0px);"&gt;...&lt;/div&gt;
     [ Message content over the limit has been removed. ]
-16  chromedriver                        0x0000000103d471a9 chromedriver + 6500777
-17  chromedriver                        0x0000000103d46ccb chromedriver + 6499531
-18  chromedriver                        0x0000000103d47635 chromedriver + 6501941
-19  chromedriver                        0x0000000103d2f4b4 chromedriver + 6403252
-20  chromedriver                        0x0000000103d4791f chromedriver + 6502687
-21  chromedriver                        0x0000000103d208e4 chromedriver + 6342884
-22  chromedriver                        0x0000000103d5f308 chromedriver + 6599432
-23  chromedriver                        0x0000000103d5f4c5 chromedriver + 6599877
-24  chromedriver                        0x0000000103d6e7f8 chromedriver + 6662136
+16  chromedriver                        0x000000010a43e1a9 chromedriver + 6500777
+17  chromedriver                        0x000000010a43dccb chromedriver + 6499531
+18  chromedriver                        0x000000010a43e635 chromedriver + 6501941
+19  chromedriver                        0x000000010a4264b4 chromedriver + 6403252
+20  chromedriver                        0x000000010a43e91f chromedriver + 6502687
+21  chromedriver                        0x000000010a4178e4 chromedriver + 6342884
+22  chromedriver                        0x000000010a456308 chromedriver + 6599432
+23  chromedriver                        0x000000010a4564c5 chromedriver + 6599877
+24  chromedriver                        0x000000010a4657f8 chromedriver + 6662136
 25  libsystem_pthread.dylib             0x00007ff81027d18b _pthread_start + 99
 26  libsystem_pthread.dylib             0x00007ff810278ae3 thread_start + 15</status>
 </kw>
 <kw name="Click Element with Delay" owner="common_art">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-12-15T13:34:21.943865" level="INFO">Clicking element '//*[@aria-label="ระบบจัดการข้อมูลสินค้า"]'.</msg>
+<msg time="2024-12-16T11:29:11.902710" level="INFO">Clicking element '//*[@aria-label="ระบบจัดการข้อมูลสินค้า"]'.</msg>
 <arg>${locator}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-15T13:34:21.942883" elapsed="0.138960"/>
+<status status="PASS" start="2024-12-16T11:29:11.902200" elapsed="0.223766"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-12-15T13:34:23.083331" level="INFO">Slept 1 second.</msg>
+<msg time="2024-12-16T11:29:13.128472" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-12-15T13:34:22.082488" elapsed="1.001857"/>
+<status status="PASS" start="2024-12-16T11:29:12.126682" elapsed="1.002185"/>
 </kw>
 <arg>${locator}</arg>
-<status status="PASS" start="2024-12-15T13:34:21.941153" elapsed="1.144045"/>
+<status status="PASS" start="2024-12-16T11:29:11.901610" elapsed="1.227578"/>
 </kw>
 <arg>3x</arg>
 <arg>0.8s</arg>
 <arg>Click Element with Delay</arg>
 <arg>${locator}</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2024-12-15T13:34:19.429472" elapsed="3.656043"/>
+<status status="PASS" start="2024-12-16T11:29:09.316674" elapsed="3.812777"/>
 </kw>
 <arg>//*[@aria-label="ระบบจัดการข้อมูลสินค้า"]</arg>
-<status status="PASS" start="2024-12-15T13:34:19.428333" elapsed="3.657567"/>
+<status status="PASS" start="2024-12-16T11:29:09.315860" elapsed="3.813815"/>
 </kw>
 <kw name="Switch Window" owner="SeleniumLibrary">
 <arg>New</arg>
 <doc>Switches to browser window matching ``locator``.</doc>
-<status status="PASS" start="2024-12-15T13:34:23.086241" elapsed="0.013969"/>
+<status status="PASS" start="2024-12-16T11:29:13.130021" elapsed="0.012594"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-12-15T13:34:23.100769" elapsed="0.005031"/>
+<status status="PASS" start="2024-12-16T11:29:13.142951" elapsed="0.252022"/>
 </kw>
 <kw name="Wait And Wait Until Element Is Visible" owner="common_art">
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${locator}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-12-15T13:34:23.107082" elapsed="0.022638"/>
-</kw>
-<arg>3x</arg>
-<arg>1.5s</arg>
-<arg>Wait Until Element Is Visible</arg>
-<arg>${locator}</arg>
-<doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2024-12-15T13:34:23.106745" elapsed="0.023173"/>
-</kw>
-<arg>//h3[text()="Article Master"]</arg>
-<status status="PASS" start="2024-12-15T13:34:23.106185" elapsed="0.023862"/>
-</kw>
-<kw name="Wait And Click Element" owner="common_art">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click Element with Delay" owner="common_art">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-12-15T13:34:23.131496" level="INFO">Clicking element '//p[text()='จัดการสินค้า']'.</msg>
-<arg>${locator}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-15T13:34:23.131254" elapsed="0.072948"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-12-15T13:34:24.205233" level="INFO">Slept 1 second.</msg>
-<arg>1s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-12-15T13:34:23.204728" elapsed="1.001281"/>
-</kw>
-<arg>${locator}</arg>
-<status status="PASS" start="2024-12-15T13:34:23.130958" elapsed="1.075625"/>
-</kw>
-<arg>3x</arg>
-<arg>0.8s</arg>
-<arg>Click Element with Delay</arg>
-<arg>${locator}</arg>
-<doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2024-12-15T13:34:23.130654" elapsed="1.076346"/>
-</kw>
-<arg>//p[text()='จัดการสินค้า']</arg>
-<status status="PASS" start="2024-12-15T13:34:23.130284" elapsed="1.077193"/>
-</kw>
-<kw name="Wait And Click Element" owner="common_art">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click Element with Delay" owner="common_art">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-12-15T13:34:24.214681" level="INFO">Clicking element '//p[text()='ขอเปลี่ยนแปลงข้อมูลสินค้า']/parent::span//parent::a[@href="/app/edit-mass-information"]'.</msg>
-<arg>${locator}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-15T13:34:24.213567" elapsed="0.089711"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-12-15T13:34:25.305638" level="INFO">Slept 1 second.</msg>
-<arg>1s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-12-15T13:34:24.303774" elapsed="1.002267"/>
-</kw>
-<arg>${locator}</arg>
-<status status="PASS" start="2024-12-15T13:34:24.211981" elapsed="1.094320"/>
-</kw>
-<arg>3x</arg>
-<arg>0.8s</arg>
-<arg>Click Element with Delay</arg>
-<arg>${locator}</arg>
-<doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2024-12-15T13:34:24.210501" elapsed="1.096010"/>
-</kw>
-<arg>//p[text()='ขอเปลี่ยนแปลงข้อมูลสินค้า']/parent::span//parent::a[@href="/app/edit-mass-information"]</arg>
-<status status="PASS" start="2024-12-15T13:34:24.208297" elapsed="1.098482"/>
-</kw>
-<kw name="Wait And Wait Until Element Is Visible" owner="common_art">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${locator}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.309269" elapsed="0.026802"/>
-</kw>
-<arg>3x</arg>
-<arg>1.5s</arg>
-<arg>Wait Until Element Is Visible</arg>
-<arg>${locator}</arg>
-<doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.308570" elapsed="0.027844"/>
-</kw>
-<arg>//input[@name="purchaser_group_no"]/following-sibling::div/div/input</arg>
-<status status="PASS" start="2024-12-15T13:34:25.307762" elapsed="0.028934"/>
-</kw>
-<status status="PASS" start="2024-12-15T13:34:08.846114" elapsed="16.491049"/>
-</kw>
-<test id="s1-t1" name="Article Edit mass round 1 (default)" line="12">
-<kw name="Process CSV Rows" owner="Read_data_csv">
-<kw name="Read Csv" owner="csv_ready_v2">
-<msg time="2024-12-15T13:34:25.341697" level="INFO">${result} = [{'no': '1', 'level_approve': 'A1', 'round': 'NR1', 'field': 'กรรมสิทธิ์ของตัวโชว์', 'value': 'D: ตัวโชว์ Dohome', 'uuid': '83c976bf-32e8-42ba-b2ac-17c4e04acae3', 'type_field': 'drop down'}, {'no': '2...</msg>
-<var>${result}</var>
-<arg>${path}</arg>
-<status status="PASS" start="2024-12-15T13:34:25.340350" elapsed="0.004279"/>
-</kw>
-<kw name="Set Variable" owner="BuiltIn">
-<msg time="2024-12-15T13:34:25.346784" level="INFO">${x_rows} = [{'no': '1', 'level_approve': 'A1', 'round': 'NR1', 'field': 'กรรมสิทธิ์ของตัวโชว์', 'value': 'D: ตัวโชว์ Dohome', 'uuid': '83c976bf-32e8-42ba-b2ac-17c4e04acae3', 'type_field': 'drop down'}, {'no': '2...</msg>
-<var>${x_rows}</var>
-<arg>${result}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.345875" elapsed="0.002547"/>
-</kw>
-<kw name="Set Variable" owner="BuiltIn">
-<msg time="2024-12-15T13:34:25.350544" level="INFO">${index} = 1</msg>
-<var>${index}</var>
-<arg>1</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.349039" elapsed="0.001964"/>
-</kw>
-<for flavor="IN">
-<iter>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-15T13:34:25.452745" level="INFO">${level_approve} = A1</msg>
-<var>${level_approve}</var>
-<arg>${row}</arg>
-<arg>level_approve</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.451945" elapsed="0.001431"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-15T13:34:25.454214" level="INFO">${round} = NR1</msg>
-<var>${round}</var>
-<arg>${row}</arg>
-<arg>round</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.453743" elapsed="0.000964"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-15T13:34:25.455940" level="INFO">${field} = กรรมสิทธิ์ของตัวโชว์</msg>
-<var>${field}</var>
-<arg>${row}</arg>
-<arg>field</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.455122" elapsed="0.001353"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-15T13:34:25.458808" level="INFO">${value} = D: ตัวโชว์ Dohome</msg>
-<var>${value}</var>
-<arg>${row}</arg>
-<arg>value</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.458052" elapsed="0.001404"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-15T13:34:25.475555" level="INFO">${uuid} = 83c976bf-32e8-42ba-b2ac-17c4e04acae3</msg>
-<var>${uuid}</var>
-<arg>${row}</arg>
-<arg>uuid</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.460504" elapsed="0.015698"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-15T13:34:25.483535" level="INFO">${level_approve_1} = A1</msg>
-<arg>${level_approve_${index}}</arg>
-<arg>${level_approve}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.476628" elapsed="0.007864"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-15T13:34:25.485901" level="INFO">${round_1} = NR1</msg>
-<arg>${round_${index}}</arg>
-<arg>${round}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.484785" elapsed="0.001314"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-15T13:34:25.487452" level="INFO">${field_1} = กรรมสิทธิ์ของตัวโชว์</msg>
-<arg>${field_${index}}</arg>
-<arg>${field}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.486350" elapsed="0.001268"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-15T13:34:25.489581" level="INFO">${value_1} = D: ตัวโชว์ Dohome</msg>
-<arg>${value_${index}}</arg>
-<arg>${value}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.487941" elapsed="0.002065"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-15T13:34:25.491627" level="INFO">${uuid_1} = 83c976bf-32e8-42ba-b2ac-17c4e04acae3</msg>
-<arg>${uuid_${index}}</arg>
-<arg>${uuid}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.490333" elapsed="0.001645"/>
-</kw>
-<kw name="Evaluate" owner="BuiltIn">
-<msg time="2024-12-15T13:34:25.492733" level="INFO">${index} = 2</msg>
-<var>${index}</var>
-<arg>(${index}) + 1</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.492365" elapsed="0.000482"/>
-</kw>
-<var name="${row}">{'no': '1', 'level_approve': 'A1', 'round': 'NR1', 'field': 'กรรมสิทธิ์ของตัวโชว์', 'value': 'D: ตัวโชว์ Dohome', 'uuid': '83c976bf-32e8-42ba-b2ac-17c4e04acae3', 'type_field': 'drop down'}</var>
-<status status="PASS" start="2024-12-15T13:34:25.451161" elapsed="0.041789"/>
-</iter>
-<iter>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-15T13:34:25.493704" level="INFO">${level_approve} = A1</msg>
-<var>${level_approve}</var>
-<arg>${row}</arg>
-<arg>level_approve</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.493403" elapsed="0.000438"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-15T13:34:25.494443" level="INFO">${round} = NR1</msg>
-<var>${round}</var>
-<arg>${row}</arg>
-<arg>round</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.494127" elapsed="0.000622"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-15T13:34:25.495778" level="INFO">${field} = กลุ่มจัดซื้อต่างประเทศ</msg>
-<var>${field}</var>
-<arg>${row}</arg>
-<arg>field</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.495159" elapsed="0.000898"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-15T13:34:25.496642" level="INFO">${value} = 201: คุณหทัยพันธน์</msg>
-<var>${value}</var>
-<arg>${row}</arg>
-<arg>value</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.496311" elapsed="0.000446"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-15T13:34:25.498276" level="INFO">${uuid} = 9d5a006a-a64b-45b2-b77d-edb75712b954</msg>
-<var>${uuid}</var>
-<arg>${row}</arg>
-<arg>uuid</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.497278" elapsed="0.001368"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-15T13:34:25.500295" level="INFO">${level_approve_2} = A1</msg>
-<arg>${level_approve_${index}}</arg>
-<arg>${level_approve}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.499088" elapsed="0.001384"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-15T13:34:25.501881" level="INFO">${round_2} = NR1</msg>
-<arg>${round_${index}}</arg>
-<arg>${round}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.500832" elapsed="0.001190"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-15T13:34:25.503140" level="INFO">${field_2} = กลุ่มจัดซื้อต่างประเทศ</msg>
-<arg>${field_${index}}</arg>
-<arg>${field}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.502226" elapsed="0.001051"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-15T13:34:25.505303" level="INFO">${value_2} = 201: คุณหทัยพันธน์</msg>
-<arg>${value_${index}}</arg>
-<arg>${value}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.503785" elapsed="0.001821"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-15T13:34:25.506999" level="INFO">${uuid_2} = 9d5a006a-a64b-45b2-b77d-edb75712b954</msg>
-<arg>${uuid_${index}}</arg>
-<arg>${uuid}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.505869" elapsed="0.001618"/>
-</kw>
-<kw name="Evaluate" owner="BuiltIn">
-<msg time="2024-12-15T13:34:25.508327" level="INFO">${index} = 3</msg>
-<var>${index}</var>
-<arg>(${index}) + 1</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.507772" elapsed="0.000693"/>
-</kw>
-<var name="${row}">{'no': '2', 'level_approve': 'A1', 'round': 'NR1', 'field': 'กลุ่มจัดซื้อต่างประเทศ', 'value': '201: คุณหทัยพันธน์', 'uuid': '9d5a006a-a64b-45b2-b77d-edb75712b954', 'type_field': 'drop down'}</var>
-<status status="PASS" start="2024-12-15T13:34:25.493198" elapsed="0.015381"/>
-</iter>
-<iter>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-15T13:34:25.509381" level="INFO">${level_approve} = A1</msg>
-<var>${level_approve}</var>
-<arg>${row}</arg>
-<arg>level_approve</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.509030" elapsed="0.000460"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-15T13:34:25.510129" level="INFO">${round} = NR1</msg>
-<var>${round}</var>
-<arg>${row}</arg>
-<arg>round</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.509669" elapsed="0.000592"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-15T13:34:25.511426" level="INFO">${field} = สถานะสินค้า Active / Inactive (Item Status)</msg>
-<var>${field}</var>
-<arg>${row}</arg>
-<arg>field</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.510623" elapsed="0.000997"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-15T13:34:25.512164" level="INFO">${value} = A: Active</msg>
-<var>${value}</var>
-<arg>${row}</arg>
-<arg>value</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.511859" elapsed="0.000411"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-15T13:34:25.512746" level="INFO">${uuid} = d48870c0-87d0-4278-b860-a4054a6cda69</msg>
-<var>${uuid}</var>
-<arg>${row}</arg>
-<arg>uuid</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.512456" elapsed="0.000406"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-15T13:34:25.514082" level="INFO">${level_approve_3} = A1</msg>
-<arg>${level_approve_${index}}</arg>
-<arg>${level_approve}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.513045" elapsed="0.001165"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-15T13:34:25.516479" level="INFO">${round_3} = NR1</msg>
-<arg>${round_${index}}</arg>
-<arg>${round}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.514393" elapsed="0.002404"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-15T13:34:25.518118" level="INFO">${field_3} = สถานะสินค้า Active / Inactive (Item Status)</msg>
-<arg>${field_${index}}</arg>
-<arg>${field}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.517060" elapsed="0.001202"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-15T13:34:25.519402" level="INFO">${value_3} = A: Active</msg>
-<arg>${value_${index}}</arg>
-<arg>${value}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.518455" elapsed="0.001073"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-15T13:34:25.520702" level="INFO">${uuid_3} = d48870c0-87d0-4278-b860-a4054a6cda69</msg>
-<arg>${uuid_${index}}</arg>
-<arg>${uuid}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.519712" elapsed="0.001111"/>
-</kw>
-<kw name="Evaluate" owner="BuiltIn">
-<msg time="2024-12-15T13:34:25.522444" level="INFO">${index} = 4</msg>
-<var>${index}</var>
-<arg>(${index}) + 1</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.520995" elapsed="0.001819"/>
-</kw>
-<var name="${row}">{'no': '3', 'level_approve': 'A1', 'round': 'NR1', 'field': 'สถานะสินค้า Active / Inactive (Item Status)', 'value': 'A: Active', 'uuid': 'd48870c0-87d0-4278-b860-a4054a6cda69', 'type_field': 'drop dow...</var>
-<status status="PASS" start="2024-12-15T13:34:25.508813" elapsed="0.014290"/>
-</iter>
-<iter>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-15T13:34:25.525527" level="INFO">${level_approve} = A1</msg>
-<var>${level_approve}</var>
-<arg>${row}</arg>
-<arg>level_approve</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.524600" elapsed="0.001343"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-15T13:34:25.528109" level="INFO">${round} = NR1</msg>
-<var>${round}</var>
-<arg>${row}</arg>
-<arg>round</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.526647" elapsed="0.001714"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-15T13:34:25.529809" level="INFO">${field} = สินค้าที่ต้องระบุ batch (Batch management)</msg>
-<var>${field}</var>
-<arg>${row}</arg>
-<arg>field</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.529031" elapsed="0.001043"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-15T13:34:25.531270" level="INFO">${value} = </msg>
-<var>${value}</var>
-<arg>${row}</arg>
-<arg>value</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.530511" elapsed="0.001172"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-15T13:34:25.532922" level="INFO">${uuid} = ac424a83-5387-401d-b8e9-78b294901d4b</msg>
-<var>${uuid}</var>
-<arg>${row}</arg>
-<arg>uuid</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.532194" elapsed="0.000892"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-15T13:34:25.535706" level="INFO">${level_approve_4} = A1</msg>
-<arg>${level_approve_${index}}</arg>
-<arg>${level_approve}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.533356" elapsed="0.002567"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-15T13:34:25.537408" level="INFO">${round_4} = NR1</msg>
-<arg>${round_${index}}</arg>
-<arg>${round}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.536175" elapsed="0.001543"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-15T13:34:25.540424" level="INFO">${field_4} = สินค้าที่ต้องระบุ batch (Batch management)</msg>
-<arg>${field_${index}}</arg>
-<arg>${field}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.538246" elapsed="0.003101"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-15T13:34:25.544353" level="INFO">${value_4} = </msg>
-<arg>${value_${index}}</arg>
-<arg>${value}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.541922" elapsed="0.002722"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-15T13:34:25.546738" level="INFO">${uuid_4} = ac424a83-5387-401d-b8e9-78b294901d4b</msg>
-<arg>${uuid_${index}}</arg>
-<arg>${uuid}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.545027" elapsed="0.001991"/>
-</kw>
-<kw name="Evaluate" owner="BuiltIn">
-<msg time="2024-12-15T13:34:25.548271" level="INFO">${index} = 5</msg>
-<var>${index}</var>
-<arg>(${index}) + 1</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.547549" elapsed="0.000908"/>
-</kw>
-<var name="${row}">{'no': '4', 'level_approve': 'A1', 'round': 'NR1', 'field': 'สินค้าที่ต้องระบุ batch (Batch management)', 'value': '', 'uuid': 'ac424a83-5387-401d-b8e9-78b294901d4b', 'type_field': 'check box'}</var>
-<status status="PASS" start="2024-12-15T13:34:25.524111" elapsed="0.024532"/>
-</iter>
-<iter>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-15T13:34:25.549828" level="INFO">${level_approve} = A1</msg>
-<var>${level_approve}</var>
-<arg>${row}</arg>
-<arg>level_approve</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.549395" elapsed="0.000582"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-15T13:34:25.550781" level="INFO">${round} = NR1</msg>
-<var>${round}</var>
-<arg>${row}</arg>
-<arg>round</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.550390" elapsed="0.000525"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-15T13:34:25.551453" level="INFO">${field} = กลุ่มสินค้า Core หลัก /เสริม (Product Role)</msg>
-<var>${field}</var>
-<arg>${row}</arg>
-<arg>field</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.551140" elapsed="0.000450"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-15T13:34:25.552338" level="INFO">${value} = 01: Core</msg>
-<var>${value}</var>
-<arg>${row}</arg>
-<arg>value</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.551797" elapsed="0.000797"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-15T13:34:25.553459" level="INFO">${uuid} = dcad006c-af57-4226-8e7c-1db348d6930d</msg>
-<var>${uuid}</var>
-<arg>${row}</arg>
-<arg>uuid</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.552982" elapsed="0.000635"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-15T13:34:25.555220" level="INFO">${level_approve_5} = A1</msg>
-<arg>${level_approve_${index}}</arg>
-<arg>${level_approve}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.553849" elapsed="0.001654"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-15T13:34:25.557221" level="INFO">${round_5} = NR1</msg>
-<arg>${round_${index}}</arg>
-<arg>${round}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.555764" elapsed="0.002033"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-15T13:34:25.559681" level="INFO">${field_5} = กลุ่มสินค้า Core หลัก /เสริม (Product Role)</msg>
-<arg>${field_${index}}</arg>
-<arg>${field}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.558147" elapsed="0.001728"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-15T13:34:25.561860" level="INFO">${value_5} = 01: Core</msg>
-<arg>${value_${index}}</arg>
-<arg>${value}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.560120" elapsed="0.001980"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-15T13:34:25.563503" level="INFO">${uuid_5} = dcad006c-af57-4226-8e7c-1db348d6930d</msg>
-<arg>${uuid_${index}}</arg>
-<arg>${uuid}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.562350" elapsed="0.001288"/>
-</kw>
-<kw name="Evaluate" owner="BuiltIn">
-<msg time="2024-12-15T13:34:25.564903" level="INFO">${index} = 6</msg>
-<var>${index}</var>
-<arg>(${index}) + 1</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.564259" elapsed="0.000996"/>
-</kw>
-<var name="${row}">{'no': '5', 'level_approve': 'A1', 'round': 'NR1', 'field': 'กลุ่มสินค้า Core หลัก /เสริม (Product Role)', 'value': '01: Core', 'uuid': 'dcad006c-af57-4226-8e7c-1db348d6930d', 'type_field': 'drop down...</var>
-<status status="PASS" start="2024-12-15T13:34:25.549093" elapsed="0.016525"/>
-</iter>
-<iter>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-15T13:34:25.567205" level="INFO">${level_approve} = A1</msg>
-<var>${level_approve}</var>
-<arg>${row}</arg>
-<arg>level_approve</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.566650" elapsed="0.000857"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-15T13:34:25.568080" level="INFO">${round} = NR2</msg>
-<var>${round}</var>
-<arg>${row}</arg>
-<arg>round</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.567748" elapsed="0.000441"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-15T13:34:25.568659" level="INFO">${field} = การจัดกลุ่มสินค้า (Item indicator)</msg>
-<var>${field}</var>
-<arg>${row}</arg>
-<arg>field</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.568372" elapsed="0.000398"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-15T13:34:25.569192" level="INFO">${value} = 4: สินค้าปกติ</msg>
-<var>${value}</var>
-<arg>${row}</arg>
-<arg>value</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.568943" elapsed="0.000353"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-15T13:34:25.569719" level="INFO">${uuid} = 7742800e-7944-4251-9e53-b54e7e071a8b</msg>
-<var>${uuid}</var>
-<arg>${row}</arg>
-<arg>uuid</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.569465" elapsed="0.000450"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-15T13:34:25.571344" level="INFO">${level_approve_6} = A1</msg>
-<arg>${level_approve_${index}}</arg>
-<arg>${level_approve}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.570105" elapsed="0.001364"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-15T13:34:25.573851" level="INFO">${round_6} = NR2</msg>
-<arg>${round_${index}}</arg>
-<arg>${round}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.571707" elapsed="0.002539"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-15T13:34:25.576170" level="INFO">${field_6} = การจัดกลุ่มสินค้า (Item indicator)</msg>
-<arg>${field_${index}}</arg>
-<arg>${field}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.574677" elapsed="0.001660"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-15T13:34:25.579596" level="INFO">${value_6} = 4: สินค้าปกติ</msg>
-<arg>${value_${index}}</arg>
-<arg>${value}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.576558" elapsed="0.003479"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-15T13:34:25.582334" level="INFO">${uuid_6} = 7742800e-7944-4251-9e53-b54e7e071a8b</msg>
-<arg>${uuid_${index}}</arg>
-<arg>${uuid}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.580587" elapsed="0.001957"/>
-</kw>
-<kw name="Evaluate" owner="BuiltIn">
-<msg time="2024-12-15T13:34:25.583115" level="INFO">${index} = 7</msg>
-<var>${index}</var>
-<arg>(${index}) + 1</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.582785" elapsed="0.000443"/>
-</kw>
-<var name="${row}">{'no': '6', 'level_approve': 'A1', 'round': 'NR2', 'field': 'การจัดกลุ่มสินค้า (Item indicator)', 'value': '4: สินค้าปกติ', 'uuid': '7742800e-7944-4251-9e53-b54e7e071a8b', 'type_field': 'drop down'}</var>
-<status status="PASS" start="2024-12-15T13:34:25.566363" elapsed="0.016966"/>
-</iter>
-<iter>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-15T13:34:25.584372" level="INFO">${level_approve} = A1</msg>
-<var>${level_approve}</var>
-<arg>${row}</arg>
-<arg>level_approve</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.583784" elapsed="0.000837"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-15T13:34:25.585282" level="INFO">${round} = NR2</msg>
-<var>${round}</var>
-<arg>${row}</arg>
-<arg>round</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.584889" elapsed="0.000559"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-15T13:34:25.586170" level="INFO">${field} = กลุ่มย่อยของ Product Role</msg>
-<var>${field}</var>
-<arg>${row}</arg>
-<arg>field</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.585806" elapsed="0.000494"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-15T13:34:25.586787" level="INFO">${value} = 01: สินค้าฤดูกาล</msg>
-<var>${value}</var>
-<arg>${row}</arg>
-<arg>value</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.586493" elapsed="0.000420"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-15T13:34:25.587340" level="INFO">${uuid} = ca98953b-03c6-445b-83bd-da790829ccaf</msg>
-<var>${uuid}</var>
-<arg>${row}</arg>
-<arg>uuid</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.587088" elapsed="0.000354"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-15T13:34:25.589194" level="INFO">${level_approve_7} = A1</msg>
-<arg>${level_approve_${index}}</arg>
-<arg>${level_approve}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.587635" elapsed="0.001728"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-15T13:34:25.591848" level="INFO">${round_7} = NR2</msg>
-<arg>${round_${index}}</arg>
-<arg>${round}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.589631" elapsed="0.002501"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-15T13:34:25.594262" level="INFO">${field_7} = กลุ่มย่อยของ Product Role</msg>
-<arg>${field_${index}}</arg>
-<arg>${field}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.592446" elapsed="0.002181"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-15T13:34:25.596301" level="INFO">${value_7} = 01: สินค้าฤดูกาล</msg>
-<arg>${value_${index}}</arg>
-<arg>${value}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.594967" elapsed="0.001813"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-15T13:34:25.599411" level="INFO">${uuid_7} = ca98953b-03c6-445b-83bd-da790829ccaf</msg>
-<arg>${uuid_${index}}</arg>
-<arg>${uuid}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.597119" elapsed="0.002512"/>
-</kw>
-<kw name="Evaluate" owner="BuiltIn">
-<msg time="2024-12-15T13:34:25.600202" level="INFO">${index} = 8</msg>
-<var>${index}</var>
-<arg>(${index}) + 1</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.599876" elapsed="0.000438"/>
-</kw>
-<var name="${row}">{'no': '7', 'level_approve': 'A1', 'round': 'NR2', 'field': 'กลุ่มย่อยของ Product Role', 'value': '01: สินค้าฤดูกาล', 'uuid': 'ca98953b-03c6-445b-83bd-da790829ccaf', 'type_field': 'drop down'}</var>
-<status status="PASS" start="2024-12-15T13:34:25.583565" elapsed="0.016851"/>
-</iter>
-<iter>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-15T13:34:25.601263" level="INFO">${level_approve} = A1</msg>
-<var>${level_approve}</var>
-<arg>${row}</arg>
-<arg>level_approve</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.600873" elapsed="0.000494"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-15T13:34:25.601799" level="INFO">${round} = NR2</msg>
-<var>${round}</var>
-<arg>${row}</arg>
-<arg>round</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.601541" elapsed="0.000350"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-15T13:34:25.602306" level="INFO">${field} = Product trends</msg>
-<var>${field}</var>
-<arg>${row}</arg>
-<arg>field</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.602060" elapsed="0.000439"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-15T13:34:25.602966" level="INFO">${value} = 01: นวัตกรรม</msg>
-<var>${value}</var>
-<arg>${row}</arg>
-<arg>value</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.602692" elapsed="0.000377"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-15T13:34:25.603496" level="INFO">${uuid} = e304c756-65b1-4381-9600-c566e800ac7d</msg>
-<var>${uuid}</var>
-<arg>${row}</arg>
-<arg>uuid</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.603241" elapsed="0.000352"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-15T13:34:25.606062" level="INFO">${level_approve_8} = A1</msg>
-<arg>${level_approve_${index}}</arg>
-<arg>${level_approve}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.603920" elapsed="0.002598"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-15T13:34:25.608275" level="INFO">${round_8} = NR2</msg>
-<arg>${round_${index}}</arg>
-<arg>${round}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.606854" elapsed="0.001709"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-15T13:34:25.610010" level="INFO">${field_8} = Product trends</msg>
-<arg>${field_${index}}</arg>
-<arg>${field}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.608757" elapsed="0.001639"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-15T13:34:25.612691" level="INFO">${value_8} = 01: นวัตกรรม</msg>
-<arg>${value_${index}}</arg>
-<arg>${value}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.610643" elapsed="0.002264"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-15T13:34:25.614544" level="INFO">${uuid_8} = e304c756-65b1-4381-9600-c566e800ac7d</msg>
-<arg>${uuid_${index}}</arg>
-<arg>${uuid}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.613155" elapsed="0.001617"/>
-</kw>
-<kw name="Evaluate" owner="BuiltIn">
-<msg time="2024-12-15T13:34:25.615293" level="INFO">${index} = 9</msg>
-<var>${index}</var>
-<arg>(${index}) + 1</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.614988" elapsed="0.000419"/>
-</kw>
-<var name="${row}">{'no': '8', 'level_approve': 'A1', 'round': 'NR2', 'field': 'Product trends', 'value': '01: นวัตกรรม', 'uuid': 'e304c756-65b1-4381-9600-c566e800ac7d', 'type_field': 'drop down'}</var>
-<status status="PASS" start="2024-12-15T13:34:25.600637" elapsed="0.014869"/>
-</iter>
-<iter>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-15T13:34:25.616194" level="INFO">${level_approve} = A1</msg>
-<var>${level_approve}</var>
-<arg>${row}</arg>
-<arg>level_approve</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.615910" elapsed="0.000385"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-15T13:34:25.617437" level="INFO">${round} = NR2</msg>
-<var>${round}</var>
-<arg>${row}</arg>
-<arg>round</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.616467" elapsed="0.001258"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-15T13:34:25.619289" level="INFO">${field} = กลุ่มจัดซื้อในประเทศ (Purch. Group)</msg>
-<var>${field}</var>
-<arg>${row}</arg>
-<arg>field</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.618331" elapsed="0.001313"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-15T13:34:25.620718" level="INFO">${value} = 101: คุณนาตยา</msg>
-<var>${value}</var>
-<arg>${row}</arg>
-<arg>value</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.620297" elapsed="0.000564"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-15T13:34:25.621370" level="INFO">${uuid} = 1dd20e62-1ea3-4026-b6f5-148c690cc301</msg>
-<var>${uuid}</var>
-<arg>${row}</arg>
-<arg>uuid</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.621074" elapsed="0.000403"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-15T13:34:25.623284" level="INFO">${level_approve_9} = A1</msg>
-<arg>${level_approve_${index}}</arg>
-<arg>${level_approve}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.621679" elapsed="0.001808"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-15T13:34:25.626658" level="INFO">${round_9} = NR2</msg>
-<arg>${round_${index}}</arg>
-<arg>${round}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.624122" elapsed="0.002791"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-15T13:34:25.629478" level="INFO">${field_9} = กลุ่มจัดซื้อในประเทศ (Purch. Group)</msg>
-<arg>${field_${index}}</arg>
-<arg>${field}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.627310" elapsed="0.002390"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-15T13:34:25.631368" level="INFO">${value_9} = 101: คุณนาตยา</msg>
-<arg>${value_${index}}</arg>
-<arg>${value}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.629952" elapsed="0.001560"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-15T13:34:25.633341" level="INFO">${uuid_9} = 1dd20e62-1ea3-4026-b6f5-148c690cc301</msg>
-<arg>${uuid_${index}}</arg>
-<arg>${uuid}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.631709" elapsed="0.001956"/>
-</kw>
-<kw name="Evaluate" owner="BuiltIn">
-<msg time="2024-12-15T13:34:25.634926" level="INFO">${index} = 10</msg>
-<var>${index}</var>
-<arg>(${index}) + 1</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.634117" elapsed="0.001051"/>
-</kw>
-<var name="${row}">{'no': '9', 'level_approve': 'A1', 'round': 'NR2', 'field': 'กลุ่มจัดซื้อในประเทศ (Purch. Group)', 'value': '101: คุณนาตยา', 'uuid': '1dd20e62-1ea3-4026-b6f5-148c690cc301', 'type_field': 'drop down'}</var>
-<status status="PASS" start="2024-12-15T13:34:25.615727" elapsed="0.019567"/>
-</iter>
-<iter>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-15T13:34:25.636083" level="INFO">${level_approve} = A1</msg>
-<var>${level_approve}</var>
-<arg>${row}</arg>
-<arg>level_approve</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.635765" elapsed="0.000521"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-15T13:34:25.636757" level="INFO">${round} = NR2</msg>
-<var>${round}</var>
-<arg>${row}</arg>
-<arg>round</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.636482" elapsed="0.000369"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-15T13:34:25.637277" level="INFO">${field} = สินค้าที่ต้องระบุ serial (Serial Number Profile)</msg>
-<var>${field}</var>
-<arg>${row}</arg>
-<arg>field</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.637023" elapsed="0.000355"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-15T13:34:25.637796" level="INFO">${value} = ZSD1: Serial SD Sell only</msg>
-<var>${value}</var>
-<arg>${row}</arg>
-<arg>value</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.637548" elapsed="0.000345"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-15T13:34:25.638331" level="INFO">${uuid} = d659c2a7-8850-4b8e-8db5-bcb346e122ab</msg>
-<var>${uuid}</var>
-<arg>${row}</arg>
-<arg>uuid</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.638069" elapsed="0.000359"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-15T13:34:25.640703" level="INFO">${level_approve_10} = A1</msg>
-<arg>${level_approve_${index}}</arg>
-<arg>${level_approve}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.638609" elapsed="0.002502"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-15T13:34:25.643673" level="INFO">${round_10} = NR2</msg>
-<arg>${round_${index}}</arg>
-<arg>${round}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.641733" elapsed="0.002269"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-15T13:34:25.647250" level="INFO">${field_10} = สินค้าที่ต้องระบุ serial (Serial Number Profile)</msg>
-<arg>${field_${index}}</arg>
-<arg>${field}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.644332" elapsed="0.003323"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-15T13:34:25.651513" level="INFO">${value_10} = ZSD1: Serial SD Sell only</msg>
-<arg>${value_${index}}</arg>
-<arg>${value}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.648061" elapsed="0.003745"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-15T13:34:25.653990" level="INFO">${uuid_10} = d659c2a7-8850-4b8e-8db5-bcb346e122ab</msg>
-<arg>${uuid_${index}}</arg>
-<arg>${uuid}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.652141" elapsed="0.002039"/>
-</kw>
-<kw name="Evaluate" owner="BuiltIn">
-<msg time="2024-12-15T13:34:25.654727" level="INFO">${index} = 11</msg>
-<var>${index}</var>
-<arg>(${index}) + 1</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.654414" elapsed="0.000422"/>
-</kw>
-<var name="${row}">{'no': '10', 'level_approve': 'A1', 'round': 'NR2', 'field': 'สินค้าที่ต้องระบุ serial (Serial Number Profile)', 'value': 'ZSD1: Serial SD Sell only', 'uuid': 'd659c2a7-8850-4b8e-8db5-bcb346e122ab', '...</var>
-<status status="PASS" start="2024-12-15T13:34:25.635538" elapsed="0.019398"/>
-</iter>
-<iter>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-15T13:34:25.655936" level="INFO">${level_approve} = A1</msg>
-<var>${level_approve}</var>
-<arg>${row}</arg>
-<arg>level_approve</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.655344" elapsed="0.000743"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-15T13:34:25.657254" level="INFO">${round} = NR3</msg>
-<var>${round}</var>
-<arg>${row}</arg>
-<arg>round</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.656525" elapsed="0.001077"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-15T13:34:25.658873" level="INFO">${field} = พนักงาน Shipping</msg>
-<var>${field}</var>
-<arg>${row}</arg>
-<arg>field</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.658192" elapsed="0.000851"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-15T13:34:25.659590" level="INFO">${value} = 1036344: จิรารัตน์ อารีย์</msg>
-<var>${value}</var>
-<arg>${row}</arg>
-<arg>value</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.659281" elapsed="0.000416"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-15T13:34:25.660143" level="INFO">${uuid} = fba89cf3-9cc9-472b-865c-0d8edab7a696</msg>
-<var>${uuid}</var>
-<arg>${row}</arg>
-<arg>uuid</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.659877" elapsed="0.000367"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-15T13:34:25.663189" level="INFO">${level_approve_11} = A1</msg>
-<arg>${level_approve_${index}}</arg>
-<arg>${level_approve}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.660902" elapsed="0.002505"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-15T13:34:25.665309" level="INFO">${round_11} = NR3</msg>
-<arg>${round_${index}}</arg>
-<arg>${round}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.663660" elapsed="0.001923"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-15T13:34:25.668623" level="INFO">${field_11} = พนักงาน Shipping</msg>
-<arg>${field_${index}}</arg>
-<arg>${field}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.666058" elapsed="0.002889"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-15T13:34:25.671452" level="INFO">${value_11} = 1036344: จิรารัตน์ อารีย์</msg>
-<arg>${value_${index}}</arg>
-<arg>${value}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.669277" elapsed="0.002384"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-15T13:34:25.674643" level="INFO">${uuid_11} = fba89cf3-9cc9-472b-865c-0d8edab7a696</msg>
-<arg>${uuid_${index}}</arg>
-<arg>${uuid}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.671921" elapsed="0.003027"/>
-</kw>
-<kw name="Evaluate" owner="BuiltIn">
-<msg time="2024-12-15T13:34:25.675730" level="INFO">${index} = 12</msg>
-<var>${index}</var>
-<arg>(${index}) + 1</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.675384" elapsed="0.000470"/>
-</kw>
-<var name="${row}">{'no': '11', 'level_approve': 'A1', 'round': 'NR3', 'field': 'พนักงาน Shipping', 'value': '1036344: จิรารัตน์ อารีย์', 'uuid': 'fba89cf3-9cc9-472b-865c-0d8edab7a696', 'type_field': 'drop down'}</var>
-<status status="PASS" start="2024-12-15T13:34:25.655156" elapsed="0.020800"/>
-</iter>
-<iter>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-15T13:34:25.676676" level="INFO">${level_approve} = A1</msg>
-<var>${level_approve}</var>
-<arg>${row}</arg>
-<arg>level_approve</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.676388" elapsed="0.000390"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-15T13:34:25.677529" level="INFO">${round} = NR3</msg>
-<var>${round}</var>
-<arg>${row}</arg>
-<arg>round</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.676951" elapsed="0.000699"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-15T13:34:25.679146" level="INFO">${field} = สถานะซื้อสินค้า (Status purchase)</msg>
-<var>${field}</var>
-<arg>${row}</arg>
-<arg>field</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.678538" elapsed="0.000791"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-15T13:34:25.680690" level="INFO">${value} = 01: Blocked for procment/whse</msg>
-<var>${value}</var>
-<arg>${row}</arg>
-<arg>value</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.679733" elapsed="0.001250"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-15T13:34:25.682691" level="INFO">${uuid} = 7665fda3-d881-4d21-aaa5-27800120f303</msg>
-<var>${uuid}</var>
-<arg>${row}</arg>
-<arg>uuid</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.681634" elapsed="0.001378"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-15T13:34:25.685786" level="INFO">${level_approve_12} = A1</msg>
-<arg>${level_approve_${index}}</arg>
-<arg>${level_approve}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.683487" elapsed="0.002551"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-15T13:34:25.687975" level="INFO">${round_12} = NR3</msg>
-<arg>${round_${index}}</arg>
-<arg>${round}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.686329" elapsed="0.001793"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-15T13:34:25.690372" level="INFO">${field_12} = สถานะซื้อสินค้า (Status purchase)</msg>
-<arg>${field_${index}}</arg>
-<arg>${field}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.688318" elapsed="0.002643"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-15T13:34:25.694097" level="INFO">${value_12} = 01: Blocked for procment/whse</msg>
-<arg>${value_${index}}</arg>
-<arg>${value}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.691327" elapsed="0.003061"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-15T13:34:25.696677" level="INFO">${uuid_12} = 7665fda3-d881-4d21-aaa5-27800120f303</msg>
-<arg>${uuid_${index}}</arg>
-<arg>${uuid}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.694646" elapsed="0.002294"/>
-</kw>
-<kw name="Evaluate" owner="BuiltIn">
-<msg time="2024-12-15T13:34:25.698034" level="INFO">${index} = 13</msg>
-<var>${index}</var>
-<arg>(${index}) + 1</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.697321" elapsed="0.000976"/>
-</kw>
-<var name="${row}">{'no': '12', 'level_approve': 'A1', 'round': 'NR3', 'field': 'สถานะซื้อสินค้า (Status purchase)', 'value': '01: Blocked for procment/whse', 'uuid': '7665fda3-d881-4d21-aaa5-27800120f303', 'type_field'...</var>
-<status status="PASS" start="2024-12-15T13:34:25.676178" elapsed="0.022279"/>
-</iter>
-<iter>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-15T13:34:25.699821" level="INFO">${level_approve} = A1</msg>
-<var>${level_approve}</var>
-<arg>${row}</arg>
-<arg>level_approve</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.699298" elapsed="0.000675"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-15T13:34:25.700498" level="INFO">${round} = NR3</msg>
-<var>${round}</var>
-<arg>${row}</arg>
-<arg>round</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.700199" elapsed="0.000398"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-15T13:34:25.701052" level="INFO">${field} = สถานะขายสินค้า (Status Sale)</msg>
-<var>${field}</var>
-<arg>${row}</arg>
-<arg>field</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.700776" elapsed="0.000453"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-15T13:34:25.701675" level="INFO">${value} = 01: Discontd w/o Replace</msg>
-<var>${value}</var>
-<arg>${row}</arg>
-<arg>value</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.701417" elapsed="0.000385"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-15T13:34:25.702294" level="INFO">${uuid} = 3c7d536c-0344-4282-baeb-8b8dbb0975c9</msg>
-<var>${uuid}</var>
-<arg>${row}</arg>
-<arg>uuid</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.702003" elapsed="0.000485"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-15T13:34:25.704395" level="INFO">${level_approve_13} = A1</msg>
-<arg>${level_approve_${index}}</arg>
-<arg>${level_approve}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.702680" elapsed="0.001848"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-15T13:34:25.707243" level="INFO">${round_13} = NR3</msg>
-<arg>${round_${index}}</arg>
-<arg>${round}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.704717" elapsed="0.003033"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-15T13:34:25.711927" level="INFO">${field_13} = สถานะขายสินค้า (Status Sale)</msg>
-<arg>${field_${index}}</arg>
-<arg>${field}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.708339" elapsed="0.003849"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-15T13:34:25.716884" level="INFO">${value_13} = 01: Discontd w/o Replace</msg>
-<arg>${value_${index}}</arg>
-<arg>${value}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.712704" elapsed="0.004404"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-15T13:34:25.719250" level="INFO">${uuid_13} = 3c7d536c-0344-4282-baeb-8b8dbb0975c9</msg>
-<arg>${uuid_${index}}</arg>
-<arg>${uuid}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.717364" elapsed="0.002157"/>
-</kw>
-<kw name="Evaluate" owner="BuiltIn">
-<msg time="2024-12-15T13:34:25.720644" level="INFO">${index} = 14</msg>
-<var>${index}</var>
-<arg>(${index}) + 1</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.719939" elapsed="0.000912"/>
-</kw>
-<var name="${row}">{'no': '13', 'level_approve': 'A1', 'round': 'NR3', 'field': 'สถานะขายสินค้า (Status Sale)', 'value': '01: Discontd w/o Replace', 'uuid': '3c7d536c-0344-4282-baeb-8b8dbb0975c9', 'type_field': 'drop do...</var>
-<status status="PASS" start="2024-12-15T13:34:25.698922" elapsed="0.022115"/>
-</iter>
-<iter>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-15T13:34:25.722747" level="INFO">${level_approve} = A1</msg>
-<var>${level_approve}</var>
-<arg>${row}</arg>
-<arg>level_approve</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.722119" elapsed="0.000986"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-15T13:34:25.724752" level="INFO">${round} = NR3</msg>
-<var>${round}</var>
-<arg>${row}</arg>
-<arg>round</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.723616" elapsed="0.001541"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-15T13:34:25.728149" level="INFO">${field} = ต้องมี Stock ตัวโชว์</msg>
-<var>${field}</var>
-<arg>${row}</arg>
-<arg>field</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.725821" elapsed="0.002632"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-15T13:34:25.729204" level="INFO">${value} = No: สินค้าไม่ต้องมีตัวโชว์</msg>
-<var>${value}</var>
-<arg>${row}</arg>
-<arg>value</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.728757" elapsed="0.000638"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-15T13:34:25.730506" level="INFO">${uuid} = 7987ebf4-57b2-4c79-90be-c53bc955abe2</msg>
-<var>${uuid}</var>
-<arg>${row}</arg>
-<arg>uuid</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.729662" elapsed="0.001302"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-15T13:34:25.734089" level="INFO">${level_approve_14} = A1</msg>
-<arg>${level_approve_${index}}</arg>
-<arg>${level_approve}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.731468" elapsed="0.002839"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-15T13:34:25.736280" level="INFO">${round_14} = NR3</msg>
-<arg>${round_${index}}</arg>
-<arg>${round}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.734557" elapsed="0.002307"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-15T13:34:25.741561" level="INFO">${field_14} = ต้องมี Stock ตัวโชว์</msg>
-<arg>${field_${index}}</arg>
-<arg>${field}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.737120" elapsed="0.004677"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-15T13:34:25.744736" level="INFO">${value_14} = No: สินค้าไม่ต้องมีตัวโชว์</msg>
-<arg>${value_${index}}</arg>
-<arg>${value}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.742049" elapsed="0.002914"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-15T13:34:25.747469" level="INFO">${uuid_14} = 7987ebf4-57b2-4c79-90be-c53bc955abe2</msg>
-<arg>${uuid_${index}}</arg>
-<arg>${uuid}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.745215" elapsed="0.002576"/>
-</kw>
-<kw name="Evaluate" owner="BuiltIn">
-<msg time="2024-12-15T13:34:25.748950" level="INFO">${index} = 15</msg>
-<var>${index}</var>
-<arg>(${index}) + 1</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.748177" elapsed="0.000979"/>
-</kw>
-<var name="${row}">{'no': '14', 'level_approve': 'A1', 'round': 'NR3', 'field': 'ต้องมี Stock ตัวโชว์', 'value': 'No: สินค้าไม่ต้องมีตัวโชว์', 'uuid': '7987ebf4-57b2-4c79-90be-c53bc955abe2', 'type_field': 'drop down'}</var>
-<status status="PASS" start="2024-12-15T13:34:25.721460" elapsed="0.028078"/>
-</iter>
-<iter>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-15T13:34:25.750985" level="INFO">${level_approve} = A1</msg>
-<var>${level_approve}</var>
-<arg>${row}</arg>
-<arg>level_approve</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.750467" elapsed="0.000703"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-15T13:34:25.751711" level="INFO">${round} = NR3</msg>
-<var>${round}</var>
-<arg>${row}</arg>
-<arg>round</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.751424" elapsed="0.000393"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-15T13:34:25.752259" level="INFO">${field} = หมายเหตุการเลิกขายสินค้า (Sub indicator)</msg>
-<var>${field}</var>
-<arg>${row}</arg>
-<arg>field</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.752003" elapsed="0.000359"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-15T13:34:25.752787" level="INFO">${value} = L: สินค้าบล็อครุ่น</msg>
-<var>${value}</var>
-<arg>${row}</arg>
-<arg>value</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.752538" elapsed="0.000444"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-15T13:34:25.753443" level="INFO">${uuid} = b0feee85-4b40-45f2-8f26-69b0f39770f1</msg>
-<var>${uuid}</var>
-<arg>${row}</arg>
-<arg>uuid</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.753175" elapsed="0.000369"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-15T13:34:25.756476" level="INFO">${level_approve_15} = A1</msg>
-<arg>${level_approve_${index}}</arg>
-<arg>${level_approve}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.753726" elapsed="0.003175"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-15T13:34:25.759784" level="INFO">${round_15} = NR3</msg>
-<arg>${round_${index}}</arg>
-<arg>${round}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.757570" elapsed="0.002403"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-15T13:34:25.763306" level="INFO">${field_15} = หมายเหตุการเลิกขายสินค้า (Sub indicator)</msg>
-<arg>${field_${index}}</arg>
-<arg>${field}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.760213" elapsed="0.003458"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-15T13:34:25.766764" level="INFO">${value_15} = L: สินค้าบล็อครุ่น</msg>
-<arg>${value_${index}}</arg>
-<arg>${value}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.764022" elapsed="0.003109"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-15T13:34:25.770036" level="INFO">${uuid_15} = b0feee85-4b40-45f2-8f26-69b0f39770f1</msg>
-<arg>${uuid_${index}}</arg>
-<arg>${uuid}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.767559" elapsed="0.002721"/>
-</kw>
-<kw name="Evaluate" owner="BuiltIn">
-<msg time="2024-12-15T13:34:25.771258" level="INFO">${index} = 16</msg>
-<var>${index}</var>
-<arg>(${index}) + 1</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.770726" elapsed="0.001009"/>
-</kw>
-<var name="${row}">{'no': '15', 'level_approve': 'A1', 'round': 'NR3', 'field': 'หมายเหตุการเลิกขายสินค้า (Sub indicator)', 'value': 'L: สินค้าบล็อครุ่น', 'uuid': 'b0feee85-4b40-45f2-8f26-69b0f39770f1', 'type_field': 'd...</var>
-<status status="PASS" start="2024-12-15T13:34:25.750160" elapsed="0.021758"/>
-</iter>
-<var>${row}</var>
-<value>@{x_rows}</value>
-<status status="PASS" start="2024-12-15T13:34:25.389677" elapsed="0.382491"/>
-</for>
-<arg>${CSV_PATH_NOT_REQ(A1)}</arg>
-<status status="PASS" start="2024-12-15T13:34:25.339552" elapsed="0.432899"/>
-</kw>
-<kw name="Search by article" owner="Menu_editmass_B2C_field">
-<kw name="Wait And Click Element" owner="common_art">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click Element with Delay" owner="common_art">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-12-15T13:34:25.775386" level="INFO">Clicking element '//input[@name="article_id"]'.</msg>
-<arg>${locator}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.775128" elapsed="0.297893"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-12-15T13:34:27.076027" level="INFO">Slept 1 second.</msg>
-<arg>1s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-12-15T13:34:26.073477" elapsed="1.002827"/>
-</kw>
-<arg>${locator}</arg>
-<status status="PASS" start="2024-12-15T13:34:25.774751" elapsed="1.301748"/>
-</kw>
-<arg>3x</arg>
-<arg>0.8s</arg>
-<arg>Click Element with Delay</arg>
-<arg>${locator}</arg>
-<doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2024-12-15T13:34:25.774408" elapsed="1.302300"/>
-</kw>
-<arg>//input[@name="article_id"]</arg>
-<status status="PASS" start="2024-12-15T13:34:25.773925" elapsed="1.303137"/>
-</kw>
-<kw name="Wait And Click Element" owner="common_art">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click Element with Delay" owner="common_art">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-12-15T13:34:27.079998" level="INFO">Clicking element '//textarea[@name="article"]'.</msg>
-<arg>${locator}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-15T13:34:27.079386" elapsed="0.089471"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-12-15T13:34:28.170274" level="INFO">Slept 1 second.</msg>
-<arg>1s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-12-15T13:34:27.169295" elapsed="1.001666"/>
-</kw>
-<arg>${locator}</arg>
-<status status="PASS" start="2024-12-15T13:34:27.078720" elapsed="1.092777"/>
-</kw>
-<arg>3x</arg>
-<arg>0.8s</arg>
-<arg>Click Element with Delay</arg>
-<arg>${locator}</arg>
-<doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2024-12-15T13:34:27.078313" elapsed="1.093570"/>
-</kw>
-<arg>//textarea[@name="article"]</arg>
-<status status="PASS" start="2024-12-15T13:34:27.077558" elapsed="1.094630"/>
-</kw>
-<for flavor="IN">
-<iter>
-<kw name="Get Value" owner="SeleniumLibrary">
-<msg time="2024-12-15T13:34:28.200197" level="INFO">${current_text} = </msg>
-<var>${current_text}</var>
-<arg>//textarea[@name="article"]</arg>
-<doc>Returns the value attribute of the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-15T13:34:28.175403" elapsed="0.025351"/>
-</kw>
-<kw name="Set Variable" owner="BuiltIn">
-<msg time="2024-12-15T13:34:28.201593" level="INFO">${new_text} = 
-10337705</msg>
-<var>${new_text}</var>
-<arg>${current_text}\n${article}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2024-12-15T13:34:28.201106" elapsed="0.000693"/>
-</kw>
-<kw name="Wait And Input Text with Delay" owner="common_art">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Input Text with Delay" owner="common_art">
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-12-15T13:34:28.204728" level="INFO">Typing text '
-10337705' into text field '//textarea[@name="article"]'.</msg>
-<arg>${locator}</arg>
-<arg>${text}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-15T13:34:28.204375" elapsed="0.060038"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-12-15T13:34:29.766742" level="INFO">Slept 1 second 500 milliseconds.</msg>
-<arg>1.5s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-12-15T13:34:28.264803" elapsed="1.502660"/>
-</kw>
-<arg>${locator}</arg>
-<arg>${text}</arg>
-<status status="PASS" start="2024-12-15T13:34:28.203748" elapsed="1.564266"/>
-</kw>
-<arg>3x</arg>
-<arg>0.8s</arg>
-<arg>Input Text with Delay</arg>
-<arg>${locator}</arg>
-<arg>${text}</arg>
-<doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2024-12-15T13:34:28.203178" elapsed="1.565304"/>
-</kw>
-<arg>//textarea[@name="article"]</arg>
-<arg>${new_text}</arg>
-<status status="PASS" start="2024-12-15T13:34:28.202153" elapsed="1.566851"/>
-</kw>
-<var name="${article}">10337705</var>
-<status status="PASS" start="2024-12-15T13:34:28.174305" elapsed="1.595745"/>
-</iter>
-<var>${article}</var>
-<value>@{articles}</value>
-<status status="PASS" start="2024-12-15T13:34:28.173499" elapsed="1.596937"/>
-</for>
-<kw name="Wait And Click Element" owner="common_art">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click Element with Delay" owner="common_art">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-12-15T13:34:29.776046" level="INFO">Clicking element '//span[text()="ส่ง"]/parent::button'.</msg>
-<msg time="2024-12-15T13:34:29.784805" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+<msg time="2024-12-16T11:29:13.405443" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
 from unknown error: web view not found
   (Session info: chrome=131.0.6778.108)
 Stacktrace:
-0   chromedriver                        0x0000000103d76e12 chromedriver + 6696466
-1   chromedriver                        0x0000000103d6ec2a chromedriver + 6663210
-2   chromedriver                        0x0000000103776e3e chromedriver + 405054
-3   chromedriver                        0x000000010374c1fa chromedriver + 229882
-4   chromedriver                        0x00000001037f4f9d chromedriver + 921501
-5   chromedriver                        0x000000010380ede4 chromedriver + 1027556
-6   chromedriver                        0x00000001037ec613 chromedriver + 886291
-7   chromedriver                        0x00000001037b9950 chromedriver + 678224
-8   chromedriver                        0x00000001037ba34e chromedriver + 680782
-9   chromedriver                        0x0000000103d44700 chromedriver + 6489856
-10  chromedriver                        0x0000000103d471a9 chromedriver + 6500777
-11  chromedriver                        0x0000000103d46ccb chromedriver + 6499531
-12  chromedriver                        0x0000000103d47635 chromedriver + 6501941
-13  chromedriver                        0x0000000103d2f4b4 chromedriver + 6403252
-14  chromedriver                        0x0000000103d4791f chromedriver + 6502687
-15  chromedriver                        0x0000000103d208e4 chromedriver + 6342884
-16  chromedriver                        0x0000000103d5f308 chromedriver + 6599432
-17  chromedriver                        0x0000000103d5f4c5 chromedriver + 6599877
-18  chromedriver                        0x0000000103d6e7f8 chromedriver + 6662136
+0   chromedriver                        0x000000010a46de12 chromedriver + 6696466
+1   chromedriver                        0x000000010a465c2a chromedriver + 6663210
+2   chromedriver                        0x0000000109e6de3e chromedriver + 405054
+3   chromedriver                        0x0000000109e431fa chromedriver + 229882
+4   chromedriver                        0x0000000109eebf9d chromedriver + 921501
+5   chromedriver                        0x0000000109f05de4 chromedriver + 1027556
+6   chromedriver                        0x0000000109ee3613 chromedriver + 886291
+7   chromedriver                        0x0000000109eb0950 chromedriver + 678224
+8   chromedriver                        0x0000000109eb134e chromedriver + 680782
+9   chromedriver                        0x000000010a43b700 chromedriver + 6489856
+10  chromedriver                        0x000000010a43e1a9 chromedriver + 6500777
+11  chromedriver                        0x000000010a43dccb chromedriver + 6499531
+12  chromedriver                        0x000000010a43e635 chromedriver + 6501941
+13  chromedriver                        0x000000010a4264b4 chromedriver + 6403252
+14  chromedriver                        0x000000010a43e91f chromedriver + 6502687
+15  chromedriver                        0x000000010a4178e4 chromedriver + 6342884
+16  chromedriver                        0x000000010a456308 chromedriver + 6599432
+17  chromedriver                        0x000000010a4564c5 chromedriver + 6599877
+18  chromedriver                        0x000000010a4657f8 chromedriver + 6662136
 19  libsystem_pthread.dylib             0x00007ff81027d18b _pthread_start + 99
 20  libsystem_pthread.dylib             0x00007ff810278ae3 thread_start + 15
 </msg>
-<msg time="2024-12-15T13:34:29.787897" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+<msg time="2024-12-16T11:29:13.407442" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
 from unknown error: web view not found
   (Session info: chrome=131.0.6778.108)
 Stacktrace:
-0   chromedriver                        0x0000000103d76e12 chromedriver + 6696466
-1   chromedriver                        0x0000000103d6ec2a chromedriver + 6663210
-2   chromedriver                        0x0000000103776e3e chromedriver + 405054
-3   chromedriver                        0x000000010374c1fa chromedriver + 229882
-4   chromedriver                        0x00000001037f4f9d chromedriver + 921501
-5   chromedriver                        0x000000010380ede4 chromedriver + 1027556
-6   chromedriver                        0x00000001037ec613 chromedriver + 886291
-7   chromedriver                        0x00000001037b9950 chromedriver + 678224
-8   chromedriver                        0x00000001037ba34e chromedriver + 680782
-9   chromedriver                        0x0000000103d44700 chromedriver + 6489856
-10  chromedriver                        0x0000000103d471a9 chromedriver + 6500777
-11  chromedriver                        0x0000000103d46ccb chromedriver + 6499531
-12  chromedriver                        0x0000000103d47635 chromedriver + 6501941
-13  chromedriver                        0x0000000103d2f4b4 chromedriver + 6403252
-14  chromedriver                        0x0000000103d4791f chromedriver + 6502687
-15  chromedriver                        0x0000000103d208e4 chromedriver + 6342884
-16  chromedriver                        0x0000000103d5f308 chromedriver + 6599432
-17  chromedriver                        0x0000000103d5f4c5 chromedriver + 6599877
-18  chromedriver                        0x0000000103d6e7f8 chromedriver + 6662136
-19  libsystem_pthread.dylib             0x00007ff81027d18b _pthread_start + 99
-20  libsystem_pthread.dylib             0x00007ff810278ae3 thread_start + 15
-</msg>
-<arg>${locator}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="FAIL" start="2024-12-15T13:34:29.774764" elapsed="0.018075">NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=131.0.6778.108)
-Stacktrace:
-0   chromedriver                        0x0000000103d76e12 chromedriver + 6696466
-1   chromedriver                        0x0000000103d6ec2a chromedriver + 6663210
-2   chromedriver                        0x0000000103776e3e chromedriver + 405054
-3   chromedriver                        0x000000010374c1fa chromedriver + 229882
-4   chromedriver                        0x00000001037f4f9d chromedriver + 921501
-5   chromedriver                        0x000000010380ede4 chromedriver + 1027556
-6   chromedriver                        0x00000001037ec613 chromedriver + 886291
-7   chromedriver                        0x00000001037b9950 chromedriver + 678224
-    [ Message content over the limit has been removed. ]
-10  chromedriver                        0x0000000103d471a9 chromedriver + 6500777
-11  chromedriver                        0x0000000103d46ccb chromedriver + 6499531
-12  chromedriver                        0x0000000103d47635 chromedriver + 6501941
-13  chromedriver                        0x0000000103d2f4b4 chromedriver + 6403252
-14  chromedriver                        0x0000000103d4791f chromedriver + 6502687
-15  chromedriver                        0x0000000103d208e4 chromedriver + 6342884
-16  chromedriver                        0x0000000103d5f308 chromedriver + 6599432
-17  chromedriver                        0x0000000103d5f4c5 chromedriver + 6599877
-18  chromedriver                        0x0000000103d6e7f8 chromedriver + 6662136
-19  libsystem_pthread.dylib             0x00007ff81027d18b _pthread_start + 99
-20  libsystem_pthread.dylib             0x00007ff810278ae3 thread_start + 15</status>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<arg>1s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" start="2024-12-15T13:34:29.793314" elapsed="0.000199"/>
-</kw>
-<arg>${locator}</arg>
-<status status="FAIL" start="2024-12-15T13:34:29.773104" elapsed="0.020735">NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=131.0.6778.108)
-Stacktrace:
-0   chromedriver                        0x0000000103d76e12 chromedriver + 6696466
-1   chromedriver                        0x0000000103d6ec2a chromedriver + 6663210
-2   chromedriver                        0x0000000103776e3e chromedriver + 405054
-3   chromedriver                        0x000000010374c1fa chromedriver + 229882
-4   chromedriver                        0x00000001037f4f9d chromedriver + 921501
-5   chromedriver                        0x000000010380ede4 chromedriver + 1027556
-6   chromedriver                        0x00000001037ec613 chromedriver + 886291
-7   chromedriver                        0x00000001037b9950 chromedriver + 678224
-    [ Message content over the limit has been removed. ]
-10  chromedriver                        0x0000000103d471a9 chromedriver + 6500777
-11  chromedriver                        0x0000000103d46ccb chromedriver + 6499531
-12  chromedriver                        0x0000000103d47635 chromedriver + 6501941
-13  chromedriver                        0x0000000103d2f4b4 chromedriver + 6403252
-14  chromedriver                        0x0000000103d4791f chromedriver + 6502687
-15  chromedriver                        0x0000000103d208e4 chromedriver + 6342884
-16  chromedriver                        0x0000000103d5f308 chromedriver + 6599432
-17  chromedriver                        0x0000000103d5f4c5 chromedriver + 6599877
-18  chromedriver                        0x0000000103d6e7f8 chromedriver + 6662136
+0   chromedriver                        0x000000010a46de12 chromedriver + 6696466
+1   chromedriver                        0x000000010a465c2a chromedriver + 6663210
+2   chromedriver                        0x0000000109e6de3e chromedriver + 405054
+3   chromedriver                        0x0000000109e431fa chromedriver + 229882
+4   chromedriver                        0x0000000109eebf9d chromedriver + 921501
+5   chromedriver                        0x0000000109f05de4 chromedriver + 1027556
+6   chromedriver                        0x0000000109ee3613 chromedriver + 886291
+7   chromedriver                        0x0000000109eb0950 chromedriver + 678224
+8   chromedriver                        0x0000000109eb134e chromedriver + 680782
+9   chromedriver                        0x000000010a43b700 chromedriver + 6489856
+10  chromedriver                        0x000000010a43e1a9 chromedriver + 6500777
+11  chromedriver                        0x000000010a43dccb chromedriver + 6499531
+12  chromedriver                        0x000000010a43e635 chromedriver + 6501941
+13  chromedriver                        0x000000010a4264b4 chromedriver + 6403252
+14  chromedriver                        0x000000010a43e91f chromedriver + 6502687
+15  chromedriver                        0x000000010a4178e4 chromedriver + 6342884
+16  chromedriver                        0x000000010a456308 chromedriver + 6599432
+17  chromedriver                        0x000000010a4564c5 chromedriver + 6599877
+18  chromedriver                        0x000000010a4657f8 chromedriver + 6662136
 19  libsystem_pthread.dylib             0x00007ff81027d18b _pthread_start + 99
 20  libsystem_pthread.dylib             0x00007ff810278ae3 thread_start + 15
