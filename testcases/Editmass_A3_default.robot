@@ -11,7 +11,8 @@ Test Teardown    Refresh page
 *** Test Cases ***
 Article Edit mass round 1 (default)
     Process CSV Rows    ${CSV_PATH_NOT_REQ(A3)}
-    Search by article    10337178
+    Search by article    10337662
+    Check value article    10337662
     Click check box all article
     Click button edit field    
     Edit field 1 (default) A3    Run 1
@@ -24,7 +25,8 @@ Article Edit mass round 1 (default)
 
 Article Edit mass round 2 (default)
     Process CSV Rows    ${CSV_PATH_NOT_REQ(A3)}
-    Search by article    10337178
+    Search by article    10337663
+    Check value article    10337663
     Click check box all article
     Click button edit field    
     Edit field 1 (default) A3    Run 2
@@ -37,7 +39,8 @@ Article Edit mass round 2 (default)
 
 Article Edit mass round 3 (default)
     Process CSV Rows    ${CSV_PATH_NOT_REQ(A3)}
-    Search by article    10337178
+    Search by article    10337666
+    Check value article    10337666
     Click check box all article
     Click button edit field    
     Edit field 1 (default) A3    Run 3

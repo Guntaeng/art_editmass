@@ -133,3 +133,58 @@ Dropdown row 1 (c1,c2,c3)     #กำหนดรูปแบบการรั�
     Wait And Click Element    //*[@name="master_tabcols_id" and @value="${new_uuid}"]/ancestor::div[6]/following-sibling::div//select/..
     Wait And Click Element    //*[text()='C1: DoHome/Retail']/ancestor::div[2]//div[@class="dx-list-select-all-label"]
     Wait And Click Element    //*[text()='OK']
+
+
+Dropdown row 2 (c1,c2,c3)
+    [Arguments]    ${master_tabcols_id}    ${values_new}    ${new_uuid}
+    Wait And Click Element    //*[text()=" เพิ่ม"]
+    Wait And Click Element    //div[@data-dx_placeholder="เลือกฟิลด์" and @class="dx-placeholder"]/preceding-sibling::input
+    Wait And Input Text with Delay    //div[@data-dx_placeholder="เลือกฟิลด์" and @class="dx-placeholder"]/preceding-sibling::input    ${master_tabcols_id} 
+    Wait And Press Keys    xpath=//div[4]/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div[2]/div/div/div/div/div/div/div/input       \\13
+    Wait And Click Element    //*[@name="master_tabcols_id" and @value="${new_uuid}"]/ancestor::div[6]/following-sibling::div[1]/descendant::input[@class="dx-texteditor-input"]
+    Wait And Input Text with Delay    //*[@name="master_tabcols_id" and @value="${new_uuid}"]/ancestor::div[6]/following-sibling::div[1]/descendant::input[@class="dx-texteditor-input"]    ${values_new} 
+    Wait And Press Keys    //*[@name="master_tabcols_id" and @value="${new_uuid}"]/ancestor::div[6]/following-sibling::div[1]/descendant::input[@class="dx-texteditor-input"]    \\13    
+    Wait And Click Element    //*[@name="master_tabcols_id" and @value="${new_uuid}"]/ancestor::div[6]/following-sibling::div//select/..
+    Wait And Click Element    //*[text()='C1: DoHome/Retail']/ancestor::div[2]//div[@class="dx-list-select-all-label"]
+    Wait And Click Element    //*[text()='OK']
+
+Dropdown row 3 (c1,c2,c3)
+    [Arguments]    ${master_tabcols_id}    ${values_new}    ${new_uuid}
+    Wait And Click Element    //*[text()=" เพิ่ม"]
+    Wait And Click Element    //div[@data-dx_placeholder="เลือกฟิลด์" and @class="dx-placeholder"]/preceding-sibling::input
+    Wait And Input Text with Delay    //div[@data-dx_placeholder="เลือกฟิลด์" and @class="dx-placeholder"]/preceding-sibling::input    ${master_tabcols_id} 
+    Wait And Press Keys    xpath=//div[5]/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div[2]/div/div/div/div/div/div/div/input       \\13
+    Wait And Click Element    //*[@name="master_tabcols_id" and @value="${new_uuid}"]/ancestor::div[6]/following-sibling::div[1]/descendant::input[@class="dx-texteditor-input"]
+    Wait And Input Text with Delay    //*[@name="master_tabcols_id" and @value="${new_uuid}"]/ancestor::div[6]/following-sibling::div[1]/descendant::input[@class="dx-texteditor-input"]    ${values_new} 
+    Wait And Press Keys    //*[@name="master_tabcols_id" and @value="${new_uuid}"]/ancestor::div[6]/following-sibling::div[1]/descendant::input[@class="dx-texteditor-input"]    \\13    
+    Wait And Click Element    //*[@name="master_tabcols_id" and @value="${new_uuid}"]/ancestor::div[6]/following-sibling::div//select/..
+    Wait And Click Element    //*[text()='C1: DoHome/Retail']/ancestor::div[2]//div[@class="dx-list-select-all-label"]
+    Wait And Click Element    //*[text()='OK']
+
+Dropdown row 4 (c1,c2,c3)
+    [Arguments]    ${master_tabcols_id}    ${values_new}    ${new_uuid}
+    Wait And Click Element    //*[text()=" เพิ่ม"]
+    Wait And Click Element    //div[@data-dx_placeholder="เลือกฟิลด์" and @class="dx-placeholder"]/preceding-sibling::input
+    Wait And Input Text with Delay    //div[@data-dx_placeholder="เลือกฟิลด์" and @class="dx-placeholder"]/preceding-sibling::input    ${master_tabcols_id} 
+    Wait And Press Keys    xpath=//div[6]/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div[2]/div/div/div/div/div/div/div/input      \\13
+    Wait And Click Element    //*[@name="master_tabcols_id" and @value="${new_uuid}"]/ancestor::div[6]/following-sibling::div[1]/descendant::input[@class="dx-texteditor-input"]
+    Wait And Input Text with Delay    //*[@name="master_tabcols_id" and @value="${new_uuid}"]/ancestor::div[6]/following-sibling::div[1]/descendant::input[@class="dx-texteditor-input"]    ${values_new} 
+    Wait And Press Keys    //*[@name="master_tabcols_id" and @value="${new_uuid}"]/ancestor::div[6]/following-sibling::div[1]/descendant::input[@class="dx-texteditor-input"]    \\13    
+    Wait And Click Element    //*[@name="master_tabcols_id" and @value="${new_uuid}"]/ancestor::div[6]/following-sibling::div//select/..
+    Wait And Click Element    //*[text()='C1: DoHome/Retail']/ancestor::div[2]//div[@class="dx-list-select-all-label"]
+    Wait And Click Element    //*[text()='OK']
+
+Dropdown row 5 (c1,c2,c3)
+    [Arguments]    ${master_tabcols_id}    ${values_new}    ${new_uuid}
+    Wait And Scroll Element Into View    //*[text()=" เพิ่ม"]
+    Wait And Click Element    //*[text()=" เพิ่ม"]
+    Wait And Click Element    //div[@data-dx_placeholder="เลือกฟิลด์" and @class="dx-placeholder"]/preceding-sibling::input
+    Wait And Input Text with Delay    //div[@data-dx_placeholder="เลือกฟิลด์" and @class="dx-placeholder"]/preceding-sibling::input    ${master_tabcols_id} 
+    Wait And Press Keys    xpath=//div[7]/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div[2]/div/div/div/div/div/div/div/input      \\13
+    Wait And Click Element    //*[@name="master_tabcols_id" and @value="${new_uuid}"]/ancestor::div[6]/following-sibling::div[1]/descendant::input[@class="dx-texteditor-input"]
+    Wait And Input Text with Delay    //*[@name="master_tabcols_id" and @value="${new_uuid}"]/ancestor::div[6]/following-sibling::div[1]/descendant::input[@class="dx-texteditor-input"]    ${values_new} 
+    Wait And Press Keys    //*[@name="master_tabcols_id" and @value="${new_uuid}"]/ancestor::div[6]/following-sibling::div[1]/descendant::input[@class="dx-texteditor-input"]    \\13    
+    Wait And Click Element    //*[@name="master_tabcols_id" and @value="${new_uuid}"]/ancestor::div[6]/following-sibling::div//select/..
+    Wait And Click Element    //*[text()='C1: DoHome/Retail']/ancestor::div[2]//div[@class="dx-list-select-all-label"]
+    Wait And Click Element    //*[text()='OK']
+

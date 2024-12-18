@@ -332,7 +332,7 @@ Edit field 2 (default) A3
         ${master_tabcols_id}    Set Variable    ${field_12}
         ${values_new}           Set Variable    ${value_12}
         ${new_uuid}             Set Variable    ${uuid_12}
-        Dropdown row 2    ${master_tabcols_id}    ${values_new}    ${new_uuid} 
+        Dropdown row 2 (c1,c2,c3)      ${master_tabcols_id}    ${values_new}    ${new_uuid} 
     END      
 
 
@@ -364,7 +364,7 @@ Edit field 4 (default) A3
         ${master_tabcols_id}    Set Variable    ${field_4} 
         ${values_new}           Set Variable    ${value_4} 
         ${new_uuid}             Set Variable    ${uuid_4}  
-        Dropdown row 4    ${master_tabcols_id}    ${values_new}    ${new_uuid}
+        Dropdown row 4 (c1,c2,c3)    ${master_tabcols_id}    ${values_new}    ${new_uuid}
     ELSE IF    '${round_9}' == 'NR2' and '${run}' == 'Run 2'
         ${master_tabcols_id}    Set Variable    ${field_9}
         ${values_new}           Set Variable    ${value_9}
@@ -385,12 +385,12 @@ Edit field 5 (default) A3
         ${master_tabcols_id}    Set Variable    ${field_5} 
         ${values_new}           Set Variable    ${value_5} 
         ${new_uuid}             Set Variable    ${uuid_5}  
-        Dropdown row 5    ${master_tabcols_id}    ${values_new}    ${new_uuid}
+        Dropdown row 5 (c1,c2,c3)    ${master_tabcols_id}    ${values_new}    ${new_uuid}
     ELSE IF    '${round_10}' == 'NR2' and '${run}' == 'Run 2'
         ${master_tabcols_id}    Set Variable    ${field_10}
         ${values_new}           Set Variable    ${value_10}
         ${new_uuid}             Set Variable    ${uuid_10}
-        Dropdown row 5    ${master_tabcols_id}    ${values_new}     ${new_uuid}      
+        Dropdown row 5 (c1,c2,c3)    ${master_tabcols_id}    ${values_new}     ${new_uuid}      
     ELSE IF    '${round_15}' == 'NR3' and '${run}' == 'Run 3'
         ${master_tabcols_id}    Set Variable    ${field_15}
         ${values_new}           Set Variable    ${value_15}

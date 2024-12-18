@@ -78,7 +78,7 @@ Wait And Click Element     #require
 
 Wait And Wait Until Element Is Visible    
     [Arguments]    ${locator}
-    Wait Until Keyword Succeeds    3x    1.5s    Wait Until Element Is Visible    ${locator}
+    Wait Until Keyword Succeeds    5x    1s    Wait Until Element Is Visible    ${locator}
 
 Wait And Wait Until Element Contains    
     [Arguments]    ${locator}    ${text}
@@ -101,7 +101,8 @@ Open browser web url for mac	#ชื่อที่จะนำไปใช้
 
 Login dohome and click web art(Create)
     #Open browser web url    ${url_dohome}    headlesschrome
-    Open browser web url for mac             ${url_dohome}                                     chrome             
+    #Open browser web url for mac             ${url_dohome}                                     chrome             
+    Open browser web url                     ${url_dohome}                                    chrome
     #Set Window Size    1920    1080
     Maximize Browser Window
     Wait And Wait Until Element Contains     //button[text()='เข้าสู่ระบบ']                       เข้าสู่ระบบ       
@@ -121,7 +122,8 @@ Login dohome and click web art(Create)
 
 Login dohome and click web art(Approve avp)
     #Open browser web url    ${url_dohome}    headlesschrome
-    Open browser web url for mac             ${url_dohome}                                     chrome             
+    #Open browser web url for mac             ${url_dohome}                                     chrome             
+    Open browser web url                     ${url_dohome}                                    chrome
     #Set Window Size    1920    1080
     Maximize Browser Window
     Wait And Wait Until Element Contains     //button[text()='เข้าสู่ระบบ']                       เข้าสู่ระบบ       
@@ -141,7 +143,8 @@ Login dohome and click web art(Approve avp)
 
 Login dohome and click web art(Approve dm)
     #Open browser web url    ${url_dohome}    headlesschrome
-    Open browser web url for mac             ${url_dohome}                                     chrome             
+    #Open browser web url for mac             ${url_dohome}                                     chrome
+    Open browser web url                     ${url_dohome}                                    chrome             
     #Set Window Size    1920    1080
     Maximize Browser Window
     Wait And Wait Until Element Contains     //button[text()='เข้าสู่ระบบ']                       เข้าสู่ระบบ       
@@ -163,8 +166,9 @@ Refresh page
 
 
 Login dohome and click web art(Edit Mass) A2
-    #Open browser web url    ${url_dohome}    headlesschrome
-    Open browser web url for mac             ${url_dohome}                                     chrome             
+    Open browser web url    ${url_dohome}    headlesschrome
+    # Open browser web url for mac             ${url_dohome}                                     chrome
+    #Open browser web url                     ${url_dohome}                                     chrome             
     #Set Window Size    1920    1080
     Maximize Browser Window
     Wait And Wait Until Element Contains     //button[text()='เข้าสู่ระบบ']                       เข้าสู่ระบบ       
@@ -187,7 +191,8 @@ Login dohome and click web art(Edit Mass) A2
 
 Login dohome and click web art(Edit Mass) A3
     #Open browser web url    ${url_dohome}    headlesschrome
-    Open browser web url for mac             ${url_dohome}                                     chrome             
+    # Open browser web url for mac             ${url_dohome}                                     chrome     
+    Open browser web url                     ${url_dohome}                                     chrome        
     #Set Window Size    1920    1080
     Maximize Browser Window
     Wait And Wait Until Element Contains     //button[text()='เข้าสู่ระบบ']                       เข้าสู่ระบบ       

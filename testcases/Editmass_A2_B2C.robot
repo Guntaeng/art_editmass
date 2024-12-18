@@ -12,7 +12,7 @@ Test Teardown    Refresh page
 Article Edit mass round 1
     Process CSV Rows    ${CSV_PATH_B2C(A2)}
     Search by article    10337742
-    #Check value article    810000756
+    Check value article    810000756
     Click check box all article
     Click button edit field    
     Edit field 1 (B2C) A2     Run 1
@@ -26,7 +26,7 @@ Article Edit mass round 1
 Article Edit mass round 2
     Process CSV Rows    ${CSV_PATH_B2C(A2)}
     Search by article    10337743
-    #Check value article    19999124
+    Check value article    19999124
     Click check box all article
     Click button edit field    
     Edit field 1 (B2C) A2    Run 2
@@ -40,6 +40,7 @@ Article Edit mass round 2
 Article Edit mass round 3
     Process CSV Rows    ${CSV_PATH_B2C(A2)}
     Search by article    10337741
+    Check value article    10337741
     Click check box all article
     Click button edit field    
     Edit field 1 (B2C) A2    Run 3
