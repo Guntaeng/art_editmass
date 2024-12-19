@@ -18,6 +18,3 @@ Approve Edit mass (AVP)
     Filter By Article    ${art}
     Click check all box
     Click Approve
-
-
-
