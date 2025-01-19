@@ -77,4 +77,4 @@ Check box and Channel row 1
     #Click channel
     Wait And Click Element    //*[@name="master_tabcols_id" and @value="${new_uuid}"]/ancestor::div[6]/following-sibling::div//select/..
     Wait And Click Element    //*[text()='C1: DoHome/Retail']/ancestor::div[2]//div[@class="dx-list-select-all-label"]
-    Wait And Click Element    //*[text()='OK']
+    Wait And Click Element    //*[text()='C1: DoHome/Retail']/ancestor::div[2]//div[@class="dx-list-select-all-label"]/ancestor::div[6]/following::div[8]

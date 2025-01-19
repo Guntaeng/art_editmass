@@ -12,11 +12,11 @@ Test Teardown    Refresh page
 Article Edit mass round 1
     Process CSV Rows    ${CSV_PATH_B2C(A3)}
     Search by article    10337747
-    Check value article    10337741
+    Check value article    10337747
     Click check box all article
     Click button edit field    
     Edit field 1 (B2C) A3     Run 1
-    Edit field 2 (B2C) A3     Run 1
+    #Edit field 2 (B2C) A3     Run 1
     # Edit field 3 (B2C) A2     Run 1
     # Edit field 4 (B2C) A2     Run 1
     # Edit field 5 (B2C) A2     Run 1

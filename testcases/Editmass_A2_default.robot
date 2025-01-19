@@ -11,8 +11,8 @@ Test Teardown    Refresh page
 *** Test Cases ***
 Article Edit mass round 1 (default)
     Process CSV Rows    ${CSV_PATH_NOT_REQ(A2)}
-    Search by article    10337667
-    Check value article    10337667
+    Search by article    10337652
+    Check value article    10337652
     Click check box all article
     Click button edit field    
     Edit field 1 (default) A2    Run 1
@@ -25,8 +25,8 @@ Article Edit mass round 1 (default)
 
 Article Edit mass round 2 (default)
     Process CSV Rows    ${CSV_PATH_NOT_REQ(A2)}
-    Search by article    10337668
-    Check value article    10337668
+    Search by article    10337653
+    Check value article    10337653
     Click check box all article
     Click button edit field    
     Edit field 1 (default) A2    Run 2
@@ -39,8 +39,8 @@ Article Edit mass round 2 (default)
 
 Article Edit mass round 3 (default)
     Process CSV Rows    ${CSV_PATH_NOT_REQ(A2)}
-    Search by article    10337705
-    Check value article    10337705
+    Search by article    10337654
+    Check value article    10337654
     Click check box all article
     Click button edit field    
     Edit field 1 (default) A2    Run 3
@@ -53,8 +53,8 @@ Article Edit mass round 3 (default)
 
 Article Edit mass round 4 (default)
     Process CSV Rows    ${CSV_PATH_NOT_REQ(A2)}
-    Search by article    10337706
-    Check value article    10337706
+    Search by article    10337655
+    Check value article    10337655
     Click check box all article
     Click button edit field    
     Edit field 1 (default) A2    Run 4
@@ -67,8 +67,8 @@ Article Edit mass round 4 (default)
 
 Article Edit mass round 5 (default)
     Process CSV Rows    ${CSV_PATH_NOT_REQ(A2)}
-    Search by article    10337723
-    Check value article    10337723
+    Search by article    10337656
+    Check value article    10337656
     Click check box all article
     Click button edit field    
     Edit field 1 (default) A2    Run 5
@@ -81,8 +81,8 @@ Article Edit mass round 5 (default)
 
 Article Edit mass round 6 (default)
     Process CSV Rows    ${CSV_PATH_NOT_REQ(A2)}
-    Search by article    10337738
-    Check value article    10337738
+    Search by article    10337657
+    Check value article    10337657
     Click check box all article
     Click button edit field    
     Edit field 1 (default) A2    Run 6
@@ -95,8 +95,8 @@ Article Edit mass round 6 (default)
 
 Article Edit mass round 7 (default)
     Process CSV Rows    ${CSV_PATH_NOT_REQ(A2)}
-    Search by article    10337742
-    Check value article    10337742
+    Search by article    10337658
+    Check value article    10337658
     Click check box all article
     Click button edit field    
     Edit field 1 (default) A2    Run 7

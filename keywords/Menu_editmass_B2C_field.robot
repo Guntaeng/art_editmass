@@ -15,50 +15,6 @@ Library    DebugLibrary
 
 
 *** Keywords ***
-### คำสั่งสำหรับการค้นหาโดยใช้ Article ###
-Search by article
-    [Documentation]    ค้นหา รหัสสินค้า ที่ต้องการแก้ไขฟิวด์
-    [Arguments]    @{articles}
-    Wait And Click Element                  //input[@name="article_id"]
-    Wait And Click Element                  //textarea[@name="article"]
-    FOR    ${article}    IN    @{articles}
-        ${current_text}=    Get Value       //textarea[@name="article"]
-        ${new_text}=        Set Variable    ${current_text}\n${article}
-        Wait And Input Text with Delay      //textarea[@name="article"]    ${new_text}
-    END
-    Wait And Click Element                  //span[text()="ส่ง"]/parent::button
-    Wait And Click Element                  //span[text()="ค้นหา"]/parent::button
-
-### ฟังก์ชันมาตรฐาน ###
-
-Click check box all article
-    [Documentation]    เลือกสินค้าทั้งหมด ใน dataGrid
-    Wait And Click Element    //span[text()="เลือกทั้งหมด"]/preceding-sibling::span
-
-Click button edit field
-    [Documentation]    คลิ๊กปุ่ม แก้ไขค่าของฟิลด์
-    Wait And Click Element    //span[text()="แก้ไขค่าของฟิลด์"]/parent::button
-
-Click button Confirm edit field
-    [Documentation]    คลิ๊กยืนยันแก้ไข step 1
-    Wait And Click Element                    //span[text()="ยืนยัน"]/parent::button
-    Wait And Wait Until Element Is Visible    //span[text()="ขออนุมัติแก้ไข"]/parent::button
-    Sleep    3s
-
-Click button Approve edit field
-    [Documentation]    คลิ๊กยืนยันแก้ไข step 2 ส่งข้อมูลไปเมนูรออนุมัติ
-    Wait And Click Element    //span[text()="ขออนุมัติแก้ไข"]/parent::button
-    Wait And Click Element    //span[text()="ยกเลิก"]/ancestor::div[2]/following-sibling::div//button
-    Wait And Click Element    //span[text()="ยืนยัน"]/parent::button
-    Wait Until Page Contains    อนุมัติแก้ไขสำเร็จ    timeout=10s
-
-Check value article
-    [Documentation]    ตรวจสอบรหัสสินค้าใน dataGrid ก่อนแก้ไข ว่ามีอยู่จริงหรือไม่
-    [Arguments]    ${article}
-    Wait And Wait Until Element Is Visible    //td[text()='${article}']
-
-
-
 ### *** การกรอกข้อมูล A2 ################################################################################################################################
 Edit field 1 (B2C) A2
     [Arguments]    ${run}
@@ -148,7 +104,12 @@ Edit field 5 (B2C) A2
         ${master_tabcols_id}    Set Variable    ${field_10} 
         ${values_new}           Set Variable    ${value_10} 
         ${new_uuid}             Set Variable    ${uuid_10}  
-        Input text editmass row 5 (section14)    ${master_tabcols_id}    ${values_new}    ${new_uuid}         
+        Input text editmass row 5 (section14)    ${master_tabcols_id}    ${values_new}    ${new_uuid}   
+    ELSE IF    '${round_15}' == 'X3' and '${run}' == 'Run 3'
+        ${master_tabcols_id}    Set Variable    ${field_15} 
+        ${values_new}           Set Variable    ${value_15} 
+        ${new_uuid}             Set Variable    ${uuid_15}  
+        Dropdown row 5    ${master_tabcols_id}    ${values_new}    ${new_uuid}              
     END
 
 

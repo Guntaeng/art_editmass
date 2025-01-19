@@ -132,7 +132,7 @@ Dropdown row 1 (c1,c2,c3)     #กำหนดรูปแบบการรั�
     #Click channel
     Wait And Click Element    //*[@name="master_tabcols_id" and @value="${new_uuid}"]/ancestor::div[6]/following-sibling::div//select/..
     Wait And Click Element    //*[text()='C1: DoHome/Retail']/ancestor::div[2]//div[@class="dx-list-select-all-label"]
-    Wait And Click Element    //*[text()='OK']
+    Wait And Click Element    //*[text()='C1: DoHome/Retail']/ancestor::div[2]//div[@class="dx-list-select-all-label"]/ancestor::div[6]/following::div[8]
 
 
 Dropdown row 2 (c1,c2,c3)
@@ -146,7 +146,7 @@ Dropdown row 2 (c1,c2,c3)
     Wait And Press Keys    //*[@name="master_tabcols_id" and @value="${new_uuid}"]/ancestor::div[6]/following-sibling::div[1]/descendant::input[@class="dx-texteditor-input"]    \\13    
     Wait And Click Element    //*[@name="master_tabcols_id" and @value="${new_uuid}"]/ancestor::div[6]/following-sibling::div//select/..
     Wait And Click Element    //*[text()='C1: DoHome/Retail']/ancestor::div[2]//div[@class="dx-list-select-all-label"]
-    Wait And Click Element    //*[text()='OK']
+    Wait And Click Element    //*[text()='C1: DoHome/Retail']/ancestor::div[2]//div[@class="dx-list-select-all-label"]/ancestor::div[6]/following::div[8]
 
 Dropdown row 3 (c1,c2,c3)
     [Arguments]    ${master_tabcols_id}    ${values_new}    ${new_uuid}
@@ -159,7 +159,7 @@ Dropdown row 3 (c1,c2,c3)
     Wait And Press Keys    //*[@name="master_tabcols_id" and @value="${new_uuid}"]/ancestor::div[6]/following-sibling::div[1]/descendant::input[@class="dx-texteditor-input"]    \\13    
     Wait And Click Element    //*[@name="master_tabcols_id" and @value="${new_uuid}"]/ancestor::div[6]/following-sibling::div//select/..
     Wait And Click Element    //*[text()='C1: DoHome/Retail']/ancestor::div[2]//div[@class="dx-list-select-all-label"]
-    Wait And Click Element    //*[text()='OK']
+    Wait And Click Element    //*[text()='C1: DoHome/Retail']/ancestor::div[2]//div[@class="dx-list-select-all-label"]/ancestor::div[6]/following::div[8]
 
 Dropdown row 4 (c1,c2,c3)
     [Arguments]    ${master_tabcols_id}    ${values_new}    ${new_uuid}
@@ -172,7 +172,7 @@ Dropdown row 4 (c1,c2,c3)
     Wait And Press Keys    //*[@name="master_tabcols_id" and @value="${new_uuid}"]/ancestor::div[6]/following-sibling::div[1]/descendant::input[@class="dx-texteditor-input"]    \\13    
     Wait And Click Element    //*[@name="master_tabcols_id" and @value="${new_uuid}"]/ancestor::div[6]/following-sibling::div//select/..
     Wait And Click Element    //*[text()='C1: DoHome/Retail']/ancestor::div[2]//div[@class="dx-list-select-all-label"]
-    Wait And Click Element    //*[text()='OK']
+    Wait And Click Element    //*[text()='C1: DoHome/Retail']/ancestor::div[2]//div[@class="dx-list-select-all-label"]/ancestor::div[6]/following::div[8]
 
 Dropdown row 5 (c1,c2,c3)
     [Arguments]    ${master_tabcols_id}    ${values_new}    ${new_uuid}
@@ -186,5 +186,5 @@ Dropdown row 5 (c1,c2,c3)
     Wait And Press Keys    //*[@name="master_tabcols_id" and @value="${new_uuid}"]/ancestor::div[6]/following-sibling::div[1]/descendant::input[@class="dx-texteditor-input"]    \\13    
     Wait And Click Element    //*[@name="master_tabcols_id" and @value="${new_uuid}"]/ancestor::div[6]/following-sibling::div//select/..
     Wait And Click Element    //*[text()='C1: DoHome/Retail']/ancestor::div[2]//div[@class="dx-list-select-all-label"]
-    Wait And Click Element    //*[text()='OK']
+    Wait And Click Element    //*[text()='C1: DoHome/Retail']/ancestor::div[2]//div[@class="dx-list-select-all-label"]/ancestor::div[6]/following::div[8]
 
