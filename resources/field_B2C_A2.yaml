@@ -1,0 +1,91 @@
+---
+name_en:
+  field:  ชื่อสินค้า Commercial (ภาษาอังกฤษ)
+  value:  Test_Editmass
+  uuid: af65e618-5adb-4fa6-9340-435966341c1c
+  type: Input text editmass
+
+e_comm_name_th:
+  field:  ชื่อสินค้า Commercial (ภาษาไทย)
+  value:  ทดสอบ Editmass
+  uuid: 19687db5-6996-441c-9cda-2eef6b506bd2
+  type: Input text editmass
+
+product_model:
+  field:  รุ่นของสินค้า
+  value:  รุ่นของสินค้า_Editmass
+  uuid: 84594b57-e6a8-4578-8362-c2878b9af8b5
+  type: Input text editmass
+
+tis_number:
+  field:  เลขที่ มอก. (TIS Number)
+  value:  เลขที่ มอก_Editmass
+  uuid: b14af321-7ffd-4690-8faa-a930137e6872
+  type: Input text editmass
+
+tis_license_number:
+  field: เลขที่ใบอนุญาต มอก. (TIS License) 
+  value:  เลขที่ใบอนุญาต มอก_Editmass
+  uuid: 5b6eed1e-9d74-452c-8d6d-6d437c412949
+  type: Input text editmass
+
+selling_point:
+  field:  จุดเด่นจุดขาย
+  value:  จุดเด่นจุดขาย_Editmass
+  uuid: 89f099c5-dee2-4354-8a35-37e127201bde
+  type: Input text editmass (section14)
+
+product_features:
+  field:  คุณสมบัติสินค้า
+  value:  คุณสมบัติสินค้า_Editmass
+  uuid: 17b3544a-d85d-453c-af36-b88e5de3bc1c
+  type: Input text editmass (section14)
+
+maintenance:
+  field:  การบำรุงรักษา
+  value:  การบำรุงรักษา_Editmass
+  uuid: 1717bc35-1ada-421b-830b-e4964748ecbb
+  type: Input text editmass (section14)
+
+method_of_use:
+  field:  การใช้งาน
+  value:  การใช้งาน_Editmass
+  uuid: 6ab4d441-d3f2-4395-9d3e-59591cda5e3c
+  type: Input text editmass (section14)
+
+caution:
+  field:  ข้อควรระวัง
+  value:  ข้อควรระวัง_Editmass
+  uuid: 9190f166-3d2e-4e7c-a04c-73eacfb84fc8
+  type: Input text editmass (section14)
+
+warranty_days:
+  field:  จำนวน(วัน)
+  value:  '99'
+  uuid: 132e1355-cc8c-4c19-9027-72557a76b7d1
+  type: Input text editmass row 1 (day warranty)
+
+item_code:
+  field:  ชื่อแบรนด์สินค้า(ยี่ห้อ) (Brand)
+  value:  "A056: ออร่า"
+  uuid: e3307131-3c4e-4f1f-9bdc-18d70706555a
+  type: Dropdown
+
+warranty_type_id:
+  field:  ประเภทของการรับประกัน
+  value:  "01: รับประกันทุกกรณี"
+  uuid: 42619105-9af0-4a0f-ab1d-720c063e0005
+  type: Dropdown row 1 (type warranty)
+
+item_name:
+  field:  กำหนดรูปแบบการขาย
+  value:  "1: ไม่ระบุ"
+  uuid: 69e351bc-1fc0-42d2-bf05-6ee785309171
+  type: Dropdown row 1 (c1,c2,c3)
+
+color_id:
+  field:  โทนสี
+  value:  "001: แดง"
+  uuid: 9a2e0c15-8c1f-4088-b451-ecf002df789b
+  type: Dropdown
+

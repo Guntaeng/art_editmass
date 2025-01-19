@@ -1,23 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.11.5 on win32)" generated="2024-12-19T15:59:36.267300" rpa="false" schemaversion="5">
-<suite id="s1" name="Editmass A1 default" source="c:\Automate_WEB\art_editmass\testcases\Editmass_A1_default.robot">
+<robot generator="Robot 7.1.1 (Python 3.11.5 on win32)" generated="2025-01-17T11:19:51.130139" rpa="false" schemaversion="5">
+<suite id="s1" name="Editmass New Ver" source="c:\Automate_WEB\art_editmass\keywords\editmass_new_ver.robot">
+<test id="s1-t1" name="Article Edit mass round 1" line="184">
 <kw name="Login dohome and click web art(Edit Mass) A2" owner="common_art" type="SETUP">
 <kw name="Open browser web url" owner="common_art">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-12-19T15:59:37.159245" level="INFO">Opening browser 'headlesschrome' to base url 'https://web-dohome-center-uat.dohome.technology/app/home'.</msg>
+<msg time="2025-01-17T11:19:51.564484" level="INFO">Opening browser 'chrome' to base url 'https://web-dohome-center-uat.dohome.technology/app/home'.</msg>
 <arg>${url}</arg>
 <arg>browser=${browserName}</arg>
 <arg>options=binary_location=r"C:\\chrome-win64\\chrome.exe"</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-12-19T15:59:37.158169" elapsed="1.833488"/>
+<status status="PASS" start="2025-01-17T11:19:51.564484" elapsed="2.985221"/>
 </kw>
 <arg>${url_dohome}</arg>
-<arg>headlesschrome</arg>
-<status status="PASS" start="2024-12-19T15:59:37.155246" elapsed="1.837318"/>
+<arg>chrome</arg>
+<status status="PASS" start="2025-01-17T11:19:51.563465" elapsed="2.987243"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-12-19T15:59:38.993649" elapsed="0.030295"/>
+<status status="PASS" start="2025-01-17T11:19:54.550708" elapsed="0.043544"/>
 </kw>
 <kw name="Wait And Wait Until Element Contains" owner="common_art">
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
@@ -25,7 +26,7 @@
 <arg>${locator}</arg>
 <arg>${text}</arg>
 <doc>Waits until the element ``locator`` contains ``text``.</doc>
-<status status="PASS" start="2024-12-19T15:59:39.027026" elapsed="0.823582"/>
+<status status="PASS" start="2025-01-17T11:19:54.596805" elapsed="0.790733"/>
 </kw>
 <arg>3x</arg>
 <arg>1s</arg>
@@ -33,39 +34,39 @@
 <arg>${locator}</arg>
 <arg>${text}</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2024-12-19T15:59:39.026028" elapsed="0.825579"/>
+<status status="PASS" start="2025-01-17T11:19:54.594778" elapsed="0.792760"/>
 </kw>
 <arg>//button[text()='เข้าสู่ระบบ']</arg>
 <arg>เข้าสู่ระบบ</arg>
-<status status="PASS" start="2024-12-19T15:59:39.024945" elapsed="0.827663"/>
+<status status="PASS" start="2025-01-17T11:19:54.594778" elapsed="0.792760"/>
 </kw>
 <kw name="Wait And Click Element" owner="common_art">
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
 <kw name="Click Element with Delay" owner="common_art">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-12-19T15:59:39.863612" level="INFO">Clicking element '//button[text()='เข้าสู่ระบบ']'.</msg>
+<msg time="2025-01-17T11:19:55.389539" level="INFO">Clicking element '//button[text()='เข้าสู่ระบบ']'.</msg>
 <arg>${locator}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-19T15:59:39.861607" elapsed="0.142510"/>
+<status status="PASS" start="2025-01-17T11:19:55.388539" elapsed="0.266082"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-12-19T15:59:41.007468" level="INFO">Slept 1 second.</msg>
+<msg time="2025-01-17T11:19:56.656078" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-12-19T15:59:40.005118" elapsed="1.002853"/>
+<status status="PASS" start="2025-01-17T11:19:55.655621" elapsed="1.000457"/>
 </kw>
 <arg>${locator}</arg>
-<status status="PASS" start="2024-12-19T15:59:39.859607" elapsed="1.149366"/>
+<status status="PASS" start="2025-01-17T11:19:55.388539" elapsed="1.267539"/>
 </kw>
 <arg>3x</arg>
 <arg>0.8s</arg>
 <arg>Click Element with Delay</arg>
 <arg>${locator}</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2024-12-19T15:59:39.854608" elapsed="1.154365"/>
+<status status="PASS" start="2025-01-17T11:19:55.388539" elapsed="1.268042"/>
 </kw>
 <arg>//button[text()='เข้าสู่ระบบ']</arg>
-<status status="PASS" start="2024-12-19T15:59:39.853608" elapsed="1.156365"/>
+<status status="PASS" start="2025-01-17T11:19:55.387538" elapsed="1.269043"/>
 </kw>
 <kw name="Wait And Wait Until Element Contains" owner="common_art">
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
@@ -73,7 +74,7 @@
 <arg>${locator}</arg>
 <arg>${text}</arg>
 <doc>Waits until the element ``locator`` contains ``text``.</doc>
-<status status="PASS" start="2024-12-19T15:59:41.014973" elapsed="0.053015"/>
+<status status="PASS" start="2025-01-17T11:19:56.656581" elapsed="0.019005"/>
 </kw>
 <arg>3x</arg>
 <arg>1s</arg>
@@ -81,59 +82,59 @@
 <arg>${locator}</arg>
 <arg>${text}</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2024-12-19T15:59:41.012975" elapsed="0.056013"/>
+<status status="PASS" start="2025-01-17T11:19:56.656581" elapsed="0.020005"/>
 </kw>
 <arg>//*[@class="text-2xl text-primary font-bold"]</arg>
 <arg>เข้าสู่ระบบ</arg>
-<status status="PASS" start="2024-12-19T15:59:41.010982" elapsed="0.059007"/>
+<status status="PASS" start="2025-01-17T11:19:56.656581" elapsed="0.020005"/>
 </kw>
 <kw name="Wait And Click Element" owner="common_art">
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
 <kw name="Click Element with Delay" owner="common_art">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-12-19T15:59:41.076988" level="INFO">Clicking element '//input[@name="username"]'.</msg>
+<msg time="2025-01-17T11:19:56.677586" level="INFO">Clicking element '//input[@name="username"]'.</msg>
 <arg>${locator}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-19T15:59:41.076988" elapsed="0.064508"/>
+<status status="PASS" start="2025-01-17T11:19:56.677586" elapsed="0.092051"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-12-19T15:59:42.146276" level="INFO">Slept 1 second.</msg>
+<msg time="2025-01-17T11:19:57.771265" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-12-19T15:59:41.143500" elapsed="1.003794"/>
+<status status="PASS" start="2025-01-17T11:19:56.769637" elapsed="1.001628"/>
 </kw>
 <arg>${locator}</arg>
-<status status="PASS" start="2024-12-19T15:59:41.074988" elapsed="1.073304"/>
+<status status="PASS" start="2025-01-17T11:19:56.677586" elapsed="1.093679"/>
 </kw>
 <arg>3x</arg>
 <arg>0.8s</arg>
 <arg>Click Element with Delay</arg>
 <arg>${locator}</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2024-12-19T15:59:41.073989" elapsed="1.074808"/>
+<status status="PASS" start="2025-01-17T11:19:56.676586" elapsed="1.094679"/>
 </kw>
 <arg>//input[@name="username"]</arg>
-<status status="PASS" start="2024-12-19T15:59:41.070988" elapsed="1.078812"/>
+<status status="PASS" start="2025-01-17T11:19:56.676586" elapsed="1.094679"/>
 </kw>
 <kw name="Wait And Input Text with Delay" owner="common_art">
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
 <kw name="Input Text with Delay" owner="common_art">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-12-19T15:59:42.156799" level="INFO">Typing text '1050607' into text field '//input[@name="username"]'.</msg>
+<msg time="2025-01-17T11:19:57.774295" level="INFO">Typing text '1050607' into text field '//input[@name="username"]'.</msg>
 <arg>${locator}</arg>
 <arg>${text}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-19T15:59:42.155800" elapsed="0.056272"/>
+<status status="PASS" start="2025-01-17T11:19:57.773377" elapsed="0.086225"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-12-19T15:59:43.713131" level="INFO">Slept 1 second 500 milliseconds.</msg>
+<msg time="2025-01-17T11:19:59.361437" level="INFO">Slept 1 second 500 milliseconds.</msg>
 <arg>1.5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-12-19T15:59:42.213083" elapsed="1.500048"/>
+<status status="PASS" start="2025-01-17T11:19:57.859602" elapsed="1.501835"/>
 </kw>
 <arg>${locator}</arg>
 <arg>${text}</arg>
-<status status="PASS" start="2024-12-19T15:59:42.154800" elapsed="1.559336"/>
+<status status="PASS" start="2025-01-17T11:19:57.773377" elapsed="1.588060"/>
 </kw>
 <arg>3x</arg>
 <arg>0.8s</arg>
@@ -141,59 +142,59 @@
 <arg>${locator}</arg>
 <arg>${text}</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2024-12-19T15:59:42.152800" elapsed="1.561336"/>
+<status status="PASS" start="2025-01-17T11:19:57.772370" elapsed="1.589067"/>
 </kw>
 <arg>//input[@name="username"]</arg>
 <arg>${user_editmass_A2}</arg>
-<status status="PASS" start="2024-12-19T15:59:42.150801" elapsed="1.564335"/>
+<status status="PASS" start="2025-01-17T11:19:57.772370" elapsed="1.589067"/>
 </kw>
 <kw name="Wait And Click Element" owner="common_art">
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
 <kw name="Click Element with Delay" owner="common_art">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-12-19T15:59:43.719136" level="INFO">Clicking element '//input[@name="password"]'.</msg>
+<msg time="2025-01-17T11:19:59.362524" level="INFO">Clicking element '//input[@name="password"]'.</msg>
 <arg>${locator}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-19T15:59:43.718219" elapsed="0.050427"/>
+<status status="PASS" start="2025-01-17T11:19:59.362524" elapsed="0.055574"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-12-19T15:59:44.770023" level="INFO">Slept 1 second.</msg>
+<msg time="2025-01-17T11:20:00.419724" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-12-19T15:59:43.769648" elapsed="1.000889"/>
+<status status="PASS" start="2025-01-17T11:19:59.419097" elapsed="1.000627"/>
 </kw>
 <arg>${locator}</arg>
-<status status="PASS" start="2024-12-19T15:59:43.717259" elapsed="1.054358"/>
+<status status="PASS" start="2025-01-17T11:19:59.362524" elapsed="1.057200"/>
 </kw>
 <arg>3x</arg>
 <arg>0.8s</arg>
 <arg>Click Element with Delay</arg>
 <arg>${locator}</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2024-12-19T15:59:43.716136" elapsed="1.056483"/>
+<status status="PASS" start="2025-01-17T11:19:59.362524" elapsed="1.057200"/>
 </kw>
 <arg>//input[@name="password"]</arg>
-<status status="PASS" start="2024-12-19T15:59:43.715136" elapsed="1.058482"/>
+<status status="PASS" start="2025-01-17T11:19:59.361437" elapsed="1.058287"/>
 </kw>
 <kw name="Wait And Input Text with Delay" owner="common_art">
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
 <kw name="Input Text with Delay" owner="common_art">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-12-19T15:59:44.778619" level="INFO">Typing text 'D0h0me*1' into text field '//input[@name="password"]'.</msg>
+<msg time="2025-01-17T11:20:00.421807" level="INFO">Typing text 'D0h0me*1' into text field '//input[@name="password"]'.</msg>
 <arg>${locator}</arg>
 <arg>${text}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-19T15:59:44.778619" elapsed="0.048420"/>
+<status status="PASS" start="2025-01-17T11:20:00.420821" elapsed="0.169323"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-12-19T15:59:46.328645" level="INFO">Slept 1 second 500 milliseconds.</msg>
+<msg time="2025-01-17T11:20:02.091611" level="INFO">Slept 1 second 500 milliseconds.</msg>
 <arg>1.5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-12-19T15:59:44.827039" elapsed="1.502611"/>
+<status status="PASS" start="2025-01-17T11:20:00.591145" elapsed="1.500466"/>
 </kw>
 <arg>${locator}</arg>
 <arg>${text}</arg>
-<status status="PASS" start="2024-12-19T15:59:44.777620" elapsed="1.553029"/>
+<status status="PASS" start="2025-01-17T11:20:00.420821" elapsed="1.671386"/>
 </kw>
 <arg>3x</arg>
 <arg>0.8s</arg>
@@ -201,1629 +202,2176 @@
 <arg>${locator}</arg>
 <arg>${text}</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2024-12-19T15:59:44.776624" elapsed="1.555025"/>
+<status status="PASS" start="2025-01-17T11:20:00.420821" elapsed="1.671386"/>
 </kw>
 <arg>//input[@name="password"]</arg>
 <arg>${pass}</arg>
-<status status="PASS" start="2024-12-19T15:59:44.775631" elapsed="1.556018"/>
+<status status="PASS" start="2025-01-17T11:20:00.420821" elapsed="1.671386"/>
 </kw>
 <kw name="Wait And Click Element" owner="common_art">
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
 <kw name="Click Element with Delay" owner="common_art">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-12-19T15:59:46.336648" level="INFO">Clicking element '//button[@type="submit"][ text()='เข้าสู่ระบบ']'.</msg>
+<msg time="2025-01-17T11:20:02.094301" level="INFO">Clicking element '//button[@type="submit"][ text()='เข้าสู่ระบบ']'.</msg>
 <arg>${locator}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-19T15:59:46.336648" elapsed="0.053714"/>
+<status status="PASS" start="2025-01-17T11:20:02.094301" elapsed="0.065308"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-12-19T15:59:47.391437" level="INFO">Slept 1 second.</msg>
+<msg time="2025-01-17T11:20:03.160005" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-12-19T15:59:46.390362" elapsed="1.001075"/>
+<status status="PASS" start="2025-01-17T11:20:02.159609" elapsed="1.000396"/>
 </kw>
 <arg>${locator}</arg>
-<status status="PASS" start="2024-12-19T15:59:46.335649" elapsed="1.056794"/>
+<status status="PASS" start="2025-01-17T11:20:02.093215" elapsed="1.066790"/>
 </kw>
 <arg>3x</arg>
 <arg>0.8s</arg>
 <arg>Click Element with Delay</arg>
 <arg>${locator}</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2024-12-19T15:59:46.334649" elapsed="1.057794"/>
+<status status="PASS" start="2025-01-17T11:20:02.093215" elapsed="1.066790"/>
 </kw>
 <arg>//button[@type="submit"][ text()='เข้าสู่ระบบ']</arg>
-<status status="PASS" start="2024-12-19T15:59:46.333649" elapsed="1.059794"/>
+<status status="PASS" start="2025-01-17T11:20:02.092207" elapsed="1.067798"/>
 </kw>
 <kw name="Wait And Click Element" owner="common_art">
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
 <kw name="Click Element with Delay" owner="common_art">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-12-19T15:59:47.397441" level="INFO">Clicking element '//*[@aria-label="ระบบจัดการข้อมูลสินค้า"]'.</msg>
-<msg time="2024-12-19T15:59:48.953848" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-10.png"&gt;&lt;img src="selenium-screenshot-10.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2024-12-19T15:59:48.954849" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a class="relative inline-flex items-center tap-highlight-transparent outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 no-underline hover:opacity-80 active:opacity-disabled transition-opacity text-xs line-clamp-1 text-primary" aria-label="ระบบจัดการข้อมูลสินค้า" role="link" href="https://web-article-master-uat.dohome.technology/?i=56ce5a791540402d7b1431edec3e4cb97ea6c7db848e2e8c6cfd6a91432e1972tfUJ80LSS5+dpjCToQepU1G4niSEVvtkDeVoezIGhi2Y5qoCCHPpBz6M7OCqVNBDPU4oIAl/Q2LbyDng+xRduz52wPOlGmsbYvWJ2vLtV98RXiG83HHpgLIkWmKbXDLuk6stB7jN+wHnkUNuhAitMINFPtAG2WEobL/KOHY4tq+7hOKNkvWV2o38hrI8b/cwT3LSuwlMmRdPkFn2pWDjBVHxeuhoaUtEj6CDQGGb3KGKOrvRZjuJc99gncAKbFIjz+BkBGXaM9UEti4pa2RxyIc38bwpkGMKbAcF5uMHExZFf1H8e8NVqoThkrwIRuWSSTn1W1BrpC1OxoUrsQHB+eRg2z9nfMW370oWrixsIWXNRVNY1DIfyFQaJSbJL2HV72Ps0fGTWDFiLcbcpq85VuQ3NoW8e9xhMkUHVUPovcrY3WWXs7u6hMToOAtMxwSJ" target="_blank" tabindex="0"&gt;...&lt;/a&gt; is not clickable at point (523, 1808). Other element would receive the click: &lt;div class="flex w-screen h-[100dvh] fixed inset-0 z-50 overflow-x-auto justify-center [--scale-enter:100%] [--scale-exit:100%] [--slide-enter:0px] [--slide-exit:80px] sm:[--scale-enter:100%] sm:[--scale-exit:103%] sm:[--slide-enter:0px] sm:[--slide-exit:0px] items-end sm:items-center" style="opacity: 1; transform: translateY(0px) scale(1.00153) translateZ(0px);"&gt;...&lt;/div&gt;
+<msg time="2025-01-17T11:20:03.161095" level="INFO">Clicking element '//*[@aria-label="ระบบจัดการข้อมูลสินค้า"]'.</msg>
+<msg time="2025-01-17T11:20:04.705790" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-15.png"&gt;&lt;img src="selenium-screenshot-15.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-01-17T11:20:04.706790" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a class="relative inline-flex items-center tap-highlight-transparent outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 no-underline hover:opacity-80 active:opacity-disabled transition-opacity text-xs line-clamp-1 text-primary" aria-label="ระบบจัดการข้อมูลสินค้า" role="link" href="https://web-article-master-uat.dohome.technology/?i=3179977e30a01041006e9d005f021b4817a2022b16f101feb56a22f27182ed94tpuEmDUHNd2cInBQrGIxnHW1IaOYS41t1JfRG4mDr1oMBojLVZAYixOaLSkb/ock5AtpQsDLXe3FIb3OyilaKmezDYYTSgRyTymR454ClQyqqvbXUk+ZfWNrO4ovCCM1JKSYvzDukMu4sW+tnRTP4aUDNXvWtiT5WMzKZHdq9rK/PMLQKNb77eY3O9zk3N0UnXniGft22B324/3DROG6gMz/YZ79gtxVkxEcgTrg5M4LnzSY1zSGDeCOSyGyuCmr+wPNbhWBKWWs3wLdatnb4q3N6cgERed0oACjLO3YXIVePxLGy84V/vkSLPK6aInZ4rgdL4pRIRKCYxnUqoimb8oY+ODOS6RPe/rtG37qyY/xk0WgwKI0bliuRf/45unfaFFkm9Y1Hlfk4P8WGTkMw/i4khwX4cWkbcz2eZ1ZDZ3V8ycBZR0OcEYWW2XQsKEH" target="_blank" tabindex="0"&gt;...&lt;/a&gt; is not clickable at point (546, 832). Other element would receive the click: &lt;div class="flex w-screen h-[100dvh] fixed inset-0 z-50 overflow-x-auto justify-center [--scale-enter:100%] [--scale-exit:100%] [--slide-enter:0px] [--slide-exit:80px] sm:[--scale-enter:100%] sm:[--scale-exit:103%] sm:[--slide-enter:0px] sm:[--slide-exit:0px] items-end sm:items-center" style="opacity: 1; transform: translateY(0px) scale(1.00375) translateZ(0px);"&gt;...&lt;/div&gt;
   (Session info: chrome=131.0.6778.87)
 Stacktrace:
-	GetHandleVerifier [0x00007FF7C4976CF5+28821]
-	(No symbol) [0x00007FF7C48E3880]
-	(No symbol) [0x00007FF7C478578A]
-	(No symbol) [0x00007FF7C47E0E8E]
-	(No symbol) [0x00007FF7C47DE92C]
-	(No symbol) [0x00007FF7C47DBAF6]
-	(No symbol) [0x00007FF7C47DAA51]
-	(No symbol) [0x00007FF7C47CCBA0]
-	(No symbol) [0x00007FF7C47FF2FA]
-	(No symbol) [0x00007FF7C47CC3F6]
-	(No symbol) [0x00007FF7C47FF510]
-	(No symbol) [0x00007FF7C481F412]
-	(No symbol) [0x00007FF7C47FF0A3]
-	(No symbol) [0x00007FF7C47CA778]
-	(No symbol) [0x00007FF7C47CB8E1]
-	GetHandleVerifier [0x00007FF7C4CAFCED+3408013]
-	GetHandleVerifier [0x00007FF7C4CC745F+3504127]
-	GetHandleVerifier [0x00007FF7C4CBB63D+3455453]
-	GetHandleVerifier [0x00007FF7C4A3BDFB+835995]
-	(No symbol) [0x00007FF7C48EEB9F]
-	(No symbol) [0x00007FF7C48EA854]
-	(No symbol) [0x00007FF7C48EA9ED]
-	(No symbol) [0x00007FF7C48DA1D9]
-	BaseThreadInitThunk [0x00007FFFBC28259D+29]
-	RtlUserThreadStart [0x00007FFFBD4EAF38+40]
+	GetHandleVerifier [0x00007FF7CB886CF5+28821]
+	(No symbol) [0x00007FF7CB7F3880]
+	(No symbol) [0x00007FF7CB69578A]
+	(No symbol) [0x00007FF7CB6F0E8E]
+	(No symbol) [0x00007FF7CB6EE92C]
+	(No symbol) [0x00007FF7CB6EBAF6]
+	(No symbol) [0x00007FF7CB6EAA51]
+	(No symbol) [0x00007FF7CB6DCBA0]
+	(No symbol) [0x00007FF7CB70F2FA]
+	(No symbol) [0x00007FF7CB6DC3F6]
+	(No symbol) [0x00007FF7CB70F510]
+	(No symbol) [0x00007FF7CB72F412]
+	(No symbol) [0x00007FF7CB70F0A3]
+	(No symbol) [0x00007FF7CB6DA778]
+	(No symbol) [0x00007FF7CB6DB8E1]
+	GetHandleVerifier [0x00007FF7CBBBFCED+3408013]
+	GetHandleVerifier [0x00007FF7CBBD745F+3504127]
+	GetHandleVerifier [0x00007FF7CBBCB63D+3455453]
+	GetHandleVerifier [0x00007FF7CB94BDFB+835995]
+	(No symbol) [0x00007FF7CB7FEB9F]
+	(No symbol) [0x00007FF7CB7FA854]
+	(No symbol) [0x00007FF7CB7FA9ED]
+	(No symbol) [0x00007FF7CB7EA1D9]
+	BaseThreadInitThunk [0x00007FFC06EBE8D7+23]
+	RtlUserThreadStart [0x00007FFC089DFBCC+44]
 </msg>
 <arg>${locator}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="FAIL" start="2024-12-19T15:59:47.397441" elapsed="1.563494">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a class="relative inline-flex items-center tap-highlight-transparent outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 no-underline hover:opacity-80 active:opacity-disabled transition-opacity text-xs line-clamp-1 text-primary" aria-label="ระบบจัดการข้อมูลสินค้า" role="link" href="https://web-article-master-uat.dohome.technology/?i=56ce5a791540402d7b1431edec3e4cb97ea6c7db848e2e8c6cfd6a91432e1972tfUJ80LSS5+dpjCToQepU1G4niSEVvtkDeVoezIGhi2Y5qoCCHPpBz6M7OCqVNBDPU4oIAl/Q2LbyDng+xRduz52wPOlGmsbYvWJ2vLtV98RXiG83HHpgLIkWmKbXDLuk6stB7jN+wHnkUNuhAitMINFPtAG2WEobL/KOHY4tq+7hOKNkvWV2o38hrI8b/cwT3LSuwlMmRdPkFn2pWDjBVHxeuhoaUtEj6CDQGGb3KGKOrvRZjuJc99gncAKbFIjz+BkBGXaM9UEti4pa2RxyIc38bwpkGMKbAcF5uMHExZFf1H8e8NVqoThkrwIRuWSSTn1W1BrpC1OxoUrsQHB+eRg2z9nfMW370oWrixsIWXNRVNY1DIfyFQaJSbJL2HV72Ps0fGTWDFiLcbcpq85VuQ3NoW8e9xhMkUHVUPovcrY3WWXs7u6hMToOAtMxwSJ" target="_blank" tabindex="0"&gt;...&lt;/a&gt; is not clickable at point (523, 1808). Other element would receive the click: &lt;div class="flex w-screen h-[100dvh] fixed inset-0 z-50 overflow-x-auto justify-center [--scale-enter:100%] [--scale-exit:100%] [--slide-enter:0px] [--slide-exit:80px] sm:[--scale-enter:100%] sm:[--scale-exit:103%] sm:[--slide-enter:0px] sm:[--slide-exit:0px] items-end sm:items-center" style="opacity: 1; transform: translateY(0px) scale(1.00153) translateZ(0px);"&gt;...&lt;/div&gt;
+<status status="FAIL" start="2025-01-17T11:20:03.161095" elapsed="1.549698">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a class="relative inline-flex items-center tap-highlight-transparent outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 no-underline hover:opacity-80 active:opacity-disabled transition-opacity text-xs line-clamp-1 text-primary" aria-label="ระบบจัดการข้อมูลสินค้า" role="link" href="https://web-article-master-uat.dohome.technology/?i=3179977e30a01041006e9d005f021b4817a2022b16f101feb56a22f27182ed94tpuEmDUHNd2cInBQrGIxnHW1IaOYS41t1JfRG4mDr1oMBojLVZAYixOaLSkb/ock5AtpQsDLXe3FIb3OyilaKmezDYYTSgRyTymR454ClQyqqvbXUk+ZfWNrO4ovCCM1JKSYvzDukMu4sW+tnRTP4aUDNXvWtiT5WMzKZHdq9rK/PMLQKNb77eY3O9zk3N0UnXniGft22B324/3DROG6gMz/YZ79gtxVkxEcgTrg5M4LnzSY1zSGDeCOSyGyuCmr+wPNbhWBKWWs3wLdatnb4q3N6cgERed0oACjLO3YXIVePxLGy84V/vkSLPK6aInZ4rgdL4pRIRKCYxnUqoimb8oY+ODOS6RPe/rtG37qyY/xk0WgwKI0bliuRf/45unfaFFkm9Y1Hlfk4P8WGTkMw/i4khwX4cWkbcz2eZ1ZDZ3V8ycBZR0OcEYWW2XQsKEH" target="_blank" tabindex="0"&gt;...&lt;/a&gt; is not clickable at point (546, 832). Other element would receive the click: &lt;div class="flex w-screen h-[100dvh] fixed inset-0 z-50 overflow-x-auto justify-center [--scale-enter:100%] [--scale-exit:100%] [--slide-enter:0px] [--slide-exit:80px] sm:[--scale-enter:100%] sm:[--scale-exit:103%] sm:[--slide-enter:0px] sm:[--slide-exit:0px] items-end sm:items-center" style="opacity: 1; transform: translateY(0px) scale(1.00375) translateZ(0px);"&gt;...&lt;/div&gt;
     [ Message content over the limit has been removed. ]
-	(No symbol) [0x00007FF7C47DBAF6]
-	(No symbol) [0x00007FF7C47DAA51]
-	(No symbol) [0x00007FF7C47CCBA0]
-	(No symbol) [0x00007FF7C47FF2FA]
-	(No symbol) [0x00007FF7C47CC3F6]
-	(No symbol) [0x00007FF7C47FF510]
-	(No symbol) [0x00007FF7C481F412]
-	(No symbol) [0x00007FF7C47FF0A3]
-	(No symbol) [0x00007FF7C47CA778]
-	(No symbol) [0x00007FF7C47CB8E1]
-	GetHandleVerifier [0x00007FF7C4CAFCED+3408013]
-	GetHandleVerifier [0x00007FF7C4CC745F+3504127]
-	GetHandleVerifier [0x00007FF7C4CBB63D+3455453]
-	GetHandleVerifier [0x00007FF7C4A3BDFB+835995]
-	(No symbol) [0x00007FF7C48EEB9F]
-	(No symbol) [0x00007FF7C48EA854]
-	(No symbol) [0x00007FF7C48EA9ED]
-	(No symbol) [0x00007FF7C48DA1D9]
-	BaseThreadInitThunk [0x00007FFFBC28259D+29]
-	RtlUserThreadStart [0x00007FFFBD4EAF38+40]</status>
+	(No symbol) [0x00007FF7CB6EBAF6]
+	(No symbol) [0x00007FF7CB6EAA51]
+	(No symbol) [0x00007FF7CB6DCBA0]
+	(No symbol) [0x00007FF7CB70F2FA]
+	(No symbol) [0x00007FF7CB6DC3F6]
+	(No symbol) [0x00007FF7CB70F510]
+	(No symbol) [0x00007FF7CB72F412]
+	(No symbol) [0x00007FF7CB70F0A3]
+	(No symbol) [0x00007FF7CB6DA778]
+	(No symbol) [0x00007FF7CB6DB8E1]
+	GetHandleVerifier [0x00007FF7CBBBFCED+3408013]
+	GetHandleVerifier [0x00007FF7CBBD745F+3504127]
+	GetHandleVerifier [0x00007FF7CBBCB63D+3455453]
+	GetHandleVerifier [0x00007FF7CB94BDFB+835995]
+	(No symbol) [0x00007FF7CB7FEB9F]
+	(No symbol) [0x00007FF7CB7FA854]
+	(No symbol) [0x00007FF7CB7FA9ED]
+	(No symbol) [0x00007FF7CB7EA1D9]
+	BaseThreadInitThunk [0x00007FFC06EBE8D7+23]
+	RtlUserThreadStart [0x00007FFC089DFBCC+44]</status>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" start="2024-12-19T15:59:48.961914" elapsed="0.000000"/>
+<status status="NOT RUN" start="2025-01-17T11:20:04.711791" elapsed="0.000000"/>
 </kw>
 <arg>${locator}</arg>
-<status status="FAIL" start="2024-12-19T15:59:47.396441" elapsed="1.566406">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a class="relative inline-flex items-center tap-highlight-transparent outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 no-underline hover:opacity-80 active:opacity-disabled transition-opacity text-xs line-clamp-1 text-primary" aria-label="ระบบจัดการข้อมูลสินค้า" role="link" href="https://web-article-master-uat.dohome.technology/?i=56ce5a791540402d7b1431edec3e4cb97ea6c7db848e2e8c6cfd6a91432e1972tfUJ80LSS5+dpjCToQepU1G4niSEVvtkDeVoezIGhi2Y5qoCCHPpBz6M7OCqVNBDPU4oIAl/Q2LbyDng+xRduz52wPOlGmsbYvWJ2vLtV98RXiG83HHpgLIkWmKbXDLuk6stB7jN+wHnkUNuhAitMINFPtAG2WEobL/KOHY4tq+7hOKNkvWV2o38hrI8b/cwT3LSuwlMmRdPkFn2pWDjBVHxeuhoaUtEj6CDQGGb3KGKOrvRZjuJc99gncAKbFIjz+BkBGXaM9UEti4pa2RxyIc38bwpkGMKbAcF5uMHExZFf1H8e8NVqoThkrwIRuWSSTn1W1BrpC1OxoUrsQHB+eRg2z9nfMW370oWrixsIWXNRVNY1DIfyFQaJSbJL2HV72Ps0fGTWDFiLcbcpq85VuQ3NoW8e9xhMkUHVUPovcrY3WWXs7u6hMToOAtMxwSJ" target="_blank" tabindex="0"&gt;...&lt;/a&gt; is not clickable at point (523, 1808). Other element would receive the click: &lt;div class="flex w-screen h-[100dvh] fixed inset-0 z-50 overflow-x-auto justify-center [--scale-enter:100%] [--scale-exit:100%] [--slide-enter:0px] [--slide-exit:80px] sm:[--scale-enter:100%] sm:[--scale-exit:103%] sm:[--slide-enter:0px] sm:[--slide-exit:0px] items-end sm:items-center" style="opacity: 1; transform: translateY(0px) scale(1.00153) translateZ(0px);"&gt;...&lt;/div&gt;
+<status status="FAIL" start="2025-01-17T11:20:03.161095" elapsed="1.550696">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a class="relative inline-flex items-center tap-highlight-transparent outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 no-underline hover:opacity-80 active:opacity-disabled transition-opacity text-xs line-clamp-1 text-primary" aria-label="ระบบจัดการข้อมูลสินค้า" role="link" href="https://web-article-master-uat.dohome.technology/?i=3179977e30a01041006e9d005f021b4817a2022b16f101feb56a22f27182ed94tpuEmDUHNd2cInBQrGIxnHW1IaOYS41t1JfRG4mDr1oMBojLVZAYixOaLSkb/ock5AtpQsDLXe3FIb3OyilaKmezDYYTSgRyTymR454ClQyqqvbXUk+ZfWNrO4ovCCM1JKSYvzDukMu4sW+tnRTP4aUDNXvWtiT5WMzKZHdq9rK/PMLQKNb77eY3O9zk3N0UnXniGft22B324/3DROG6gMz/YZ79gtxVkxEcgTrg5M4LnzSY1zSGDeCOSyGyuCmr+wPNbhWBKWWs3wLdatnb4q3N6cgERed0oACjLO3YXIVePxLGy84V/vkSLPK6aInZ4rgdL4pRIRKCYxnUqoimb8oY+ODOS6RPe/rtG37qyY/xk0WgwKI0bliuRf/45unfaFFkm9Y1Hlfk4P8WGTkMw/i4khwX4cWkbcz2eZ1ZDZ3V8ycBZR0OcEYWW2XQsKEH" target="_blank" tabindex="0"&gt;...&lt;/a&gt; is not clickable at point (546, 832). Other element would receive the click: &lt;div class="flex w-screen h-[100dvh] fixed inset-0 z-50 overflow-x-auto justify-center [--scale-enter:100%] [--scale-exit:100%] [--slide-enter:0px] [--slide-exit:80px] sm:[--scale-enter:100%] sm:[--scale-exit:103%] sm:[--slide-enter:0px] sm:[--slide-exit:0px] items-end sm:items-center" style="opacity: 1; transform: translateY(0px) scale(1.00375) translateZ(0px);"&gt;...&lt;/div&gt;
     [ Message content over the limit has been removed. ]
-	(No symbol) [0x00007FF7C47DBAF6]
-	(No symbol) [0x00007FF7C47DAA51]
-	(No symbol) [0x00007FF7C47CCBA0]
-	(No symbol) [0x00007FF7C47FF2FA]
-	(No symbol) [0x00007FF7C47CC3F6]
-	(No symbol) [0x00007FF7C47FF510]
-	(No symbol) [0x00007FF7C481F412]
-	(No symbol) [0x00007FF7C47FF0A3]
-	(No symbol) [0x00007FF7C47CA778]
-	(No symbol) [0x00007FF7C47CB8E1]
-	GetHandleVerifier [0x00007FF7C4CAFCED+3408013]
-	GetHandleVerifier [0x00007FF7C4CC745F+3504127]
-	GetHandleVerifier [0x00007FF7C4CBB63D+3455453]
-	GetHandleVerifier [0x00007FF7C4A3BDFB+835995]
-	(No symbol) [0x00007FF7C48EEB9F]
-	(No symbol) [0x00007FF7C48EA854]
-	(No symbol) [0x00007FF7C48EA9ED]
-	(No symbol) [0x00007FF7C48DA1D9]
-	BaseThreadInitThunk [0x00007FFFBC28259D+29]
-	RtlUserThreadStart [0x00007FFFBD4EAF38+40]</status>
+	(No symbol) [0x00007FF7CB6EBAF6]
+	(No symbol) [0x00007FF7CB6EAA51]
+	(No symbol) [0x00007FF7CB6DCBA0]
+	(No symbol) [0x00007FF7CB70F2FA]
+	(No symbol) [0x00007FF7CB6DC3F6]
+	(No symbol) [0x00007FF7CB70F510]
+	(No symbol) [0x00007FF7CB72F412]
+	(No symbol) [0x00007FF7CB70F0A3]
+	(No symbol) [0x00007FF7CB6DA778]
+	(No symbol) [0x00007FF7CB6DB8E1]
+	GetHandleVerifier [0x00007FF7CBBBFCED+3408013]
+	GetHandleVerifier [0x00007FF7CBBD745F+3504127]
+	GetHandleVerifier [0x00007FF7CBBCB63D+3455453]
+	GetHandleVerifier [0x00007FF7CB94BDFB+835995]
+	(No symbol) [0x00007FF7CB7FEB9F]
+	(No symbol) [0x00007FF7CB7FA854]
+	(No symbol) [0x00007FF7CB7FA9ED]
+	(No symbol) [0x00007FF7CB7EA1D9]
+	BaseThreadInitThunk [0x00007FFC06EBE8D7+23]
+	RtlUserThreadStart [0x00007FFC089DFBCC+44]</status>
 </kw>
 <kw name="Click Element with Delay" owner="common_art">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-12-19T15:59:49.765035" level="INFO">Clicking element '//*[@aria-label="ระบบจัดการข้อมูลสินค้า"]'.</msg>
+<msg time="2025-01-17T11:20:05.514573" level="INFO">Clicking element '//*[@aria-label="ระบบจัดการข้อมูลสินค้า"]'.</msg>
 <arg>${locator}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-19T15:59:49.764037" elapsed="0.100341"/>
+<status status="PASS" start="2025-01-17T11:20:05.513565" elapsed="0.109669"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-12-19T15:59:50.867217" level="INFO">Slept 1 second.</msg>
+<msg time="2025-01-17T11:20:06.625665" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-12-19T15:59:49.866382" elapsed="1.000835"/>
+<status status="PASS" start="2025-01-17T11:20:05.624246" elapsed="1.001419"/>
 </kw>
 <arg>${locator}</arg>
-<status status="PASS" start="2024-12-19T15:59:49.763033" elapsed="1.104184"/>
+<status status="PASS" start="2025-01-17T11:20:05.513565" elapsed="1.112100"/>
 </kw>
 <arg>3x</arg>
 <arg>0.8s</arg>
 <arg>Click Element with Delay</arg>
 <arg>${locator}</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2024-12-19T15:59:47.395441" elapsed="3.472786"/>
+<status status="PASS" start="2025-01-17T11:20:03.160005" elapsed="3.465660"/>
 </kw>
 <arg>//*[@aria-label="ระบบจัดการข้อมูลสินค้า"]</arg>
-<status status="PASS" start="2024-12-19T15:59:47.394441" elapsed="3.473786"/>
+<status status="PASS" start="2025-01-17T11:20:03.160005" elapsed="3.465660"/>
 </kw>
 <kw name="Switch Window" owner="SeleniumLibrary">
 <arg>New</arg>
 <doc>Switches to browser window matching ``locator``.</doc>
-<status status="PASS" start="2024-12-19T15:59:50.868227" elapsed="0.010187"/>
+<status status="PASS" start="2025-01-17T11:20:06.626671" elapsed="0.008035"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-12-19T15:59:50.879416" elapsed="20.183010"/>
+<status status="PASS" start="2025-01-17T11:20:06.635781" elapsed="0.005911"/>
 </kw>
 <kw name="Wait And Wait Until Element Is Visible" owner="common_art">
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${locator}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-12-19T16:00:11.065425" elapsed="0.227317"/>
+<status status="PASS" start="2025-01-17T11:20:06.642691" elapsed="0.021084"/>
 </kw>
 <arg>5x</arg>
 <arg>1s</arg>
 <arg>Wait Until Element Is Visible</arg>
 <arg>${locator}</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2024-12-19T16:00:11.064425" elapsed="0.229316"/>
+<status status="PASS" start="2025-01-17T11:20:06.641692" elapsed="0.022083"/>
 </kw>
 <arg>//h3[text()="Article Master"]</arg>
-<status status="PASS" start="2024-12-19T16:00:11.063425" elapsed="0.230316"/>
+<status status="PASS" start="2025-01-17T11:20:06.641692" elapsed="0.022083"/>
 </kw>
 <kw name="Wait And Click Element" owner="common_art">
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
 <kw name="Click Element with Delay" owner="common_art">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-12-19T16:00:11.298742" level="INFO">Clicking element '//p[text()='จัดการสินค้า']'.</msg>
+<msg time="2025-01-17T11:20:06.664779" level="INFO">Clicking element '//p[text()='จัดการสินค้า']'.</msg>
 <arg>${locator}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-19T16:00:11.297742" elapsed="0.054530"/>
+<status status="PASS" start="2025-01-17T11:20:06.664779" elapsed="0.067262"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-12-19T16:00:12.353741" level="INFO">Slept 1 second.</msg>
+<msg time="2025-01-17T11:20:07.733373" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-12-19T16:00:11.352272" elapsed="1.002001"/>
+<status status="PASS" start="2025-01-17T11:20:06.732041" elapsed="1.001332"/>
 </kw>
 <arg>${locator}</arg>
-<status status="PASS" start="2024-12-19T16:00:11.296742" elapsed="1.058571"/>
+<status status="PASS" start="2025-01-17T11:20:06.664779" elapsed="1.068594"/>
 </kw>
 <arg>3x</arg>
 <arg>0.8s</arg>
 <arg>Click Element with Delay</arg>
 <arg>${locator}</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2024-12-19T16:00:11.295742" elapsed="1.059571"/>
+<status status="PASS" start="2025-01-17T11:20:06.664779" elapsed="1.068594"/>
 </kw>
 <arg>//p[text()='จัดการสินค้า']</arg>
-<status status="PASS" start="2024-12-19T16:00:11.293741" elapsed="1.062584"/>
+<status status="PASS" start="2025-01-17T11:20:06.663775" elapsed="1.069598"/>
 </kw>
 <kw name="Wait And Click Element" owner="common_art">
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
 <kw name="Click Element with Delay" owner="common_art">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-12-19T16:00:12.362359" level="INFO">Clicking element '//p[text()='ขอเปลี่ยนแปลงข้อมูลสินค้า']/parent::span//parent::a[@href="/app/edit-mass-information"]'.</msg>
+<msg time="2025-01-17T11:20:07.735377" level="INFO">Clicking element '//p[text()='ขอเปลี่ยนแปลงข้อมูลสินค้า']/parent::span//parent::a[@href="/app/edit-mass-information"]'.</msg>
 <arg>${locator}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-12-19T16:00:12.361324" elapsed="0.053680"/>
+<status status="PASS" start="2025-01-17T11:20:07.734379" elapsed="0.092151"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-12-19T16:00:13.417663" level="INFO">Slept 1 second.</msg>
+<msg time="2025-01-17T11:20:08.828118" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-12-19T16:00:12.416002" elapsed="1.001661"/>
+<status status="PASS" start="2025-01-17T11:20:07.827530" elapsed="1.000588"/>
 </kw>
 <arg>${locator}</arg>
-<status status="PASS" start="2024-12-19T16:00:12.359355" elapsed="1.059312"/>
+<status status="PASS" start="2025-01-17T11:20:07.734379" elapsed="1.093739"/>
 </kw>
 <arg>3x</arg>
 <arg>0.8s</arg>
 <arg>Click Element with Delay</arg>
 <arg>${locator}</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2024-12-19T16:00:12.358370" elapsed="1.061298"/>
+<status status="PASS" start="2025-01-17T11:20:07.734379" elapsed="1.093739"/>
 </kw>
 <arg>//p[text()='ขอเปลี่ยนแปลงข้อมูลสินค้า']/parent::span//parent::a[@href="/app/edit-mass-information"]</arg>
-<status status="PASS" start="2024-12-19T16:00:12.357371" elapsed="1.062297"/>
+<status status="PASS" start="2025-01-17T11:20:07.734379" elapsed="1.093739"/>
 </kw>
 <kw name="Wait And Wait Until Element Is Visible" owner="common_art">
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${locator}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-12-19T16:00:13.422665" elapsed="3.980725"/>
+<status status="PASS" start="2025-01-17T11:20:08.829125" elapsed="0.019829"/>
 </kw>
 <arg>5x</arg>
 <arg>1s</arg>
 <arg>Wait Until Element Is Visible</arg>
 <arg>${locator}</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2024-12-19T16:00:13.421666" elapsed="3.981724"/>
+<status status="PASS" start="2025-01-17T11:20:08.829125" elapsed="0.020835"/>
 </kw>
 <arg>//input[@name="purchaser_group_no"]/following-sibling::div/div/input</arg>
-<status status="PASS" start="2024-12-19T16:00:13.420666" elapsed="3.983723"/>
+<status status="PASS" start="2025-01-17T11:20:08.828118" elapsed="0.021842"/>
 </kw>
-<status status="PASS" start="2024-12-19T15:59:37.154254" elapsed="40.250135"/>
+<status status="PASS" start="2025-01-17T11:19:51.563465" elapsed="17.286495"/>
 </kw>
-<test id="s1-t1" name="Article Edit mass round 1 (default)" line="12">
-<kw name="Process CSV Rows" owner="Read_data_csv">
-<kw name="Read Csv" owner="csv_ready_v2">
-<msg time="2024-12-19T16:00:17.410722" level="INFO">${result} = [{'no': '1', 'level_approve': 'A1', 'round': 'NR1', 'field': 'กรรมสิทธิ์ของตัวโชว์', 'value': 'D: ตัวโชว์ Dohome', 'uuid': '83c976bf-32e8-42ba-b2ac-17c4e04acae3', 'type_field': 'drop down'}, {'no': '2...</msg>
-<var>${result}</var>
-<arg>${path}</arg>
-<status status="PASS" start="2024-12-19T16:00:17.408799" elapsed="0.002928"/>
+<kw name="Search by article" owner="common_art">
+<kw name="Wait And Click Element" owner="common_art">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element with Delay" owner="common_art">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-17T11:20:08.852446" level="INFO">Clicking element '//input[@name="article_id"]'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-17T11:20:08.852446" elapsed="0.125026"/>
 </kw>
-<kw name="Set Variable" owner="BuiltIn">
-<msg time="2024-12-19T16:00:17.415726" level="INFO">${x_rows} = [{'no': '1', 'level_approve': 'A1', 'round': 'NR1', 'field': 'กรรมสิทธิ์ของตัวโชว์', 'value': 'D: ตัวโชว์ Dohome', 'uuid': '83c976bf-32e8-42ba-b2ac-17c4e04acae3', 'type_field': 'drop down'}, {'no': '2...</msg>
-<var>${x_rows}</var>
-<arg>${result}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.412722" elapsed="0.004000"/>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-17T11:20:09.978778" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-17T11:20:08.977472" elapsed="1.001306"/>
 </kw>
-<kw name="Set Variable" owner="BuiltIn">
-<msg time="2024-12-19T16:00:17.418722" level="INFO">${index} = 1</msg>
-<var>${index}</var>
-<arg>1</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.417722" elapsed="0.001000"/>
+<arg>${locator}</arg>
+<status status="PASS" start="2025-01-17T11:20:08.852446" elapsed="1.126332"/>
+</kw>
+<arg>3x</arg>
+<arg>0.8s</arg>
+<arg>Click Element with Delay</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-01-17T11:20:08.851196" elapsed="1.127582"/>
+</kw>
+<arg>//input[@name="article_id"]</arg>
+<status status="PASS" start="2025-01-17T11:20:08.851196" elapsed="1.127582"/>
+</kw>
+<kw name="Wait And Click Element" owner="common_art">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element with Delay" owner="common_art">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-17T11:20:09.980858" level="INFO">Clicking element '//textarea[@name="article"]'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-17T11:20:09.979856" elapsed="0.051527"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-17T11:20:11.032984" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-17T11:20:10.031383" elapsed="1.001601"/>
+</kw>
+<arg>${locator}</arg>
+<status status="PASS" start="2025-01-17T11:20:09.979856" elapsed="1.053128"/>
+</kw>
+<arg>3x</arg>
+<arg>0.8s</arg>
+<arg>Click Element with Delay</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-01-17T11:20:09.979856" elapsed="1.053128"/>
+</kw>
+<arg>//textarea[@name="article"]</arg>
+<status status="PASS" start="2025-01-17T11:20:09.978778" elapsed="1.054206"/>
 </kw>
 <for flavor="IN">
 <iter>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-19T16:00:17.423722" level="INFO">${level_approve} = A1</msg>
-<var>${level_approve}</var>
-<arg>${row}</arg>
-<arg>level_approve</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.421722" elapsed="0.003000"/>
+<kw name="Get Value" owner="SeleniumLibrary">
+<msg time="2025-01-17T11:20:11.049422" level="INFO">${current_text} = </msg>
+<var>${current_text}</var>
+<arg>//textarea[@name="article"]</arg>
+<doc>Returns the value attribute of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-17T11:20:11.033992" elapsed="0.015430"/>
 </kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-19T16:00:17.426722" level="INFO">${round} = NR1</msg>
-<var>${round}</var>
-<arg>${row}</arg>
-<arg>round</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.425722" elapsed="0.002000"/>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-01-17T11:20:11.049422" level="INFO">${new_text} = 
+10337742</msg>
+<var>${new_text}</var>
+<arg>${current_text}\n${article}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-01-17T11:20:11.049422" elapsed="0.001017"/>
 </kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-19T16:00:17.430722" level="INFO">${field} = กรรมสิทธิ์ของตัวโชว์</msg>
-<var>${field}</var>
-<arg>${row}</arg>
-<arg>field</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.428722" elapsed="0.002000"/>
+<kw name="Wait And Input Text with Delay" owner="common_art">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input Text with Delay" owner="common_art">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-17T11:20:11.051440" level="INFO">Typing text '
+10337742' into text field '//textarea[@name="article"]'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-17T11:20:11.050439" elapsed="0.051667"/>
 </kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-19T16:00:17.433722" level="INFO">${value} = D: ตัวโชว์ Dohome</msg>
-<var>${value}</var>
-<arg>${row}</arg>
-<arg>value</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.431722" elapsed="0.002000"/>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-17T11:20:12.602409" level="INFO">Slept 1 second 500 milliseconds.</msg>
+<arg>1.5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-17T11:20:11.102106" elapsed="1.500303"/>
 </kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-19T16:00:17.436725" level="INFO">${uuid} = 83c976bf-32e8-42ba-b2ac-17c4e04acae3</msg>
-<var>${uuid}</var>
-<arg>${row}</arg>
-<arg>uuid</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.434722" elapsed="0.002003"/>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<status status="PASS" start="2025-01-17T11:20:11.050439" elapsed="1.551970"/>
 </kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-19T16:00:17.444725" level="INFO">${level_approve_1} = A1</msg>
-<arg>${level_approve_${index}}</arg>
-<arg>${level_approve}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.437725" elapsed="0.007000"/>
+<arg>3x</arg>
+<arg>0.8s</arg>
+<arg>Input Text with Delay</arg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-01-17T11:20:11.050439" elapsed="1.551970"/>
 </kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-19T16:00:17.450816" level="INFO">${round_1} = NR1</msg>
-<arg>${round_${index}}</arg>
-<arg>${round}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.445725" elapsed="0.005595"/>
+<arg>//textarea[@name="article"]</arg>
+<arg>${new_text}</arg>
+<status status="PASS" start="2025-01-17T11:20:11.050439" elapsed="1.551970"/>
 </kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-19T16:00:17.456323" level="INFO">${field_1} = กรรมสิทธิ์ของตัวโชว์</msg>
-<arg>${field_${index}}</arg>
-<arg>${field}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.451320" elapsed="0.006003"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-19T16:00:17.464324" level="INFO">${value_1} = D: ตัวโชว์ Dohome</msg>
-<arg>${value_${index}}</arg>
-<arg>${value}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.458323" elapsed="0.007083"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-19T16:00:17.472407" level="INFO">${uuid_1} = 83c976bf-32e8-42ba-b2ac-17c4e04acae3</msg>
-<arg>${uuid_${index}}</arg>
-<arg>${uuid}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.466407" elapsed="0.007002"/>
-</kw>
-<kw name="Evaluate" owner="BuiltIn">
-<msg time="2024-12-19T16:00:17.474323" level="INFO">${index} = 2</msg>
-<var>${index}</var>
-<arg>(${index}) + 1</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.474323" elapsed="0.001084"/>
-</kw>
-<var name="${row}">{'no': '1', 'level_approve': 'A1', 'round': 'NR1', 'field': 'กรรมสิทธิ์ของตัวโชว์', 'value': 'D: ตัวโชว์ Dohome', 'uuid': '83c976bf-32e8-42ba-b2ac-17c4e04acae3', 'type_field': 'drop down'}</var>
-<status status="PASS" start="2024-12-19T16:00:17.420722" elapsed="0.054685"/>
+<var name="${article}">10337742</var>
+<status status="PASS" start="2025-01-17T11:20:11.033992" elapsed="1.568417"/>
 </iter>
-<iter>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-19T16:00:17.477325" level="INFO">${level_approve} = A1</msg>
-<var>${level_approve}</var>
-<arg>${row}</arg>
-<arg>level_approve</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.476421" elapsed="0.001903"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-19T16:00:17.479324" level="INFO">${round} = NR1</msg>
-<var>${round}</var>
-<arg>${row}</arg>
-<arg>round</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.479324" elapsed="0.001093"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-19T16:00:17.481412" level="INFO">${field} = กลุ่มจัดซื้อต่างประเทศ</msg>
-<var>${field}</var>
-<arg>${row}</arg>
-<arg>field</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.480417" elapsed="0.000995"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-19T16:00:17.482417" level="INFO">${value} = 201: คุณหทัยพันธน์</msg>
-<var>${value}</var>
-<arg>${row}</arg>
-<arg>value</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.482417" elapsed="0.000989"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-19T16:00:17.484407" level="INFO">${uuid} = 9d5a006a-a64b-45b2-b77d-edb75712b954</msg>
-<var>${uuid}</var>
-<arg>${row}</arg>
-<arg>uuid</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.483406" elapsed="0.001001"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-19T16:00:17.487406" level="INFO">${level_approve_2} = A1</msg>
-<arg>${level_approve_${index}}</arg>
-<arg>${level_approve}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.484407" elapsed="0.004001"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-19T16:00:17.491407" level="INFO">${round_2} = NR1</msg>
-<arg>${round_${index}}</arg>
-<arg>${round}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.488408" elapsed="0.003998"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-19T16:00:17.496324" level="INFO">${field_2} = กลุ่มจัดซื้อต่างประเทศ</msg>
-<arg>${field_${index}}</arg>
-<arg>${field}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.492406" elapsed="0.004952"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-19T16:00:17.501422" level="INFO">${value_2} = 201: คุณหทัยพันธน์</msg>
-<arg>${value_${index}}</arg>
-<arg>${value}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.497358" elapsed="0.004064"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-19T16:00:17.505416" level="INFO">${uuid_2} = 9d5a006a-a64b-45b2-b77d-edb75712b954</msg>
-<arg>${uuid_${index}}</arg>
-<arg>${uuid}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.502369" elapsed="0.003047"/>
-</kw>
-<kw name="Evaluate" owner="BuiltIn">
-<msg time="2024-12-19T16:00:17.507406" level="INFO">${index} = 3</msg>
-<var>${index}</var>
-<arg>(${index}) + 1</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.506407" elapsed="0.000999"/>
-</kw>
-<var name="${row}">{'no': '2', 'level_approve': 'A1', 'round': 'NR1', 'field': 'กลุ่มจัดซื้อต่างประเทศ', 'value': '201: คุณหทัยพันธน์', 'uuid': '9d5a006a-a64b-45b2-b77d-edb75712b954', 'type_field': 'drop down'}</var>
-<status status="PASS" start="2024-12-19T16:00:17.475407" elapsed="0.031999"/>
-</iter>
-<iter>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-19T16:00:17.510324" level="INFO">${level_approve} = A1</msg>
-<var>${level_approve}</var>
-<arg>${row}</arg>
-<arg>level_approve</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.508405" elapsed="0.001919"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-19T16:00:17.512325" level="INFO">${round} = NR1</msg>
-<var>${round}</var>
-<arg>${row}</arg>
-<arg>round</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.511361" elapsed="0.000964"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-19T16:00:17.513420" level="INFO">${field} = สถานะสินค้า Active / Inactive (Item Status)</msg>
-<var>${field}</var>
-<arg>${row}</arg>
-<arg>field</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.513420" elapsed="0.000988"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-19T16:00:17.515407" level="INFO">${value} = A: Active</msg>
-<var>${value}</var>
-<arg>${row}</arg>
-<arg>value</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.514408" elapsed="0.000999"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-19T16:00:17.516407" level="INFO">${uuid} = d48870c0-87d0-4278-b860-a4054a6cda69</msg>
-<var>${uuid}</var>
-<arg>${row}</arg>
-<arg>uuid</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.516407" elapsed="0.001000"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-19T16:00:17.520413" level="INFO">${level_approve_3} = A1</msg>
-<arg>${level_approve_${index}}</arg>
-<arg>${level_approve}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.517407" elapsed="0.004001"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-19T16:00:17.525505" level="INFO">${round_3} = NR1</msg>
-<arg>${round_${index}}</arg>
-<arg>${round}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.521408" elapsed="0.004097"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-19T16:00:17.529453" level="INFO">${field_3} = สถานะสินค้า Active / Inactive (Item Status)</msg>
-<arg>${field_${index}}</arg>
-<arg>${field}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.525505" elapsed="0.003948"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-19T16:00:17.534417" level="INFO">${value_3} = A: Active</msg>
-<arg>${value_${index}}</arg>
-<arg>${value}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.530499" elapsed="0.003918"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-19T16:00:17.538179" level="INFO">${uuid_3} = d48870c0-87d0-4278-b860-a4054a6cda69</msg>
-<arg>${uuid_${index}}</arg>
-<arg>${uuid}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.535511" elapsed="0.003675"/>
-</kw>
-<kw name="Evaluate" owner="BuiltIn">
-<msg time="2024-12-19T16:00:17.540097" level="INFO">${index} = 4</msg>
-<var>${index}</var>
-<arg>(${index}) + 1</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.539186" elapsed="0.000911"/>
-</kw>
-<var name="${row}">{'no': '3', 'level_approve': 'A1', 'round': 'NR1', 'field': 'สถานะสินค้า Active / Inactive (Item Status)', 'value': 'A: Active', 'uuid': 'd48870c0-87d0-4278-b860-a4054a6cda69', 'type_field': 'drop dow...</var>
-<status status="PASS" start="2024-12-19T16:00:17.508405" elapsed="0.031692"/>
-</iter>
-<iter>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-19T16:00:17.543142" level="INFO">${level_approve} = A1</msg>
-<var>${level_approve}</var>
-<arg>${row}</arg>
-<arg>level_approve</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.542095" elapsed="0.001047"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-19T16:00:17.544100" level="INFO">${round} = NR1</msg>
-<var>${round}</var>
-<arg>${row}</arg>
-<arg>round</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.543142" elapsed="0.000958"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-19T16:00:17.546096" level="INFO">${field} = สินค้าที่ต้องระบุ batch (Batch management)</msg>
-<var>${field}</var>
-<arg>${row}</arg>
-<arg>field</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.545216" elapsed="0.000880"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-19T16:00:17.547682" level="INFO">${value} = </msg>
-<var>${value}</var>
-<arg>${row}</arg>
-<arg>value</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.546096" elapsed="0.001586"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-19T16:00:17.548768" level="INFO">${uuid} = ac424a83-5387-401d-b8e9-78b294901d4b</msg>
-<var>${uuid}</var>
-<arg>${row}</arg>
-<arg>uuid</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.547682" elapsed="0.001086"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-19T16:00:17.553452" level="INFO">${level_approve_4} = A1</msg>
-<arg>${level_approve_${index}}</arg>
-<arg>${level_approve}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.549768" elapsed="0.003684"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-19T16:00:17.559065" level="INFO">${round_4} = NR1</msg>
-<arg>${round_${index}}</arg>
-<arg>${round}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.554455" elapsed="0.004610"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-19T16:00:17.564152" level="INFO">${field_4} = สินค้าที่ต้องระบุ batch (Batch management)</msg>
-<arg>${field_${index}}</arg>
-<arg>${field}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.560144" elapsed="0.004008"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-19T16:00:17.568155" level="INFO">${value_4} = </msg>
-<arg>${value_${index}}</arg>
-<arg>${value}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.565145" elapsed="0.004002"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-19T16:00:17.572823" level="INFO">${uuid_4} = ac424a83-5387-401d-b8e9-78b294901d4b</msg>
-<arg>${uuid_${index}}</arg>
-<arg>${uuid}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.569147" elapsed="0.003676"/>
-</kw>
-<kw name="Evaluate" owner="BuiltIn">
-<msg time="2024-12-19T16:00:17.574824" level="INFO">${index} = 5</msg>
-<var>${index}</var>
-<arg>(${index}) + 1</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.573824" elapsed="0.001000"/>
-</kw>
-<var name="${row}">{'no': '4', 'level_approve': 'A1', 'round': 'NR1', 'field': 'สินค้าที่ต้องระบุ batch (Batch management)', 'value': '', 'uuid': 'ac424a83-5387-401d-b8e9-78b294901d4b', 'type_field': 'check box'}</var>
-<status status="PASS" start="2024-12-19T16:00:17.541181" elapsed="0.033643"/>
-</iter>
-<iter>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-19T16:00:17.576822" level="INFO">${level_approve} = A1</msg>
-<var>${level_approve}</var>
-<arg>${row}</arg>
-<arg>level_approve</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.575822" elapsed="0.001000"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-19T16:00:17.578742" level="INFO">${round} = NR1</msg>
-<var>${round}</var>
-<arg>${row}</arg>
-<arg>round</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.577739" elapsed="0.001003"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-19T16:00:17.579782" level="INFO">${field} = กลุ่มสินค้า Core หลัก /เสริม (Product Role)</msg>
-<var>${field}</var>
-<arg>${row}</arg>
-<arg>field</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.578742" elapsed="0.001040"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-19T16:00:17.581824" level="INFO">${value} = 01: Core</msg>
-<var>${value}</var>
-<arg>${row}</arg>
-<arg>value</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.580823" elapsed="0.001001"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-19T16:00:17.582822" level="INFO">${uuid} = dcad006c-af57-4226-8e7c-1db348d6930d</msg>
-<var>${uuid}</var>
-<arg>${row}</arg>
-<arg>uuid</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.581824" elapsed="0.000998"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-19T16:00:17.586825" level="INFO">${level_approve_5} = A1</msg>
-<arg>${level_approve_${index}}</arg>
-<arg>${level_approve}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.583824" elapsed="0.004000"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-19T16:00:17.591742" level="INFO">${round_5} = NR1</msg>
-<arg>${round_${index}}</arg>
-<arg>${round}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.587824" elapsed="0.004999"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-19T16:00:17.597828" level="INFO">${field_5} = กลุ่มสินค้า Core หลัก /เสริม (Product Role)</msg>
-<arg>${field_${index}}</arg>
-<arg>${field}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.592823" elapsed="0.005005"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-19T16:00:17.602771" level="INFO">${value_5} = 01: Core</msg>
-<arg>${value_${index}}</arg>
-<arg>${value}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.598820" elapsed="0.003951"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-19T16:00:17.606820" level="INFO">${uuid_5} = dcad006c-af57-4226-8e7c-1db348d6930d</msg>
-<arg>${uuid_${index}}</arg>
-<arg>${uuid}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.602771" elapsed="0.005046"/>
-</kw>
-<kw name="Evaluate" owner="BuiltIn">
-<msg time="2024-12-19T16:00:17.608822" level="INFO">${index} = 6</msg>
-<var>${index}</var>
-<arg>(${index}) + 1</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.607817" elapsed="0.001005"/>
-</kw>
-<var name="${row}">{'no': '5', 'level_approve': 'A1', 'round': 'NR1', 'field': 'กลุ่มสินค้า Core หลัก /เสริม (Product Role)', 'value': '01: Core', 'uuid': 'dcad006c-af57-4226-8e7c-1db348d6930d', 'type_field': 'drop down...</var>
-<status status="PASS" start="2024-12-19T16:00:17.574824" elapsed="0.033998"/>
-</iter>
-<iter>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-19T16:00:17.611834" level="INFO">${level_approve} = A1</msg>
-<var>${level_approve}</var>
-<arg>${row}</arg>
-<arg>level_approve</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.610763" elapsed="0.001071"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-19T16:00:17.612775" level="INFO">${round} = NR2</msg>
-<var>${round}</var>
-<arg>${row}</arg>
-<arg>round</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.612775" elapsed="0.001048"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-19T16:00:17.614824" level="INFO">${field} = การจัดกลุ่มสินค้า (Item indicator)</msg>
-<var>${field}</var>
-<arg>${row}</arg>
-<arg>field</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.613823" elapsed="0.001001"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-19T16:00:17.615832" level="INFO">${value} = 4: สินค้าปกติ</msg>
-<var>${value}</var>
-<arg>${row}</arg>
-<arg>value</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.615832" elapsed="0.000990"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-19T16:00:17.617823" level="INFO">${uuid} = 7742800e-7944-4251-9e53-b54e7e071a8b</msg>
-<var>${uuid}</var>
-<arg>${row}</arg>
-<arg>uuid</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.616822" elapsed="0.001001"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-19T16:00:17.622826" level="INFO">${level_approve_6} = A1</msg>
-<arg>${level_approve_${index}}</arg>
-<arg>${level_approve}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.617823" elapsed="0.006006"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-19T16:00:17.629771" level="INFO">${round_6} = NR2</msg>
-<arg>${round_${index}}</arg>
-<arg>${round}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.623829" elapsed="0.005942"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-19T16:00:17.635741" level="INFO">${field_6} = การจัดกลุ่มสินค้า (Item indicator)</msg>
-<arg>${field_${index}}</arg>
-<arg>${field}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.630752" elapsed="0.004989"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-19T16:00:17.640831" level="INFO">${value_6} = 4: สินค้าปกติ</msg>
-<arg>${value_${index}}</arg>
-<arg>${value}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.635741" elapsed="0.005090"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-19T16:00:17.645746" level="INFO">${uuid_6} = 7742800e-7944-4251-9e53-b54e7e071a8b</msg>
-<arg>${uuid_${index}}</arg>
-<arg>${uuid}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.640831" elapsed="0.004915"/>
-</kw>
-<kw name="Evaluate" owner="BuiltIn">
-<msg time="2024-12-19T16:00:17.646829" level="INFO">${index} = 7</msg>
-<var>${index}</var>
-<arg>(${index}) + 1</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.646829" elapsed="0.001001"/>
-</kw>
-<var name="${row}">{'no': '6', 'level_approve': 'A1', 'round': 'NR2', 'field': 'การจัดกลุ่มสินค้า (Item indicator)', 'value': '4: สินค้าปกติ', 'uuid': '7742800e-7944-4251-9e53-b54e7e071a8b', 'type_field': 'drop down'}</var>
-<status status="PASS" start="2024-12-19T16:00:17.609821" elapsed="0.038009"/>
-</iter>
-<iter>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-19T16:00:17.649828" level="INFO">${level_approve} = A1</msg>
-<var>${level_approve}</var>
-<arg>${row}</arg>
-<arg>level_approve</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.648841" elapsed="0.000987"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-19T16:00:17.651290" level="INFO">${round} = NR2</msg>
-<var>${round}</var>
-<arg>${row}</arg>
-<arg>round</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.649828" elapsed="0.001462"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-19T16:00:17.652294" level="INFO">${field} = กลุ่มย่อยของ Product Role</msg>
-<var>${field}</var>
-<arg>${row}</arg>
-<arg>field</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.652294" elapsed="0.001000"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-19T16:00:17.654294" level="INFO">${value} = 01: สินค้าฤดูกาล</msg>
-<var>${value}</var>
-<arg>${row}</arg>
-<arg>value</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.653294" elapsed="0.001000"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-19T16:00:17.656294" level="INFO">${uuid} = ca98953b-03c6-445b-83bd-da790829ccaf</msg>
-<var>${uuid}</var>
-<arg>${row}</arg>
-<arg>uuid</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.655294" elapsed="0.001000"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-19T16:00:17.661293" level="INFO">${level_approve_7} = A1</msg>
-<arg>${level_approve_${index}}</arg>
-<arg>${level_approve}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.657386" elapsed="0.004907"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-19T16:00:17.667292" level="INFO">${round_7} = NR2</msg>
-<arg>${round_${index}}</arg>
-<arg>${round}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.662293" elapsed="0.004999"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-19T16:00:17.673313" level="INFO">${field_7} = กลุ่มย่อยของ Product Role</msg>
-<arg>${field_${index}}</arg>
-<arg>${field}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.668390" elapsed="0.004923"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-19T16:00:17.679330" level="INFO">${value_7} = 01: สินค้าฤดูกาล</msg>
-<arg>${value_${index}}</arg>
-<arg>${value}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.674340" elapsed="0.004990"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-19T16:00:17.685293" level="INFO">${uuid_7} = ca98953b-03c6-445b-83bd-da790829ccaf</msg>
-<arg>${uuid_${index}}</arg>
-<arg>${uuid}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.680376" elapsed="0.004917"/>
-</kw>
-<kw name="Evaluate" owner="BuiltIn">
-<msg time="2024-12-19T16:00:17.686294" level="INFO">${index} = 8</msg>
-<var>${index}</var>
-<arg>(${index}) + 1</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.685293" elapsed="0.001001"/>
-</kw>
-<var name="${row}">{'no': '7', 'level_approve': 'A1', 'round': 'NR2', 'field': 'กลุ่มย่อยของ Product Role', 'value': '01: สินค้าฤดูกาล', 'uuid': 'ca98953b-03c6-445b-83bd-da790829ccaf', 'type_field': 'drop down'}</var>
-<status status="PASS" start="2024-12-19T16:00:17.647830" elapsed="0.039464"/>
-</iter>
-<iter>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-19T16:00:17.688294" level="INFO">${level_approve} = A1</msg>
-<var>${level_approve}</var>
-<arg>${row}</arg>
-<arg>level_approve</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.688294" elapsed="0.001000"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-19T16:00:17.690294" level="INFO">${round} = NR2</msg>
-<var>${round}</var>
-<arg>${row}</arg>
-<arg>round</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.689294" elapsed="0.001000"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-19T16:00:17.691294" level="INFO">${field} = Product trends</msg>
-<var>${field}</var>
-<arg>${row}</arg>
-<arg>field</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.690294" elapsed="0.001000"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-19T16:00:17.692294" level="INFO">${value} = 01: นวัตกรรม</msg>
-<var>${value}</var>
-<arg>${row}</arg>
-<arg>value</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.692294" elapsed="0.019999"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-19T16:00:17.714378" level="INFO">${uuid} = e304c756-65b1-4381-9600-c566e800ac7d</msg>
-<var>${uuid}</var>
-<arg>${row}</arg>
-<arg>uuid</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.713310" elapsed="0.001068"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-19T16:00:17.719375" level="INFO">${level_approve_8} = A1</msg>
-<arg>${level_approve_${index}}</arg>
-<arg>${level_approve}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.714378" elapsed="0.004997"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-19T16:00:17.724372" level="INFO">${round_8} = NR2</msg>
-<arg>${round_${index}}</arg>
-<arg>${round}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.720384" elapsed="0.004987"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-19T16:00:17.730293" level="INFO">${field_8} = Product trends</msg>
-<arg>${field_${index}}</arg>
-<arg>${field}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.725371" elapsed="0.004922"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-19T16:00:17.736457" level="INFO">${value_8} = 01: นวัตกรรม</msg>
-<arg>${value_${index}}</arg>
-<arg>${value}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.731370" elapsed="0.005087"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-19T16:00:17.741456" level="INFO">${uuid_8} = e304c756-65b1-4381-9600-c566e800ac7d</msg>
-<arg>${uuid_${index}}</arg>
-<arg>${uuid}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.736457" elapsed="0.004999"/>
-</kw>
-<kw name="Evaluate" owner="BuiltIn">
-<msg time="2024-12-19T16:00:17.743380" level="INFO">${index} = 9</msg>
-<var>${index}</var>
-<arg>(${index}) + 1</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.742458" elapsed="0.000922"/>
-</kw>
-<var name="${row}">{'no': '8', 'level_approve': 'A1', 'round': 'NR2', 'field': 'Product trends', 'value': '01: นวัตกรรม', 'uuid': 'e304c756-65b1-4381-9600-c566e800ac7d', 'type_field': 'drop down'}</var>
-<status status="PASS" start="2024-12-19T16:00:17.687294" elapsed="0.057086"/>
-</iter>
-<iter>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-19T16:00:17.746381" level="INFO">${level_approve} = A1</msg>
-<var>${level_approve}</var>
-<arg>${row}</arg>
-<arg>level_approve</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.745401" elapsed="0.000980"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-19T16:00:17.747884" level="INFO">${round} = NR2</msg>
-<var>${round}</var>
-<arg>${row}</arg>
-<arg>round</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.746381" elapsed="0.001503"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-19T16:00:17.748887" level="INFO">${field} = กลุ่มจัดซื้อในประเทศ (Purch. Group)</msg>
-<var>${field}</var>
-<arg>${row}</arg>
-<arg>field</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.748887" elapsed="0.000000"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-19T16:00:17.750887" level="INFO">${value} = 101: คุณนาตยา</msg>
-<var>${value}</var>
-<arg>${row}</arg>
-<arg>value</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.749887" elapsed="0.001000"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-19T16:00:17.751391" level="INFO">${uuid} = 1dd20e62-1ea3-4026-b6f5-148c690cc301</msg>
-<var>${uuid}</var>
-<arg>${row}</arg>
-<arg>uuid</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.751391" elapsed="0.001003"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-19T16:00:17.757393" level="INFO">${level_approve_9} = A1</msg>
-<arg>${level_approve_${index}}</arg>
-<arg>${level_approve}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.752394" elapsed="0.004999"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-19T16:00:17.763478" level="INFO">${round_9} = NR2</msg>
-<arg>${round_${index}}</arg>
-<arg>${round}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.758394" elapsed="0.006079"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-19T16:00:17.769471" level="INFO">${field_9} = กลุ่มจัดซื้อในประเทศ (Purch. Group)</msg>
-<arg>${field_${index}}</arg>
-<arg>${field}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.764473" elapsed="0.006010"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-19T16:00:17.775471" level="INFO">${value_9} = 101: คุณนาตยา</msg>
-<arg>${value_${index}}</arg>
-<arg>${value}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.770483" elapsed="0.004988"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-19T16:00:17.781394" level="INFO">${uuid_9} = 1dd20e62-1ea3-4026-b6f5-148c690cc301</msg>
-<arg>${uuid_${index}}</arg>
-<arg>${uuid}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.776469" elapsed="0.004925"/>
-</kw>
-<kw name="Evaluate" owner="BuiltIn">
-<msg time="2024-12-19T16:00:17.782394" level="INFO">${index} = 10</msg>
-<var>${index}</var>
-<arg>(${index}) + 1</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.782394" elapsed="0.001000"/>
-</kw>
-<var name="${row}">{'no': '9', 'level_approve': 'A1', 'round': 'NR2', 'field': 'กลุ่มจัดซื้อในประเทศ (Purch. Group)', 'value': '101: คุณนาตยา', 'uuid': '1dd20e62-1ea3-4026-b6f5-148c690cc301', 'type_field': 'drop down'}</var>
-<status status="PASS" start="2024-12-19T16:00:17.744380" elapsed="0.039014"/>
-</iter>
-<iter>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-19T16:00:17.785394" level="INFO">${level_approve} = A1</msg>
-<var>${level_approve}</var>
-<arg>${row}</arg>
-<arg>level_approve</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.784394" elapsed="0.001000"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-19T16:00:17.786394" level="INFO">${round} = NR2</msg>
-<var>${round}</var>
-<arg>${row}</arg>
-<arg>round</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.785394" elapsed="0.001000"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-19T16:00:17.787394" level="INFO">${field} = สินค้าที่ต้องระบุ serial (Serial Number Profile)</msg>
-<var>${field}</var>
-<arg>${row}</arg>
-<arg>field</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.787394" elapsed="0.001000"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-19T16:00:17.789395" level="INFO">${value} = ZSD1: Serial SD Sell only</msg>
-<var>${value}</var>
-<arg>${row}</arg>
-<arg>value</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.788394" elapsed="0.001001"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-19T16:00:17.790394" level="INFO">${uuid} = d659c2a7-8850-4b8e-8db5-bcb346e122ab</msg>
-<var>${uuid}</var>
-<arg>${row}</arg>
-<arg>uuid</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.790394" elapsed="0.000000"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-19T16:00:17.797469" level="INFO">${level_approve_10} = A1</msg>
-<arg>${level_approve_${index}}</arg>
-<arg>${level_approve}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.791394" elapsed="0.006075"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-19T16:00:17.803470" level="INFO">${round_10} = NR2</msg>
-<arg>${round_${index}}</arg>
-<arg>${round}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.798482" elapsed="0.004988"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-19T16:00:17.809479" level="INFO">${field_10} = สินค้าที่ต้องระบุ serial (Serial Number Profile)</msg>
-<arg>${field_${index}}</arg>
-<arg>${field}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.804394" elapsed="0.005085"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-19T16:00:17.816395" level="INFO">${value_10} = ZSD1: Serial SD Sell only</msg>
-<arg>${value_${index}}</arg>
-<arg>${value}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.810394" elapsed="0.006001"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-19T16:00:17.822470" level="INFO">${uuid_10} = d659c2a7-8850-4b8e-8db5-bcb346e122ab</msg>
-<arg>${uuid_${index}}</arg>
-<arg>${uuid}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.816395" elapsed="0.006075"/>
-</kw>
-<kw name="Evaluate" owner="BuiltIn">
-<msg time="2024-12-19T16:00:17.823469" level="INFO">${index} = 11</msg>
-<var>${index}</var>
-<arg>(${index}) + 1</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.823469" elapsed="0.001003"/>
-</kw>
-<var name="${row}">{'no': '10', 'level_approve': 'A1', 'round': 'NR2', 'field': 'สินค้าที่ต้องระบุ serial (Serial Number Profile)', 'value': 'ZSD1: Serial SD Sell only', 'uuid': 'd659c2a7-8850-4b8e-8db5-bcb346e122ab', '...</var>
-<status status="PASS" start="2024-12-19T16:00:17.783394" elapsed="0.041078"/>
-</iter>
-<iter>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-19T16:00:17.826395" level="INFO">${level_approve} = A1</msg>
-<var>${level_approve}</var>
-<arg>${row}</arg>
-<arg>level_approve</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.825473" elapsed="0.000922"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-19T16:00:17.827429" level="INFO">${round} = NR3</msg>
-<var>${round}</var>
-<arg>${row}</arg>
-<arg>round</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.827429" elapsed="0.001042"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-19T16:00:17.829470" level="INFO">${field} = พนักงาน Shipping</msg>
-<var>${field}</var>
-<arg>${row}</arg>
-<arg>field</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.828471" elapsed="0.000999"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-19T16:00:17.831480" level="INFO">${value} = 1036344: จิรารัตน์ อารีย์</msg>
-<var>${value}</var>
-<arg>${row}</arg>
-<arg>value</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.830480" elapsed="0.001000"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-19T16:00:17.832480" level="INFO">${uuid} = fba89cf3-9cc9-472b-865c-0d8edab7a696</msg>
-<var>${uuid}</var>
-<arg>${row}</arg>
-<arg>uuid</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.831480" elapsed="0.001000"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-19T16:00:17.838557" level="INFO">${level_approve_11} = A1</msg>
-<arg>${level_approve_${index}}</arg>
-<arg>${level_approve}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.833470" elapsed="0.006084"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-19T16:00:17.846479" level="INFO">${round_11} = NR3</msg>
-<arg>${round_${index}}</arg>
-<arg>${round}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.839554" elapsed="0.006925"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-19T16:00:17.853242" level="INFO">${field_11} = พนักงาน Shipping</msg>
-<arg>${field_${index}}</arg>
-<arg>${field}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.847482" elapsed="0.005760"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-19T16:00:17.861157" level="INFO">${value_11} = 1036344: จิรารัตน์ อารีย์</msg>
-<arg>${value_${index}}</arg>
-<arg>${value}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.854232" elapsed="0.006925"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-19T16:00:17.870232" level="INFO">${uuid_11} = fba89cf3-9cc9-472b-865c-0d8edab7a696</msg>
-<arg>${uuid_${index}}</arg>
-<arg>${uuid}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.863161" elapsed="0.007071"/>
-</kw>
-<kw name="Evaluate" owner="BuiltIn">
-<msg time="2024-12-19T16:00:17.872235" level="INFO">${index} = 12</msg>
-<var>${index}</var>
-<arg>(${index}) + 1</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.871232" elapsed="0.001003"/>
-</kw>
-<var name="${row}">{'no': '11', 'level_approve': 'A1', 'round': 'NR3', 'field': 'พนักงาน Shipping', 'value': '1036344: จิรารัตน์ อารีย์', 'uuid': 'fba89cf3-9cc9-472b-865c-0d8edab7a696', 'type_field': 'drop down'}</var>
-<status status="PASS" start="2024-12-19T16:00:17.824472" elapsed="0.047763"/>
-</iter>
-<iter>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-19T16:00:17.874241" level="INFO">${level_approve} = A1</msg>
-<var>${level_approve}</var>
-<arg>${row}</arg>
-<arg>level_approve</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.873233" elapsed="0.001008"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-19T16:00:17.876244" level="INFO">${round} = NR3</msg>
-<var>${round}</var>
-<arg>${row}</arg>
-<arg>round</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.875239" elapsed="0.001005"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-19T16:00:17.877240" level="INFO">${field} = สถานะซื้อสินค้า (Status purchase)</msg>
-<var>${field}</var>
-<arg>${row}</arg>
-<arg>field</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.876244" elapsed="0.001913"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-19T16:00:17.879160" level="INFO">${value} = 01: Blocked for procment/whse</msg>
-<var>${value}</var>
-<arg>${row}</arg>
-<arg>value</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.878157" elapsed="0.001003"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-19T16:00:17.881164" level="INFO">${uuid} = 7665fda3-d881-4d21-aaa5-27800120f303</msg>
-<var>${uuid}</var>
-<arg>${row}</arg>
-<arg>uuid</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.881164" elapsed="0.001034"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-19T16:00:17.888255" level="INFO">${level_approve_12} = A1</msg>
-<arg>${level_approve_${index}}</arg>
-<arg>${level_approve}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.882198" elapsed="0.006057"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-19T16:00:17.894856" level="INFO">${round_12} = NR3</msg>
-<arg>${round_${index}}</arg>
-<arg>${round}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.888255" elapsed="0.006601"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-19T16:00:17.901907" level="INFO">${field_12} = สถานะซื้อสินค้า (Status purchase)</msg>
-<arg>${field_${index}}</arg>
-<arg>${field}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.895911" elapsed="0.005996"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-19T16:00:17.908907" level="INFO">${value_12} = 01: Blocked for procment/whse</msg>
-<arg>${value_${index}}</arg>
-<arg>${value}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.901907" elapsed="0.007000"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-19T16:00:17.915909" level="INFO">${uuid_12} = 7665fda3-d881-4d21-aaa5-27800120f303</msg>
-<arg>${uuid_${index}}</arg>
-<arg>${uuid}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.909903" elapsed="0.006006"/>
-</kw>
-<kw name="Evaluate" owner="BuiltIn">
-<msg time="2024-12-19T16:00:17.917907" level="INFO">${index} = 13</msg>
-<var>${index}</var>
-<arg>(${index}) + 1</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.916981" elapsed="0.000926"/>
-</kw>
-<var name="${row}">{'no': '12', 'level_approve': 'A1', 'round': 'NR3', 'field': 'สถานะซื้อสินค้า (Status purchase)', 'value': '01: Blocked for procment/whse', 'uuid': '7665fda3-d881-4d21-aaa5-27800120f303', 'type_field'...</var>
-<status status="PASS" start="2024-12-19T16:00:17.873233" elapsed="0.044674"/>
-</iter>
-<iter>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-19T16:00:17.919907" level="INFO">${level_approve} = A1</msg>
-<var>${level_approve}</var>
-<arg>${row}</arg>
-<arg>level_approve</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.918914" elapsed="0.000993"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-19T16:00:17.921828" level="INFO">${round} = NR3</msg>
-<var>${round}</var>
-<arg>${row}</arg>
-<arg>round</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.920903" elapsed="0.000925"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-19T16:00:17.922908" level="INFO">${field} = สถานะขายสินค้า (Status Sale)</msg>
-<var>${field}</var>
-<arg>${row}</arg>
-<arg>field</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.922908" elapsed="0.001013"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-19T16:00:17.924904" level="INFO">${value} = 01: Discontd w/o Replace</msg>
-<var>${value}</var>
-<arg>${row}</arg>
-<arg>value</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.923921" elapsed="0.000983"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-19T16:00:17.925904" level="INFO">${uuid} = 3c7d536c-0344-4282-baeb-8b8dbb0975c9</msg>
-<var>${uuid}</var>
-<arg>${row}</arg>
-<arg>uuid</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.925904" elapsed="0.000000"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-19T16:00:17.932913" level="INFO">${level_approve_13} = A1</msg>
-<arg>${level_approve_${index}}</arg>
-<arg>${level_approve}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.926914" elapsed="0.005999"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-19T16:00:17.939998" level="INFO">${round_13} = NR3</msg>
-<arg>${round_${index}}</arg>
-<arg>${round}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.933997" elapsed="0.007002"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-19T16:00:17.946999" level="INFO">${field_13} = สถานะขายสินค้า (Status Sale)</msg>
-<arg>${field_${index}}</arg>
-<arg>${field}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.940999" elapsed="0.006000"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-19T16:00:17.953274" level="INFO">${value_13} = 01: Discontd w/o Replace</msg>
-<arg>${value_${index}}</arg>
-<arg>${value}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.946999" elapsed="0.007275"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-19T16:00:17.960273" level="INFO">${uuid_13} = 3c7d536c-0344-4282-baeb-8b8dbb0975c9</msg>
-<arg>${uuid_${index}}</arg>
-<arg>${uuid}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.954274" elapsed="0.005999"/>
-</kw>
-<kw name="Evaluate" owner="BuiltIn">
-<msg time="2024-12-19T16:00:17.961274" level="INFO">${index} = 14</msg>
-<var>${index}</var>
-<arg>(${index}) + 1</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.960273" elapsed="0.001001"/>
-</kw>
-<var name="${row}">{'no': '13', 'level_approve': 'A1', 'round': 'NR3', 'field': 'สถานะขายสินค้า (Status Sale)', 'value': '01: Discontd w/o Replace', 'uuid': '3c7d536c-0344-4282-baeb-8b8dbb0975c9', 'type_field': 'drop do...</var>
-<status status="PASS" start="2024-12-19T16:00:17.918914" elapsed="0.043360"/>
-</iter>
-<iter>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-19T16:00:17.963274" level="INFO">${level_approve} = A1</msg>
-<var>${level_approve}</var>
-<arg>${row}</arg>
-<arg>level_approve</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.963274" elapsed="0.001000"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-19T16:00:17.965274" level="INFO">${round} = NR3</msg>
-<var>${round}</var>
-<arg>${row}</arg>
-<arg>round</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.964274" elapsed="0.001000"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-19T16:00:17.966274" level="INFO">${field} = ต้องมี Stock ตัวโชว์</msg>
-<var>${field}</var>
-<arg>${row}</arg>
-<arg>field</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.965274" elapsed="0.001000"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-19T16:00:17.968274" level="INFO">${value} = No: สินค้าไม่ต้องมีตัวโชว์</msg>
-<var>${value}</var>
-<arg>${row}</arg>
-<arg>value</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.967274" elapsed="0.001000"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-19T16:00:17.970273" level="INFO">${uuid} = 7987ebf4-57b2-4c79-90be-c53bc955abe2</msg>
-<var>${uuid}</var>
-<arg>${row}</arg>
-<arg>uuid</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.969273" elapsed="0.002000"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-19T16:00:17.979274" level="INFO">${level_approve_14} = A1</msg>
-<arg>${level_approve_${index}}</arg>
-<arg>${level_approve}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.972273" elapsed="0.007001"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-19T16:00:17.987349" level="INFO">${round_14} = NR3</msg>
-<arg>${round_${index}}</arg>
-<arg>${round}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.980275" elapsed="0.007074"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-19T16:00:17.994275" level="INFO">${field_14} = ต้องมี Stock ตัวโชว์</msg>
-<arg>${field_${index}}</arg>
-<arg>${field}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.988353" elapsed="0.005922"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-19T16:00:18.001273" level="INFO">${value_14} = No: สินค้าไม่ต้องมีตัวโชว์</msg>
-<arg>${value_${index}}</arg>
-<arg>${value}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-19T16:00:17.995350" elapsed="0.006999"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-19T16:00:18.009435" level="INFO">${uuid_14} = 7987ebf4-57b2-4c79-90be-c53bc955abe2</msg>
-<arg>${uuid_${index}}</arg>
-<arg>${uuid}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-19T16:00:18.002349" elapsed="0.007086"/>
-</kw>
-<kw name="Evaluate" owner="BuiltIn">
-<msg time="2024-12-19T16:00:18.010441" level="INFO">${index} = 15</msg>
-<var>${index}</var>
-<arg>(${index}) + 1</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2024-12-19T16:00:18.010441" elapsed="0.000946"/>
-</kw>
-<var name="${row}">{'no': '14', 'level_approve': 'A1', 'round': 'NR3', 'field': 'ต้องมี Stock ตัวโชว์', 'value': 'No: สินค้าไม่ต้องมีตัวโชว์', 'uuid': '7987ebf4-57b2-4c79-90be-c53bc955abe2', 'type_field': 'drop down'}</var>
-<status status="PASS" start="2024-12-19T16:00:17.962274" elapsed="0.049113"/>
-</iter>
-<iter>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-19T16:00:18.013433" level="INFO">${level_approve} = A1</msg>
-<var>${level_approve}</var>
-<arg>${row}</arg>
-<arg>level_approve</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-19T16:00:18.012435" elapsed="0.000998"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-19T16:00:18.014441" level="INFO">${round} = NR3</msg>
-<var>${round}</var>
-<arg>${row}</arg>
-<arg>round</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-19T16:00:18.013433" elapsed="0.001008"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-19T16:00:18.016434" level="INFO">${field} = หมายเหตุการเลิกขายสินค้า (Sub indicator)</msg>
-<var>${field}</var>
-<arg>${row}</arg>
-<arg>field</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-19T16:00:18.015435" elapsed="0.000999"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-19T16:00:18.018364" level="INFO">${value} = L: สินค้าบล็อครุ่น</msg>
-<var>${value}</var>
-<arg>${row}</arg>
-<arg>value</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-19T16:00:18.017381" elapsed="0.000983"/>
-</kw>
-<kw name="Get From Dictionary" owner="Collections">
-<msg time="2024-12-19T16:00:18.019434" level="INFO">${uuid} = b0feee85-4b40-45f2-8f26-69b0f39770f1</msg>
-<var>${uuid}</var>
-<arg>${row}</arg>
-<arg>uuid</arg>
-<arg>default=Not Found</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="PASS" start="2024-12-19T16:00:18.018364" elapsed="0.001070"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-19T16:00:18.027110" level="INFO">${level_approve_15} = A1</msg>
-<arg>${level_approve_${index}}</arg>
-<arg>${level_approve}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-19T16:00:18.020438" elapsed="0.006672"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-19T16:00:18.035100" level="INFO">${round_15} = NR3</msg>
-<arg>${round_${index}}</arg>
-<arg>${round}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-19T16:00:18.028106" elapsed="0.006994"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-19T16:00:18.042184" level="INFO">${field_15} = หมายเหตุการเลิกขายสินค้า (Sub indicator)</msg>
-<arg>${field_${index}}</arg>
-<arg>${field}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-19T16:00:18.035100" elapsed="0.007084"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-19T16:00:18.049911" level="INFO">${value_15} = L: สินค้าบล็อครุ่น</msg>
-<arg>${value_${index}}</arg>
-<arg>${value}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="PASS" start="2024-12-19T16:00:18.043184" elapsed="0.006727"/>
-</kw>
-<kw name="Set Suite Variable" owner="BuiltIn">
-<msg time="2024-12-19T16:00:18.057416" level="INFO">${uuid_15} = b0feee85-4b40-45f2-8f26-69b0f39770f1</msg>
-<arg>${uuid_${index}}</arg>
-<arg>${uuid}</arg>
-<doc>
+<var>${article}</var>
+<value>@{articles}</value>
+<status status="PASS" start="2025-01-17T11:20:11.032984" elapsed="1.569425"/>
+</for>
+<kw name="Wait And Click Element" owner="common_art">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element with Delay" owner="common_art">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-17T11:20:12.604419" level="INFO">Clicking element '//span[text()="ส่ง"]/parent::button'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-17T11:20:12.604419" elapsed="0.063179"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-17T11:20:13.668008" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-17T11:20:12.667598" elapsed="1.000410"/>
+</kw>
+<arg>${locator}</arg>
+<status status="PASS" start="2025-01-17T11:20:12.603420" elapsed="1.064588"/>
+</kw>
+<arg>3x</arg>
+<arg>0.8s</arg>
+<arg>Click Element with Delay</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-01-17T11:20:12.603420" elapsed="1.064588"/>
+</kw>
+<arg>//span[text()="ส่ง"]/parent::button</arg>
+<status status="PASS" start="2025-01-17T11:20:12.603420" elapsed="1.064588"/>
+</kw>
+<kw name="Wait And Click Element" owner="common_art">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element with Delay" owner="common_art">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-17T11:20:13.670025" level="INFO">Clicking element '//span[text()="ค้นหา"]/parent::button'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-17T11:20:13.669026" elapsed="0.157943"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-17T11:20:14.828524" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-17T11:20:13.826969" elapsed="1.001555"/>
+</kw>
+<arg>${locator}</arg>
+<status status="PASS" start="2025-01-17T11:20:13.669026" elapsed="1.159498"/>
+</kw>
+<arg>3x</arg>
+<arg>0.8s</arg>
+<arg>Click Element with Delay</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-01-17T11:20:13.669026" elapsed="1.159498"/>
+</kw>
+<arg>//span[text()="ค้นหา"]/parent::button</arg>
+<status status="PASS" start="2025-01-17T11:20:13.668008" elapsed="1.160516"/>
+</kw>
+<arg>10337742</arg>
+<doc>ค้นหา รหัสสินค้า ที่ต้องการแก้ไขฟิวด์</doc>
+<status status="PASS" start="2025-01-17T11:20:08.851196" elapsed="5.977328"/>
+</kw>
+<kw name="Check value article" owner="common_art">
+<kw name="Wait And Wait Until Element Is Visible" owner="common_art">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-01-17T11:20:14.831534" elapsed="0.034677"/>
+</kw>
+<arg>5x</arg>
+<arg>1s</arg>
+<arg>Wait Until Element Is Visible</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-01-17T11:20:14.830534" elapsed="0.035677"/>
+</kw>
+<arg>//td[text()='${article}']</arg>
+<status status="PASS" start="2025-01-17T11:20:14.830534" elapsed="0.035677"/>
+</kw>
+<arg>10337742</arg>
+<doc>ตรวจสอบรหัสสินค้าใน dataGrid ก่อนแก้ไข ว่ามีอยู่จริงหรือไม่</doc>
+<status status="PASS" start="2025-01-17T11:20:14.829629" elapsed="0.036582"/>
+</kw>
+<kw name="Click check box all article" owner="common_art">
+<kw name="Wait And Click Element" owner="common_art">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element with Delay" owner="common_art">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-17T11:20:14.868298" level="INFO">Clicking element '//span[text()="เลือกทั้งหมด"]/preceding-sibling::span'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-17T11:20:14.868298" elapsed="0.136058"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-17T11:20:16.006006" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-17T11:20:15.005356" elapsed="1.000650"/>
+</kw>
+<arg>${locator}</arg>
+<status status="PASS" start="2025-01-17T11:20:14.868298" elapsed="1.138775"/>
+</kw>
+<arg>3x</arg>
+<arg>0.8s</arg>
+<arg>Click Element with Delay</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-01-17T11:20:14.867201" elapsed="1.139872"/>
+</kw>
+<arg>//span[text()="เลือกทั้งหมด"]/preceding-sibling::span</arg>
+<status status="PASS" start="2025-01-17T11:20:14.867201" elapsed="1.140833"/>
+</kw>
+<doc>เลือกสินค้าทั้งหมด ใน dataGrid</doc>
+<status status="PASS" start="2025-01-17T11:20:14.867201" elapsed="1.140833"/>
+</kw>
+<kw name="Click button edit field" owner="common_art">
+<kw name="Wait And Click Element" owner="common_art">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element with Delay" owner="common_art">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-17T11:20:16.012018" level="INFO">Clicking element '//span[text()="แก้ไขค่าของฟิลด์"]/parent::button'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-17T11:20:16.012018" elapsed="0.052865"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-17T11:20:17.066176" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-17T11:20:16.064883" elapsed="1.001293"/>
+</kw>
+<arg>${locator}</arg>
+<status status="PASS" start="2025-01-17T11:20:16.012018" elapsed="1.054158"/>
+</kw>
+<arg>3x</arg>
+<arg>0.8s</arg>
+<arg>Click Element with Delay</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-01-17T11:20:16.011016" elapsed="1.055160"/>
+</kw>
+<arg>//span[text()="แก้ไขค่าของฟิลด์"]/parent::button</arg>
+<status status="PASS" start="2025-01-17T11:20:16.010018" elapsed="1.056158"/>
+</kw>
+<doc>คลิ๊กปุ่ม แก้ไขค่าของฟิลด์</doc>
+<status status="PASS" start="2025-01-17T11:20:16.009024" elapsed="1.057152"/>
+</kw>
+<kw name="No. 1 Edit field name :">
+<if>
+<branch type="IF" condition="'${field}' == '${name_en.field}'">
+<kw name="Input text editmass row 1" owner="input_text">
+<arg>${name_en.field}</arg>
+<arg>${name_en.value}</arg>
+<status status="NOT RUN" start="2025-01-17T11:20:17.068214" elapsed="0.000967"/>
+</kw>
+<status status="NOT RUN" start="2025-01-17T11:20:17.068214" elapsed="0.000967"/>
+</branch>
+<branch type="ELSE IF" condition="'${field}' == '${e_comm_name_th.field}'">
+<kw name="Input text editmass row 1" owner="input_text">
+<arg>${e_comm_name_th.field}</arg>
+<arg>${e_comm_name_th.value}</arg>
+<status status="NOT RUN" start="2025-01-17T11:20:17.069181" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2025-01-17T11:20:17.069181" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE IF" condition="'${field}' == '${product_model.field}'">
+<kw name="Input text editmass row 1" owner="input_text">
+<arg>${product_model.field}</arg>
+<arg>${product_model.value}</arg>
+<status status="NOT RUN" start="2025-01-17T11:20:17.070265" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2025-01-17T11:20:17.070265" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE IF" condition="'${field}' == '${tis_number.field}'">
+<kw name="Input text editmass row 1" owner="input_text">
+<arg>${tis_number.field}</arg>
+<arg>${tis_number.value}</arg>
+<status status="NOT RUN" start="2025-01-17T11:20:17.071287" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2025-01-17T11:20:17.070265" elapsed="0.001022"/>
+</branch>
+<branch type="ELSE IF" condition="'${field}' == '${tis_license_number.field}'">
+<kw name="Input text editmass row 1" owner="input_text">
+<arg>${tis_license_number.field}</arg>
+<arg>${tis_license_number.value}</arg>
+<status status="NOT RUN" start="2025-01-17T11:20:17.072185" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2025-01-17T11:20:17.071287" elapsed="0.000898"/>
+</branch>
+<branch type="ELSE IF" condition="'${field}' == '${selling_point.field}'">
+<kw name="Input text editmass row 1 (section14)" owner="input_text">
+<arg>${selling_point.field}</arg>
+<arg>${selling_point.value}</arg>
+<status status="NOT RUN" start="2025-01-17T11:20:17.073183" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2025-01-17T11:20:17.072185" elapsed="0.000998"/>
+</branch>
+<branch type="ELSE IF" condition="'${field}' == '${maintenance.field}'">
+<kw name="Input text editmass row 1 (section14)" owner="input_text">
+<arg>${maintenance.field}</arg>
+<arg>${maintenance.value}</arg>
+<status status="NOT RUN" start="2025-01-17T11:20:17.074225" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2025-01-17T11:20:17.073183" elapsed="0.001042"/>
+</branch>
+<branch type="ELSE IF" condition="'${field}' == '${method_of_use.field}'">
+<kw name="Input text editmass row 1 (section14)" owner="input_text">
+<arg>${method_of_use.field}</arg>
+<arg>${method_of_use.value}</arg>
+<status status="NOT RUN" start="2025-01-17T11:20:17.075284" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2025-01-17T11:20:17.074225" elapsed="0.001059"/>
+</branch>
+<branch type="ELSE IF" condition="'${field}' == '${caution.field}'">
+<kw name="Input text editmass row 1 (section14)" owner="input_text">
+<arg>${caution.field}</arg>
+<arg>${caution.value}</arg>
+<status status="NOT RUN" start="2025-01-17T11:20:17.075284" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2025-01-17T11:20:17.075284" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE IF" condition="'${field}' == '${warranty_days.field}'">
+<kw name="Input text editmass row 1 (day warranty)" owner="input_text">
+<arg>${warranty_days.field}</arg>
+<arg>${warranty_days.value}</arg>
+<status status="NOT RUN" start="2025-01-17T11:20:17.076278" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2025-01-17T11:20:17.075284" elapsed="0.000994"/>
+</branch>
+<branch type="ELSE IF" condition="'${field}' == '${item_code.field}'">
+<kw name="Dropdown row 1" owner="drop_down">
+<arg>${item_code.field}</arg>
+<arg>${item_code.value}</arg>
+<status status="NOT RUN" start="2025-01-17T11:20:17.076278" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2025-01-17T11:20:17.076278" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE IF" condition="'${field}' == '${warranty_type_id.field}'">
+<kw name="Dropdown row 1 (type warranty)" owner="drop_down">
+<kw name="Wait And Click Element" owner="common_art">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element with Delay" owner="common_art">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-17T11:20:17.080182" level="INFO">Clicking element '//input[@name="master_tabcols_id"]/following-sibling::div/div/input'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-17T11:20:17.079186" elapsed="0.118830"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-17T11:20:18.199344" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-17T11:20:17.198016" elapsed="1.001834"/>
+</kw>
+<arg>${locator}</arg>
+<status status="PASS" start="2025-01-17T11:20:17.079186" elapsed="1.120664"/>
+</kw>
+<arg>3x</arg>
+<arg>0.8s</arg>
+<arg>Click Element with Delay</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-01-17T11:20:17.079186" elapsed="1.120664"/>
+</kw>
+<arg>//input[@name="master_tabcols_id"]/following-sibling::div/div/input</arg>
+<status status="PASS" start="2025-01-17T11:20:17.078289" elapsed="1.121561"/>
+</kw>
+<kw name="Wait And Input Text with Delay" owner="common_art">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input Text with Delay" owner="common_art">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-17T11:20:18.201859" level="INFO">Typing text 'ประเภทของการรับประกัน' into text field '//input[@name="master_tabcols_id"]/following-sibling::div/div/input'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-17T11:20:18.201859" elapsed="0.064320"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-17T11:20:19.767487" level="INFO">Slept 1 second 500 milliseconds.</msg>
+<arg>1.5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-17T11:20:18.267171" elapsed="1.500316"/>
+</kw>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<status status="PASS" start="2025-01-17T11:20:18.200868" elapsed="1.566619"/>
+</kw>
+<arg>3x</arg>
+<arg>0.8s</arg>
+<arg>Input Text with Delay</arg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-01-17T11:20:18.200868" elapsed="1.566619"/>
+</kw>
+<arg>//input[@name="master_tabcols_id"]/following-sibling::div/div/input</arg>
+<arg>${master_tabcols_id}</arg>
+<status status="PASS" start="2025-01-17T11:20:18.199850" elapsed="1.567637"/>
+</kw>
+<kw name="Wait And Press Keys" owner="common_art">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Press Key" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${keys}</arg>
+<doc>Simulates user pressing key on element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-17T11:20:19.768595" elapsed="0.029352"/>
+</kw>
+<arg>3x</arg>
+<arg>0.8s</arg>
+<arg>Press Key</arg>
+<arg>${locator}</arg>
+<arg>${keys}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-01-17T11:20:19.768595" elapsed="0.029352"/>
+</kw>
+<arg>//input[@name="master_tabcols_id"]/following-sibling::div/div/input</arg>
+<arg>\ue015</arg>
+<status status="PASS" start="2025-01-17T11:20:19.768595" elapsed="0.029352"/>
+</kw>
+<kw name="Wait And Press Keys" owner="common_art">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Press Key" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${keys}</arg>
+<doc>Simulates user pressing key on element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-17T11:20:19.798951" elapsed="0.106345"/>
+</kw>
+<arg>3x</arg>
+<arg>0.8s</arg>
+<arg>Press Key</arg>
+<arg>${locator}</arg>
+<arg>${keys}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-01-17T11:20:19.798951" elapsed="0.106345"/>
+</kw>
+<arg>//input[@name="master_tabcols_id"]/following-sibling::div/div/input</arg>
+<arg>\\13</arg>
+<status status="PASS" start="2025-01-17T11:20:19.798951" elapsed="0.106345"/>
+</kw>
+<kw name="Wait And Click Element" owner="common_art">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element with Delay" owner="common_art">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-17T11:20:19.907295" level="INFO">Clicking element '//input[@name="values_new"]/following-sibling::div/div/input'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-17T11:20:19.907295" elapsed="0.083881"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-17T11:20:20.991621" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-17T11:20:19.991176" elapsed="1.000445"/>
+</kw>
+<arg>${locator}</arg>
+<status status="PASS" start="2025-01-17T11:20:19.907295" elapsed="1.084927"/>
+</kw>
+<arg>3x</arg>
+<arg>0.8s</arg>
+<arg>Click Element with Delay</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-01-17T11:20:19.906295" elapsed="1.085927"/>
+</kw>
+<arg>//input[@name="values_new"]/following-sibling::div/div/input</arg>
+<status status="PASS" start="2025-01-17T11:20:19.906295" elapsed="1.085927"/>
+</kw>
+<kw name="Wait And Input Text with Delay" owner="common_art">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input Text with Delay" owner="common_art">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-17T11:20:20.993336" level="INFO">Typing text '01: รับประกันทุกกรณี' into text field '//input[@name="values_new"]/following-sibling::div/div/input'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-17T11:20:20.993336" elapsed="0.148673"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-17T11:20:22.642539" level="INFO">Slept 1 second 500 milliseconds.</msg>
+<arg>1.5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-17T11:20:21.142009" elapsed="1.500530"/>
+</kw>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<status status="PASS" start="2025-01-17T11:20:20.993336" elapsed="1.650215"/>
+</kw>
+<arg>3x</arg>
+<arg>0.8s</arg>
+<arg>Input Text with Delay</arg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-01-17T11:20:20.993336" elapsed="1.650215"/>
+</kw>
+<arg>//input[@name="values_new"]/following-sibling::div/div/input</arg>
+<arg>${values_new}</arg>
+<status status="PASS" start="2025-01-17T11:20:20.992222" elapsed="1.651329"/>
+</kw>
+<kw name="Wait And Press Keys" owner="common_art">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Press Key" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${keys}</arg>
+<doc>Simulates user pressing key on element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-17T11:20:22.644550" elapsed="0.028763"/>
+</kw>
+<arg>3x</arg>
+<arg>0.8s</arg>
+<arg>Press Key</arg>
+<arg>${locator}</arg>
+<arg>${keys}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-01-17T11:20:22.644550" elapsed="0.028763"/>
+</kw>
+<arg>//input[@name="values_new"]/following-sibling::div/div/input</arg>
+<arg>\\13</arg>
+<status status="PASS" start="2025-01-17T11:20:22.643551" elapsed="0.029762"/>
+</kw>
+<arg>${warranty_type_id.field}</arg>
+<arg>${warranty_type_id.value}</arg>
+<arg>${warranty_type_id.uuid}</arg>
+<status status="PASS" start="2025-01-17T11:20:17.077274" elapsed="5.596039"/>
+</kw>
+<status status="PASS" start="2025-01-17T11:20:17.077274" elapsed="5.596039"/>
+</branch>
+<branch type="ELSE IF" condition="'${field}' == '${item_name.field}'">
+<kw name="Dropdown row 1 (c1,c2,c3)" owner="drop_down">
+<arg>${item_name.field}</arg>
+<arg>${item_name.value}</arg>
+<arg>${item_name.uuid}</arg>
+<status status="NOT RUN" start="2025-01-17T11:20:22.674331" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2025-01-17T11:20:22.673313" elapsed="0.001018"/>
+</branch>
+<branch type="ELSE IF" condition="'${field}' == '${color_id.field}'">
+<kw name="Dropdown row 1" owner="drop_down">
+<arg>${color_id.field}</arg>
+<arg>${color_id.value}</arg>
+<status status="NOT RUN" start="2025-01-17T11:20:22.674331" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2025-01-17T11:20:22.674331" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2025-01-17T11:20:17.068214" elapsed="5.606117"/>
+</if>
+<arg>ประเภทของการรับประกัน</arg>
+<status status="PASS" start="2025-01-17T11:20:17.067268" elapsed="5.607063"/>
+</kw>
+<kw name="No. 2 Edit field name :">
+<if>
+<branch type="IF" condition="'${field}' == '${name_en.field}'">
+<kw name="Input text editmass row 2" owner="input_text">
+<arg>${name_en.field}</arg>
+<arg>${name_en.value}</arg>
+<arg>${name_en.uuid}</arg>
+<status status="NOT RUN" start="2025-01-17T11:20:22.677312" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2025-01-17T11:20:22.676325" elapsed="0.000987"/>
+</branch>
+<branch type="ELSE IF" condition="'${field}' == '${e_comm_name_th.field}'">
+<kw name="Input text editmass row 2" owner="input_text">
+<arg>${e_comm_name_th.field}</arg>
+<arg>${e_comm_name_th.value}</arg>
+<arg>${e_comm_name_th.uuid}</arg>
+<status status="NOT RUN" start="2025-01-17T11:20:22.677312" elapsed="0.001023"/>
+</kw>
+<status status="NOT RUN" start="2025-01-17T11:20:22.677312" elapsed="0.001023"/>
+</branch>
+<branch type="ELSE IF" condition="'${field}' == '${product_model.field}'">
+<kw name="Input text editmass row 2" owner="input_text">
+<arg>${product_model.field}</arg>
+<arg>${product_model.value}</arg>
+<arg>${product_model.uuid}</arg>
+<status status="NOT RUN" start="2025-01-17T11:20:22.678335" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2025-01-17T11:20:22.678335" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE IF" condition="'${field}' == '${tis_number.field}'">
+<kw name="Input text editmass row 2" owner="input_text">
+<arg>${tis_number.field}</arg>
+<arg>${tis_number.value}</arg>
+<arg>${tis_number.uuid}</arg>
+<status status="NOT RUN" start="2025-01-17T11:20:22.679328" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2025-01-17T11:20:22.679328" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE IF" condition="'${field}' == '${tis_license_number.field}'">
+<kw name="Input text editmass row 2" owner="input_text">
+<arg>${tis_license_number.field}</arg>
+<arg>${tis_license_number.value}</arg>
+<arg>${tis_license_number.uuid}</arg>
+<status status="NOT RUN" start="2025-01-17T11:20:22.680327" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2025-01-17T11:20:22.679328" elapsed="0.000999"/>
+</branch>
+<branch type="ELSE IF" condition="'${field}' == '${selling_point.field}'">
+<kw name="Input text editmass row 2 (section14)" owner="input_text">
+<arg>${selling_point.field}</arg>
+<arg>${selling_point.value}</arg>
+<arg>${selling_point.uuid}</arg>
+<status status="NOT RUN" start="2025-01-17T11:20:22.680327" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2025-01-17T11:20:22.680327" elapsed="0.001001"/>
+</branch>
+<branch type="ELSE IF" condition="'${field}' == '${maintenance.field}'">
+<kw name="Input text editmass row 2 (section14)" owner="input_text">
+<arg>${maintenance.field}</arg>
+<arg>${maintenance.value}</arg>
+<arg>${maintenance.uuid}</arg>
+<status status="NOT RUN" start="2025-01-17T11:20:22.681328" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2025-01-17T11:20:22.681328" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE IF" condition="'${field}' == '${method_of_use.field}'">
+<kw name="Input text editmass row 2 (section14)" owner="input_text">
+<arg>${method_of_use.field}</arg>
+<arg>${method_of_use.value}</arg>
+<arg>${method_of_use.uuid}</arg>
+<status status="NOT RUN" start="2025-01-17T11:20:22.682327" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2025-01-17T11:20:22.681328" elapsed="0.000999"/>
+</branch>
+<branch type="ELSE IF" condition="'${field}' == '${caution.field}'">
+<kw name="Input text editmass row 2 (section14)" owner="input_text">
+<arg>${caution.field}</arg>
+<arg>${caution.value}</arg>
+<arg>${caution.uuid}</arg>
+<status status="NOT RUN" start="2025-01-17T11:20:22.682327" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2025-01-17T11:20:22.682327" elapsed="0.001002"/>
+</branch>
+<branch type="ELSE IF" condition="'${field}' == '${warranty_days.field}'">
+<kw name="Input text editmass row 2 (day warranty)" owner="input_text">
+<arg>${warranty_days.field}</arg>
+<arg>${warranty_days.value}</arg>
+<arg>${warranty_days.uuid}</arg>
+<status status="NOT RUN" start="2025-01-17T11:20:22.684344" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2025-01-17T11:20:22.683329" elapsed="0.001015"/>
+</branch>
+<branch type="ELSE IF" condition="'${field}' == '${item_code.field}'">
+<kw name="Dropdown row 2" owner="drop_down">
+<arg>${item_code.field}</arg>
+<arg>${item_code.value}</arg>
+<arg>${item_code.uuid}</arg>
+<status status="NOT RUN" start="2025-01-17T11:20:22.685370" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2025-01-17T11:20:22.684344" elapsed="0.001026"/>
+</branch>
+<branch type="ELSE IF" condition="'${field}' == '${warranty_type_id.field}'">
+<kw name="Dropdown row 2 (type warranty)" owner="drop_down">
+<arg>${warranty_type_id.field}</arg>
+<arg>${warranty_type_id.value}</arg>
+<arg>${warranty_type_id.uuid}</arg>
+<status status="NOT RUN" start="2025-01-17T11:20:22.685370" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2025-01-17T11:20:22.685370" elapsed="0.001001"/>
+</branch>
+<branch type="ELSE IF" condition="'${field}' == '${item_name.field}'">
+<kw name="Dropdown row 2 (c1,c2,c3)" owner="drop_down">
+<arg>${item_name.field}</arg>
+<arg>${item_name.value}</arg>
+<arg>${item_name.uuid}</arg>
+<status status="NOT RUN" start="2025-01-17T11:20:22.686371" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2025-01-17T11:20:22.686371" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE IF" condition="'${field}' == '${color_id.field}'">
+<kw name="Dropdown row 2" owner="drop_down">
+<kw name="Wait And Click Element" owner="common_art">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element with Delay" owner="common_art">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-17T11:20:22.692356" level="INFO">Clicking element '//*[text()=" เพิ่ม"]'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-17T11:20:22.691353" elapsed="0.119066"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-17T11:20:23.810730" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-17T11:20:22.810419" elapsed="1.000311"/>
+</kw>
+<arg>${locator}</arg>
+<status status="PASS" start="2025-01-17T11:20:22.691353" elapsed="1.119377"/>
+</kw>
+<arg>3x</arg>
+<arg>0.8s</arg>
+<arg>Click Element with Delay</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-01-17T11:20:22.691353" elapsed="1.119377"/>
+</kw>
+<arg>//*[text()=" เพิ่ม"]</arg>
+<status status="PASS" start="2025-01-17T11:20:22.691353" elapsed="1.119377"/>
+</kw>
+<kw name="Wait And Click Element" owner="common_art">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element with Delay" owner="common_art">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-17T11:20:23.812736" level="INFO">Clicking element '//div[@data-dx_placeholder="เลือกฟิลด์" and @class="dx-placeholder"]/preceding-sibling::input'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-17T11:20:23.811739" elapsed="0.102445"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-17T11:20:24.914576" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-17T11:20:23.914184" elapsed="1.000392"/>
+</kw>
+<arg>${locator}</arg>
+<status status="PASS" start="2025-01-17T11:20:23.811739" elapsed="1.102837"/>
+</kw>
+<arg>3x</arg>
+<arg>0.8s</arg>
+<arg>Click Element with Delay</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-01-17T11:20:23.811739" elapsed="1.102837"/>
+</kw>
+<arg>//div[@data-dx_placeholder="เลือกฟิลด์" and @class="dx-placeholder"]/preceding-sibling::input</arg>
+<status status="PASS" start="2025-01-17T11:20:23.810730" elapsed="1.103846"/>
+</kw>
+<kw name="Wait And Input Text with Delay" owner="common_art">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input Text with Delay" owner="common_art">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-17T11:20:24.915689" level="INFO">Typing text 'โทนสี' into text field '//div[@data-dx_placeholder="เลือกฟิลด์" and @class="dx-placeholder"]/preceding-sibling::input'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-17T11:20:24.915689" elapsed="0.047089"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-17T11:20:26.463273" level="INFO">Slept 1 second 500 milliseconds.</msg>
+<arg>1.5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-17T11:20:24.962778" elapsed="1.500495"/>
+</kw>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<status status="PASS" start="2025-01-17T11:20:24.915689" elapsed="1.548253"/>
+</kw>
+<arg>3x</arg>
+<arg>0.8s</arg>
+<arg>Input Text with Delay</arg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-01-17T11:20:24.915689" elapsed="1.548253"/>
+</kw>
+<arg>//div[@data-dx_placeholder="เลือกฟิลด์" and @class="dx-placeholder"]/preceding-sibling::input</arg>
+<arg>${master_tabcols_id}</arg>
+<status status="PASS" start="2025-01-17T11:20:24.914576" elapsed="1.549366"/>
+</kw>
+<kw name="Wait And Press Keys" owner="common_art">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Press Key" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${keys}</arg>
+<doc>Simulates user pressing key on element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-17T11:20:26.465038" elapsed="0.130485"/>
+</kw>
+<arg>3x</arg>
+<arg>0.8s</arg>
+<arg>Press Key</arg>
+<arg>${locator}</arg>
+<arg>${keys}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-01-17T11:20:26.465038" elapsed="0.130485"/>
+</kw>
+<arg>xpath=//div[4]/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div[2]/div/div/div/div/div/div/div/input</arg>
+<arg>\\13</arg>
+<status status="PASS" start="2025-01-17T11:20:26.463942" elapsed="0.131581"/>
+</kw>
+<kw name="Wait And Click Element" owner="common_art">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element with Delay" owner="common_art">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-17T11:20:26.597542" level="INFO">Clicking element '//*[@name="master_tabcols_id" and @value="9a2e0c15-8c1f-4088-b451-ecf002df789b"]/ancestor::div[6]/following-sibling::div[1]/descendant::input[@class="dx-texteditor-input"]'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-17T11:20:26.597542" elapsed="0.105524"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-17T11:20:27.705708" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-17T11:20:26.704572" elapsed="1.001136"/>
+</kw>
+<arg>${locator}</arg>
+<status status="PASS" start="2025-01-17T11:20:26.596523" elapsed="1.109185"/>
+</kw>
+<arg>3x</arg>
+<arg>0.8s</arg>
+<arg>Click Element with Delay</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-01-17T11:20:26.596523" elapsed="1.109185"/>
+</kw>
+<arg>//*[@name="master_tabcols_id" and @value="${new_uuid}"]/ancestor::div[6]/following-sibling::div[1]/descendant::input[@class="dx-texteditor-input"]</arg>
+<status status="PASS" start="2025-01-17T11:20:26.596523" elapsed="1.109185"/>
+</kw>
+<kw name="Wait And Input Text with Delay" owner="common_art">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input Text with Delay" owner="common_art">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-17T11:20:27.707714" level="INFO">Typing text '001: แดง' into text field '//*[@name="master_tabcols_id" and @value="9a2e0c15-8c1f-4088-b451-ecf002df789b"]/ancestor::div[6]/following-sibling::div[1]/descendant::input[@class="dx-texteditor-input"]'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-17T11:20:27.707714" elapsed="0.067101"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-17T11:20:29.275380" level="INFO">Slept 1 second 500 milliseconds.</msg>
+<arg>1.5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-17T11:20:27.774815" elapsed="1.500565"/>
+</kw>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<status status="PASS" start="2025-01-17T11:20:27.707714" elapsed="1.567666"/>
+</kw>
+<arg>3x</arg>
+<arg>0.8s</arg>
+<arg>Input Text with Delay</arg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-01-17T11:20:27.706712" elapsed="1.568668"/>
+</kw>
+<arg>//*[@name="master_tabcols_id" and @value="${new_uuid}"]/ancestor::div[6]/following-sibling::div[1]/descendant::input[@class="dx-texteditor-input"]</arg>
+<arg>${values_new}</arg>
+<status status="PASS" start="2025-01-17T11:20:27.706712" elapsed="1.568668"/>
+</kw>
+<kw name="Wait And Press Keys" owner="common_art">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Press Key" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${keys}</arg>
+<doc>Simulates user pressing key on element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-17T11:20:29.276502" elapsed="0.029378"/>
+</kw>
+<arg>3x</arg>
+<arg>0.8s</arg>
+<arg>Press Key</arg>
+<arg>${locator}</arg>
+<arg>${keys}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-01-17T11:20:29.276502" elapsed="0.029378"/>
+</kw>
+<arg>//*[@name="master_tabcols_id" and @value="${new_uuid}"]/ancestor::div[6]/following-sibling::div[1]/descendant::input[@class="dx-texteditor-input"]</arg>
+<arg>\\13</arg>
+<status status="PASS" start="2025-01-17T11:20:29.276502" elapsed="0.029378"/>
+</kw>
+<arg>${color_id.field}</arg>
+<arg>${color_id.value}</arg>
+<arg>${color_id.uuid}</arg>
+<status status="PASS" start="2025-01-17T11:20:22.688352" elapsed="6.617528"/>
+</kw>
+<status status="PASS" start="2025-01-17T11:20:22.686371" elapsed="6.619509"/>
+</branch>
+<status status="PASS" start="2025-01-17T11:20:22.676325" elapsed="6.629555"/>
+</if>
+<arg>โทนสี</arg>
+<status status="PASS" start="2025-01-17T11:20:22.675333" elapsed="6.630547"/>
+</kw>
+<kw name="No. 3 Edit field name :">
+<if>
+<branch type="IF" condition="'${field}' == '${name_en.field}'">
+<kw name="Input text editmass row 3" owner="input_text">
+<arg>${name_en.field}</arg>
+<arg>${name_en.value}</arg>
+<arg>${name_en.uuid}</arg>
+<status status="NOT RUN" start="2025-01-17T11:20:29.307894" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2025-01-17T11:20:29.307894" elapsed="0.001005"/>
+</branch>
+<branch type="ELSE IF" condition="'${field}' == '${e_comm_name_th.field}'">
+<kw name="Input text editmass row 3" owner="input_text">
+<arg>${e_comm_name_th.field}</arg>
+<arg>${e_comm_name_th.value}</arg>
+<arg>${e_comm_name_th.uuid}</arg>
+<status status="NOT RUN" start="2025-01-17T11:20:29.308899" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2025-01-17T11:20:29.308899" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE IF" condition="'${field}' == '${product_model.field}'">
+<kw name="Input text editmass row 3" owner="input_text">
+<arg>${product_model.field}</arg>
+<arg>${product_model.value}</arg>
+<arg>${product_model.uuid}</arg>
+<status status="NOT RUN" start="2025-01-17T11:20:29.309896" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2025-01-17T11:20:29.308899" elapsed="0.000997"/>
+</branch>
+<branch type="ELSE IF" condition="'${field}' == '${tis_number.field}'">
+<kw name="Input text editmass row 3" owner="input_text">
+<arg>${tis_number.field}</arg>
+<arg>${tis_number.value}</arg>
+<arg>${tis_number.uuid}</arg>
+<status status="NOT RUN" start="2025-01-17T11:20:29.310896" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2025-01-17T11:20:29.309896" elapsed="0.001000"/>
+</branch>
+<branch type="ELSE IF" condition="'${field}' == '${tis_license_number.field}'">
+<kw name="Input text editmass row 3" owner="input_text">
+<arg>${tis_license_number.field}</arg>
+<arg>${tis_license_number.value}</arg>
+<arg>${tis_license_number.uuid}</arg>
+<status status="NOT RUN" start="2025-01-17T11:20:29.310896" elapsed="0.000998"/>
+</kw>
+<status status="NOT RUN" start="2025-01-17T11:20:29.310896" elapsed="0.000998"/>
+</branch>
+<branch type="ELSE IF" condition="'${field}' == '${selling_point.field}'">
+<kw name="Input text editmass row 3 (section14)" owner="input_text">
+<kw name="Wait And Click Element" owner="common_art">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element with Delay" owner="common_art">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-17T11:20:29.313897" level="INFO">Clicking element '//*[text()=" เพิ่ม"]'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-17T11:20:29.313897" elapsed="0.202077"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-17T11:20:30.516363" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-17T11:20:29.515974" elapsed="1.000985"/>
+</kw>
+<arg>${locator}</arg>
+<status status="PASS" start="2025-01-17T11:20:29.313897" elapsed="1.203062"/>
+</kw>
+<arg>3x</arg>
+<arg>0.8s</arg>
+<arg>Click Element with Delay</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-01-17T11:20:29.312895" elapsed="1.204670"/>
+</kw>
+<arg>//*[text()=" เพิ่ม"]</arg>
+<status status="PASS" start="2025-01-17T11:20:29.312895" elapsed="1.204670"/>
+</kw>
+<kw name="Wait And Click Element" owner="common_art">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element with Delay" owner="common_art">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-17T11:20:30.519074" level="INFO">Clicking element '//div[@data-dx_placeholder="เลือกฟิลด์" and @class="dx-placeholder"]/preceding-sibling::input'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-17T11:20:30.518069" elapsed="0.150195"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-17T11:20:31.668514" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-17T11:20:30.668264" elapsed="1.000250"/>
+</kw>
+<arg>${locator}</arg>
+<status status="PASS" start="2025-01-17T11:20:30.518069" elapsed="1.150445"/>
+</kw>
+<arg>3x</arg>
+<arg>0.8s</arg>
+<arg>Click Element with Delay</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-01-17T11:20:30.518069" elapsed="1.150445"/>
+</kw>
+<arg>//div[@data-dx_placeholder="เลือกฟิลด์" and @class="dx-placeholder"]/preceding-sibling::input</arg>
+<status status="PASS" start="2025-01-17T11:20:30.518069" elapsed="1.150445"/>
+</kw>
+<kw name="Wait And Input Text with Delay" owner="common_art">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input Text with Delay" owner="common_art">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-17T11:20:31.671523" level="INFO">Typing text 'จุดเด่นจุดขาย' into text field '//div[@data-dx_placeholder="เลือกฟิลด์" and @class="dx-placeholder"]/preceding-sibling::input'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-17T11:20:31.670523" elapsed="0.070569"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-17T11:20:33.241899" level="INFO">Slept 1 second 500 milliseconds.</msg>
+<arg>1.5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-17T11:20:31.741092" elapsed="1.500807"/>
+</kw>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<status status="PASS" start="2025-01-17T11:20:31.670523" elapsed="1.571376"/>
+</kw>
+<arg>3x</arg>
+<arg>0.8s</arg>
+<arg>Input Text with Delay</arg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-01-17T11:20:31.669524" elapsed="1.572375"/>
+</kw>
+<arg>//div[@data-dx_placeholder="เลือกฟิลด์" and @class="dx-placeholder"]/preceding-sibling::input</arg>
+<arg>${master_tabcols_id}</arg>
+<status status="PASS" start="2025-01-17T11:20:31.669524" elapsed="1.572375"/>
+</kw>
+<kw name="Wait And Press Keys" owner="common_art">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Press Key" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${keys}</arg>
+<doc>Simulates user pressing key on element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-17T11:20:33.243009" elapsed="0.176942"/>
+</kw>
+<arg>3x</arg>
+<arg>0.8s</arg>
+<arg>Press Key</arg>
+<arg>${locator}</arg>
+<arg>${keys}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-01-17T11:20:33.243009" elapsed="0.176942"/>
+</kw>
+<arg>xpath=//div[5]/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div[2]/div/div/div/div/div/div/div/input</arg>
+<arg>\\13</arg>
+<status status="PASS" start="2025-01-17T11:20:33.241899" elapsed="0.178052"/>
+</kw>
+<kw name="Wait And Click Element" owner="common_art">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element with Delay" owner="common_art">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-17T11:20:33.423954" level="INFO">Clicking element '//*[@name="master_tabcols_id" and @value="89f099c5-dee2-4354-8a35-37e127201bde"]/ancestor::div[6]/following-sibling::div[1]/descendant::div//*[@data-placeholder="ค่า (Value)"]'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-17T11:20:33.422951" elapsed="0.077949"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-17T11:20:34.502175" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-17T11:20:33.501899" elapsed="1.000276"/>
+</kw>
+<arg>${locator}</arg>
+<status status="PASS" start="2025-01-17T11:20:33.421953" elapsed="1.080222"/>
+</kw>
+<arg>3x</arg>
+<arg>0.8s</arg>
+<arg>Click Element with Delay</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-01-17T11:20:33.421953" elapsed="1.080222"/>
+</kw>
+<arg>//*[@name="master_tabcols_id" and @value="${new_uuid}"]/ancestor::div[6]/following-sibling::div[1]/descendant::div//*[@data-placeholder="ค่า (Value)"]</arg>
+<status status="PASS" start="2025-01-17T11:20:33.420955" elapsed="1.081220"/>
+</kw>
+<kw name="Wait And Input Text with Delay" owner="common_art">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input Text with Delay" owner="common_art">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-17T11:20:34.504191" level="INFO">Typing text 'จุดเด่นจุดขาย_Editmass' into text field '//*[@name="master_tabcols_id" and @value="89f099c5-dee2-4354-8a35-37e127201bde"]/ancestor::div[6]/following-sibling::div[1]/descendant::div//*[@data-placeholder="ค่า (Value)"]'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-17T11:20:34.504191" elapsed="0.095978"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-17T11:20:36.101997" level="INFO">Slept 1 second 500 milliseconds.</msg>
+<arg>1.5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-17T11:20:34.601216" elapsed="1.500781"/>
+</kw>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<status status="PASS" start="2025-01-17T11:20:34.503195" elapsed="1.598802"/>
+</kw>
+<arg>3x</arg>
+<arg>0.8s</arg>
+<arg>Input Text with Delay</arg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-01-17T11:20:34.503195" elapsed="1.598802"/>
+</kw>
+<arg>//*[@name="master_tabcols_id" and @value="${new_uuid}"]/ancestor::div[6]/following-sibling::div[1]/descendant::div//*[@data-placeholder="ค่า (Value)"]</arg>
+<arg>${values_new}</arg>
+<status status="PASS" start="2025-01-17T11:20:34.503195" elapsed="1.598802"/>
+</kw>
+<arg>${selling_point.field}</arg>
+<arg>${selling_point.value}</arg>
+<arg>${selling_point.uuid}</arg>
+<status status="PASS" start="2025-01-17T11:20:29.311894" elapsed="6.790103"/>
+</kw>
+<status status="PASS" start="2025-01-17T11:20:29.311894" elapsed="6.791126"/>
+</branch>
+<branch type="ELSE IF" condition="'${field}' == '${maintenance.field}'">
+<kw name="Input text editmass row 3 (section14)" owner="input_text">
+<arg>${maintenance.field}</arg>
+<arg>${maintenance.value}</arg>
+<arg>${maintenance.uuid}</arg>
+<status status="NOT RUN" start="2025-01-17T11:20:36.103020" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2025-01-17T11:20:36.103020" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE IF" condition="'${field}' == '${method_of_use.field}'">
+<kw name="Input text editmass row 3 (section14)" owner="input_text">
+<arg>${method_of_use.field}</arg>
+<arg>${method_of_use.value}</arg>
+<arg>${method_of_use.uuid}</arg>
+<status status="NOT RUN" start="2025-01-17T11:20:36.104011" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2025-01-17T11:20:36.103020" elapsed="0.000991"/>
+</branch>
+<branch type="ELSE IF" condition="'${field}' == '${caution.field}'">
+<kw name="Input text editmass row 3 (section14)" owner="input_text">
+<arg>${caution.field}</arg>
+<arg>${caution.value}</arg>
+<arg>${caution.uuid}</arg>
+<status status="NOT RUN" start="2025-01-17T11:20:36.104011" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2025-01-17T11:20:36.104011" elapsed="0.000999"/>
+</branch>
+<branch type="ELSE IF" condition="'${field}' == '${warranty_days.field}'">
+<kw name="Input text editmass row 3 (day warranty)" owner="input_text">
+<arg>${warranty_days.field}</arg>
+<arg>${warranty_days.value}</arg>
+<arg>${warranty_days.uuid}</arg>
+<status status="NOT RUN" start="2025-01-17T11:20:36.105010" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2025-01-17T11:20:36.105010" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE IF" condition="'${field}' == '${item_code.field}'">
+<kw name="Dropdown row 3" owner="drop_down">
+<arg>${item_code.field}</arg>
+<arg>${item_code.value}</arg>
+<arg>${item_code.uuid}</arg>
+<status status="NOT RUN" start="2025-01-17T11:20:36.106008" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2025-01-17T11:20:36.106008" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE IF" condition="'${field}' == '${warranty_type_id.field}'">
+<kw name="Dropdown row 3 (type warranty)" owner="drop_down">
+<arg>${warranty_type_id.field}</arg>
+<arg>${warranty_type_id.value}</arg>
+<arg>${warranty_type_id.uuid}</arg>
+<status status="NOT RUN" start="2025-01-17T11:20:36.106008" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2025-01-17T11:20:36.106008" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE IF" condition="'${field}' == '${item_name.field}'">
+<kw name="Dropdown row 3 (c1,c2,c3)" owner="drop_down">
+<arg>${item_name.field}</arg>
+<arg>${item_name.value}</arg>
+<arg>${item_name.uuid}</arg>
+<status status="NOT RUN" start="2025-01-17T11:20:36.107007" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2025-01-17T11:20:36.107007" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE IF" condition="'${field}' == '${color_id.field}'">
+<kw name="Dropdown row 3" owner="drop_down">
+<arg>${color_id.field}</arg>
+<arg>${color_id.value}</arg>
+<arg>${color_id.uuid}</arg>
+<status status="NOT RUN" start="2025-01-17T11:20:36.107007" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2025-01-17T11:20:36.107007" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2025-01-17T11:20:29.307894" elapsed="6.799113"/>
+</if>
+<arg>จุดเด่นจุดขาย</arg>
+<status status="PASS" start="2025-01-17T11:20:29.306879" elapsed="6.801128"/>
+</kw>
+<kw name="No. 4 Edit field name :">
+<if>
+<branch type="IF" condition="'${field}' == '${name_en.field}'">
+<kw name="Input text editmass row 4" owner="input_text">
+<arg>${name_en.field}</arg>
+<arg>${name_en.value}</arg>
+<arg>${name_en.uuid}</arg>
+<status status="NOT RUN" start="2025-01-17T11:20:36.109004" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2025-01-17T11:20:36.109004" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE IF" condition="'${field}' == '${e_comm_name_th.field}'">
+<kw name="Input text editmass row 4" owner="input_text">
+<arg>${e_comm_name_th.field}</arg>
+<arg>${e_comm_name_th.value}</arg>
+<arg>${e_comm_name_th.uuid}</arg>
+<status status="NOT RUN" start="2025-01-17T11:20:36.110087" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2025-01-17T11:20:36.110087" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE IF" condition="'${field}' == '${product_model.field}'">
+<kw name="Input text editmass row 4" owner="input_text">
+<arg>${product_model.field}</arg>
+<arg>${product_model.value}</arg>
+<arg>${product_model.uuid}</arg>
+<status status="NOT RUN" start="2025-01-17T11:20:36.111005" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2025-01-17T11:20:36.110087" elapsed="0.000918"/>
+</branch>
+<branch type="ELSE IF" condition="'${field}' == '${tis_number.field}'">
+<kw name="Input text editmass row 4" owner="input_text">
+<arg>${tis_number.field}</arg>
+<arg>${tis_number.value}</arg>
+<arg>${tis_number.uuid}</arg>
+<status status="NOT RUN" start="2025-01-17T11:20:36.111005" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2025-01-17T11:20:36.111005" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE IF" condition="'${field}' == '${tis_license_number.field}'">
+<kw name="Input text editmass row 4" owner="input_text">
+<arg>${tis_license_number.field}</arg>
+<arg>${tis_license_number.value}</arg>
+<arg>${tis_license_number.uuid}</arg>
+<status status="NOT RUN" start="2025-01-17T11:20:36.112005" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2025-01-17T11:20:36.111005" elapsed="0.001000"/>
+</branch>
+<branch type="ELSE IF" condition="'${field}' == '${selling_point.field}'">
+<kw name="Input text editmass row 4 (section14)" owner="input_text">
+<arg>${selling_point.field}</arg>
+<arg>${selling_point.value}</arg>
+<arg>${selling_point.uuid}</arg>
+<status status="NOT RUN" start="2025-01-17T11:20:36.112005" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2025-01-17T11:20:36.112005" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE IF" condition="'${field}' == '${maintenance.field}'">
+<kw name="Input text editmass row 4 (section14)" owner="input_text">
+<arg>${maintenance.field}</arg>
+<arg>${maintenance.value}</arg>
+<arg>${maintenance.uuid}</arg>
+<status status="NOT RUN" start="2025-01-17T11:20:36.113004" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2025-01-17T11:20:36.113004" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE IF" condition="'${field}' == '${method_of_use.field}'">
+<kw name="Input text editmass row 4 (section14)" owner="input_text">
+<arg>${method_of_use.field}</arg>
+<arg>${method_of_use.value}</arg>
+<arg>${method_of_use.uuid}</arg>
+<status status="NOT RUN" start="2025-01-17T11:20:36.114004" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2025-01-17T11:20:36.113004" elapsed="0.001000"/>
+</branch>
+<branch type="ELSE IF" condition="'${field}' == '${caution.field}'">
+<kw name="Input text editmass row 4 (section14)" owner="input_text">
+<arg>${caution.field}</arg>
+<arg>${caution.value}</arg>
+<arg>${caution.uuid}</arg>
+<status status="NOT RUN" start="2025-01-17T11:20:36.115007" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2025-01-17T11:20:36.114004" elapsed="0.001003"/>
+</branch>
+<branch type="ELSE IF" condition="'${field}' == '${warranty_days.field}'">
+<kw name="Input text editmass row 4 (day warranty)" owner="input_text">
+<kw name="Wait And Click Element" owner="common_art">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element with Delay" owner="common_art">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-17T11:20:36.118004" level="INFO">Clicking element '//*[text()=" เพิ่ม"]'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-17T11:20:36.118004" elapsed="0.177967"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-17T11:20:37.297353" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-17T11:20:36.296971" elapsed="1.000382"/>
+</kw>
+<arg>${locator}</arg>
+<status status="PASS" start="2025-01-17T11:20:36.118004" elapsed="1.179349"/>
+</kw>
+<arg>3x</arg>
+<arg>0.8s</arg>
+<arg>Click Element with Delay</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-01-17T11:20:36.117004" elapsed="1.180349"/>
+</kw>
+<arg>//*[text()=" เพิ่ม"]</arg>
+<status status="PASS" start="2025-01-17T11:20:36.117004" elapsed="1.180349"/>
+</kw>
+<kw name="Wait And Click Element" owner="common_art">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element with Delay" owner="common_art">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-17T11:20:37.298452" level="INFO">Clicking element '//div[@data-dx_placeholder="เลือกฟิลด์" and @class="dx-placeholder"]/preceding-sibling::input'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-17T11:20:37.298452" elapsed="0.099251"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-17T11:20:38.398068" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-17T11:20:37.397703" elapsed="1.000365"/>
+</kw>
+<arg>${locator}</arg>
+<status status="PASS" start="2025-01-17T11:20:37.298452" elapsed="1.100124"/>
+</kw>
+<arg>3x</arg>
+<arg>0.8s</arg>
+<arg>Click Element with Delay</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-01-17T11:20:37.298452" elapsed="1.100124"/>
+</kw>
+<arg>//div[@data-dx_placeholder="เลือกฟิลด์" and @class="dx-placeholder"]/preceding-sibling::input</arg>
+<status status="PASS" start="2025-01-17T11:20:37.297353" elapsed="1.101223"/>
+</kw>
+<kw name="Wait And Input Text with Delay" owner="common_art">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input Text with Delay" owner="common_art">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-17T11:20:38.400588" level="INFO">Typing text 'จำนวน(วัน)' into text field '//div[@data-dx_placeholder="เลือกฟิลด์" and @class="dx-placeholder"]/preceding-sibling::input'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-17T11:20:38.400588" elapsed="0.054626"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-17T11:20:39.956873" level="INFO">Slept 1 second 500 milliseconds.</msg>
+<arg>1.5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-17T11:20:38.455214" elapsed="1.501659"/>
+</kw>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<status status="PASS" start="2025-01-17T11:20:38.399592" elapsed="1.557281"/>
+</kw>
+<arg>3x</arg>
+<arg>0.8s</arg>
+<arg>Input Text with Delay</arg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-01-17T11:20:38.399592" elapsed="1.557878"/>
+</kw>
+<arg>//div[@data-dx_placeholder="เลือกฟิลด์" and @class="dx-placeholder"]/preceding-sibling::input</arg>
+<arg>${master_tabcols_id}</arg>
+<status status="PASS" start="2025-01-17T11:20:38.399592" elapsed="1.557878"/>
+</kw>
+<kw name="Wait And Press Keys" owner="common_art">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Press Key" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${keys}</arg>
+<doc>Simulates user pressing key on element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-17T11:20:39.958567" elapsed="0.267147"/>
+</kw>
+<arg>3x</arg>
+<arg>0.8s</arg>
+<arg>Press Key</arg>
+<arg>${locator}</arg>
+<arg>${keys}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-01-17T11:20:39.957470" elapsed="0.268244"/>
+</kw>
+<arg>xpath=//div[6]/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div[2]/div/div/div/div/div/div/div/input</arg>
+<arg>\\13</arg>
+<status status="PASS" start="2025-01-17T11:20:39.957470" elapsed="0.268244"/>
+</kw>
+<kw name="Wait And Click Element" owner="common_art">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element with Delay" owner="common_art">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-17T11:20:40.228713" level="INFO">Clicking element '//*[@name="master_tabcols_id" and @value="132e1355-cc8c-4c19-9027-72557a76b7d1"]/ancestor::div[6]/following-sibling::div[1]/descendant::input[@class="dx-texteditor-input"]'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-17T11:20:40.227723" elapsed="0.081259"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-17T11:20:41.309652" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-17T11:20:40.308982" elapsed="1.000670"/>
+</kw>
+<arg>${locator}</arg>
+<status status="PASS" start="2025-01-17T11:20:40.227723" elapsed="1.081929"/>
+</kw>
+<arg>3x</arg>
+<arg>0.8s</arg>
+<arg>Click Element with Delay</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-01-17T11:20:40.226713" elapsed="1.082939"/>
+</kw>
+<arg>//*[@name="master_tabcols_id" and @value="${new_uuid}"]/ancestor::div[6]/following-sibling::div[1]/descendant::input[@class="dx-texteditor-input"]</arg>
+<status status="PASS" start="2025-01-17T11:20:40.226713" elapsed="1.082939"/>
+</kw>
+<kw name="Wait And Input Text with Delay" owner="common_art">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input Text with Delay" owner="common_art">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-17T11:20:41.310764" level="INFO">Typing text '99' into text field '//*[@name="master_tabcols_id" and @value="132e1355-cc8c-4c19-9027-72557a76b7d1"]/ancestor::div[6]/following-sibling::div[1]/descendant::input[@class="dx-texteditor-input"]'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-17T11:20:41.310764" elapsed="0.049206"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-17T11:20:42.861444" level="INFO">Slept 1 second 500 milliseconds.</msg>
+<arg>1.5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-17T11:20:41.361034" elapsed="1.500410"/>
+</kw>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<status status="PASS" start="2025-01-17T11:20:41.310764" elapsed="1.550680"/>
+</kw>
+<arg>3x</arg>
+<arg>0.8s</arg>
+<arg>Input Text with Delay</arg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-01-17T11:20:41.310764" elapsed="1.550680"/>
+</kw>
+<arg>//*[@name="master_tabcols_id" and @value="${new_uuid}"]/ancestor::div[6]/following-sibling::div[1]/descendant::input[@class="dx-texteditor-input"]</arg>
+<arg>${values_new}</arg>
+<status status="PASS" start="2025-01-17T11:20:41.310764" elapsed="1.550680"/>
+</kw>
+<arg>${warranty_days.field}</arg>
+<arg>${warranty_days.value}</arg>
+<arg>${warranty_days.uuid}</arg>
+<status status="PASS" start="2025-01-17T11:20:36.116008" elapsed="6.746553"/>
+</kw>
+<status status="PASS" start="2025-01-17T11:20:36.115007" elapsed="6.747554"/>
+</branch>
+<branch type="ELSE IF" condition="'${field}' == '${item_code.field}'">
+<kw name="Dropdown row 4" owner="drop_down">
+<arg>${item_code.field}</arg>
+<arg>${item_code.value}</arg>
+<arg>${item_code.uuid}</arg>
+<status status="NOT RUN" start="2025-01-17T11:20:42.862561" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2025-01-17T11:20:42.862561" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE IF" condition="'${field}' == '${warranty_type_id.field}'">
+<kw name="Dropdown row 4 (type warranty)" owner="drop_down">
+<arg>${warranty_type_id.field}</arg>
+<arg>${warranty_type_id.value}</arg>
+<arg>${warranty_type_id.uuid}</arg>
+<status status="NOT RUN" start="2025-01-17T11:20:42.863537" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2025-01-17T11:20:42.862561" elapsed="0.000976"/>
+</branch>
+<branch type="ELSE IF" condition="'${field}' == '${item_name.field}'">
+<kw name="Dropdown row 4 (c1,c2,c3)" owner="drop_down">
+<arg>${item_name.field}</arg>
+<arg>${item_name.value}</arg>
+<arg>${item_name.uuid}</arg>
+<status status="NOT RUN" start="2025-01-17T11:20:42.863537" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2025-01-17T11:20:42.863537" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE IF" condition="'${field}' == '${color_id.field}'">
+<kw name="Dropdown row 4" owner="drop_down">
+<arg>${color_id.field}</arg>
+<arg>${color_id.value}</arg>
+<arg>${color_id.uuid}</arg>
+<status status="NOT RUN" start="2025-01-17T11:20:42.864545" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2025-01-17T11:20:42.863537" elapsed="0.001008"/>
+</branch>
+<status status="PASS" start="2025-01-17T11:20:36.109004" elapsed="6.755541"/>
+</if>
+<arg>จำนวน(วัน)</arg>
+<status status="PASS" start="2025-01-17T11:20:36.108007" elapsed="6.756538"/>
+</kw>
+<kw name="No. 5 Edit field name :">
+<if>
+<branch type="IF" condition="'${field}' == '${name_en.field}'">
+<kw name="Input text editmass row 5" owner="input_text">
+<arg>${name_en.field}</arg>
+<arg>${name_en.value}</arg>
+<arg>${name_en.uuid}</arg>
+<status status="NOT RUN" start="2025-01-17T11:20:42.867451" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2025-01-17T11:20:42.866450" elapsed="0.001001"/>
+</branch>
+<branch type="ELSE IF" condition="'${field}' == '${e_comm_name_th.field}'">
+<kw name="Input text editmass row 5" owner="input_text">
+<arg>${e_comm_name_th.field}</arg>
+<arg>${e_comm_name_th.value}</arg>
+<arg>${e_comm_name_th.uuid}</arg>
+<status status="NOT RUN" start="2025-01-17T11:20:42.868450" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2025-01-17T11:20:42.867451" elapsed="0.000999"/>
+</branch>
+<branch type="ELSE IF" condition="'${field}' == '${product_model.field}'">
+<kw name="Input text editmass row 5" owner="input_text">
+<arg>${product_model.field}</arg>
+<arg>${product_model.value}</arg>
+<arg>${product_model.uuid}</arg>
+<status status="NOT RUN" start="2025-01-17T11:20:42.870455" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2025-01-17T11:20:42.869452" elapsed="0.001003"/>
+</branch>
+<branch type="ELSE IF" condition="'${field}' == '${tis_number.field}'">
+<kw name="Input text editmass row 5" owner="input_text">
+<arg>${tis_number.field}</arg>
+<arg>${tis_number.value}</arg>
+<arg>${tis_number.uuid}</arg>
+<status status="NOT RUN" start="2025-01-17T11:20:42.871456" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2025-01-17T11:20:42.870455" elapsed="0.001001"/>
+</branch>
+<branch type="ELSE IF" condition="'${field}' == '${tis_license_number.field}'">
+<kw name="Input text editmass row 5" owner="input_text">
+<arg>${tis_license_number.field}</arg>
+<arg>${tis_license_number.value}</arg>
+<arg>${tis_license_number.uuid}</arg>
+<status status="NOT RUN" start="2025-01-17T11:20:42.871456" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2025-01-17T11:20:42.871456" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE IF" condition="'${field}' == '${selling_point.field}'">
+<kw name="Input text editmass row 5 (section14)" owner="input_text">
+<arg>${selling_point.field}</arg>
+<arg>${selling_point.value}</arg>
+<arg>${selling_point.uuid}</arg>
+<status status="NOT RUN" start="2025-01-17T11:20:42.872451" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2025-01-17T11:20:42.871456" elapsed="0.000995"/>
+</branch>
+<branch type="ELSE IF" condition="'${field}' == '${maintenance.field}'">
+<kw name="Input text editmass row 5 (section14)" owner="input_text">
+<arg>${maintenance.field}</arg>
+<arg>${maintenance.value}</arg>
+<arg>${maintenance.uuid}</arg>
+<status status="NOT RUN" start="2025-01-17T11:20:42.873450" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2025-01-17T11:20:42.872451" elapsed="0.000999"/>
+</branch>
+<branch type="ELSE IF" condition="'${field}' == '${method_of_use.field}'">
+<kw name="Input text editmass row 5 (section14)" owner="input_text">
+<arg>${method_of_use.field}</arg>
+<arg>${method_of_use.value}</arg>
+<arg>${method_of_use.uuid}</arg>
+<status status="NOT RUN" start="2025-01-17T11:20:42.873450" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2025-01-17T11:20:42.873450" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE IF" condition="'${field}' == '${caution.field}'">
+<kw name="Input text editmass row 5 (section14)" owner="input_text">
+<arg>${caution.field}</arg>
+<arg>${caution.value}</arg>
+<arg>${caution.uuid}</arg>
+<status status="NOT RUN" start="2025-01-17T11:20:42.874450" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2025-01-17T11:20:42.873450" elapsed="0.001000"/>
+</branch>
+<branch type="ELSE IF" condition="'${field}' == '${warranty_days.field}'">
+<kw name="Input text editmass row 5 (day warranty)" owner="input_text">
+<arg>${warranty_days.field}</arg>
+<arg>${warranty_days.value}</arg>
+<arg>${warranty_days.uuid}</arg>
+<status status="NOT RUN" start="2025-01-17T11:20:42.874450" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2025-01-17T11:20:42.874450" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE IF" condition="'${field}' == '${item_code.field}'">
+<kw name="Dropdown row 5" owner="drop_down">
+<arg>${item_code.field}</arg>
+<arg>${item_code.value}</arg>
+<arg>${item_code.uuid}</arg>
+<status status="NOT RUN" start="2025-01-17T11:20:42.875451" elapsed="0.000999"/>
+</kw>
+<status status="NOT RUN" start="2025-01-17T11:20:42.874450" elapsed="0.002000"/>
+</branch>
+<branch type="ELSE IF" condition="'${field}' == '${warranty_type_id.field}'">
+<kw name="Dropdown row 5 (type warranty)" owner="drop_down">
+<arg>${warranty_type_id.field}</arg>
+<arg>${warranty_type_id.value}</arg>
+<arg>${warranty_type_id.uuid}</arg>
+<status status="NOT RUN" start="2025-01-17T11:20:42.876450" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2025-01-17T11:20:42.876450" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE IF" condition="'${field}' == '${item_name.field}'">
+<kw name="Dropdown row 5 (c1,c2,c3)" owner="drop_down">
+<kw name="Wait And Scroll Element Into View" owner="common_art">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-01-17T11:20:42.878449" elapsed="0.278921"/>
+</kw>
+<arg>3x</arg>
+<arg>0.8s</arg>
+<arg>Scroll Element Into View</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-01-17T11:20:42.878449" elapsed="0.278921"/>
+</kw>
+<arg>//*[text()=" เพิ่ม"]</arg>
+<status status="PASS" start="2025-01-17T11:20:42.878449" elapsed="0.278921"/>
+</kw>
+<kw name="Wait And Click Element" owner="common_art">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element with Delay" owner="common_art">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-17T11:20:43.158588" level="INFO">Clicking element '//*[text()=" เพิ่ม"]'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-17T11:20:43.158588" elapsed="0.183651"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-17T11:20:44.342900" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-17T11:20:43.342239" elapsed="1.000661"/>
+</kw>
+<arg>${locator}</arg>
+<status status="PASS" start="2025-01-17T11:20:43.158588" elapsed="1.184312"/>
+</kw>
+<arg>3x</arg>
+<arg>0.8s</arg>
+<arg>Click Element with Delay</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-01-17T11:20:43.158588" elapsed="1.184312"/>
+</kw>
+<arg>//*[text()=" เพิ่ม"]</arg>
+<status status="PASS" start="2025-01-17T11:20:43.157370" elapsed="1.185530"/>
+</kw>
+<kw name="Wait And Click Element" owner="common_art">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element with Delay" owner="common_art">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-17T11:20:44.344851" level="INFO">Clicking element '//div[@data-dx_placeholder="เลือกฟิลด์" and @class="dx-placeholder"]/preceding-sibling::input'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-17T11:20:44.344851" elapsed="0.096702"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-17T11:20:45.442883" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-17T11:20:44.441553" elapsed="1.001330"/>
+</kw>
+<arg>${locator}</arg>
+<status status="PASS" start="2025-01-17T11:20:44.344851" elapsed="1.098032"/>
+</kw>
+<arg>3x</arg>
+<arg>0.8s</arg>
+<arg>Click Element with Delay</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-01-17T11:20:44.343923" elapsed="1.098960"/>
+</kw>
+<arg>//div[@data-dx_placeholder="เลือกฟิลด์" and @class="dx-placeholder"]/preceding-sibling::input</arg>
+<status status="PASS" start="2025-01-17T11:20:44.343923" elapsed="1.098960"/>
+</kw>
+<kw name="Wait And Input Text with Delay" owner="common_art">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input Text with Delay" owner="common_art">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-17T11:20:45.444889" level="INFO">Typing text 'กำหนดรูปแบบการขาย' into text field '//div[@data-dx_placeholder="เลือกฟิลด์" and @class="dx-placeholder"]/preceding-sibling::input'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-17T11:20:45.444889" elapsed="0.059128"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-17T11:20:47.004640" level="INFO">Slept 1 second 500 milliseconds.</msg>
+<arg>1.5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-17T11:20:45.504017" elapsed="1.500623"/>
+</kw>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<status status="PASS" start="2025-01-17T11:20:45.443892" elapsed="1.560748"/>
+</kw>
+<arg>3x</arg>
+<arg>0.8s</arg>
+<arg>Input Text with Delay</arg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-01-17T11:20:45.443892" elapsed="1.560748"/>
+</kw>
+<arg>//div[@data-dx_placeholder="เลือกฟิลด์" and @class="dx-placeholder"]/preceding-sibling::input</arg>
+<arg>${master_tabcols_id}</arg>
+<status status="PASS" start="2025-01-17T11:20:45.442883" elapsed="1.561757"/>
+</kw>
+<kw name="Wait And Press Keys" owner="common_art">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Press Key" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${keys}</arg>
+<doc>Simulates user pressing key on element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-17T11:20:47.006839" elapsed="0.221401"/>
+</kw>
+<arg>3x</arg>
+<arg>0.8s</arg>
+<arg>Press Key</arg>
+<arg>${locator}</arg>
+<arg>${keys}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-01-17T11:20:47.005885" elapsed="0.223356"/>
+</kw>
+<arg>xpath=//div[7]/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div[2]/div/div/div/div/div/div/div/input</arg>
+<arg>\\13</arg>
+<status status="PASS" start="2025-01-17T11:20:47.005885" elapsed="0.223356"/>
+</kw>
+<kw name="Wait And Click Element" owner="common_art">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element with Delay" owner="common_art">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-17T11:20:47.230247" level="INFO">Clicking element '//*[@name="master_tabcols_id" and @value="69e351bc-1fc0-42d2-bf05-6ee785309171"]/ancestor::div[6]/following-sibling::div[1]/descendant::input[@class="dx-texteditor-input"]'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-17T11:20:47.230247" elapsed="0.095311"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-17T11:20:48.326226" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-17T11:20:47.325558" elapsed="1.000668"/>
+</kw>
+<arg>${locator}</arg>
+<status status="PASS" start="2025-01-17T11:20:47.230247" elapsed="1.095979"/>
+</kw>
+<arg>3x</arg>
+<arg>0.8s</arg>
+<arg>Click Element with Delay</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-01-17T11:20:47.230247" elapsed="1.095979"/>
+</kw>
+<arg>//*[@name="master_tabcols_id" and @value="${new_uuid}"]/ancestor::div[6]/following-sibling::div[1]/descendant::input[@class="dx-texteditor-input"]</arg>
+<status status="PASS" start="2025-01-17T11:20:47.229241" elapsed="1.096985"/>
+</kw>
+<kw name="Wait And Input Text with Delay" owner="common_art">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input Text with Delay" owner="common_art">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-17T11:20:48.327755" level="INFO">Typing text '1: ไม่ระบุ' into text field '//*[@name="master_tabcols_id" and @value="69e351bc-1fc0-42d2-bf05-6ee785309171"]/ancestor::div[6]/following-sibling::div[1]/descendant::input[@class="dx-texteditor-input"]'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-17T11:20:48.327755" elapsed="0.120183"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-17T11:20:49.948747" level="INFO">Slept 1 second 500 milliseconds.</msg>
+<arg>1.5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-17T11:20:48.447938" elapsed="1.500809"/>
+</kw>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<status status="PASS" start="2025-01-17T11:20:48.327755" elapsed="1.620992"/>
+</kw>
+<arg>3x</arg>
+<arg>0.8s</arg>
+<arg>Input Text with Delay</arg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-01-17T11:20:48.327755" elapsed="1.620992"/>
+</kw>
+<arg>//*[@name="master_tabcols_id" and @value="${new_uuid}"]/ancestor::div[6]/following-sibling::div[1]/descendant::input[@class="dx-texteditor-input"]</arg>
+<arg>${values_new}</arg>
+<status status="PASS" start="2025-01-17T11:20:48.326226" elapsed="1.623628"/>
+</kw>
+<kw name="Wait And Press Keys" owner="common_art">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Press Key" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${keys}</arg>
+<doc>Simulates user pressing key on element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-17T11:20:49.951766" elapsed="0.029396"/>
+</kw>
+<arg>3x</arg>
+<arg>0.8s</arg>
+<arg>Press Key</arg>
+<arg>${locator}</arg>
+<arg>${keys}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-01-17T11:20:49.950772" elapsed="0.030390"/>
+</kw>
+<arg>//*[@name="master_tabcols_id" and @value="${new_uuid}"]/ancestor::div[6]/following-sibling::div[1]/descendant::input[@class="dx-texteditor-input"]</arg>
+<arg>\\13</arg>
+<status status="PASS" start="2025-01-17T11:20:49.949854" elapsed="0.031308"/>
+</kw>
+<kw name="Wait And Click Element" owner="common_art">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element with Delay" owner="common_art">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-17T11:20:49.983185" level="INFO">Clicking element '//*[@name="master_tabcols_id" and @value="69e351bc-1fc0-42d2-bf05-6ee785309171"]/ancestor::div[6]/following-sibling::div//select/..'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-17T11:20:49.982163" elapsed="0.076181"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-17T11:20:51.059516" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-17T11:20:50.058344" elapsed="1.001172"/>
+</kw>
+<arg>${locator}</arg>
+<status status="PASS" start="2025-01-17T11:20:49.982163" elapsed="1.077353"/>
+</kw>
+<arg>3x</arg>
+<arg>0.8s</arg>
+<arg>Click Element with Delay</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-01-17T11:20:49.982163" elapsed="1.077353"/>
+</kw>
+<arg>//*[@name="master_tabcols_id" and @value="${new_uuid}"]/ancestor::div[6]/following-sibling::div//select/..</arg>
+<status status="PASS" start="2025-01-17T11:20:49.982163" elapsed="1.077353"/>
+</kw>
+<kw name="Wait And Click Element" owner="common_art">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element with Delay" owner="common_art">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-17T11:20:51.060618" level="INFO">Clicking element '//*[text()='C1: DoHome/Retail']/ancestor::div[2]//div[@class="dx-list-select-all-label"]'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-17T11:20:51.060618" elapsed="0.051422"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-17T11:20:52.113617" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-17T11:20:51.112040" elapsed="1.001577"/>
+</kw>
+<arg>${locator}</arg>
+<status status="PASS" start="2025-01-17T11:20:51.060618" elapsed="1.053598"/>
+</kw>
+<arg>3x</arg>
+<arg>0.8s</arg>
+<arg>Click Element with Delay</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-01-17T11:20:51.060618" elapsed="1.053598"/>
+</kw>
+<arg>//*[text()='C1: DoHome/Retail']/ancestor::div[2]//div[@class="dx-list-select-all-label"]</arg>
+<status status="PASS" start="2025-01-17T11:20:51.059516" elapsed="1.054700"/>
+</kw>
+<kw name="Wait And Click Element" owner="common_art">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element with Delay" owner="common_art">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-17T11:20:52.117223" level="INFO">Clicking element '//*[text()='C1: DoHome/Retail']/ancestor::div[2]//div[@class="dx-list-select-all-label"]/ancestor::div[6]/following::div[8]'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-17T11:20:52.116229" elapsed="0.061689"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-17T11:20:53.178889" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-17T11:20:52.177918" elapsed="1.000971"/>
+</kw>
+<arg>${locator}</arg>
+<status status="PASS" start="2025-01-17T11:20:52.115327" elapsed="1.063562"/>
+</kw>
+<arg>3x</arg>
+<arg>0.8s</arg>
+<arg>Click Element with Delay</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-01-17T11:20:52.115327" elapsed="1.063562"/>
+</kw>
+<arg>//*[text()='C1: DoHome/Retail']/ancestor::div[2]//div[@class="dx-list-select-all-label"]/ancestor::div[6]/following::div[8]</arg>
+<status status="PASS" start="2025-01-17T11:20:52.114216" elapsed="1.064673"/>
+</kw>
+<arg>${item_name.field}</arg>
+<arg>${item_name.value}</arg>
+<arg>${item_name.uuid}</arg>
+<status status="PASS" start="2025-01-17T11:20:42.877449" elapsed="10.302454"/>
+</kw>
+<status status="PASS" start="2025-01-17T11:20:42.877449" elapsed="10.302454"/>
+</branch>
+<branch type="ELSE IF" condition="'${field}' == '${color_id.field}'">
+<kw name="Dropdown row 5" owner="drop_down">
+<arg>${color_id.field}</arg>
+<arg>${color_id.value}</arg>
+<arg>${color_id.uuid}</arg>
+<status status="NOT RUN" start="2025-01-17T11:20:53.179903" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2025-01-17T11:20:53.179903" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2025-01-17T11:20:42.866450" elapsed="10.314448"/>
+</if>
+<arg>กำหนดรูปแบบการขาย</arg>
+<status status="PASS" start="2025-01-17T11:20:42.865451" elapsed="10.315447"/>
+</kw>
+<status status="PASS" start="2025-01-17T11:19:51.562460" elapsed="61.619438"/>
+</test>
+<status status="PASS" start="2025-01-17T11:19:51.135184" elapsed="62.047712"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Editmass New Ver">Editmass New Ver</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

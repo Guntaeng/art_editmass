@@ -1,5 +1,6 @@
 *** Settings ***
 Library    SeleniumLibrary
+Library    DebugLibrary
 Resource    ../variables/config_art.robot
 
 
@@ -99,6 +100,50 @@ Open browser web url for mac	#ชื่อที่จะนำไปใช้
     ...    options=binary_location=r"/usr/local/bin/chrome-mac-x64/Google Chrome for Testing"  
 
 
+### คำสั่งสำหรับการค้นหาโดยใช้ Article ###
+Search by article
+    [Documentation]    ค้นหา รหัสสินค้า ที่ต้องการแก้ไขฟิวด์
+    [Arguments]    @{articles}
+    Wait And Click Element                  //input[@name="article_id"]
+    Wait And Click Element                  //textarea[@name="article"]
+    FOR    ${article}    IN    @{articles}
+        ${current_text}=    Get Value       //textarea[@name="article"]
+        ${new_text}=        Set Variable    ${current_text}\n${article}
+        Wait And Input Text with Delay      //textarea[@name="article"]    ${new_text}
+    END
+    Wait And Click Element                  //span[text()="ส่ง"]/parent::button
+    Wait And Click Element                  //span[text()="ค้นหา"]/parent::button
+
+### ฟังก์ชันมาตรฐาน ###
+
+Click check box all article
+    [Documentation]    เลือกสินค้าทั้งหมด ใน dataGrid
+    Wait And Click Element    //span[text()="เลือกทั้งหมด"]/preceding-sibling::span
+
+Click button edit field
+    [Documentation]    คลิ๊กปุ่ม แก้ไขค่าของฟิลด์
+    Wait And Click Element    //span[text()="แก้ไขค่าของฟิลด์"]/parent::button
+
+Click button Confirm edit field
+    [Documentation]    คลิ๊กยืนยันแก้ไข step 1
+    Wait And Click Element                    //span[text()="ยืนยัน"]/parent::button
+    Wait And Wait Until Element Is Visible    //span[text()="ขออนุมัติแก้ไข"]/parent::button
+    Sleep    3s
+
+Click button Approve edit field
+    [Documentation]    คลิ๊กยืนยันแก้ไข step 2 ส่งข้อมูลไปเมนูรออนุมัติ
+    Wait And Click Element    //span[text()="ขออนุมัติแก้ไข"]/parent::button
+    Wait And Click Element    //span[text()="ยกเลิก"]/ancestor::div[2]/following-sibling::div//button
+    Wait And Click Element    //span[text()="ยืนยัน"]/parent::button
+    Wait Until Page Contains    อนุมัติแก้ไขสำเร็จ    timeout=10s
+
+Check value article
+    [Documentation]    ตรวจสอบรหัสสินค้าใน dataGrid ก่อนแก้ไข ว่ามีอยู่จริงหรือไม่
+    [Arguments]    ${article}
+    Wait And Wait Until Element Is Visible    //td[text()='${article}']
+
+
+
 Login dohome and click web art(Create)
     #Open browser web url    ${url_dohome}    headlesschrome
     #Open browser web url for mac             ${url_dohome}                                     chrome             
@@ -166,9 +211,9 @@ Refresh page
 
 
 Login dohome and click web art(Edit Mass) A2
-    Open browser web url    ${url_dohome}    headlesschrome
+    #Open browser web url    ${url_dohome}    headlesschrome
     # Open browser web url for mac             ${url_dohome}                                     chrome
-    #Open browser web url                     ${url_dohome}                                     chrome             
+    Open browser web url                     ${url_dohome}                                     chrome             
     #Set Window Size    1920    1080
     Maximize Browser Window
     Wait And Wait Until Element Contains     //button[text()='เข้าสู่ระบบ']                       เข้าสู่ระบบ       
