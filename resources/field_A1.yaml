@@ -1,0 +1,86 @@
+---
+ownership_show:
+  field:  กรรมสิทธิ์ของตัวโชว์
+  value:  "D: ตัวโชว์ Dohome"
+  uuid: 83c976bf-32e8-42ba-b2ac-17c4e04acae3
+  type: Dropdown
+
+import_purchase:
+  field:  กลุ่มจัดซื้อต่างประเทศ
+  value:  "201: คุณหทัยพันธน์"
+  uuid: 9d5a006a-a64b-45b2-b77d-edb75712b954
+  type: Dropdown
+
+product_status:
+  field:  สถานะสินค้า Active / Inactive (Item Status)
+  value:  "A: Active"
+  uuid: d48870c0-87d0-4278-b860-a4054a6cda69
+  type: Dropdown
+
+flag_batch_management:
+  field:  สินค้าที่ต้องระบุ batch (Batch management)
+  value:  
+  uuid: ac424a83-5387-401d-b8e9-78b294901d4b
+  type: checkbox
+
+product_role:
+  field: กลุ่มสินค้า Core หลัก /เสริม (Product Role)
+  value:  "01: Core"
+  uuid: dcad006c-af57-4226-8e7c-1db348d6930d
+  type: Dropdown
+
+abc_indicator:
+  field:  การจัดกลุ่มสินค้า (Item indicator)
+  value:  "4: สินค้าปกติ"
+  uuid: 7742800e-7944-4251-9e53-b54e7e071a8b
+  type: Dropdown
+
+product_sub_role:
+  field:  กลุ่มย่อยของ Product Role
+  value:  "01: สินค้าฤดูกาล"
+  uuid: ca98953b-03c6-445b-83bd-da790829ccaf
+  type: dropdown
+
+product_trend:
+  field:  Product trends
+  value:  "01: นวัตกรรม"
+  uuid: 304c756-65b1-4381-9600-c566e800ac7d
+  type: dropdown
+
+purchaser_group_no:
+  field:  กลุ่มจัดซื้อในประเทศ (Purch. Group)
+  value:  "101: คุณนาตยา"
+  uuid: 1dd20e62-1ea3-4026-b6f5-148c690cc301
+  type: dropdown
+
+shipping_group:
+  field:  พนักงาน Shipping
+  value:  "1036344: จิรารัตน์ อารีย์"
+  uuid: fba89cf3-9cc9-472b-865c-0d8edab7a696
+  type: dropdown
+
+status_purchase:
+  field:  สถานะซื้อสินค้า (Status purchase)
+  value:  "01: Blocked for procment/whse"
+  uuid: 7665fda3-d881-4d21-aaa5-27800120f303
+  type: dropdown
+
+status_sale:
+  field:  สถานะขายสินค้า (Status Sale)
+  value:  "01: Discontd w/o Replace"
+  uuid: 3c7d536c-0344-4282-baeb-8b8dbb0975c9
+  type: Dropdown
+
+stock_show:
+  field:  ต้องมี Stock ตัวโชว์
+  value:  "No: สินค้าไม่ต้องมีตัวโชว์"
+  uuid: 7987ebf4-57b2-4c79-90be-c53bc955abe2
+  type: Dropdown
+
+product_sub_indicator:
+  field:  หมายเหตุการเลิกขายสินค้า (Sub indicator)
+  value:  "L: สินค้าบล็อครุ่น"
+  uuid: b0feee85-4b40-45f2-8f26-69b0f39770f1
+  type: Dropdown
+
+

@@ -1,0 +1,91 @@
+---
+is_flag_returns:
+  field:  รับคืนจากลูกค้า
+  value:  ''
+  uuid:   f028d72d-d555-4d1d-adc7-fff156b65227
+  type:   "check box, req c1,c2,C3"
+
+artl_statistics_grp:
+  field:  ผังการลงบัญชีสินค้า
+  value:  '1: 'A' Article'
+  uuid:   c306bc39-c066-43f5-95f4-89496d69246c
+  type:   drop down
+
+neg_stocks:
+  field:  สินค้าที่สามารถขายได้เมื่อสต็อกติดลบ
+  value:  ''
+  uuid:   7cdd04b6-ca46-46e1-a4eb-6514ac0a9386
+  type:   check box
+
+acct_assignment:
+  field:  ลงบัญชีรายได้ (Acct. assignment )
+  value:  '01: Stock Sales'
+  uuid:   c7941f66-493b-4359-9a04-66d624ec8635
+  type:   drop down
+
+stock_group:
+  field:  กลุ่มการจัดเก็บสต็อก (Artl.)
+  value:  '1: 'A' Article'
+  uuid:   b9838b90-e50e-4bb9-ba00-5551d6d38a41
+  type:   drop down
+
+astmt_list_type:
+  field:  Astmt List Type
+  value:  '1: SAP reference object'
+  uuid:   8facfe24-3dd0-4738-922e-8048db20afca
+  type:   drop down
+
+avail_check:
+  field:  การตรวจสอบความพอเพียง (Avail. Check)
+  value:  '01: Daily requirements'
+  uuid:   3595f916-c9b2-4984-83cf-3d2e17fb25b5
+  type:   drop down
+
+stor_conditions:
+  field:  ที่จัดจ่ายสินค้า Basic (Stor.conditions)
+  value:  '01: Storage condition 1'
+  uuid:   d1c71b9a-44d9-473f-bbb3-4b82a8a6736b
+  type:   drop down
+
+division:
+  field:  Division
+  value:  '00: Common Division'
+  uuid:   d344c07a-8235-4e50-9674-76370451765f
+  type:   drop down
+
+artl_statistics_grp:
+  field:  c (Gen. item cat)
+  value:  'DIEN: Service w/ Delivery'
+  uuid:   cd43ac36-9e55-41ee-a0ca-59e2c8f61205
+  type:   drop down
+
+gen_item_cat_grp:
+  field:  กลุ่มวัสดุ-ลงบัญชีขาย (Gen. item cat. grp)
+  value:  'DIEN: Service w/ Delivery'
+  uuid:   c01e3ab3-265f-448b-a1da-b8fcf865b827
+  type:   drop down
+
+revenue:
+  field:  การรับรู้รายได้ (Item cat)
+  value:  'DIEN: Service w/ Delivery'
+  uuid:   89309c52-97fc-42fb-9c38-55609ae1ab76
+  type:   drop down
+
+loading_group:
+  field:  คลังจัดเก็บ (Loading Group)
+  value:  '0001: Store ค้าปลีก'
+  uuid:   745c5258-93d9-4c5e-8965-d61e9f4a06c7
+  type:   drop down
+
+dc_loading_group:
+  field:  จุดจัดเก็บสินค้า (Loading Group)
+  value:  '0001: Store ค้าปลีก'
+  uuid:   2f8fc29d-473b-4e1b-bd08-d0b3de57ac80
+  type:   drop down
+
+valuation_class:
+  field:  ประเภทสินค้าทางบัญชี (valuation class)
+  value:  '0710: Equipment 1'
+  uuid:   570c0d96-d236-451b-b500-79b9fcecfbba
+  type:   drop down
+

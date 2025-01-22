@@ -1,0 +1,199 @@
+---
+profitable_product:
+  field:  สินค้าทองคำ
+  value:  'สินค้าทองคำ_editmass'
+  uuid: eaeb4bb9-0a23-439a-a642-ba56bf151b06
+  type: input text
+
+brand_type:
+  field:  ประเภทแบรนด์
+  value:  '01: แบรนด์ของ Vendor'
+  uuid:   eea0047f-38ea-4ea5-ade3-47f9576782ee
+  type:   drop down
+
+seasonal_products:
+  field:  สินค้าฤดูกาล (สินค้าที่ขายในช่วงที่เป็นฤดูกาลขายมมากกว่าการขายปกติ)
+  value:  'มกราคม'
+  uuid:   de3f4f40-141e-434f-a1a0-1c1c8ee1c79c
+  type:   Check box month row 1
+
+search_remark:  
+  field:  หมายเหตุการขาย
+  value:  '_editmass'
+  uuid:   c4ee0c1f-2489-4a11-ba8b-b010d701945b
+  type:   input text
+
+product_transform:    
+  field:  สินค้าต้องแปรสภาพ
+  value:  '01: แปรสภาพใช้สูตร'
+  uuid:   5fae4a1f-9dd4-4151-aed2-2af2fc79a6e7
+  type:   drop down
+
+product_detail:
+  field:  คำขยายของตัวสินค้า
+  value:  'คำขยายของตัวสินค้า_editmass'
+  uuid:   00e936a0-4817-4852-84fc-9bde5823df65
+  type:   input text
+
+sales_period:
+  field:  ช่วงระยะเวลาที่ขาย (เดือนที่เป็นช่วงการขายของสินค้าเทศกาลนั้นๆ)
+  value:  'มกราคม'
+  uuid:   cbbf7ee2-0b3e-46c1-8598-e2ad37e009c6
+  type:   Check box month row 2
+
+warranty_terms:
+  field:  เงื่อนไขการรับประกัน
+  value:  'เงื่อนไขการรับประกัน_editmass'
+  uuid:   24b50355-96f2-4409-ad6b-c57989a1ebc9
+  type:   Input text editmass row 3 (section14)
+
+old_article:
+  field:  รหัสสินค้าเดิมที่ยกเลิกขาย
+  value:  'รหัสสินค้าเดิมที่ยกเลิกขาย_editmass'
+  uuid:   10a463ad-7b70-4d9a-9a8f-618176aa3bb4
+  type:   input text
+
+recommended_minimum:
+  field:  อายุขั้นต่ำที่แนะนำให้รับสินค้า
+  value:  '1234'
+  uuid:   21fdaede-a880-4520-8a8f-64a395f0998a
+  type:   Input text editmass row 5 (day warranty)
+
+customs_tariff:
+  field:  พิกัดศุลกากร (Comm./imp. code no.)
+  value:  'พิกัดศุลกากร (Comm./imp. code no.)_editmass'
+  uuid:   deb87581-ae77-470e-8f76-517db894722e
+  type:   input text
+
+components:
+  field:  ส่วนประกอบตัวลูกตัวแม่ (components)
+  value:  '1234'
+  uuid:   d00d18d5-af5f-4b79-a87e-7ee3bfea0195
+  type:   input number
+
+content_unit:
+  field:  หน่วยน้ำหนักคู่ขนาน (Content unit)
+  value:  'Inchx'
+  uuid:   9faa62f5-7482-41b5-9e90-835cab1a2279
+  type:   drop down
+
+country_of_region:
+  field:  ประเทศต้นทางนำเข้า (Ctry of origin)
+  value:  'AE: ประเทศเอมิเรตส์'
+  uuid:   12c7c566-75c8-4fdc-9247-60bc40466aba
+  type:   drop down
+
+first_sale_date:
+  field:  วันที่ต้องการที่จะขาย (First Sale Date)
+  value:  '10/12/2024'
+  uuid:   d13a7611-81be-44d0-8544-de35dbc37fc6
+  type:   input text
+
+gross_contents:
+  field:  น้ำหนักต่ำสุด หน่วยคู่ขนาน (Gross contents )
+  value:  '1234'
+  uuid:   56cbb34b-e291-429a-8fd7-d1db2b6258eb
+  type:   input number
+
+hazardous_no:
+  field:  เลขที่สำหรับวัตถุอันตราย (Haz. artl no.)
+  value:  'เลขที่สำหรับวัตถุอันตราย (Haz. artl no.)_editmass'
+  uuid:   fea6397a-24f9-46bd-a5f9-29516495a33c
+  type:   input text
+
+hb_nonhb:
+  field:  HB/Non HB
+  value:  '01: Non House brand'
+  uuid:   d0504e07-92e9-4a17-8f86-e9b1d52a4a55
+  type:   drop down
+
+production:
+  field:  HB ในประเทศ/ต่างประเทศ (Production)
+  value:  'Z1: ผลิตในประเทศ'
+  uuid:   4c34a311-51f4-4c4c-9bea-d0f11d941bda
+  type:   drop down
+
+merchandise_category4:
+  field:  รุ่นเหล็ก (Mdes Catary4 )
+  value:  '12อ: แบนรีด 12อ'
+  uuid:   e85271b4-cbac-480b-a301-ffeb8b8b8e16
+  type:   drop down
+
+merchandise_category3:
+  field:  สินค้าต้องระวังพื้นที่จัดเก็บ(Mdse catgry3)
+  value:  '01: สารเคมี'
+  uuid:   67ffb08f-e775-40be-8356-99dd8708071c
+  type:   drop down
+
+net_contents:
+  field:  น้ำหนักสูงสุด หน่วยคู่ขนาน (Net contents)
+  value:  '1234'
+  uuid:   7867a800-ddf8-4733-890c-556a492df6dd
+  type:   drop down
+
+price_band_cat:
+  field:  ประเภทหน่วยคู่ขนาน (Price Band Cat.)
+  value:  '1: Zinc (สังกะสี)'
+  uuid:   7d2f04cf-e185-4eca-b32e-aa6d3f345288
+  type:   drop down
+
+regions_origin:
+  field:  แหล่งกำเนิดสินค้า (Reg. of origin)
+  value:  '01: Buenos Aires'
+  uuid:   87623ec3-48ad-4013-a340-e162e7029ee1
+  type:   drop down
+
+rem_shelf_life:
+  field:  อายุสินค้าที่รับสินค้าได้ (remaining shelf life)
+  value:  '1234'
+  uuid:   cd0287b3-cc6b-4e91-94d1-24d3e9eefd90
+  type:   Input text
+
+repack:
+  field:  สินค้าต้องrepack/ติดบาร์โค๊ด (repack)
+  value:  '01: สินค้าต้อง repack ติดบาร์โค๊ด'
+  uuid:   28361478-094e-4c36-9ace-84b1a06b9241
+  type:   drop down
+
+search_word:
+  field:  ชื่อค้นหาสินค้า (Search Name)
+  value:  'ชื่อค้นหาสินค้า (Search Name)_editmass'
+  uuid:   d108e5f3-811b-4f7b-802c-9cad3fe58fa7
+  type:   input text
+
+site_artl_status:
+  field:  สถานะราย site (P-S artl status)
+  value:  '01: Blocked for procment/whse'
+  uuid:   466f0303-68e2-4d65-bebe-8582d354417e
+  type:   drop down
+
+tax_class:
+  field:  ประเภทภาษีขาย (Tax class.)
+  value:  '0: No tax'
+  uuid:   51282b64-d937-450a-951c-335a4b171c8e
+  type:   drop down
+
+temperature:
+  field:  อุณหภูมิการเก็บรักษา (Temperature)
+  value:  '1234'
+  uuid:   295a7cd2-a0dc-43dc-a88d-2865383de989
+  type:   Input text editmass row 5 (day warranty)
+
+name_th:
+  field:  ชื่อสินค้าภาษาไทย (Thai Name)
+  value:  'Test_QA_editmass'
+  uuid:   af65e618-5adb-4fa6-9441-435966341c1c
+  type:   input text
+
+tot_shelf_life:
+  field:  อายุสินค้าทั้งหมด (total shelf life)
+  value:  '1234'
+  uuid:   e6bee95f-3d9a-4731-a928-96ff25933f95
+  type:   Input text editmass row 2 (day warranty)
+
+tradmark:
+  field:  เครื่องหมายการค้า (Tradmark)
+  value:  'HBNTM: สินค้า HB ไม่มี Trademark'
+  uuid:   2fdd67d8-47f2-41e1-a935-4829e255a876
+  type:   drop down
+  

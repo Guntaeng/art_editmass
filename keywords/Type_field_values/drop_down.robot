@@ -9,7 +9,7 @@ Resource    ../common_art.robot
 
 *** Keywords ***
 Dropdown row 1
-    [Arguments]    ${master_tabcols_id}    ${values_new}    
+    [Arguments]    ${master_tabcols_id}    ${values_new}    ${new_uuid}   
     Wait And Click Element    //input[@name="master_tabcols_id"]/following-sibling::div/div/input
     Wait And Input Text with Delay    //input[@name="master_tabcols_id"]/following-sibling::div/div/input    ${master_tabcols_id} 
     Wait And Press Keys    //input[@name="master_tabcols_id"]/following-sibling::div/div/input    \\13
