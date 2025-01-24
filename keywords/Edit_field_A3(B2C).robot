@@ -50,15 +50,12 @@ No. 5 Edit field name (ฺB2C/A3) :
 
 
 
-*** Test Cases ***
-Article Edit mass round 1
-    [Setup]    Login dohome and click web art(Edit Mass) A3
-    Search by article    10337742
-    Check value article    10337742
-    Click check box all article
-    Click button edit field    
-    No. 1 Edit field name (ฺB2C/A3) :    Categories
-    
+############### Keyword Data Driven ###########################
+No. 1 Edit field name (ฺB2C/A3/Data-Driven) :
+    [Arguments]    ${field}    ${value}
+    IF         '${field}' == '${product_categories_level.field}'
+        Dropdown row 1                           ${product_categories_level.field}               ${value}           ${product_categories_level.uuid}
+    END
 
 
 

@@ -1,24 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.1.1 (Python 3.12.5 on darwin)" generated="2025-01-22T10:33:46.139252" rpa="false" schemaversion="5">
-<suite id="s1" name="Edit field A2" source="/Users/guntz/Desktop/art_editmass/keywords/Edit_field_A2.robot">
-<test id="s1-t1" name="Article Edit mass round 1" line="374">
-<kw name="Login dohome and click web art(Edit Mass) A2" owner="common_art" type="SETUP">
-<kw name="Open browser web url for mac" owner="common_art">
+<robot generator="Robot 7.1.1 (Python 3.11.5 on win32)" generated="2025-01-24T09:55:34.705065" rpa="false" schemaversion="5">
+<suite id="s1" name="Editmass datadriven" source="c:\Automate_WEB\Clone_Article\Clone_article_GR\art_editmass\testcases\Editmass_datadriven.robot">
+<kw name="Login dohome and click web art(Edit Mass) A3" owner="common_art" type="SETUP">
+<kw name="Open browser web url" owner="common_art">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-01-22T10:33:46.735213" level="INFO">Opening browser 'chrome' to base url 'https://web-dohome-center-uat.dohome.technology/app/home'.</msg>
+<msg time="2025-01-24T09:55:35.168880" level="INFO">Opening browser 'chrome' to base url 'https://web-dohome-center-uat.dohome.technology/app/home'.</msg>
 <arg>${url}</arg>
 <arg>browser=${browserName}</arg>
-<arg>options=binary_location=r"/usr/local/bin/chrome-mac-x64/Google Chrome for Testing"</arg>
+<arg>options=binary_location=r"C:\\chrome-win64\\chrome.exe"</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-01-22T10:33:46.734623" elapsed="9.915790"/>
+<status status="PASS" start="2025-01-24T09:55:35.167798" elapsed="3.075509"/>
 </kw>
 <arg>${url_dohome}</arg>
 <arg>chrome</arg>
-<status status="PASS" start="2025-01-22T10:33:46.733224" elapsed="9.918314"/>
+<status status="PASS" start="2025-01-24T09:55:35.167798" elapsed="3.075509"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-01-22T10:33:56.652981" elapsed="0.069420"/>
+<status status="PASS" start="2025-01-24T09:55:38.244313" elapsed="0.044530"/>
 </kw>
 <kw name="Wait And Wait Until Element Contains" owner="common_art">
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
@@ -26,7 +25,7 @@
 <arg>${locator}</arg>
 <arg>${text}</arg>
 <doc>Waits until the element ``locator`` contains ``text``.</doc>
-<status status="PASS" start="2025-01-22T10:33:56.724345" elapsed="0.715529"/>
+<status status="PASS" start="2025-01-24T09:55:38.289847" elapsed="0.744093"/>
 </kw>
 <arg>3x</arg>
 <arg>1s</arg>
@@ -34,39 +33,39 @@
 <arg>${locator}</arg>
 <arg>${text}</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-01-22T10:33:56.723906" elapsed="0.716253"/>
+<status status="PASS" start="2025-01-24T09:55:38.288843" elapsed="0.745097"/>
 </kw>
 <arg>//button[text()='เข้าสู่ระบบ']</arg>
 <arg>เข้าสู่ระบบ</arg>
-<status status="PASS" start="2025-01-22T10:33:56.722911" elapsed="0.717451"/>
+<status status="PASS" start="2025-01-24T09:55:38.288843" elapsed="0.746104"/>
 </kw>
 <kw name="Wait And Click Element" owner="common_art">
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
 <kw name="Click Element with Delay" owner="common_art">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-01-22T10:33:57.442550" level="INFO">Clicking element '//button[text()='เข้าสู่ระบบ']'.</msg>
+<msg time="2025-01-24T09:55:39.037949" level="INFO">Clicking element '//button[text()='เข้าสู่ระบบ']'.</msg>
 <arg>${locator}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-22T10:33:57.442178" elapsed="0.342268"/>
+<status status="PASS" start="2025-01-24T09:55:39.037949" elapsed="0.405039"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-22T10:33:58.786130" level="INFO">Slept 1 second.</msg>
+<msg time="2025-01-24T09:55:40.444099" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-22T10:33:57.784791" elapsed="1.002235"/>
+<status status="PASS" start="2025-01-24T09:55:39.443994" elapsed="1.000613"/>
 </kw>
 <arg>${locator}</arg>
-<status status="PASS" start="2025-01-22T10:33:57.441703" elapsed="1.345938"/>
+<status status="PASS" start="2025-01-24T09:55:39.036949" elapsed="1.407658"/>
 </kw>
 <arg>3x</arg>
 <arg>0.8s</arg>
 <arg>Click Element with Delay</arg>
 <arg>${locator}</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-01-22T10:33:57.441172" elapsed="1.346984"/>
+<status status="PASS" start="2025-01-24T09:55:39.035950" elapsed="1.409665"/>
 </kw>
 <arg>//button[text()='เข้าสู่ระบบ']</arg>
-<status status="PASS" start="2025-01-22T10:33:57.440638" elapsed="1.347856"/>
+<status status="PASS" start="2025-01-24T09:55:39.034947" elapsed="1.410668"/>
 </kw>
 <kw name="Wait And Wait Until Element Contains" owner="common_art">
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
@@ -74,7 +73,7 @@
 <arg>${locator}</arg>
 <arg>${text}</arg>
 <doc>Waits until the element ``locator`` contains ``text``.</doc>
-<status status="PASS" start="2025-01-22T10:33:58.790988" elapsed="0.029636"/>
+<status status="PASS" start="2025-01-24T09:55:40.447624" elapsed="0.099590"/>
 </kw>
 <arg>3x</arg>
 <arg>1s</arg>
@@ -82,59 +81,59 @@
 <arg>${locator}</arg>
 <arg>${text}</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-01-22T10:33:58.790178" elapsed="0.030668"/>
+<status status="PASS" start="2025-01-24T09:55:40.446623" elapsed="0.101579"/>
 </kw>
 <arg>//*[@class="text-2xl text-primary font-bold"]</arg>
 <arg>เข้าสู่ระบบ</arg>
-<status status="PASS" start="2025-01-22T10:33:58.789083" elapsed="0.031933"/>
+<status status="PASS" start="2025-01-24T09:55:40.445615" elapsed="0.102587"/>
 </kw>
 <kw name="Wait And Click Element" owner="common_art">
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
 <kw name="Click Element with Delay" owner="common_art">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-01-22T10:33:58.822847" level="INFO">Clicking element '//input[@name="username"]'.</msg>
+<msg time="2025-01-24T09:55:40.550202" level="INFO">Clicking element '//input[@name="username"]'.</msg>
 <arg>${locator}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-22T10:33:58.822538" elapsed="0.126244"/>
+<status status="PASS" start="2025-01-24T09:55:40.549200" elapsed="0.118984"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-22T10:33:59.950020" level="INFO">Slept 1 second.</msg>
+<msg time="2025-01-24T09:55:41.669462" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-22T10:33:58.949148" elapsed="1.001411"/>
+<status status="PASS" start="2025-01-24T09:55:40.669184" elapsed="1.000278"/>
 </kw>
 <arg>${locator}</arg>
-<status status="PASS" start="2025-01-22T10:33:58.822133" elapsed="1.128814"/>
+<status status="PASS" start="2025-01-24T09:55:40.549200" elapsed="1.120770"/>
 </kw>
 <arg>3x</arg>
 <arg>0.8s</arg>
 <arg>Click Element with Delay</arg>
 <arg>${locator}</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-01-22T10:33:58.821767" elapsed="1.129490"/>
+<status status="PASS" start="2025-01-24T09:55:40.548202" elapsed="1.121768"/>
 </kw>
 <arg>//input[@name="username"]</arg>
-<status status="PASS" start="2025-01-22T10:33:58.821290" elapsed="1.130285"/>
+<status status="PASS" start="2025-01-24T09:55:40.548202" elapsed="1.121768"/>
 </kw>
 <kw name="Wait And Input Text with Delay" owner="common_art">
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
 <kw name="Input Text with Delay" owner="common_art">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-01-22T10:33:59.955952" level="INFO">Typing text '1050607' into text field '//input[@name="username"]'.</msg>
+<msg time="2025-01-24T09:55:41.671977" level="INFO">Typing text '1046813' into text field '//input[@name="username"]'.</msg>
 <arg>${locator}</arg>
 <arg>${text}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-22T10:33:59.955221" elapsed="0.215862"/>
+<status status="PASS" start="2025-01-24T09:55:41.671977" elapsed="0.106002"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-22T10:34:01.675328" level="INFO">Slept 1 second 500 milliseconds.</msg>
+<msg time="2025-01-24T09:55:43.279402" level="INFO">Slept 1 second 500 milliseconds.</msg>
 <arg>1.5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-22T10:34:00.171675" elapsed="1.504442"/>
+<status status="PASS" start="2025-01-24T09:55:41.778969" elapsed="1.500433"/>
 </kw>
 <arg>${locator}</arg>
 <arg>${text}</arg>
-<status status="PASS" start="2025-01-22T10:33:59.954113" elapsed="1.722606"/>
+<status status="PASS" start="2025-01-24T09:55:41.670977" elapsed="1.608425"/>
 </kw>
 <arg>3x</arg>
 <arg>0.8s</arg>
@@ -142,59 +141,59 @@
 <arg>${locator}</arg>
 <arg>${text}</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-01-22T10:33:59.953268" elapsed="1.723915"/>
+<status status="PASS" start="2025-01-24T09:55:41.670977" elapsed="1.608425"/>
 </kw>
 <arg>//input[@name="username"]</arg>
-<arg>${user_editmass_A2}</arg>
-<status status="PASS" start="2025-01-22T10:33:59.952128" elapsed="1.725616"/>
+<arg>${user_editmass_A3}</arg>
+<status status="PASS" start="2025-01-24T09:55:41.669970" elapsed="1.609432"/>
 </kw>
 <kw name="Wait And Click Element" owner="common_art">
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
 <kw name="Click Element with Delay" owner="common_art">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-01-22T10:34:01.684238" level="INFO">Clicking element '//input[@name="password"]'.</msg>
+<msg time="2025-01-24T09:55:43.280493" level="INFO">Clicking element '//input[@name="password"]'.</msg>
 <arg>${locator}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-22T10:34:01.683534" elapsed="0.082456"/>
+<status status="PASS" start="2025-01-24T09:55:43.280493" elapsed="0.056540"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-22T10:34:02.767563" level="INFO">Slept 1 second.</msg>
+<msg time="2025-01-24T09:55:44.338400" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-22T10:34:01.766704" elapsed="1.001347"/>
+<status status="PASS" start="2025-01-24T09:55:43.337033" elapsed="1.001367"/>
 </kw>
 <arg>${locator}</arg>
-<status status="PASS" start="2025-01-22T10:34:01.681997" elapsed="1.086514"/>
+<status status="PASS" start="2025-01-24T09:55:43.280493" elapsed="1.057907"/>
 </kw>
 <arg>3x</arg>
 <arg>0.8s</arg>
 <arg>Click Element with Delay</arg>
 <arg>${locator}</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-01-22T10:34:01.681099" elapsed="1.087765"/>
+<status status="PASS" start="2025-01-24T09:55:43.279402" elapsed="1.058998"/>
 </kw>
 <arg>//input[@name="password"]</arg>
-<status status="PASS" start="2025-01-22T10:34:01.678728" elapsed="1.090457"/>
+<status status="PASS" start="2025-01-24T09:55:43.279402" elapsed="1.059501"/>
 </kw>
 <kw name="Wait And Input Text with Delay" owner="common_art">
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
 <kw name="Input Text with Delay" owner="common_art">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-01-22T10:34:02.780041" level="INFO">Typing text 'D0h0me*1' into text field '//input[@name="password"]'.</msg>
+<msg time="2025-01-24T09:55:44.339908" level="INFO">Typing text 'D0h0me*1' into text field '//input[@name="password"]'.</msg>
 <arg>${locator}</arg>
 <arg>${text}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-22T10:34:02.775297" elapsed="0.079914"/>
+<status status="PASS" start="2025-01-24T09:55:44.339908" elapsed="0.106350"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-22T10:34:04.356311" level="INFO">Slept 1 second 500 milliseconds.</msg>
+<msg time="2025-01-24T09:55:45.947934" level="INFO">Slept 1 second 500 milliseconds.</msg>
 <arg>1.5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-22T10:34:02.855554" elapsed="1.501255"/>
+<status status="PASS" start="2025-01-24T09:55:44.446258" elapsed="1.501676"/>
 </kw>
 <arg>${locator}</arg>
 <arg>${text}</arg>
-<status status="PASS" start="2025-01-22T10:34:02.773719" elapsed="1.583614"/>
+<status status="PASS" start="2025-01-24T09:55:44.338903" elapsed="1.609031"/>
 </kw>
 <arg>3x</arg>
 <arg>0.8s</arg>
@@ -202,332 +201,356 @@
 <arg>${locator}</arg>
 <arg>${text}</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-01-22T10:34:02.772775" elapsed="1.584891"/>
+<status status="PASS" start="2025-01-24T09:55:44.338903" elapsed="1.609031"/>
 </kw>
 <arg>//input[@name="password"]</arg>
 <arg>${pass}</arg>
-<status status="PASS" start="2025-01-22T10:34:02.769981" elapsed="1.588032"/>
+<status status="PASS" start="2025-01-24T09:55:44.338903" elapsed="1.609031"/>
 </kw>
 <kw name="Wait And Click Element" owner="common_art">
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
 <kw name="Click Element with Delay" owner="common_art">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-01-22T10:34:04.363648" level="INFO">Clicking element '//button[@type="submit"][ text()='เข้าสู่ระบบ']'.</msg>
+<msg time="2025-01-24T09:55:45.949941" level="INFO">Clicking element '//button[@type="submit"][ text()='เข้าสู่ระบบ']'.</msg>
 <arg>${locator}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-22T10:34:04.362444" elapsed="0.085352"/>
+<status status="PASS" start="2025-01-24T09:55:45.949941" elapsed="0.061236"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-22T10:34:05.448480" level="INFO">Slept 1 second.</msg>
+<msg time="2025-01-24T09:55:47.012730" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-22T10:34:04.448096" elapsed="1.000995"/>
+<status status="PASS" start="2025-01-24T09:55:46.012175" elapsed="1.000555"/>
 </kw>
 <arg>${locator}</arg>
-<status status="PASS" start="2025-01-22T10:34:04.360974" elapsed="1.088465"/>
+<status status="PASS" start="2025-01-24T09:55:45.949035" elapsed="1.063695"/>
 </kw>
 <arg>3x</arg>
 <arg>0.8s</arg>
 <arg>Click Element with Delay</arg>
 <arg>${locator}</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-01-22T10:34:04.359663" elapsed="1.090256"/>
+<status status="PASS" start="2025-01-24T09:55:45.949035" elapsed="1.063695"/>
 </kw>
 <arg>//button[@type="submit"][ text()='เข้าสู่ระบบ']</arg>
-<status status="PASS" start="2025-01-22T10:34:04.358620" elapsed="1.091836"/>
+<status status="PASS" start="2025-01-24T09:55:45.947934" elapsed="1.064796"/>
 </kw>
 <kw name="Wait And Click Element" owner="common_art">
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
 <kw name="Click Element with Delay" owner="common_art">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-01-22T10:34:05.453529" level="INFO">Clicking element '//*[@aria-label="ระบบจัดการข้อมูลสินค้า"]'.</msg>
-<msg time="2025-01-22T10:34:07.073226" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-10.png"&gt;&lt;img src="selenium-screenshot-10.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2025-01-22T10:34:07.074129" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a class="relative inline-flex items-center tap-highlight-transparent outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 no-underline hover:opacity-80 active:opacity-disabled transition-opacity text-xs line-clamp-1 text-primary" aria-label="ระบบจัดการข้อมูลสินค้า" role="link" href="https://web-article-master-uat.dohome.technology/?i=bcd8deca266991095222fc7bad68d58fa80c193f9df548b95d29b999272e8886xtBeEUJR/6uUaDhLSxz7V2PTS2lWMR+cdaZz1quaUWVtJt+HTGccV/dKBogmgYF6aUyk/69ki9GS0ZQONmP47MvrL4kackxPQKhb6KJBMZ2sIXQPbO12a5myqpJv4boWJ4LNtkJLpxt7VZ7a3zZhyuszn6Ee3wB9dJFEWqm6wl1r7UTNxN/BJMkHw2KrtMY+uupWM43IrGcQAoxoldNMwvS5uUk693+IgbMPAQObgPu6NVEMyvrVTfMuDvYrTbW/BzI+jnY4VYCDdtpqVp1XO60t6dewC/OTU2XWNoi2CLibmn/ubnUfyoVa/xJ09/o24VZ6Sy4Xgh1/KKeLymgx1lG6amkkKKQm3/WCV0R3TSO11kJe3bKcBWMKG0+65ojXaDReqrtArxcy5QAJV/9NeHtLKwNAUrXdUUgLQazXtqu7VLOLFeFEa8Rdsw5z/205" target="_blank" tabindex="0"&gt;...&lt;/a&gt; is not clickable at point (315, 611). Other element would receive the click: &lt;div class="flex w-screen h-[100dvh] fixed inset-0 z-50 overflow-x-auto justify-center [--scale-enter:100%] [--scale-exit:100%] [--slide-enter:0px] [--slide-exit:80px] sm:[--scale-enter:100%] sm:[--scale-exit:103%] sm:[--slide-enter:0px] sm:[--slide-exit:0px] items-end sm:items-center" style="opacity: 1; transform: translateY(0px) scale(1.00556) translateZ(0px);"&gt;...&lt;/div&gt;
-  (Session info: chrome=132.0.6834.83)
+<msg time="2025-01-24T09:55:47.013737" level="INFO">Clicking element '//*[@aria-label="ระบบจัดการข้อมูลสินค้า"]'.</msg>
+<msg time="2025-01-24T09:55:48.599787" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-01-24T09:55:48.599787" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a class="relative inline-flex items-center tap-highlight-transparent outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 no-underline hover:opacity-80 active:opacity-disabled transition-opacity text-xs line-clamp-1 text-primary" aria-label="ระบบจัดการข้อมูลสินค้า" role="link" href="https://web-article-master-uat.dohome.technology/?i=19513fc01d41697f601a285089f90d38df5776eaf767c2a1b2c135815831e917N6nCE78z9iWVc+9VmAeiYqCMvwQsFwjmAS4rlAcgO+FT3KjpKbdahZgYWeNpcbrE/PGCDyc65uy7+/oIlPtdsNZNoagz1lyjghY0if7Yc+WdrJWDM48r4hF7CVKVe/ByCPl6ogQA3DqJCPeKr+PKOAMO+nPvILIeVJfPFaEARL7aEDIotEYlxvI8l6ogf2i0/Z6YDUT3tqdnxhocwjmgRn7VLoPVqPGS/hz8JEmWXww44g3fDDFzD2Sjzi9ZVPjq7skWHvZUhgQz7UDqxVhp/5tfxflIj16zrpr1QNnuQ8pGrRal4pI0UVjRL4cI7EXC0MUrau9qsO7kIXvLT+WWLXII3BrB1/PwZjrKlPeUiW6/o5KNI1KWOseDRaY0/uQrIS+8T3cKNnYFuJ8hqfhNvvM1zkp5ZqI0eg+8XR8m0w8lLE0dmsdqXaCrg5GjhXdM" target="_blank" tabindex="0"&gt;...&lt;/a&gt; is not clickable at point (546, 832). Other element would receive the click: &lt;div class="flex w-screen h-[100dvh] fixed inset-0 z-50 overflow-x-auto justify-center [--scale-enter:100%] [--scale-exit:100%] [--slide-enter:0px] [--slide-exit:80px] sm:[--scale-enter:100%] sm:[--scale-exit:103%] sm:[--slide-enter:0px] sm:[--slide-exit:0px] items-end sm:items-center" style="opacity: 1; transform: translateY(0px) scale(1.00442) translateZ(0px);"&gt;...&lt;/div&gt;
+  (Session info: chrome=131.0.6778.87)
 Stacktrace:
-0   chromedriver                        0x000000010cf5e538 chromedriver + 5539128
-1   chromedriver                        0x000000010cf563fa chromedriver + 5506042
-2   chromedriver                        0x000000010ca77640 chromedriver + 398912
-3   chromedriver                        0x000000010cace28e chromedriver + 754318
-4   chromedriver                        0x000000010cacc1ae chromedriver + 745902
-5   chromedriver                        0x000000010cac9902 chromedriver + 735490
-6   chromedriver                        0x000000010cac8b15 chromedriver + 731925
-7   chromedriver                        0x000000010cabb77d chromedriver + 677757
-8   chromedriver                        0x000000010caec4f2 chromedriver + 877810
-9   chromedriver                        0x000000010cabb118 chromedriver + 676120
-10  chromedriver                        0x000000010caec6ae chromedriver + 878254
-11  chromedriver                        0x000000010cb0b3f7 chromedriver + 1004535
-12  chromedriver                        0x000000010caec293 chromedriver + 877203
-13  chromedriver                        0x000000010cab9180 chromedriver + 668032
-14  chromedriver                        0x000000010caba3fe chromedriver + 672766
-15  chromedriver                        0x000000010cf241d0 chromedriver + 5300688
-16  chromedriver                        0x000000010cf281e0 chromedriver + 5317088
-17  chromedriver                        0x000000010cf05ee7 chromedriver + 5177063
-18  chromedriver                        0x000000010cf28b7e chromedriver + 5319550
-19  chromedriver                        0x000000010cef5b14 chromedriver + 5110548
-20  chromedriver                        0x000000010cf448d8 chromedriver + 5433560
-21  chromedriver                        0x000000010cf44a96 chromedriver + 5434006
-22  chromedriver                        0x000000010cf55fd8 chromedriver + 5504984
-23  libsystem_pthread.dylib             0x00007ff81328b18b _pthread_start + 99
-24  libsystem_pthread.dylib             0x00007ff813286ae3 thread_start + 15
+	GetHandleVerifier [0x00007FF6C7306CF5+28821]
+	(No symbol) [0x00007FF6C7273880]
+	(No symbol) [0x00007FF6C711578A]
+	(No symbol) [0x00007FF6C7170E8E]
+	(No symbol) [0x00007FF6C716E92C]
+	(No symbol) [0x00007FF6C716BAF6]
+	(No symbol) [0x00007FF6C716AA51]
+	(No symbol) [0x00007FF6C715CBA0]
+	(No symbol) [0x00007FF6C718F2FA]
+	(No symbol) [0x00007FF6C715C3F6]
+	(No symbol) [0x00007FF6C718F510]
+	(No symbol) [0x00007FF6C71AF412]
+	(No symbol) [0x00007FF6C718F0A3]
+	(No symbol) [0x00007FF6C715A778]
+	(No symbol) [0x00007FF6C715B8E1]
+	GetHandleVerifier [0x00007FF6C763FCED+3408013]
+	GetHandleVerifier [0x00007FF6C765745F+3504127]
+	GetHandleVerifier [0x00007FF6C764B63D+3455453]
+	GetHandleVerifier [0x00007FF6C73CBDFB+835995]
+	(No symbol) [0x00007FF6C727EB9F]
+	(No symbol) [0x00007FF6C727A854]
+	(No symbol) [0x00007FF6C727A9ED]
+	(No symbol) [0x00007FF6C726A1D9]
+	BaseThreadInitThunk [0x00007FFC06EBE8D7+23]
+	RtlUserThreadStart [0x00007FFC089DFBCC+44]
 </msg>
 <arg>${locator}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="FAIL" start="2025-01-22T10:34:05.453146" elapsed="1.635201">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a class="relative inline-flex items-center tap-highlight-transparent outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 no-underline hover:opacity-80 active:opacity-disabled transition-opacity text-xs line-clamp-1 text-primary" aria-label="ระบบจัดการข้อมูลสินค้า" role="link" href="https://web-article-master-uat.dohome.technology/?i=bcd8deca266991095222fc7bad68d58fa80c193f9df548b95d29b999272e8886xtBeEUJR/6uUaDhLSxz7V2PTS2lWMR+cdaZz1quaUWVtJt+HTGccV/dKBogmgYF6aUyk/69ki9GS0ZQONmP47MvrL4kackxPQKhb6KJBMZ2sIXQPbO12a5myqpJv4boWJ4LNtkJLpxt7VZ7a3zZhyuszn6Ee3wB9dJFEWqm6wl1r7UTNxN/BJMkHw2KrtMY+uupWM43IrGcQAoxoldNMwvS5uUk693+IgbMPAQObgPu6NVEMyvrVTfMuDvYrTbW/BzI+jnY4VYCDdtpqVp1XO60t6dewC/OTU2XWNoi2CLibmn/ubnUfyoVa/xJ09/o24VZ6Sy4Xgh1/KKeLymgx1lG6amkkKKQm3/WCV0R3TSO11kJe3bKcBWMKG0+65ojXaDReqrtArxcy5QAJV/9NeHtLKwNAUrXdUUgLQazXtqu7VLOLFeFEa8Rdsw5z/205" target="_blank" tabindex="0"&gt;...&lt;/a&gt; is not clickable at point (315, 611). Other element would receive the click: &lt;div class="flex w-screen h-[100dvh] fixed inset-0 z-50 overflow-x-auto justify-center [--scale-enter:100%] [--scale-exit:100%] [--slide-enter:0px] [--slide-exit:80px] sm:[--scale-enter:100%] sm:[--scale-exit:103%] sm:[--slide-enter:0px] sm:[--slide-exit:0px] items-end sm:items-center" style="opacity: 1; transform: translateY(0px) scale(1.00556) translateZ(0px);"&gt;...&lt;/div&gt;
+<status status="FAIL" start="2025-01-24T09:55:47.013737" elapsed="1.590143">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a class="relative inline-flex items-center tap-highlight-transparent outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 no-underline hover:opacity-80 active:opacity-disabled transition-opacity text-xs line-clamp-1 text-primary" aria-label="ระบบจัดการข้อมูลสินค้า" role="link" href="https://web-article-master-uat.dohome.technology/?i=19513fc01d41697f601a285089f90d38df5776eaf767c2a1b2c135815831e917N6nCE78z9iWVc+9VmAeiYqCMvwQsFwjmAS4rlAcgO+FT3KjpKbdahZgYWeNpcbrE/PGCDyc65uy7+/oIlPtdsNZNoagz1lyjghY0if7Yc+WdrJWDM48r4hF7CVKVe/ByCPl6ogQA3DqJCPeKr+PKOAMO+nPvILIeVJfPFaEARL7aEDIotEYlxvI8l6ogf2i0/Z6YDUT3tqdnxhocwjmgRn7VLoPVqPGS/hz8JEmWXww44g3fDDFzD2Sjzi9ZVPjq7skWHvZUhgQz7UDqxVhp/5tfxflIj16zrpr1QNnuQ8pGrRal4pI0UVjRL4cI7EXC0MUrau9qsO7kIXvLT+WWLXII3BrB1/PwZjrKlPeUiW6/o5KNI1KWOseDRaY0/uQrIS+8T3cKNnYFuJ8hqfhNvvM1zkp5ZqI0eg+8XR8m0w8lLE0dmsdqXaCrg5GjhXdM" target="_blank" tabindex="0"&gt;...&lt;/a&gt; is not clickable at point (546, 832). Other element would receive the click: &lt;div class="flex w-screen h-[100dvh] fixed inset-0 z-50 overflow-x-auto justify-center [--scale-enter:100%] [--scale-exit:100%] [--slide-enter:0px] [--slide-exit:80px] sm:[--scale-enter:100%] sm:[--scale-exit:103%] sm:[--slide-enter:0px] sm:[--slide-exit:0px] items-end sm:items-center" style="opacity: 1; transform: translateY(0px) scale(1.00442) translateZ(0px);"&gt;...&lt;/div&gt;
     [ Message content over the limit has been removed. ]
-14  chromedriver                        0x000000010caba3fe chromedriver + 672766
-15  chromedriver                        0x000000010cf241d0 chromedriver + 5300688
-16  chromedriver                        0x000000010cf281e0 chromedriver + 5317088
-17  chromedriver                        0x000000010cf05ee7 chromedriver + 5177063
-18  chromedriver                        0x000000010cf28b7e chromedriver + 5319550
-19  chromedriver                        0x000000010cef5b14 chromedriver + 5110548
-20  chromedriver                        0x000000010cf448d8 chromedriver + 5433560
-21  chromedriver                        0x000000010cf44a96 chromedriver + 5434006
-22  chromedriver                        0x000000010cf55fd8 chromedriver + 5504984
-23  libsystem_pthread.dylib             0x00007ff81328b18b _pthread_start + 99
-24  libsystem_pthread.dylib             0x00007ff813286ae3 thread_start + 15</status>
+	(No symbol) [0x00007FF6C716BAF6]
+	(No symbol) [0x00007FF6C716AA51]
+	(No symbol) [0x00007FF6C715CBA0]
+	(No symbol) [0x00007FF6C718F2FA]
+	(No symbol) [0x00007FF6C715C3F6]
+	(No symbol) [0x00007FF6C718F510]
+	(No symbol) [0x00007FF6C71AF412]
+	(No symbol) [0x00007FF6C718F0A3]
+	(No symbol) [0x00007FF6C715A778]
+	(No symbol) [0x00007FF6C715B8E1]
+	GetHandleVerifier [0x00007FF6C763FCED+3408013]
+	GetHandleVerifier [0x00007FF6C765745F+3504127]
+	GetHandleVerifier [0x00007FF6C764B63D+3455453]
+	GetHandleVerifier [0x00007FF6C73CBDFB+835995]
+	(No symbol) [0x00007FF6C727EB9F]
+	(No symbol) [0x00007FF6C727A854]
+	(No symbol) [0x00007FF6C727A9ED]
+	(No symbol) [0x00007FF6C726A1D9]
+	BaseThreadInitThunk [0x00007FFC06EBE8D7+23]
+	RtlUserThreadStart [0x00007FFC089DFBCC+44]</status>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" start="2025-01-22T10:34:07.089009" elapsed="0.000157"/>
+<status status="NOT RUN" start="2025-01-24T09:55:48.604866" elapsed="0.000000"/>
 </kw>
 <arg>${locator}</arg>
-<status status="FAIL" start="2025-01-22T10:34:05.452607" elapsed="1.636876">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a class="relative inline-flex items-center tap-highlight-transparent outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 no-underline hover:opacity-80 active:opacity-disabled transition-opacity text-xs line-clamp-1 text-primary" aria-label="ระบบจัดการข้อมูลสินค้า" role="link" href="https://web-article-master-uat.dohome.technology/?i=bcd8deca266991095222fc7bad68d58fa80c193f9df548b95d29b999272e8886xtBeEUJR/6uUaDhLSxz7V2PTS2lWMR+cdaZz1quaUWVtJt+HTGccV/dKBogmgYF6aUyk/69ki9GS0ZQONmP47MvrL4kackxPQKhb6KJBMZ2sIXQPbO12a5myqpJv4boWJ4LNtkJLpxt7VZ7a3zZhyuszn6Ee3wB9dJFEWqm6wl1r7UTNxN/BJMkHw2KrtMY+uupWM43IrGcQAoxoldNMwvS5uUk693+IgbMPAQObgPu6NVEMyvrVTfMuDvYrTbW/BzI+jnY4VYCDdtpqVp1XO60t6dewC/OTU2XWNoi2CLibmn/ubnUfyoVa/xJ09/o24VZ6Sy4Xgh1/KKeLymgx1lG6amkkKKQm3/WCV0R3TSO11kJe3bKcBWMKG0+65ojXaDReqrtArxcy5QAJV/9NeHtLKwNAUrXdUUgLQazXtqu7VLOLFeFEa8Rdsw5z/205" target="_blank" tabindex="0"&gt;...&lt;/a&gt; is not clickable at point (315, 611). Other element would receive the click: &lt;div class="flex w-screen h-[100dvh] fixed inset-0 z-50 overflow-x-auto justify-center [--scale-enter:100%] [--scale-exit:100%] [--slide-enter:0px] [--slide-exit:80px] sm:[--scale-enter:100%] sm:[--scale-exit:103%] sm:[--slide-enter:0px] sm:[--slide-exit:0px] items-end sm:items-center" style="opacity: 1; transform: translateY(0px) scale(1.00556) translateZ(0px);"&gt;...&lt;/div&gt;
+<status status="FAIL" start="2025-01-24T09:55:47.013737" elapsed="1.591129">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a class="relative inline-flex items-center tap-highlight-transparent outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 no-underline hover:opacity-80 active:opacity-disabled transition-opacity text-xs line-clamp-1 text-primary" aria-label="ระบบจัดการข้อมูลสินค้า" role="link" href="https://web-article-master-uat.dohome.technology/?i=19513fc01d41697f601a285089f90d38df5776eaf767c2a1b2c135815831e917N6nCE78z9iWVc+9VmAeiYqCMvwQsFwjmAS4rlAcgO+FT3KjpKbdahZgYWeNpcbrE/PGCDyc65uy7+/oIlPtdsNZNoagz1lyjghY0if7Yc+WdrJWDM48r4hF7CVKVe/ByCPl6ogQA3DqJCPeKr+PKOAMO+nPvILIeVJfPFaEARL7aEDIotEYlxvI8l6ogf2i0/Z6YDUT3tqdnxhocwjmgRn7VLoPVqPGS/hz8JEmWXww44g3fDDFzD2Sjzi9ZVPjq7skWHvZUhgQz7UDqxVhp/5tfxflIj16zrpr1QNnuQ8pGrRal4pI0UVjRL4cI7EXC0MUrau9qsO7kIXvLT+WWLXII3BrB1/PwZjrKlPeUiW6/o5KNI1KWOseDRaY0/uQrIS+8T3cKNnYFuJ8hqfhNvvM1zkp5ZqI0eg+8XR8m0w8lLE0dmsdqXaCrg5GjhXdM" target="_blank" tabindex="0"&gt;...&lt;/a&gt; is not clickable at point (546, 832). Other element would receive the click: &lt;div class="flex w-screen h-[100dvh] fixed inset-0 z-50 overflow-x-auto justify-center [--scale-enter:100%] [--scale-exit:100%] [--slide-enter:0px] [--slide-exit:80px] sm:[--scale-enter:100%] sm:[--scale-exit:103%] sm:[--slide-enter:0px] sm:[--slide-exit:0px] items-end sm:items-center" style="opacity: 1; transform: translateY(0px) scale(1.00442) translateZ(0px);"&gt;...&lt;/div&gt;
     [ Message content over the limit has been removed. ]
-14  chromedriver                        0x000000010caba3fe chromedriver + 672766
-15  chromedriver                        0x000000010cf241d0 chromedriver + 5300688
-16  chromedriver                        0x000000010cf281e0 chromedriver + 5317088
-17  chromedriver                        0x000000010cf05ee7 chromedriver + 5177063
-18  chromedriver                        0x000000010cf28b7e chromedriver + 5319550
-19  chromedriver                        0x000000010cef5b14 chromedriver + 5110548
-20  chromedriver                        0x000000010cf448d8 chromedriver + 5433560
-21  chromedriver                        0x000000010cf44a96 chromedriver + 5434006
-22  chromedriver                        0x000000010cf55fd8 chromedriver + 5504984
-23  libsystem_pthread.dylib             0x00007ff81328b18b _pthread_start + 99
-24  libsystem_pthread.dylib             0x00007ff813286ae3 thread_start + 15</status>
+	(No symbol) [0x00007FF6C716BAF6]
+	(No symbol) [0x00007FF6C716AA51]
+	(No symbol) [0x00007FF6C715CBA0]
+	(No symbol) [0x00007FF6C718F2FA]
+	(No symbol) [0x00007FF6C715C3F6]
+	(No symbol) [0x00007FF6C718F510]
+	(No symbol) [0x00007FF6C71AF412]
+	(No symbol) [0x00007FF6C718F0A3]
+	(No symbol) [0x00007FF6C715A778]
+	(No symbol) [0x00007FF6C715B8E1]
+	GetHandleVerifier [0x00007FF6C763FCED+3408013]
+	GetHandleVerifier [0x00007FF6C765745F+3504127]
+	GetHandleVerifier [0x00007FF6C764B63D+3455453]
+	GetHandleVerifier [0x00007FF6C73CBDFB+835995]
+	(No symbol) [0x00007FF6C727EB9F]
+	(No symbol) [0x00007FF6C727A854]
+	(No symbol) [0x00007FF6C727A9ED]
+	(No symbol) [0x00007FF6C726A1D9]
+	BaseThreadInitThunk [0x00007FFC06EBE8D7+23]
+	RtlUserThreadStart [0x00007FFC089DFBCC+44]</status>
 </kw>
 <kw name="Click Element with Delay" owner="common_art">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-01-22T10:34:07.895248" level="INFO">Clicking element '//*[@aria-label="ระบบจัดการข้อมูลสินค้า"]'.</msg>
+<msg time="2025-01-24T09:55:49.405785" level="INFO">Clicking element '//*[@aria-label="ระบบจัดการข้อมูลสินค้า"]'.</msg>
 <arg>${locator}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-22T10:34:07.894467" elapsed="0.172881"/>
+<status status="PASS" start="2025-01-24T09:55:49.405785" elapsed="0.135830"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-22T10:34:09.069427" level="INFO">Slept 1 second.</msg>
+<msg time="2025-01-24T09:55:50.544182" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-22T10:34:08.068146" elapsed="1.002285"/>
+<status status="PASS" start="2025-01-24T09:55:49.542630" elapsed="1.001552"/>
 </kw>
 <arg>${locator}</arg>
-<status status="PASS" start="2025-01-22T10:34:07.891936" elapsed="1.179091"/>
+<status status="PASS" start="2025-01-24T09:55:49.405270" elapsed="1.138912"/>
 </kw>
 <arg>3x</arg>
 <arg>0.8s</arg>
 <arg>Click Element with Delay</arg>
 <arg>${locator}</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-01-22T10:34:05.452028" elapsed="3.619334"/>
+<status status="PASS" start="2025-01-24T09:55:47.013737" elapsed="3.530445"/>
 </kw>
 <arg>//*[@aria-label="ระบบจัดการข้อมูลสินค้า"]</arg>
-<status status="PASS" start="2025-01-22T10:34:05.451210" elapsed="3.620454"/>
+<status status="PASS" start="2025-01-24T09:55:47.012730" elapsed="3.531452"/>
 </kw>
 <kw name="Switch Window" owner="SeleniumLibrary">
 <arg>New</arg>
 <doc>Switches to browser window matching ``locator``.</doc>
-<status status="PASS" start="2025-01-22T10:34:09.072747" elapsed="0.018967"/>
+<status status="PASS" start="2025-01-24T09:55:50.544182" elapsed="0.147075"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-01-22T10:34:09.092099" elapsed="1.917136"/>
+<status status="PASS" start="2025-01-24T09:55:50.691257" elapsed="0.023080"/>
 </kw>
 <kw name="Wait And Wait Until Element Is Visible" owner="common_art">
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${locator}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-01-22T10:34:11.011106" elapsed="0.025491"/>
+<status status="PASS" start="2025-01-24T09:55:50.716851" elapsed="0.254127"/>
 </kw>
 <arg>5x</arg>
 <arg>1s</arg>
 <arg>Wait Until Element Is Visible</arg>
 <arg>${locator}</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-01-22T10:34:11.010293" elapsed="0.026502"/>
+<status status="PASS" start="2025-01-24T09:55:50.715844" elapsed="0.255134"/>
 </kw>
 <arg>//h3[text()="Article Master"]</arg>
-<status status="PASS" start="2025-01-22T10:34:11.009673" elapsed="0.027262"/>
+<status status="PASS" start="2025-01-24T09:55:50.715844" elapsed="0.255134"/>
 </kw>
 <kw name="Wait And Click Element" owner="common_art">
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
 <kw name="Click Element with Delay" owner="common_art">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-01-22T10:34:11.038472" level="INFO">Clicking element '//p[text()='จัดการสินค้า']'.</msg>
+<msg time="2025-01-24T09:55:50.976978" level="INFO">Clicking element '//p[text()='จัดการสินค้า']'.</msg>
 <arg>${locator}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-22T10:34:11.038227" elapsed="0.062142"/>
+<status status="PASS" start="2025-01-24T09:55:50.974980" elapsed="0.128598"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-22T10:34:12.101805" level="INFO">Slept 1 second.</msg>
+<msg time="2025-01-24T09:55:52.105183" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-22T10:34:11.100750" elapsed="1.001831"/>
+<status status="PASS" start="2025-01-24T09:55:51.103578" elapsed="1.001605"/>
 </kw>
 <arg>${locator}</arg>
-<status status="PASS" start="2025-01-22T10:34:11.037894" elapsed="1.065298"/>
+<status status="PASS" start="2025-01-24T09:55:50.973983" elapsed="1.132423"/>
 </kw>
 <arg>3x</arg>
 <arg>0.8s</arg>
 <arg>Click Element with Delay</arg>
 <arg>${locator}</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-01-22T10:34:11.037590" elapsed="1.066056"/>
+<status status="PASS" start="2025-01-24T09:55:50.971977" elapsed="1.134429"/>
 </kw>
 <arg>//p[text()='จัดการสินค้า']</arg>
-<status status="PASS" start="2025-01-22T10:34:11.037186" elapsed="1.066947"/>
+<status status="PASS" start="2025-01-24T09:55:50.971977" elapsed="1.134429"/>
 </kw>
 <kw name="Wait And Click Element" owner="common_art">
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
 <kw name="Click Element with Delay" owner="common_art">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-01-22T10:34:12.111607" level="INFO">Clicking element '//p[text()='ขอเปลี่ยนแปลงข้อมูลสินค้า']/parent::span//parent::a[@href="/app/edit-mass-information"]'.</msg>
+<msg time="2025-01-24T09:55:52.108301" level="INFO">Clicking element '//p[text()='ขอเปลี่ยนแปลงข้อมูลสินค้า']/parent::span//parent::a[@href="/app/edit-mass-information"]'.</msg>
 <arg>${locator}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-22T10:34:12.110078" elapsed="0.092282"/>
+<status status="PASS" start="2025-01-24T09:55:52.108301" elapsed="0.072466"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-22T10:34:13.204071" level="INFO">Slept 1 second.</msg>
+<msg time="2025-01-24T09:55:53.182431" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-22T10:34:12.202936" elapsed="1.002066"/>
+<status status="PASS" start="2025-01-24T09:55:52.180767" elapsed="1.001664"/>
 </kw>
 <arg>${locator}</arg>
-<status status="PASS" start="2025-01-22T10:34:12.108650" elapsed="1.096813"/>
+<status status="PASS" start="2025-01-24T09:55:52.107302" elapsed="1.075129"/>
 </kw>
 <arg>3x</arg>
 <arg>0.8s</arg>
 <arg>Click Element with Delay</arg>
 <arg>${locator}</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-01-22T10:34:12.106892" elapsed="1.098890"/>
+<status status="PASS" start="2025-01-24T09:55:52.107302" elapsed="1.076141"/>
 </kw>
 <arg>//p[text()='ขอเปลี่ยนแปลงข้อมูลสินค้า']/parent::span//parent::a[@href="/app/edit-mass-information"]</arg>
-<status status="PASS" start="2025-01-22T10:34:12.104947" elapsed="1.101207"/>
+<status status="PASS" start="2025-01-24T09:55:52.106406" elapsed="1.077037"/>
 </kw>
 <kw name="Wait And Wait Until Element Is Visible" owner="common_art">
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${locator}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-01-22T10:34:13.208582" elapsed="1.750531"/>
+<status status="PASS" start="2025-01-24T09:55:53.183443" elapsed="3.927214"/>
 </kw>
 <arg>5x</arg>
 <arg>1s</arg>
 <arg>Wait Until Element Is Visible</arg>
 <arg>${locator}</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-01-22T10:34:13.207908" elapsed="1.751879"/>
+<status status="PASS" start="2025-01-24T09:55:53.183443" elapsed="3.927214"/>
 </kw>
 <arg>//input[@name="purchaser_group_no"]/following-sibling::div/div/input</arg>
-<status status="PASS" start="2025-01-22T10:34:13.206763" elapsed="1.753221"/>
+<status status="PASS" start="2025-01-24T09:55:53.183443" elapsed="3.927214"/>
 </kw>
-<status status="PASS" start="2025-01-22T10:33:46.732712" elapsed="28.227440"/>
+<status status="PASS" start="2025-01-24T09:55:35.167798" elapsed="21.942859"/>
 </kw>
+<test id="s1-t1" name="Run Edit field Categories" line="16">
+<kw name="Edit field name Categories">
 <kw name="Search by article" owner="common_art">
 <kw name="Wait And Click Element" owner="common_art">
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
 <kw name="Click Element with Delay" owner="common_art">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-01-22T10:34:14.963601" level="INFO">Clicking element '//input[@name="article_id"]'.</msg>
+<msg time="2025-01-24T09:55:57.114666" level="INFO">Clicking element '//input[@name="article_id"]'.</msg>
 <arg>${locator}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-22T10:34:14.963348" elapsed="0.142490"/>
+<status status="PASS" start="2025-01-24T09:55:57.113741" elapsed="0.156811"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-22T10:34:16.108051" level="INFO">Slept 1 second.</msg>
+<msg time="2025-01-24T09:55:58.270910" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-22T10:34:15.106249" elapsed="1.002708"/>
+<status status="PASS" start="2025-01-24T09:55:57.270552" elapsed="1.000971"/>
 </kw>
 <arg>${locator}</arg>
-<status status="PASS" start="2025-01-22T10:34:14.963007" elapsed="1.146467"/>
+<status status="PASS" start="2025-01-24T09:55:57.113741" elapsed="1.157782"/>
 </kw>
 <arg>3x</arg>
 <arg>0.8s</arg>
 <arg>Click Element with Delay</arg>
 <arg>${locator}</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-01-22T10:34:14.962678" elapsed="1.147095"/>
+<status status="PASS" start="2025-01-24T09:55:57.113741" elapsed="1.157782"/>
 </kw>
 <arg>//input[@name="article_id"]</arg>
-<status status="PASS" start="2025-01-22T10:34:14.962270" elapsed="1.147826"/>
+<status status="PASS" start="2025-01-24T09:55:57.112657" elapsed="1.158866"/>
 </kw>
 <kw name="Wait And Click Element" owner="common_art">
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
 <kw name="Click Element with Delay" owner="common_art">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-01-22T10:34:16.114057" level="INFO">Clicking element '//textarea[@name="article"]'.</msg>
+<msg time="2025-01-24T09:55:58.273530" level="INFO">Clicking element '//textarea[@name="article"]'.</msg>
 <arg>${locator}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-22T10:34:16.113406" elapsed="0.089789"/>
+<status status="PASS" start="2025-01-24T09:55:58.273530" elapsed="0.055860"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-22T10:34:17.204737" level="INFO">Slept 1 second.</msg>
+<msg time="2025-01-24T09:55:59.330798" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-22T10:34:16.203682" elapsed="1.001813"/>
+<status status="PASS" start="2025-01-24T09:55:58.329390" elapsed="1.001408"/>
 </kw>
 <arg>${locator}</arg>
-<status status="PASS" start="2025-01-22T10:34:16.112500" elapsed="1.093406"/>
+<status status="PASS" start="2025-01-24T09:55:58.272524" elapsed="1.058274"/>
 </kw>
 <arg>3x</arg>
 <arg>0.8s</arg>
 <arg>Click Element with Delay</arg>
 <arg>${locator}</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-01-22T10:34:16.111676" elapsed="1.094547"/>
+<status status="PASS" start="2025-01-24T09:55:58.272524" elapsed="1.058274"/>
 </kw>
 <arg>//textarea[@name="article"]</arg>
-<status status="PASS" start="2025-01-22T10:34:16.110680" elapsed="1.095877"/>
+<status status="PASS" start="2025-01-24T09:55:58.271523" elapsed="1.060308"/>
 </kw>
 <for flavor="IN">
 <iter>
 <kw name="Get Value" owner="SeleniumLibrary">
-<msg time="2025-01-22T10:34:17.297680" level="INFO">${current_text} = </msg>
+<msg time="2025-01-24T09:55:59.346926" level="INFO">${current_text} = </msg>
 <var>${current_text}</var>
 <arg>//textarea[@name="article"]</arg>
 <doc>Returns the value attribute of the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-22T10:34:17.208437" elapsed="0.089632"/>
+<status status="PASS" start="2025-01-24T09:55:59.331831" elapsed="0.015095"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-01-22T10:34:17.298820" level="INFO">${new_text} = 
-10337742</msg>
+<msg time="2025-01-24T09:55:59.347935" level="INFO">${new_text} = 
+10337799
+10337394
+10337395</msg>
 <var>${new_text}</var>
 <arg>${current_text}\n${article}</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-01-22T10:34:17.298420" elapsed="0.000541"/>
+<status status="PASS" start="2025-01-24T09:55:59.346926" elapsed="0.001009"/>
 </kw>
 <kw name="Wait And Input Text with Delay" owner="common_art">
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
 <kw name="Input Text with Delay" owner="common_art">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-01-22T10:34:17.300636" level="INFO">Typing text '
-10337742' into text field '//textarea[@name="article"]'.</msg>
+<msg time="2025-01-24T09:55:59.348934" level="INFO">Typing text '
+10337799
+10337394
+10337395' into text field '//textarea[@name="article"]'.</msg>
 <arg>${locator}</arg>
 <arg>${text}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-22T10:34:17.300352" elapsed="0.062946"/>
+<status status="PASS" start="2025-01-24T09:55:59.348934" elapsed="0.101682"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-22T10:34:18.864464" level="INFO">Slept 1 second 500 milliseconds.</msg>
+<msg time="2025-01-24T09:56:00.952017" level="INFO">Slept 1 second 500 milliseconds.</msg>
 <arg>1.5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-22T10:34:17.363660" elapsed="1.501681"/>
+<status status="PASS" start="2025-01-24T09:55:59.450616" elapsed="1.501401"/>
 </kw>
 <arg>${locator}</arg>
 <arg>${text}</arg>
-<status status="PASS" start="2025-01-22T10:34:17.299984" elapsed="1.566391"/>
+<status status="PASS" start="2025-01-24T09:55:59.347935" elapsed="1.604082"/>
 </kw>
 <arg>3x</arg>
 <arg>0.8s</arg>
@@ -535,387 +558,196 @@ Stacktrace:
 <arg>${locator}</arg>
 <arg>${text}</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-01-22T10:34:17.299673" elapsed="1.567565"/>
+<status status="PASS" start="2025-01-24T09:55:59.347935" elapsed="1.604082"/>
 </kw>
 <arg>//textarea[@name="article"]</arg>
 <arg>${new_text}</arg>
-<status status="PASS" start="2025-01-22T10:34:17.299230" elapsed="1.569052"/>
+<status status="PASS" start="2025-01-24T09:55:59.347935" elapsed="1.604082"/>
 </kw>
-<var name="${article}">10337742</var>
-<status status="PASS" start="2025-01-22T10:34:17.207806" elapsed="1.660839"/>
+<var name="${article}">10337799
+10337394
+10337395</var>
+<status status="PASS" start="2025-01-24T09:55:59.331831" elapsed="1.620186"/>
 </iter>
 <var>${article}</var>
 <value>@{articles}</value>
-<status status="PASS" start="2025-01-22T10:34:17.206952" elapsed="1.662044"/>
+<status status="PASS" start="2025-01-24T09:55:59.331831" elapsed="1.620186"/>
 </for>
 <kw name="Wait And Click Element" owner="common_art">
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
 <kw name="Click Element with Delay" owner="common_art">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-01-22T10:34:18.873847" level="INFO">Clicking element '//span[text()="ส่ง"]/parent::button'.</msg>
+<msg time="2025-01-24T09:56:00.954117" level="INFO">Clicking element '//span[text()="ส่ง"]/parent::button'.</msg>
 <arg>${locator}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-22T10:34:18.873032" elapsed="0.128310"/>
+<status status="PASS" start="2025-01-24T09:56:00.953118" elapsed="0.076228"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-22T10:34:20.002405" level="INFO">Slept 1 second.</msg>
+<msg time="2025-01-24T09:56:02.031465" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-22T10:34:19.001660" elapsed="1.001430"/>
+<status status="PASS" start="2025-01-24T09:56:01.030843" elapsed="1.000622"/>
 </kw>
 <arg>${locator}</arg>
-<status status="PASS" start="2025-01-22T10:34:18.871983" elapsed="1.131497"/>
+<status status="PASS" start="2025-01-24T09:56:00.953118" elapsed="1.078347"/>
 </kw>
 <arg>3x</arg>
 <arg>0.8s</arg>
 <arg>Click Element with Delay</arg>
 <arg>${locator}</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-01-22T10:34:18.870661" elapsed="1.133132"/>
+<status status="PASS" start="2025-01-24T09:56:00.953118" elapsed="1.078347"/>
 </kw>
 <arg>//span[text()="ส่ง"]/parent::button</arg>
-<status status="PASS" start="2025-01-22T10:34:18.869656" elapsed="1.134454"/>
+<status status="PASS" start="2025-01-24T09:56:00.952017" elapsed="1.079448"/>
 </kw>
 <kw name="Wait And Click Element" owner="common_art">
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
 <kw name="Click Element with Delay" owner="common_art">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-01-22T10:34:20.008624" level="INFO">Clicking element '//span[text()="ค้นหา"]/parent::button'.</msg>
+<msg time="2025-01-24T09:56:02.032485" level="INFO">Clicking element '//span[text()="ค้นหา"]/parent::button'.</msg>
 <arg>${locator}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-22T10:34:20.007413" elapsed="0.099137"/>
+<status status="PASS" start="2025-01-24T09:56:02.032485" elapsed="0.074152"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-22T10:34:21.107943" level="INFO">Slept 1 second.</msg>
+<msg time="2025-01-24T09:56:03.108293" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-22T10:34:20.106887" elapsed="1.001875"/>
+<status status="PASS" start="2025-01-24T09:56:02.107639" elapsed="1.000654"/>
 </kw>
 <arg>${locator}</arg>
-<status status="PASS" start="2025-01-22T10:34:20.006495" elapsed="1.102906"/>
+<status status="PASS" start="2025-01-24T09:56:02.032485" elapsed="1.075808"/>
 </kw>
 <arg>3x</arg>
 <arg>0.8s</arg>
 <arg>Click Element with Delay</arg>
 <arg>${locator}</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-01-22T10:34:20.005652" elapsed="1.104217"/>
+<status status="PASS" start="2025-01-24T09:56:02.032485" elapsed="1.075808"/>
 </kw>
 <arg>//span[text()="ค้นหา"]/parent::button</arg>
-<status status="PASS" start="2025-01-22T10:34:20.004666" elapsed="1.105692"/>
+<status status="PASS" start="2025-01-24T09:56:02.031465" elapsed="1.077416"/>
 </kw>
-<arg>10337742</arg>
+<arg>${article_no}</arg>
 <doc>ค้นหา รหัสสินค้า ที่ต้องการแก้ไขฟิวด์</doc>
-<status status="PASS" start="2025-01-22T10:34:14.961706" elapsed="6.149152"/>
-</kw>
-<kw name="Check value article" owner="common_art">
-<kw name="Wait And Wait Until Element Is Visible" owner="common_art">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${locator}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-01-22T10:34:21.117098" elapsed="0.026881"/>
-</kw>
-<arg>5x</arg>
-<arg>1s</arg>
-<arg>Wait Until Element Is Visible</arg>
-<arg>${locator}</arg>
-<doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-01-22T10:34:21.114660" elapsed="0.029546"/>
-</kw>
-<arg>//td[text()='${article}']</arg>
-<status status="PASS" start="2025-01-22T10:34:21.113534" elapsed="0.030838"/>
-</kw>
-<arg>10337742</arg>
-<doc>ตรวจสอบรหัสสินค้าใน dataGrid ก่อนแก้ไข ว่ามีอยู่จริงหรือไม่</doc>
-<status status="PASS" start="2025-01-22T10:34:21.112448" elapsed="0.032083"/>
+<status status="PASS" start="2025-01-24T09:55:57.112657" elapsed="5.996224"/>
 </kw>
 <kw name="Click check box all article" owner="common_art">
 <kw name="Wait And Click Element" owner="common_art">
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
 <kw name="Click Element with Delay" owner="common_art">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-01-22T10:34:21.147532" level="INFO">Clicking element '//span[text()="เลือกทั้งหมด"]/preceding-sibling::span'.</msg>
+<msg time="2025-01-24T09:56:03.109986" level="INFO">Clicking element '//span[text()="เลือกทั้งหมด"]/preceding-sibling::span'.</msg>
 <arg>${locator}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-22T10:34:21.147248" elapsed="0.138686"/>
+<status status="PASS" start="2025-01-24T09:56:03.109986" elapsed="0.134559"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-22T10:34:22.288728" level="INFO">Slept 1 second.</msg>
+<msg time="2025-01-24T09:56:04.244937" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-22T10:34:21.286267" elapsed="1.003231"/>
+<status status="PASS" start="2025-01-24T09:56:03.244545" elapsed="1.000392"/>
 </kw>
 <arg>${locator}</arg>
-<status status="PASS" start="2025-01-22T10:34:21.146792" elapsed="1.143343"/>
+<status status="PASS" start="2025-01-24T09:56:03.108881" elapsed="1.136056"/>
 </kw>
 <arg>3x</arg>
 <arg>0.8s</arg>
 <arg>Click Element with Delay</arg>
 <arg>${locator}</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-01-22T10:34:21.146368" elapsed="1.144291"/>
+<status status="PASS" start="2025-01-24T09:56:03.108881" elapsed="1.136056"/>
 </kw>
 <arg>//span[text()="เลือกทั้งหมด"]/preceding-sibling::span</arg>
-<status status="PASS" start="2025-01-22T10:34:21.145746" elapsed="1.145395"/>
+<status status="PASS" start="2025-01-24T09:56:03.108881" elapsed="1.136056"/>
 </kw>
 <doc>เลือกสินค้าทั้งหมด ใน dataGrid</doc>
-<status status="PASS" start="2025-01-22T10:34:21.145091" elapsed="1.146535"/>
+<status status="PASS" start="2025-01-24T09:56:03.108881" elapsed="1.136056"/>
 </kw>
 <kw name="Click button edit field" owner="common_art">
 <kw name="Wait And Click Element" owner="common_art">
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
 <kw name="Click Element with Delay" owner="common_art">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-01-22T10:34:22.301534" level="INFO">Clicking element '//span[text()="แก้ไขค่าของฟิลด์"]/parent::button'.</msg>
+<msg time="2025-01-24T09:56:04.245949" level="INFO">Clicking element '//span[text()="แก้ไขค่าของฟิลด์"]/parent::button'.</msg>
 <arg>${locator}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-22T10:34:22.300809" elapsed="0.066435"/>
+<status status="PASS" start="2025-01-24T09:56:04.245949" elapsed="0.057019"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-22T10:34:23.368564" level="INFO">Slept 1 second.</msg>
+<msg time="2025-01-24T09:56:05.303144" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-22T10:34:22.367538" elapsed="1.001818"/>
+<status status="PASS" start="2025-01-24T09:56:04.302968" elapsed="1.000176"/>
 </kw>
 <arg>${locator}</arg>
-<status status="PASS" start="2025-01-22T10:34:22.299637" elapsed="1.070290"/>
+<status status="PASS" start="2025-01-24T09:56:04.245949" elapsed="1.057195"/>
 </kw>
 <arg>3x</arg>
 <arg>0.8s</arg>
 <arg>Click Element with Delay</arg>
 <arg>${locator}</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-01-22T10:34:22.297006" elapsed="1.073387"/>
+<status status="PASS" start="2025-01-24T09:56:04.245949" elapsed="1.057195"/>
 </kw>
 <arg>//span[text()="แก้ไขค่าของฟิลด์"]/parent::button</arg>
-<status status="PASS" start="2025-01-22T10:34:22.295401" elapsed="1.075476"/>
+<status status="PASS" start="2025-01-24T09:56:04.245949" elapsed="1.058307"/>
 </kw>
 <doc>คลิ๊กปุ่ม แก้ไขค่าของฟิลด์</doc>
-<status status="PASS" start="2025-01-22T10:34:22.293407" elapsed="1.078007"/>
+<status status="PASS" start="2025-01-24T09:56:04.244937" elapsed="1.059319"/>
 </kw>
-<kw name="No. 1 Edit field name (A2) :">
+<kw name="No. 1 Edit field name (ฺB2C/A3/Data-Driven) :" owner="Edit_field_A3(B2C)">
 <if>
-<branch type="IF" condition="'${field}' == '${profitable_product.field}'">
-<kw name="Input text editmass row 1" owner="input_text">
-<arg>${profitable_product.field}</arg>
-<arg>${profitable_product.value}</arg>
-<arg>${profitable_product.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:23.379436" elapsed="0.001655"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:23.376096" elapsed="0.005546"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${brand_type.field}'">
-<kw name="Dropdown row 1" owner="drop_down">
-<arg>${brand_type.field}</arg>
-<arg>${brand_type.value}</arg>
-<arg>${brand_type.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:23.384677" elapsed="0.000293"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:23.381961" elapsed="0.003237"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${seasonal_products.field}'">
-<kw name="Check box month row 1" owner="check_box">
-<arg>${seasonal_products.field}</arg>
-<arg>${seasonal_products.value}</arg>
-<arg>${seasonal_products.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:23.387175" elapsed="0.000573"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:23.385402" elapsed="0.002756"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${search_remark.field}'">
-<kw name="Input text editmass row 1" owner="input_text">
-<arg>${search_remark.field}</arg>
-<arg>${search_remark.value}</arg>
-<arg>${search_remark.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:23.390302" elapsed="0.000444"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:23.388362" elapsed="0.002617"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${product_transform.field}'">
-<kw name="Dropdown row 1" owner="drop_down">
-<arg>${product_transform.field}</arg>
-<arg>${product_transform.value}</arg>
-<arg>${product_transform.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:23.392621" elapsed="0.000227"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:23.391329" elapsed="0.001701"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${product_detail.field}'">
-<kw name="Input text editmass row 1" owner="input_text">
-<arg>${product_detail.field}</arg>
-<arg>${product_detail.value}</arg>
-<arg>${product_detail.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:23.394243" elapsed="0.000179"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:23.393181" elapsed="0.001400"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${sales_period.field}'">
-<kw name="Check box month row 1" owner="check_box">
-<arg>${sales_period.field}</arg>
-<arg>${sales_period.value}</arg>
-<arg>${sales_period.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:23.396059" elapsed="0.000195"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:23.394752" elapsed="0.001665"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${warranty_terms.field}'">
-<kw name="Input text editmass row 1 (section14)" owner="input_text">
-<arg>${warranty_terms.field}</arg>
-<arg>${warranty_terms.value}</arg>
-<arg>${warranty_terms.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:23.397862" elapsed="0.000264"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:23.396561" elapsed="0.001872"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${old_article.field}'">
-<kw name="Input text editmass row 1" owner="input_text">
-<arg>${old_article.field}</arg>
-<arg>${old_article.value}</arg>
-<arg>${old_article.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:23.400311" elapsed="0.000176"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:23.398852" elapsed="0.001798"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${recommended_minimum.field}'">
-<kw name="Input text editmass row 1 (day warranty)" owner="input_text">
-<arg>${recommended_minimum.field}</arg>
-<arg>${recommended_minimum.value}</arg>
-<arg>${recommended_minimum.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:23.401783" elapsed="0.000321"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:23.400790" elapsed="0.001462"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${customs_tariff.field}'">
-<kw name="Input text editmass row 1" owner="input_text">
-<arg>${customs_tariff.field}</arg>
-<arg>${customs_tariff.value}</arg>
-<arg>${customs_tariff.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:23.403858" elapsed="0.000340"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:23.402374" elapsed="0.054456"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${components.field}'">
-<kw name="Input text editmass row 1" owner="input_text">
-<arg>${components.field}</arg>
-<arg>${components.value}</arg>
-<arg>${components.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:23.458457" elapsed="0.000202"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:23.457175" elapsed="0.001611"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${content_unit.field}'">
-<kw name="Dropdown row 1" owner="drop_down">
-<arg>${content_unit.field}</arg>
-<arg>${content_unit.value}</arg>
-<arg>${content_unit.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:23.459675" elapsed="0.000136"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:23.458883" elapsed="0.001060"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${country_of_region.field}'">
-<kw name="Dropdown row 1" owner="drop_down">
-<arg>${country_of_region.field}</arg>
-<arg>${country_of_region.value}</arg>
-<arg>${country_of_region.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:23.461024" elapsed="0.000298"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:23.460070" elapsed="0.001404"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${first_sale_date.field}'">
-<kw name="Input text editmass row 1" owner="input_text">
-<arg>${first_sale_date.field}</arg>
-<arg>${first_sale_date.value}</arg>
-<arg>${first_sale_date.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:23.469326" elapsed="0.000278"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:23.461582" elapsed="0.008171"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${gross_contents.field}'">
-<kw name="Input text editmass row 1" owner="input_text">
-<arg>${gross_contents.field}</arg>
-<arg>${gross_contents.value}</arg>
-<arg>${gross_contents.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:23.470687" elapsed="0.000138"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:23.469859" elapsed="0.001091"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${hazardous_no.field}'">
-<kw name="Input text editmass row 1" owner="input_text">
-<arg>${hazardous_no.field}</arg>
-<arg>${hazardous_no.value}</arg>
-<arg>${hazardous_no.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:23.471808" elapsed="0.000123"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:23.471048" elapsed="0.000995"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${hb_nonhb.field}'">
-<kw name="Dropdown row 1" owner="drop_down">
-<arg>${hb_nonhb.field}</arg>
-<arg>${hb_nonhb.value}</arg>
-<arg>${hb_nonhb.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:23.474171" elapsed="0.000219"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:23.473042" elapsed="0.002033"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${production.field}'">
-<kw name="Dropdown row 1" owner="drop_down">
-<arg>${production.field}</arg>
-<arg>${production.value}</arg>
-<arg>${production.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:23.476548" elapsed="0.000164"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:23.475587" elapsed="0.001299"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${merchandise_category4.field}'">
+<branch type="IF" condition="'${field}' == '${product_categories_level.field}'">
 <kw name="Dropdown row 1" owner="drop_down">
 <kw name="Wait And Click Element" owner="common_art">
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
 <kw name="Click Element with Delay" owner="common_art">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-01-22T10:34:23.481230" level="INFO">Clicking element '//input[@name="master_tabcols_id"]/following-sibling::div/div/input'.</msg>
+<msg time="2025-01-24T09:56:05.309165" level="INFO">Clicking element '//input[@name="master_tabcols_id"]/following-sibling::div/div/input'.</msg>
 <arg>${locator}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-22T10:34:23.480534" elapsed="0.147595"/>
+<status status="PASS" start="2025-01-24T09:56:05.309165" elapsed="0.105095"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-22T10:34:24.629719" level="INFO">Slept 1 second.</msg>
+<msg time="2025-01-24T09:56:06.415693" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-22T10:34:23.628536" elapsed="1.002310"/>
+<status status="PASS" start="2025-01-24T09:56:05.415330" elapsed="1.000363"/>
 </kw>
 <arg>${locator}</arg>
-<status status="PASS" start="2025-01-22T10:34:23.479899" elapsed="1.151696"/>
+<status status="PASS" start="2025-01-24T09:56:05.308290" elapsed="1.107403"/>
 </kw>
 <arg>3x</arg>
 <arg>0.8s</arg>
 <arg>Click Element with Delay</arg>
 <arg>${locator}</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-01-22T10:34:23.479631" elapsed="1.152325"/>
+<status status="PASS" start="2025-01-24T09:56:05.307160" elapsed="1.108533"/>
 </kw>
 <arg>//input[@name="master_tabcols_id"]/following-sibling::div/div/input</arg>
-<status status="PASS" start="2025-01-22T10:34:23.479319" elapsed="1.152979"/>
+<status status="PASS" start="2025-01-24T09:56:05.307160" elapsed="1.108533"/>
 </kw>
 <kw name="Wait And Input Text with Delay" owner="common_art">
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
 <kw name="Input Text with Delay" owner="common_art">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-01-22T10:34:24.636464" level="INFO">Typing text 'รุ่นเหล็ก (Mdes Catary4 )' into text field '//input[@name="master_tabcols_id"]/following-sibling::div/div/input'.</msg>
+<msg time="2025-01-24T09:56:06.416791" level="INFO">Typing text 'Categories' into text field '//input[@name="master_tabcols_id"]/following-sibling::div/div/input'.</msg>
 <arg>${locator}</arg>
 <arg>${text}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-22T10:34:24.635749" elapsed="0.135713"/>
+<status status="PASS" start="2025-01-24T09:56:06.416791" elapsed="0.076400"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-22T10:34:26.273767" level="INFO">Slept 1 second 500 milliseconds.</msg>
+<msg time="2025-01-24T09:56:07.994626" level="INFO">Slept 1 second 500 milliseconds.</msg>
 <arg>1.5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-22T10:34:24.771923" elapsed="1.502539"/>
+<status status="PASS" start="2025-01-24T09:56:06.493191" elapsed="1.501435"/>
 </kw>
 <arg>${locator}</arg>
 <arg>${text}</arg>
-<status status="PASS" start="2025-01-22T10:34:24.634790" elapsed="1.640252"/>
+<status status="PASS" start="2025-01-24T09:56:06.416791" elapsed="1.578378"/>
 </kw>
 <arg>3x</arg>
 <arg>0.8s</arg>
@@ -923,11 +755,11 @@ Stacktrace:
 <arg>${locator}</arg>
 <arg>${text}</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-01-22T10:34:24.633970" elapsed="1.641545"/>
+<status status="PASS" start="2025-01-24T09:56:06.416791" elapsed="1.578378"/>
 </kw>
 <arg>//input[@name="master_tabcols_id"]/following-sibling::div/div/input</arg>
 <arg>${master_tabcols_id}</arg>
-<status status="PASS" start="2025-01-22T10:34:24.632866" elapsed="1.643129"/>
+<status status="PASS" start="2025-01-24T09:56:06.415693" elapsed="1.579476"/>
 </kw>
 <kw name="Wait And Press Keys" owner="common_art">
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
@@ -935,7 +767,7 @@ Stacktrace:
 <arg>${locator}</arg>
 <arg>${keys}</arg>
 <doc>Simulates user pressing key on element identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-22T10:34:26.279424" elapsed="0.158570"/>
+<status status="PASS" start="2025-01-24T09:56:07.996202" elapsed="0.133346"/>
 </kw>
 <arg>3x</arg>
 <arg>0.8s</arg>
@@ -943,59 +775,59 @@ Stacktrace:
 <arg>${locator}</arg>
 <arg>${keys}</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-01-22T10:34:26.277855" elapsed="0.160668"/>
+<status status="PASS" start="2025-01-24T09:56:07.996202" elapsed="0.134329"/>
 </kw>
 <arg>//input[@name="master_tabcols_id"]/following-sibling::div/div/input</arg>
 <arg>\\13</arg>
-<status status="PASS" start="2025-01-22T10:34:26.276801" elapsed="0.161904"/>
+<status status="PASS" start="2025-01-24T09:56:07.995169" elapsed="0.135362"/>
 </kw>
 <kw name="Wait And Click Element" owner="common_art">
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
 <kw name="Click Element with Delay" owner="common_art">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-01-22T10:34:26.440777" level="INFO">Clicking element '//input[@name="values_new"]/following-sibling::div/div/input'.</msg>
+<msg time="2025-01-24T09:56:08.134529" level="INFO">Clicking element '//input[@name="values_new"]/following-sibling::div/div/input'.</msg>
 <arg>${locator}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-22T10:34:26.440535" elapsed="0.194049"/>
+<status status="PASS" start="2025-01-24T09:56:08.133530" elapsed="0.743555"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-22T10:34:27.635549" level="INFO">Slept 1 second.</msg>
+<msg time="2025-01-24T09:56:09.878550" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-22T10:34:26.634921" elapsed="1.001030"/>
+<status status="PASS" start="2025-01-24T09:56:08.877085" elapsed="1.001465"/>
 </kw>
 <arg>${locator}</arg>
-<status status="PASS" start="2025-01-22T10:34:26.440204" elapsed="1.196062"/>
+<status status="PASS" start="2025-01-24T09:56:08.132536" elapsed="1.746014"/>
 </kw>
 <arg>3x</arg>
 <arg>0.8s</arg>
 <arg>Click Element with Delay</arg>
 <arg>${locator}</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-01-22T10:34:26.439875" elapsed="1.196638"/>
+<status status="PASS" start="2025-01-24T09:56:08.132536" elapsed="1.746014"/>
 </kw>
 <arg>//input[@name="values_new"]/following-sibling::div/div/input</arg>
-<status status="PASS" start="2025-01-22T10:34:26.439276" elapsed="1.198239"/>
+<status status="PASS" start="2025-01-24T09:56:08.131532" elapsed="1.747018"/>
 </kw>
 <kw name="Wait And Input Text with Delay" owner="common_art">
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
 <kw name="Input Text with Delay" owner="common_art">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-01-22T10:34:27.641368" level="INFO">Typing text '12อ: แบนรีด 12อ' into text field '//input[@name="values_new"]/following-sibling::div/div/input'.</msg>
+<msg time="2025-01-24T09:56:09.879557" level="INFO">Typing text 'C09020102' into text field '//input[@name="values_new"]/following-sibling::div/div/input'.</msg>
 <arg>${locator}</arg>
 <arg>${text}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-22T10:34:27.640818" elapsed="0.071719"/>
+<status status="PASS" start="2025-01-24T09:56:09.879557" elapsed="0.078430"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-22T10:34:29.214751" level="INFO">Slept 1 second 500 milliseconds.</msg>
+<msg time="2025-01-24T09:56:11.459092" level="INFO">Slept 1 second 500 milliseconds.</msg>
 <arg>1.5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-22T10:34:27.712895" elapsed="1.502373"/>
+<status status="PASS" start="2025-01-24T09:56:09.958993" elapsed="1.500099"/>
 </kw>
 <arg>${locator}</arg>
 <arg>${text}</arg>
-<status status="PASS" start="2025-01-22T10:34:27.639942" elapsed="1.575712"/>
+<status status="PASS" start="2025-01-24T09:56:09.879557" elapsed="1.579535"/>
 </kw>
 <arg>3x</arg>
 <arg>0.8s</arg>
@@ -1003,11 +835,11 @@ Stacktrace:
 <arg>${locator}</arg>
 <arg>${text}</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-01-22T10:34:27.639034" elapsed="1.576928"/>
+<status status="PASS" start="2025-01-24T09:56:09.879557" elapsed="1.579535"/>
 </kw>
 <arg>//input[@name="values_new"]/following-sibling::div/div/input</arg>
 <arg>${values_new}</arg>
-<status status="PASS" start="2025-01-22T10:34:27.638086" elapsed="1.578192"/>
+<status status="PASS" start="2025-01-24T09:56:09.878550" elapsed="1.580542"/>
 </kw>
 <kw name="Wait And Press Keys" owner="common_art">
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
@@ -1015,7 +847,7 @@ Stacktrace:
 <arg>${locator}</arg>
 <arg>${keys}</arg>
 <doc>Simulates user pressing key on element identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-22T10:34:29.218627" elapsed="0.038393"/>
+<status status="PASS" start="2025-01-24T09:56:11.459685" elapsed="0.031983"/>
 </kw>
 <arg>3x</arg>
 <arg>0.8s</arg>
@@ -1023,2060 +855,509 @@ Stacktrace:
 <arg>${locator}</arg>
 <arg>${keys}</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-01-22T10:34:29.217856" elapsed="0.039361"/>
+<status status="PASS" start="2025-01-24T09:56:11.459685" elapsed="0.031983"/>
 </kw>
 <arg>//input[@name="values_new"]/following-sibling::div/div/input</arg>
 <arg>\\13</arg>
-<status status="PASS" start="2025-01-22T10:34:29.216842" elapsed="0.040510"/>
+<status status="PASS" start="2025-01-24T09:56:11.459685" elapsed="0.031983"/>
 </kw>
-<arg>${merchandise_category4.field}</arg>
-<arg>${merchandise_category4.value}</arg>
-<arg>${merchandise_category4.uuid}</arg>
-<status status="PASS" start="2025-01-22T10:34:23.477984" elapsed="5.779507"/>
+<arg>${product_categories_level.field}</arg>
+<arg>${value}</arg>
+<arg>${product_categories_level.uuid}</arg>
+<status status="PASS" start="2025-01-24T09:56:05.305162" elapsed="6.186506"/>
 </kw>
-<status status="PASS" start="2025-01-22T10:34:23.477049" elapsed="5.780548"/>
+<status status="PASS" start="2025-01-24T09:56:05.304256" elapsed="6.187412"/>
 </branch>
-<branch type="ELSE IF" condition="'${field}' == '${merchandise_category3.field}'">
-<kw name="Dropdown row 1" owner="drop_down">
-<arg>${merchandise_category3.field}</arg>
-<arg>${merchandise_category3.value}</arg>
-<arg>${merchandise_category3.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:29.257985" elapsed="0.000123"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:29.257709" elapsed="0.000499"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${net_contents.field}'">
-<kw name="Dropdown row 1" owner="drop_down">
-<arg>${net_contents.field}</arg>
-<arg>${net_contents.value}</arg>
-<arg>${net_contents.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:29.258508" elapsed="0.000121"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:29.258300" elapsed="0.000426"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${price_band_cat.field}'">
-<kw name="Dropdown row 1" owner="drop_down">
-<arg>${price_band_cat.field}</arg>
-<arg>${price_band_cat.value}</arg>
-<arg>${price_band_cat.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:29.259005" elapsed="0.000108"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:29.258815" elapsed="0.000391"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${regions_origin.field}'">
-<kw name="Dropdown row 1" owner="drop_down">
-<arg>${regions_origin.field}</arg>
-<arg>${regions_origin.value}</arg>
-<arg>${regions_origin.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:29.259487" elapsed="0.000108"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:29.259297" elapsed="0.000403"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${rem_shelf_life.field}'">
-<kw name="Input text editmass row 1 (day warranty)" owner="input_text">
-<arg>${rem_shelf_life.field}</arg>
-<arg>${rem_shelf_life.value}</arg>
-<arg>${rem_shelf_life.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:29.260030" elapsed="0.000276"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:29.259796" elapsed="0.000796"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${repack.field}'">
-<kw name="Dropdown row 1" owner="drop_down">
-<arg>${repack.field}</arg>
-<arg>${repack.value}</arg>
-<arg>${repack.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:29.261057" elapsed="0.000122"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:29.260740" elapsed="0.000541"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${search_word.field}'">
-<kw name="Input text editmass row 1" owner="input_text">
-<arg>${search_word.field}</arg>
-<arg>${search_word.value}</arg>
-<arg>${search_word.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:29.261583" elapsed="0.000117"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:29.261372" elapsed="0.000659"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${site_artl_status.field}'">
-<kw name="Dropdown row 1" owner="drop_down">
-<arg>${site_artl_status.field}</arg>
-<arg>${site_artl_status.value}</arg>
-<arg>${site_artl_status.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:29.262322" elapsed="0.000118"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:29.262123" elapsed="0.000416"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${tax_class.field}'">
-<kw name="Dropdown row 1" owner="drop_down">
-<arg>${tax_class.field}</arg>
-<arg>${tax_class.value}</arg>
-<arg>${tax_class.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:29.262821" elapsed="0.000105"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:29.262630" elapsed="0.000392"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${temperature.field}'">
-<kw name="Input text editmass row 1 (day warranty)" owner="input_text">
-<arg>${temperature.field}</arg>
-<arg>${temperature.value}</arg>
-<arg>${temperature.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:29.263291" elapsed="0.000103"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:29.263111" elapsed="0.000589"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${name_th.field}'">
-<kw name="Input text editmass row 1" owner="input_text">
-<arg>${name_th.field}</arg>
-<arg>${name_th.value}</arg>
-<arg>${name_th.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:29.264133" elapsed="0.000147"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:29.263840" elapsed="0.000684"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${tot_shelf_life.field}'">
-<kw name="Input text editmass row 1 (day warranty)" owner="input_text">
-<arg>${tot_shelf_life.field}</arg>
-<arg>${tot_shelf_life.value}</arg>
-<arg>${tot_shelf_life.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:29.265228" elapsed="0.000193"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:29.264844" elapsed="0.000711"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${tradmark.field}'">
-<kw name="Dropdown row 1" owner="drop_down">
-<arg>${tradmark.field}</arg>
-<arg>${tradmark.value}</arg>
-<arg>${tradmark.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:29.265944" elapsed="0.000133"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:29.265663" elapsed="0.000569"/>
-</branch>
-<status status="PASS" start="2025-01-22T10:34:23.376001" elapsed="5.890358"/>
+<status status="PASS" start="2025-01-24T09:56:05.304256" elapsed="6.187412"/>
 </if>
-<arg>รุ่นเหล็ก (Mdes Catary4 )</arg>
-<status status="PASS" start="2025-01-22T10:34:23.374997" elapsed="5.891453"/>
-</kw>
-<kw name="No. 2 Edit field name (A2) :">
-<if>
-<branch type="IF" condition="'${field}' == '${profitable_product.field}'">
-<kw name="Input text editmass row 2" owner="input_text">
-<arg>${profitable_product.field}</arg>
-<arg>${profitable_product.value}</arg>
-<arg>${profitable_product.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:29.268985" elapsed="0.000122"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:29.268160" elapsed="0.001072"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${brand_type.field}'">
-<kw name="Dropdown row 2" owner="drop_down">
-<arg>${brand_type.field}</arg>
-<arg>${brand_type.value}</arg>
-<arg>${brand_type.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:29.270030" elapsed="0.000107"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:29.269325" elapsed="0.000912"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${seasonal_products.field}'">
-<kw name="Check box month row 2" owner="check_box">
-<arg>${seasonal_products.field}</arg>
-<arg>${seasonal_products.value}</arg>
-<arg>${seasonal_products.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:29.270951" elapsed="0.000109"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:29.270324" elapsed="0.000840"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${search_remark.field}'">
-<kw name="Input text editmass row 2" owner="input_text">
-<arg>${search_remark.field}</arg>
-<arg>${search_remark.value}</arg>
-<arg>${search_remark.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:29.271926" elapsed="0.000102"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:29.271254" elapsed="0.000873"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${product_transform.field}'">
-<kw name="Dropdown row 2" owner="drop_down">
-<arg>${product_transform.field}</arg>
-<arg>${product_transform.value}</arg>
-<arg>${product_transform.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:29.273427" elapsed="0.000172"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:29.272364" elapsed="0.001375"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${product_detail.field}'">
-<kw name="Input text editmass row 2" owner="input_text">
-<arg>${product_detail.field}</arg>
-<arg>${product_detail.value}</arg>
-<arg>${product_detail.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:29.274628" elapsed="0.000109"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:29.273844" elapsed="0.000999"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${sales_period.field}'">
-<kw name="Check box month row 2" owner="check_box">
-<arg>${sales_period.field}</arg>
-<arg>${sales_period.value}</arg>
-<arg>${sales_period.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:29.275626" elapsed="0.000382"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:29.274931" elapsed="0.001371"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${warranty_terms.field}'">
-<kw name="Input text editmass row 2 (section14)" owner="input_text">
-<arg>${warranty_terms.field}</arg>
-<arg>${warranty_terms.value}</arg>
-<arg>${warranty_terms.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:29.277779" elapsed="0.000260"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:29.276598" elapsed="0.001673"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${old_article.field}'">
-<kw name="Input text editmass row 2" owner="input_text">
-<arg>${old_article.field}</arg>
-<arg>${old_article.value}</arg>
-<arg>${old_article.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:29.279300" elapsed="0.000120"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:29.278438" elapsed="0.001100"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${recommended_minimum.field}'">
-<kw name="Input text editmass row 2 (day warranty)" owner="input_text">
-<arg>${recommended_minimum.field}</arg>
-<arg>${recommended_minimum.value}</arg>
-<arg>${recommended_minimum.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:29.282610" elapsed="0.000202"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:29.279649" elapsed="0.003417"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${customs_tariff.field}'">
-<kw name="Input text editmass row 2" owner="input_text">
-<arg>${customs_tariff.field}</arg>
-<arg>${customs_tariff.value}</arg>
-<arg>${customs_tariff.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:29.284904" elapsed="0.000423"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:29.283209" elapsed="0.002318"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${components.field}'">
-<kw name="Input text editmass row 2" owner="input_text">
-<arg>${components.field}</arg>
-<arg>${components.value}</arg>
-<arg>${components.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:29.286528" elapsed="0.000110"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:29.285664" elapsed="0.001079"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${content_unit.field}'">
-<kw name="Dropdown row 2" owner="drop_down">
-<arg>${content_unit.field}</arg>
-<arg>${content_unit.value}</arg>
-<arg>${content_unit.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:29.287516" elapsed="0.000099"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:29.286831" elapsed="0.000885"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${country_of_region.field}'">
-<kw name="Dropdown row 2" owner="drop_down">
-<arg>${country_of_region.field}</arg>
-<arg>${country_of_region.value}</arg>
-<arg>${country_of_region.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:29.288467" elapsed="0.000100"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:29.287808" elapsed="0.000855"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${first_sale_date.field}'">
-<kw name="Input text editmass row 2" owner="input_text">
-<arg>${first_sale_date.field}</arg>
-<arg>${first_sale_date.value}</arg>
-<arg>${first_sale_date.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:29.289376" elapsed="0.000099"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:29.288753" elapsed="0.000819"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${gross_contents.field}'">
-<kw name="Input text editmass row 2" owner="input_text">
-<arg>${gross_contents.field}</arg>
-<arg>${gross_contents.value}</arg>
-<arg>${gross_contents.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:29.290638" elapsed="0.000150"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:29.289661" elapsed="0.001305"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${hazardous_no.field}'">
-<kw name="Input text editmass row 2" owner="input_text">
-<kw name="Wait And Click Element" owner="common_art">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click Element with Delay" owner="common_art">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-01-22T10:34:29.298273" level="INFO">Clicking element '//*[text()=" เพิ่ม"]'.</msg>
-<arg>${locator}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-22T10:34:29.297685" elapsed="0.259891"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-22T10:34:30.560654" level="INFO">Slept 1 second.</msg>
-<arg>1s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-22T10:34:29.557993" elapsed="1.003834"/>
-</kw>
-<arg>${locator}</arg>
-<status status="PASS" start="2025-01-22T10:34:29.296433" elapsed="1.265984"/>
-</kw>
-<arg>3x</arg>
-<arg>0.8s</arg>
-<arg>Click Element with Delay</arg>
-<arg>${locator}</arg>
-<doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-01-22T10:34:29.295968" elapsed="1.266915"/>
-</kw>
-<arg>//*[text()=" เพิ่ม"]</arg>
-<status status="PASS" start="2025-01-22T10:34:29.295137" elapsed="1.268074"/>
-</kw>
-<kw name="Wait And Click Element" owner="common_art">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click Element with Delay" owner="common_art">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-01-22T10:34:30.568638" level="INFO">Clicking element '//div[@data-dx_placeholder="เลือกฟิลด์" and @class="dx-placeholder"]/preceding-sibling::input'.</msg>
-<arg>${locator}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-22T10:34:30.567652" elapsed="0.154494"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-22T10:34:31.723527" level="INFO">Slept 1 second.</msg>
-<arg>1s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-22T10:34:30.722470" elapsed="1.001818"/>
-</kw>
-<arg>${locator}</arg>
-<status status="PASS" start="2025-01-22T10:34:30.566409" elapsed="1.158472"/>
-</kw>
-<arg>3x</arg>
-<arg>0.8s</arg>
-<arg>Click Element with Delay</arg>
-<arg>${locator}</arg>
-<doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-01-22T10:34:30.564777" elapsed="1.160905"/>
-</kw>
-<arg>//div[@data-dx_placeholder="เลือกฟิลด์" and @class="dx-placeholder"]/preceding-sibling::input</arg>
-<status status="PASS" start="2025-01-22T10:34:30.563760" elapsed="1.163223"/>
-</kw>
-<kw name="Wait And Input Text with Delay" owner="common_art">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Input Text with Delay" owner="common_art">
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-01-22T10:34:31.732543" level="INFO">Typing text 'เลขที่สำหรับวัตถุอันตราย (Haz. artl no.)' into text field '//div[@data-dx_placeholder="เลือกฟิลด์" and @class="dx-placeholder"]/preceding-sibling::input'.</msg>
-<arg>${locator}</arg>
-<arg>${text}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-22T10:34:31.731583" elapsed="0.125044"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-22T10:34:33.359779" level="INFO">Slept 1 second 500 milliseconds.</msg>
-<arg>1.5s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-22T10:34:31.857429" elapsed="1.502838"/>
-</kw>
-<arg>${locator}</arg>
-<arg>${text}</arg>
-<status status="PASS" start="2025-01-22T10:34:31.730022" elapsed="1.630638"/>
-</kw>
-<arg>3x</arg>
-<arg>0.8s</arg>
-<arg>Input Text with Delay</arg>
-<arg>${locator}</arg>
-<arg>${text}</arg>
-<doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-01-22T10:34:31.729182" elapsed="1.631788"/>
-</kw>
-<arg>//div[@data-dx_placeholder="เลือกฟิลด์" and @class="dx-placeholder"]/preceding-sibling::input</arg>
-<arg>${master_tabcols_id}</arg>
-<status status="PASS" start="2025-01-22T10:34:31.728051" elapsed="1.633238"/>
-</kw>
-<kw name="Wait And Press Keys" owner="common_art">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Press Key" owner="SeleniumLibrary">
-<arg>${locator}</arg>
-<arg>${keys}</arg>
-<doc>Simulates user pressing key on element identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-22T10:34:33.364327" elapsed="0.183113"/>
-</kw>
-<arg>3x</arg>
-<arg>0.8s</arg>
-<arg>Press Key</arg>
-<arg>${locator}</arg>
-<arg>${keys}</arg>
-<doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-01-22T10:34:33.363126" elapsed="0.184685"/>
-</kw>
-<arg>xpath=//div[4]/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div[2]/div/div/div/div/div/div/div/input</arg>
-<arg>\\13</arg>
-<status status="PASS" start="2025-01-22T10:34:33.361871" elapsed="0.186198"/>
-</kw>
-<kw name="Wait And Click Element" owner="common_art">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click Element with Delay" owner="common_art">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-01-22T10:34:33.551155" level="INFO">Clicking element '//*[@name="master_tabcols_id" and @value="fea6397a-24f9-46bd-a5f9-29516495a33c"]/ancestor::div[6]/following-sibling::div[1]/descendant::input[@class="dx-texteditor-input"]'.</msg>
-<arg>${locator}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-22T10:34:33.550835" elapsed="0.088593"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-22T10:34:34.640985" level="INFO">Slept 1 second.</msg>
-<arg>1s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-22T10:34:33.639729" elapsed="1.002338"/>
-</kw>
-<arg>${locator}</arg>
-<status status="PASS" start="2025-01-22T10:34:33.550060" elapsed="1.092425"/>
-</kw>
-<arg>3x</arg>
-<arg>0.8s</arg>
-<arg>Click Element with Delay</arg>
-<arg>${locator}</arg>
-<doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-01-22T10:34:33.549256" elapsed="1.093605"/>
-</kw>
-<arg>//*[@name="master_tabcols_id" and @value="${new_uuid}"]/ancestor::div[6]/following-sibling::div[1]/descendant::input[@class="dx-texteditor-input"]</arg>
-<status status="PASS" start="2025-01-22T10:34:33.548401" elapsed="1.095140"/>
-</kw>
-<kw name="Wait And Input Text with Delay" owner="common_art">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Input Text with Delay" owner="common_art">
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-01-22T10:34:34.649091" level="INFO">Typing text 'เลขที่สำหรับวัตถุอันตราย (Haz. artl no.)_editmass' into text field '//*[@name="master_tabcols_id" and @value="fea6397a-24f9-46bd-a5f9-29516495a33c"]/ancestor::div[6]/following-sibling::div[1]/descendant::input[@class="dx-texteditor-input"]'.</msg>
-<arg>${locator}</arg>
-<arg>${text}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-22T10:34:34.648409" elapsed="0.149513"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-22T10:34:36.299646" level="INFO">Slept 1 second 500 milliseconds.</msg>
-<arg>1.5s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-22T10:34:34.798499" elapsed="1.501830"/>
-</kw>
-<arg>${locator}</arg>
-<arg>${text}</arg>
-<status status="PASS" start="2025-01-22T10:34:34.646157" elapsed="1.654667"/>
-</kw>
-<arg>3x</arg>
-<arg>0.8s</arg>
-<arg>Input Text with Delay</arg>
-<arg>${locator}</arg>
-<arg>${text}</arg>
-<doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-01-22T10:34:34.645321" elapsed="1.655831"/>
-</kw>
-<arg>//*[@name="master_tabcols_id" and @value="${new_uuid}"]/ancestor::div[6]/following-sibling::div[1]/descendant::input[@class="dx-texteditor-input"]</arg>
-<arg>${values_new}</arg>
-<status status="PASS" start="2025-01-22T10:34:34.644145" elapsed="1.657343"/>
-</kw>
-<arg>${hazardous_no.field}</arg>
-<arg>${hazardous_no.value}</arg>
-<arg>${hazardous_no.uuid}</arg>
-<status status="PASS" start="2025-01-22T10:34:29.292148" elapsed="7.009708"/>
-</kw>
-<status status="PASS" start="2025-01-22T10:34:29.291121" elapsed="7.011062"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${hb_nonhb.field}'">
-<kw name="Dropdown row 2" owner="drop_down">
-<arg>${hb_nonhb.field}</arg>
-<arg>${hb_nonhb.value}</arg>
-<arg>${hb_nonhb.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:36.303291" elapsed="0.000370"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:36.302493" elapsed="0.001840"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${production.field}'">
-<kw name="Dropdown row 2" owner="drop_down">
-<arg>${production.field}</arg>
-<arg>${production.value}</arg>
-<arg>${production.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:36.307234" elapsed="0.000353"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:36.305013" elapsed="0.002855"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${merchandise_category4.field}'">
-<kw name="Dropdown row 2" owner="drop_down">
-<arg>${merchandise_category4.field}</arg>
-<arg>${merchandise_category4.value}</arg>
-<arg>${merchandise_category4.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:36.308745" elapsed="0.000498"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:36.308092" elapsed="0.001780"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${merchandise_category3.field}'">
-<kw name="Dropdown row 2" owner="drop_down">
-<arg>${merchandise_category3.field}</arg>
-<arg>${merchandise_category3.value}</arg>
-<arg>${merchandise_category3.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:36.311011" elapsed="0.000315"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:36.310300" elapsed="0.001292"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${net_contents.field}'">
-<kw name="Dropdown row 2" owner="drop_down">
-<arg>${net_contents.field}</arg>
-<arg>${net_contents.value}</arg>
-<arg>${net_contents.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:36.312310" elapsed="0.000235"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:36.311811" elapsed="0.000957"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${price_band_cat.field}'">
-<kw name="Dropdown row 2" owner="drop_down">
-<arg>${price_band_cat.field}</arg>
-<arg>${price_band_cat.value}</arg>
-<arg>${price_band_cat.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:36.313384" elapsed="0.000585"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:36.312965" elapsed="0.001189"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${regions_origin.field}'">
-<kw name="Dropdown row 2" owner="drop_down">
-<arg>${regions_origin.field}</arg>
-<arg>${regions_origin.value}</arg>
-<arg>${regions_origin.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:36.314675" elapsed="0.000181"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:36.314320" elapsed="0.000709"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${rem_shelf_life.field}'">
-<kw name="Input text editmass row 2 (day warranty)" owner="input_text">
-<arg>${rem_shelf_life.field}</arg>
-<arg>${rem_shelf_life.value}</arg>
-<arg>${rem_shelf_life.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:36.315525" elapsed="0.000184"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:36.315187" elapsed="0.000701"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${repack.field}'">
-<kw name="Dropdown row 2" owner="drop_down">
-<arg>${repack.field}</arg>
-<arg>${repack.value}</arg>
-<arg>${repack.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:36.316783" elapsed="0.000232"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:36.316060" elapsed="0.001157"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${search_word.field}'">
-<kw name="Input text editmass row 2" owner="input_text">
-<arg>${search_word.field}</arg>
-<arg>${search_word.value}</arg>
-<arg>${search_word.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:36.318213" elapsed="0.000299"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:36.317444" elapsed="0.001609"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${site_artl_status.field}'">
-<kw name="Dropdown row 2" owner="drop_down">
-<arg>${site_artl_status.field}</arg>
-<arg>${site_artl_status.value}</arg>
-<arg>${site_artl_status.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:36.319735" elapsed="0.000186"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:36.319281" elapsed="0.000807"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${tax_class.field}'">
-<kw name="Dropdown row 2" owner="drop_down">
-<arg>${tax_class.field}</arg>
-<arg>${tax_class.value}</arg>
-<arg>${tax_class.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:36.320555" elapsed="0.000158"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:36.320231" elapsed="0.000636"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${temperature.field}'">
-<kw name="Input text editmass row 2 (day warranty)" owner="input_text">
-<arg>${temperature.field}</arg>
-<arg>${temperature.value}</arg>
-<arg>${temperature.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:36.321298" elapsed="0.000178"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:36.321001" elapsed="0.000765"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${name_th.field}'">
-<kw name="Input text editmass row 2" owner="input_text">
-<arg>${name_th.field}</arg>
-<arg>${name_th.value}</arg>
-<arg>${name_th.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:36.323115" elapsed="0.000195"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:36.322678" elapsed="0.000827"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${tot_shelf_life.field}'">
-<kw name="Input text editmass row 2 (day warranty)" owner="input_text">
-<arg>${tot_shelf_life.field}</arg>
-<arg>${tot_shelf_life.value}</arg>
-<arg>${tot_shelf_life.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:36.324720" elapsed="0.000384"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:36.323672" elapsed="0.001904"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${tradmark.field}'">
-<kw name="Dropdown row 2" owner="drop_down">
-<arg>${tradmark.field}</arg>
-<arg>${tradmark.value}</arg>
-<arg>${tradmark.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:36.326503" elapsed="0.000188"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:36.326047" elapsed="0.000816"/>
-</branch>
-<status status="PASS" start="2025-01-22T10:34:29.268128" elapsed="7.058869"/>
-</if>
-<arg>เลขที่สำหรับวัตถุอันตราย (Haz. artl no.)</arg>
-<status status="PASS" start="2025-01-22T10:34:29.267575" elapsed="7.059529"/>
-</kw>
-<kw name="No. 3 Edit field name (A2) :">
-<if>
-<branch type="IF" condition="'${field}' == '${profitable_product.field}'">
-<kw name="Input text editmass row 3" owner="input_text">
-<arg>${profitable_product.field}</arg>
-<arg>${profitable_product.value}</arg>
-<arg>${profitable_product.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:36.329871" elapsed="0.000174"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:36.328726" elapsed="0.001489"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${brand_type.field}'">
-<kw name="Dropdown row 3" owner="drop_down">
-<arg>${brand_type.field}</arg>
-<arg>${brand_type.value}</arg>
-<arg>${brand_type.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:36.331363" elapsed="0.000157"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:36.330351" elapsed="0.001313"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${seasonal_products.field}'">
-<kw name="Check box month row 3" owner="check_box">
-<arg>${seasonal_products.field}</arg>
-<arg>${seasonal_products.value}</arg>
-<arg>${seasonal_products.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:36.332584" elapsed="0.000131"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:36.331810" elapsed="0.001028"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${search_remark.field}'">
-<kw name="Input text editmass row 3" owner="input_text">
-<arg>${search_remark.field}</arg>
-<arg>${search_remark.value}</arg>
-<arg>${search_remark.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:36.333947" elapsed="0.000231"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:36.332946" elapsed="0.001467"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${product_transform.field}'">
-<kw name="Dropdown row 3" owner="drop_down">
-<arg>${product_transform.field}</arg>
-<arg>${product_transform.value}</arg>
-<arg>${product_transform.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:36.335891" elapsed="0.000313"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:36.334568" elapsed="0.001808"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${product_detail.field}'">
-<kw name="Input text editmass row 3" owner="input_text">
-<arg>${product_detail.field}</arg>
-<arg>${product_detail.value}</arg>
-<arg>${product_detail.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:36.337335" elapsed="0.000122"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:36.336486" elapsed="0.001088"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${sales_period.field}'">
-<kw name="Check box month row 3" owner="check_box">
-<arg>${sales_period.field}</arg>
-<arg>${sales_period.value}</arg>
-<arg>${sales_period.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:36.338662" elapsed="0.000256"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:36.337678" elapsed="0.001516"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${warranty_terms.field}'">
-<kw name="Input text editmass row 3 (section14)" owner="input_text">
-<arg>${warranty_terms.field}</arg>
-<arg>${warranty_terms.value}</arg>
-<arg>${warranty_terms.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:36.340442" elapsed="0.000136"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:36.339354" elapsed="0.001352"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${old_article.field}'">
-<kw name="Input text editmass row 3" owner="input_text">
-<arg>${old_article.field}</arg>
-<arg>${old_article.value}</arg>
-<arg>${old_article.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:36.341637" elapsed="0.000112"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:36.340805" elapsed="0.001051"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${recommended_minimum.field}'">
-<kw name="Input text editmass row 3 (day warranty)" owner="input_text">
-<arg>${recommended_minimum.field}</arg>
-<arg>${recommended_minimum.value}</arg>
-<arg>${recommended_minimum.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:36.343472" elapsed="0.000235"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:36.341949" elapsed="0.002149"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${customs_tariff.field}'">
-<kw name="Input text editmass row 3" owner="input_text">
-<arg>${customs_tariff.field}</arg>
-<arg>${customs_tariff.value}</arg>
-<arg>${customs_tariff.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:36.345310" elapsed="0.000152"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:36.344224" elapsed="0.001359"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${components.field}'">
-<kw name="Input text editmass row 3" owner="input_text">
-<kw name="Wait And Click Element" owner="common_art">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click Element with Delay" owner="common_art">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-01-22T10:34:36.349577" level="INFO">Clicking element '//*[text()=" เพิ่ม"]'.</msg>
-<arg>${locator}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-22T10:34:36.349318" elapsed="0.259615"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-22T10:34:37.610440" level="INFO">Slept 1 second.</msg>
-<arg>1s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-22T10:34:36.609406" elapsed="1.001670"/>
-</kw>
-<arg>${locator}</arg>
-<status status="PASS" start="2025-01-22T10:34:36.348990" elapsed="1.262489"/>
-</kw>
-<arg>3x</arg>
-<arg>0.8s</arg>
-<arg>Click Element with Delay</arg>
-<arg>${locator}</arg>
-<doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-01-22T10:34:36.348689" elapsed="1.263100"/>
-</kw>
-<arg>//*[text()=" เพิ่ม"]</arg>
-<status status="PASS" start="2025-01-22T10:34:36.348338" elapsed="1.263769"/>
-</kw>
-<kw name="Wait And Click Element" owner="common_art">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click Element with Delay" owner="common_art">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-01-22T10:34:37.616246" level="INFO">Clicking element '//div[@data-dx_placeholder="เลือกฟิลด์" and @class="dx-placeholder"]/preceding-sibling::input'.</msg>
-<arg>${locator}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-22T10:34:37.615564" elapsed="0.127507"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-22T10:34:38.745083" level="INFO">Slept 1 second.</msg>
-<arg>1s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-22T10:34:37.743357" elapsed="1.002630"/>
-</kw>
-<arg>${locator}</arg>
-<status status="PASS" start="2025-01-22T10:34:37.614556" elapsed="1.132114"/>
-</kw>
-<arg>3x</arg>
-<arg>0.8s</arg>
-<arg>Click Element with Delay</arg>
-<arg>${locator}</arg>
-<doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-01-22T10:34:37.613704" elapsed="1.133414"/>
-</kw>
-<arg>//div[@data-dx_placeholder="เลือกฟิลด์" and @class="dx-placeholder"]/preceding-sibling::input</arg>
-<status status="PASS" start="2025-01-22T10:34:37.612687" elapsed="1.134902"/>
-</kw>
-<kw name="Wait And Input Text with Delay" owner="common_art">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Input Text with Delay" owner="common_art">
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-01-22T10:34:38.752476" level="INFO">Typing text 'ส่วนประกอบตัวลูกตัวแม่ (components)' into text field '//div[@data-dx_placeholder="เลือกฟิลด์" and @class="dx-placeholder"]/preceding-sibling::input'.</msg>
-<arg>${locator}</arg>
-<arg>${text}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-22T10:34:38.751448" elapsed="0.142929"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-22T10:34:40.395298" level="INFO">Slept 1 second 500 milliseconds.</msg>
-<arg>1.5s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-22T10:34:38.894690" elapsed="1.501022"/>
-</kw>
-<arg>${locator}</arg>
-<arg>${text}</arg>
-<status status="PASS" start="2025-01-22T10:34:38.750466" elapsed="1.645566"/>
-</kw>
-<arg>3x</arg>
-<arg>0.8s</arg>
-<arg>Input Text with Delay</arg>
-<arg>${locator}</arg>
-<arg>${text}</arg>
-<doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-01-22T10:34:38.749674" elapsed="1.646612"/>
-</kw>
-<arg>//div[@data-dx_placeholder="เลือกฟิลด์" and @class="dx-placeholder"]/preceding-sibling::input</arg>
-<arg>${master_tabcols_id}</arg>
-<status status="PASS" start="2025-01-22T10:34:38.748398" elapsed="1.648156"/>
-</kw>
-<kw name="Wait And Press Keys" owner="common_art">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Press Key" owner="SeleniumLibrary">
-<arg>${locator}</arg>
-<arg>${keys}</arg>
-<doc>Simulates user pressing key on element identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-22T10:34:40.398557" elapsed="0.213783"/>
-</kw>
-<arg>3x</arg>
-<arg>0.8s</arg>
-<arg>Press Key</arg>
-<arg>${locator}</arg>
-<arg>${keys}</arg>
-<doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-01-22T10:34:40.397900" elapsed="0.214694"/>
-</kw>
-<arg>xpath=//div[5]/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div[2]/div/div/div/div/div/div/div/input</arg>
-<arg>\\13</arg>
-<status status="PASS" start="2025-01-22T10:34:40.397025" elapsed="0.215884"/>
-</kw>
-<kw name="Wait And Click Element" owner="common_art">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click Element with Delay" owner="common_art">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-01-22T10:34:40.615557" level="INFO">Clicking element '//*[@name="master_tabcols_id" and @value="d00d18d5-af5f-4b79-a87e-7ee3bfea0195"]/ancestor::div[6]/following-sibling::div[1]/descendant::input[@class="dx-texteditor-input"]'.</msg>
-<arg>${locator}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-22T10:34:40.615197" elapsed="0.076919"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-22T10:34:41.693557" level="INFO">Slept 1 second.</msg>
-<arg>1s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-22T10:34:40.692561" elapsed="1.001601"/>
-</kw>
-<arg>${locator}</arg>
-<status status="PASS" start="2025-01-22T10:34:40.614685" elapsed="1.080050"/>
-</kw>
-<arg>3x</arg>
-<arg>0.8s</arg>
-<arg>Click Element with Delay</arg>
-<arg>${locator}</arg>
-<doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-01-22T10:34:40.614140" elapsed="1.080914"/>
-</kw>
-<arg>//*[@name="master_tabcols_id" and @value="${new_uuid}"]/ancestor::div[6]/following-sibling::div[1]/descendant::input[@class="dx-texteditor-input"]</arg>
-<status status="PASS" start="2025-01-22T10:34:40.613349" elapsed="1.082628"/>
-</kw>
-<kw name="Wait And Input Text with Delay" owner="common_art">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Input Text with Delay" owner="common_art">
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-01-22T10:34:41.700611" level="INFO">Typing text '1234' into text field '//*[@name="master_tabcols_id" and @value="d00d18d5-af5f-4b79-a87e-7ee3bfea0195"]/ancestor::div[6]/following-sibling::div[1]/descendant::input[@class="dx-texteditor-input"]'.</msg>
-<arg>${locator}</arg>
-<arg>${text}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-22T10:34:41.699972" elapsed="0.062471"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-22T10:34:43.263427" level="INFO">Slept 1 second 500 milliseconds.</msg>
-<arg>1.5s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-22T10:34:41.762725" elapsed="1.501100"/>
-</kw>
-<arg>${locator}</arg>
-<arg>${text}</arg>
-<status status="PASS" start="2025-01-22T10:34:41.698818" elapsed="1.565327"/>
-</kw>
-<arg>3x</arg>
-<arg>0.8s</arg>
-<arg>Input Text with Delay</arg>
-<arg>${locator}</arg>
-<arg>${text}</arg>
-<doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-01-22T10:34:41.697868" elapsed="1.566536"/>
-</kw>
-<arg>//*[@name="master_tabcols_id" and @value="${new_uuid}"]/ancestor::div[6]/following-sibling::div[1]/descendant::input[@class="dx-texteditor-input"]</arg>
-<arg>${values_new}</arg>
-<status status="PASS" start="2025-01-22T10:34:41.696609" elapsed="1.568070"/>
-</kw>
-<arg>${components.field}</arg>
-<arg>${components.value}</arg>
-<arg>${components.uuid}</arg>
-<status status="PASS" start="2025-01-22T10:34:36.346695" elapsed="6.918264"/>
-</kw>
-<status status="PASS" start="2025-01-22T10:34:36.345710" elapsed="6.919470"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${content_unit.field}'">
-<kw name="Dropdown row 3" owner="drop_down">
-<arg>${content_unit.field}</arg>
-<arg>${content_unit.value}</arg>
-<arg>${content_unit.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:43.265917" elapsed="0.000238"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:43.265395" elapsed="0.000989"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${country_of_region.field}'">
-<kw name="Dropdown row 3" owner="drop_down">
-<arg>${country_of_region.field}</arg>
-<arg>${country_of_region.value}</arg>
-<arg>${country_of_region.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:43.266900" elapsed="0.000182"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:43.266550" elapsed="0.000701"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${first_sale_date.field}'">
-<kw name="Input text editmass row 3" owner="input_text">
-<arg>${first_sale_date.field}</arg>
-<arg>${first_sale_date.value}</arg>
-<arg>${first_sale_date.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:43.268410" elapsed="0.000695"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:43.267411" elapsed="0.001934"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${gross_contents.field}'">
-<kw name="Input text editmass row 3" owner="input_text">
-<arg>${gross_contents.field}</arg>
-<arg>${gross_contents.value}</arg>
-<arg>${gross_contents.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:43.269940" elapsed="0.000201"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:43.269530" elapsed="0.000802"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${hazardous_no.field}'">
-<kw name="Input text editmass row 3" owner="input_text">
-<arg>${hazardous_no.field}</arg>
-<arg>${hazardous_no.value}</arg>
-<arg>${hazardous_no.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:43.271208" elapsed="0.000270"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:43.270574" elapsed="0.001120"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${hb_nonhb.field}'">
-<kw name="Dropdown row 3" owner="drop_down">
-<arg>${hb_nonhb.field}</arg>
-<arg>${hb_nonhb.value}</arg>
-<arg>${hb_nonhb.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:43.272316" elapsed="0.000227"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:43.271893" elapsed="0.000812"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${production.field}'">
-<kw name="Dropdown row 3" owner="drop_down">
-<arg>${production.field}</arg>
-<arg>${production.value}</arg>
-<arg>${production.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:43.273159" elapsed="0.000158"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:43.272847" elapsed="0.000625"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${merchandise_category4.field}'">
-<kw name="Dropdown row 3" owner="drop_down">
-<arg>${merchandise_category4.field}</arg>
-<arg>${merchandise_category4.value}</arg>
-<arg>${merchandise_category4.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:43.273896" elapsed="0.000153"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:43.273608" elapsed="0.000590"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${merchandise_category3.field}'">
-<kw name="Dropdown row 3" owner="drop_down">
-<arg>${merchandise_category3.field}</arg>
-<arg>${merchandise_category3.value}</arg>
-<arg>${merchandise_category3.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:43.274623" elapsed="0.000164"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:43.274332" elapsed="0.001029"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${net_contents.field}'">
-<kw name="Dropdown row 3" owner="drop_down">
-<arg>${net_contents.field}</arg>
-<arg>${net_contents.value}</arg>
-<arg>${net_contents.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:43.275933" elapsed="0.000503"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:43.275558" elapsed="0.001372"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${price_band_cat.field}'">
-<kw name="Dropdown row 3" owner="drop_down">
-<arg>${price_band_cat.field}</arg>
-<arg>${price_band_cat.value}</arg>
-<arg>${price_band_cat.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:43.277702" elapsed="0.000192"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:43.277275" elapsed="0.000793"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${regions_origin.field}'">
-<kw name="Dropdown row 3" owner="drop_down">
-<arg>${regions_origin.field}</arg>
-<arg>${regions_origin.value}</arg>
-<arg>${regions_origin.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:43.278534" elapsed="0.000193"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:43.278216" elapsed="0.000644"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${rem_shelf_life.field}'">
-<kw name="Input text editmass row 3 (day warranty)" owner="input_text">
-<arg>${rem_shelf_life.field}</arg>
-<arg>${rem_shelf_life.value}</arg>
-<arg>${rem_shelf_life.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:43.279236" elapsed="0.000134"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:43.278980" elapsed="0.000519"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${repack.field}'">
-<kw name="Dropdown row 3" owner="drop_down">
-<arg>${repack.field}</arg>
-<arg>${repack.value}</arg>
-<arg>${repack.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:43.279861" elapsed="0.000130"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:43.279616" elapsed="0.000502"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${search_word.field}'">
-<kw name="Input text editmass row 3" owner="input_text">
-<arg>${search_word.field}</arg>
-<arg>${search_word.value}</arg>
-<arg>${search_word.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:43.280473" elapsed="0.000131"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:43.280235" elapsed="0.000759"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${site_artl_status.field}'">
-<kw name="Dropdown row 3" owner="drop_down">
-<arg>${site_artl_status.field}</arg>
-<arg>${site_artl_status.value}</arg>
-<arg>${site_artl_status.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:43.281485" elapsed="0.000204"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:43.281165" elapsed="0.000703"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${tax_class.field}'">
-<kw name="Dropdown row 3" owner="drop_down">
-<arg>${tax_class.field}</arg>
-<arg>${tax_class.value}</arg>
-<arg>${tax_class.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:43.282566" elapsed="0.000197"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:43.282003" elapsed="0.000931"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${temperature.field}'">
-<kw name="Input text editmass row 3 (day warranty)" owner="input_text">
-<arg>${temperature.field}</arg>
-<arg>${temperature.value}</arg>
-<arg>${temperature.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:43.283363" elapsed="0.000144"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:43.283066" elapsed="0.000575"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${name_th.field}'">
-<kw name="Input text editmass row 3" owner="input_text">
-<arg>${name_th.field}</arg>
-<arg>${name_th.value}</arg>
-<arg>${name_th.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:43.284169" elapsed="0.000800"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:43.283763" elapsed="0.001453"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${tot_shelf_life.field}'">
-<kw name="Input text editmass row 3 (day warranty)" owner="input_text">
-<arg>${tot_shelf_life.field}</arg>
-<arg>${tot_shelf_life.value}</arg>
-<arg>${tot_shelf_life.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:43.285660" elapsed="0.000134"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:43.285347" elapsed="0.001163"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${tradmark.field}'">
-<kw name="Dropdown row 3" owner="drop_down">
-<arg>${tradmark.field}</arg>
-<arg>${tradmark.value}</arg>
-<arg>${tradmark.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:43.286979" elapsed="0.000155"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:43.286658" elapsed="0.000681"/>
-</branch>
-<status status="PASS" start="2025-01-22T10:34:36.328691" elapsed="6.958940"/>
-</if>
-<arg>ส่วนประกอบตัวลูกตัวแม่ (components)</arg>
-<status status="PASS" start="2025-01-22T10:34:36.328177" elapsed="6.959631"/>
-</kw>
-<kw name="No. 4 Edit field name (A2) :">
-<if>
-<branch type="IF" condition="'${field}' == '${profitable_product.field}'">
-<kw name="Input text editmass row 4" owner="input_text">
-<arg>${profitable_product.field}</arg>
-<arg>${profitable_product.value}</arg>
-<arg>${profitable_product.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:43.290858" elapsed="0.000139"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:43.289894" elapsed="0.001244"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${brand_type.field}'">
-<kw name="Dropdown row 4" owner="drop_down">
-<arg>${brand_type.field}</arg>
-<arg>${brand_type.value}</arg>
-<arg>${brand_type.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:43.292081" elapsed="0.000130"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:43.291247" elapsed="0.001084"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${seasonal_products.field}'">
-<kw name="Check box month row 4" owner="check_box">
-<arg>${seasonal_products.field}</arg>
-<arg>${seasonal_products.value}</arg>
-<arg>${seasonal_products.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:43.293185" elapsed="0.000144"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:43.292436" elapsed="0.001032"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${search_remark.field}'">
-<kw name="Input text editmass row 4" owner="input_text">
-<arg>${search_remark.field}</arg>
-<arg>${search_remark.value}</arg>
-<arg>${search_remark.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:43.294809" elapsed="0.000240"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:43.293592" elapsed="0.001614"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${product_transform.field}'">
-<kw name="Dropdown row 4" owner="drop_down">
-<arg>${product_transform.field}</arg>
-<arg>${product_transform.value}</arg>
-<arg>${product_transform.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:43.296720" elapsed="0.000141"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:43.295392" elapsed="0.001592"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${product_detail.field}'">
-<kw name="Input text editmass row 4" owner="input_text">
-<arg>${product_detail.field}</arg>
-<arg>${product_detail.value}</arg>
-<arg>${product_detail.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:43.297812" elapsed="0.000105"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:43.297082" elapsed="0.000933"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${sales_period.field}'">
-<kw name="Check box month row 4" owner="check_box">
-<arg>${sales_period.field}</arg>
-<arg>${sales_period.value}</arg>
-<arg>${sales_period.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:43.298795" elapsed="0.000106"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:43.298105" elapsed="0.000895"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${warranty_terms.field}'">
-<kw name="Input text editmass row 4 (section14)" owner="input_text">
-<arg>${warranty_terms.field}</arg>
-<arg>${warranty_terms.value}</arg>
-<arg>${warranty_terms.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:43.299738" elapsed="0.000121"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:43.299090" elapsed="0.000869"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${old_article.field}'">
-<kw name="Input text editmass row 4" owner="input_text">
-<arg>${old_article.field}</arg>
-<arg>${old_article.value}</arg>
-<arg>${old_article.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:43.301339" elapsed="0.000372"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:43.300049" elapsed="0.001891"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${recommended_minimum.field}'">
-<kw name="Input text editmass row 4 (day warranty)" owner="input_text">
-<kw name="Wait And Click Element" owner="common_art">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click Element with Delay" owner="common_art">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-01-22T10:34:43.307398" level="INFO">Clicking element '//*[text()=" เพิ่ม"]'.</msg>
-<arg>${locator}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-22T10:34:43.307003" elapsed="0.319418"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-22T10:34:44.629834" level="INFO">Slept 1 second.</msg>
-<arg>1s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-22T10:34:43.627283" elapsed="1.003363"/>
-</kw>
-<arg>${locator}</arg>
-<status status="PASS" start="2025-01-22T10:34:43.306550" elapsed="1.324689"/>
-</kw>
-<arg>3x</arg>
-<arg>0.8s</arg>
-<arg>Click Element with Delay</arg>
-<arg>${locator}</arg>
-<doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-01-22T10:34:43.306053" elapsed="1.325638"/>
-</kw>
-<arg>//*[text()=" เพิ่ม"]</arg>
-<status status="PASS" start="2025-01-22T10:34:43.305060" elapsed="1.327102"/>
-</kw>
-<kw name="Wait And Click Element" owner="common_art">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click Element with Delay" owner="common_art">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-01-22T10:34:44.640684" level="INFO">Clicking element '//div[@data-dx_placeholder="เลือกฟิลด์" and @class="dx-placeholder"]/preceding-sibling::input'.</msg>
-<arg>${locator}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-22T10:34:44.638057" elapsed="0.122230"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-22T10:34:45.762341" level="INFO">Slept 1 second.</msg>
-<arg>1s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-22T10:34:44.760657" elapsed="1.002172"/>
-</kw>
-<arg>${locator}</arg>
-<status status="PASS" start="2025-01-22T10:34:44.636966" elapsed="1.126270"/>
-</kw>
-<arg>3x</arg>
-<arg>0.8s</arg>
-<arg>Click Element with Delay</arg>
-<arg>${locator}</arg>
-<doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-01-22T10:34:44.634967" elapsed="1.128603"/>
-</kw>
-<arg>//div[@data-dx_placeholder="เลือกฟิลด์" and @class="dx-placeholder"]/preceding-sibling::input</arg>
-<status status="PASS" start="2025-01-22T10:34:44.632969" elapsed="1.130942"/>
-</kw>
-<kw name="Wait And Input Text with Delay" owner="common_art">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Input Text with Delay" owner="common_art">
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-01-22T10:34:45.769715" level="INFO">Typing text 'อายุขั้นต่ำที่แนะนำให้รับสินค้า' into text field '//div[@data-dx_placeholder="เลือกฟิลด์" and @class="dx-placeholder"]/preceding-sibling::input'.</msg>
-<arg>${locator}</arg>
-<arg>${text}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-22T10:34:45.769038" elapsed="0.105590"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-22T10:34:47.376388" level="INFO">Slept 1 second 500 milliseconds.</msg>
-<arg>1.5s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-22T10:34:45.874948" elapsed="1.501667"/>
-</kw>
-<arg>${locator}</arg>
-<arg>${text}</arg>
-<status status="PASS" start="2025-01-22T10:34:45.767744" elapsed="1.609034"/>
-</kw>
-<arg>3x</arg>
-<arg>0.8s</arg>
-<arg>Input Text with Delay</arg>
-<arg>${locator}</arg>
-<arg>${text}</arg>
-<doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-01-22T10:34:45.766717" elapsed="1.610181"/>
-</kw>
-<arg>//div[@data-dx_placeholder="เลือกฟิลด์" and @class="dx-placeholder"]/preceding-sibling::input</arg>
-<arg>${master_tabcols_id}</arg>
-<status status="PASS" start="2025-01-22T10:34:45.764508" elapsed="1.612514"/>
-</kw>
-<kw name="Wait And Press Keys" owner="common_art">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Press Key" owner="SeleniumLibrary">
-<arg>${locator}</arg>
-<arg>${keys}</arg>
-<doc>Simulates user pressing key on element identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-22T10:34:47.378041" elapsed="0.260141"/>
-</kw>
-<arg>3x</arg>
-<arg>0.8s</arg>
-<arg>Press Key</arg>
-<arg>${locator}</arg>
-<arg>${keys}</arg>
-<doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-01-22T10:34:47.377741" elapsed="0.260653"/>
-</kw>
-<arg>xpath=//div[6]/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div[2]/div/div/div/div/div/div/div/input</arg>
-<arg>\\13</arg>
-<status status="PASS" start="2025-01-22T10:34:47.377295" elapsed="0.261256"/>
-</kw>
-<kw name="Wait And Click Element" owner="common_art">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click Element with Delay" owner="common_art">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-01-22T10:34:47.640649" level="INFO">Clicking element '//*[@name="master_tabcols_id" and @value="21fdaede-a880-4520-8a8f-64a395f0998a"]/ancestor::div[6]/following-sibling::div[1]/descendant::input[@class="dx-texteditor-input"]'.</msg>
-<arg>${locator}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-22T10:34:47.640341" elapsed="0.092197"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-22T10:34:48.734538" level="INFO">Slept 1 second.</msg>
-<arg>1s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-22T10:34:47.732846" elapsed="1.002409"/>
-</kw>
-<arg>${locator}</arg>
-<status status="PASS" start="2025-01-22T10:34:47.639893" elapsed="1.095941"/>
-</kw>
-<arg>3x</arg>
-<arg>0.8s</arg>
-<arg>Click Element with Delay</arg>
-<arg>${locator}</arg>
-<doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-01-22T10:34:47.639461" elapsed="1.096827"/>
-</kw>
-<arg>//*[@name="master_tabcols_id" and @value="${new_uuid}"]/ancestor::div[6]/following-sibling::div[1]/descendant::input[@class="dx-texteditor-input"]</arg>
-<status status="PASS" start="2025-01-22T10:34:47.638818" elapsed="1.097957"/>
-</kw>
-<kw name="Wait And Input Text with Delay" owner="common_art">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Input Text with Delay" owner="common_art">
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-01-22T10:34:48.742187" level="INFO">Typing text '1234' into text field '//*[@name="master_tabcols_id" and @value="21fdaede-a880-4520-8a8f-64a395f0998a"]/ancestor::div[6]/following-sibling::div[1]/descendant::input[@class="dx-texteditor-input"]'.</msg>
-<arg>${locator}</arg>
-<arg>${text}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-22T10:34:48.741033" elapsed="0.062103"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-22T10:34:50.304155" level="INFO">Slept 1 second 500 milliseconds.</msg>
-<arg>1.5s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-22T10:34:48.803435" elapsed="1.501425"/>
-</kw>
-<arg>${locator}</arg>
-<arg>${text}</arg>
-<status status="PASS" start="2025-01-22T10:34:48.739622" elapsed="1.565691"/>
-</kw>
-<arg>3x</arg>
-<arg>0.8s</arg>
-<arg>Input Text with Delay</arg>
-<arg>${locator}</arg>
-<arg>${text}</arg>
-<doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-01-22T10:34:48.738807" elapsed="1.566856"/>
-</kw>
-<arg>//*[@name="master_tabcols_id" and @value="${new_uuid}"]/ancestor::div[6]/following-sibling::div[1]/descendant::input[@class="dx-texteditor-input"]</arg>
-<arg>${values_new}</arg>
-<status status="PASS" start="2025-01-22T10:34:48.737636" elapsed="1.568385"/>
-</kw>
-<arg>${recommended_minimum.field}</arg>
-<arg>${recommended_minimum.value}</arg>
-<arg>${recommended_minimum.uuid}</arg>
-<status status="PASS" start="2025-01-22T10:34:43.303195" elapsed="7.003191"/>
-</kw>
-<status status="PASS" start="2025-01-22T10:34:43.302093" elapsed="7.004581"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${customs_tariff.field}'">
-<kw name="Input text editmass row 4" owner="input_text">
-<arg>${customs_tariff.field}</arg>
-<arg>${customs_tariff.value}</arg>
-<arg>${customs_tariff.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:50.307653" elapsed="0.000418"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:50.306959" elapsed="0.001422"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${components.field}'">
-<kw name="Input text editmass row 4" owner="input_text">
-<arg>${components.field}</arg>
-<arg>${components.value}</arg>
-<arg>${components.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:50.309238" elapsed="0.000242"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:50.308649" elapsed="0.001045"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${content_unit.field}'">
-<kw name="Dropdown row 4" owner="drop_down">
-<arg>${content_unit.field}</arg>
-<arg>${content_unit.value}</arg>
-<arg>${content_unit.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:50.310332" elapsed="0.000884"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:50.309894" elapsed="0.001745"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${country_of_region.field}'">
-<kw name="Dropdown row 4" owner="drop_down">
-<arg>${country_of_region.field}</arg>
-<arg>${country_of_region.value}</arg>
-<arg>${country_of_region.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:50.313642" elapsed="0.000370"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:50.312235" elapsed="0.002060"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${first_sale_date.field}'">
-<kw name="Input text editmass row 4" owner="input_text">
-<arg>${first_sale_date.field}</arg>
-<arg>${first_sale_date.value}</arg>
-<arg>${first_sale_date.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:50.315008" elapsed="0.000244"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:50.314514" elapsed="0.000968"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${gross_contents.field}'">
-<kw name="Input text editmass row 4" owner="input_text">
-<arg>${gross_contents.field}</arg>
-<arg>${gross_contents.value}</arg>
-<arg>${gross_contents.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:50.316107" elapsed="0.000199"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:50.315721" elapsed="0.000778"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${hazardous_no.field}'">
-<kw name="Input text editmass row 4" owner="input_text">
-<arg>${hazardous_no.field}</arg>
-<arg>${hazardous_no.value}</arg>
-<arg>${hazardous_no.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:50.317054" elapsed="0.000196"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:50.316671" elapsed="0.000770"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${hb_nonhb.field}'">
-<kw name="Dropdown row 4" owner="drop_down">
-<arg>${hb_nonhb.field}</arg>
-<arg>${hb_nonhb.value}</arg>
-<arg>${hb_nonhb.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:50.317980" elapsed="0.000178"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:50.317610" elapsed="0.001589"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${production.field}'">
-<kw name="Dropdown row 4" owner="drop_down">
-<arg>${production.field}</arg>
-<arg>${production.value}</arg>
-<arg>${production.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:50.319920" elapsed="0.000368"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:50.319470" elapsed="0.001360"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${merchandise_category4.field}'">
-<kw name="Dropdown row 4" owner="drop_down">
-<arg>${merchandise_category4.field}</arg>
-<arg>${merchandise_category4.value}</arg>
-<arg>${merchandise_category4.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:50.322201" elapsed="0.000334"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:50.321516" elapsed="0.001521"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${merchandise_category4.field}'">
-<kw name="Dropdown row 4" owner="drop_down">
-<arg>${merchandise_category4.field}</arg>
-<arg>${merchandise_category4.value}</arg>
-<arg>${merchandise_category4.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:50.324725" elapsed="0.000414"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:50.323553" elapsed="0.001866"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${net_contents.field}'">
-<kw name="Dropdown row 4" owner="drop_down">
-<arg>${net_contents.field}</arg>
-<arg>${net_contents.value}</arg>
-<arg>${net_contents.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:50.326068" elapsed="0.000212"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:50.325605" elapsed="0.000859"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${price_band_cat.field}'">
-<kw name="Dropdown row 4" owner="drop_down">
-<arg>${price_band_cat.field}</arg>
-<arg>${price_band_cat.value}</arg>
-<arg>${price_band_cat.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:50.326986" elapsed="0.000171"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:50.326622" elapsed="0.000696"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${regions_origin.field}'">
-<kw name="Dropdown row 4" owner="drop_down">
-<arg>${regions_origin.field}</arg>
-<arg>${regions_origin.value}</arg>
-<arg>${regions_origin.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:50.327769" elapsed="0.000155"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:50.327460" elapsed="0.000638"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${rem_shelf_life.field}'">
-<kw name="Input text editmass row 4 (day warranty)" owner="input_text">
-<arg>${rem_shelf_life.field}</arg>
-<arg>${rem_shelf_life.value}</arg>
-<arg>${rem_shelf_life.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:50.328489" elapsed="0.000154"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:50.328220" elapsed="0.000629"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${repack.field}'">
-<kw name="Dropdown row 4" owner="drop_down">
-<arg>${repack.field}</arg>
-<arg>${repack.value}</arg>
-<arg>${repack.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:50.329735" elapsed="0.000186"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:50.329217" elapsed="0.000873"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${search_word.field}'">
-<kw name="Input text editmass row 4" owner="input_text">
-<arg>${search_word.field}</arg>
-<arg>${search_word.value}</arg>
-<arg>${search_word.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:50.330511" elapsed="0.000144"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:50.330224" elapsed="0.000568"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${site_artl_status.field}'">
-<kw name="Dropdown row 4" owner="drop_down">
-<arg>${site_artl_status.field}</arg>
-<arg>${site_artl_status.value}</arg>
-<arg>${site_artl_status.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:50.331545" elapsed="0.000256"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:50.331172" elapsed="0.000867"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${tax_class.field}'">
-<kw name="Dropdown row 4" owner="drop_down">
-<arg>${tax_class.field}</arg>
-<arg>${tax_class.value}</arg>
-<arg>${tax_class.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:50.332727" elapsed="0.000478"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:50.332240" elapsed="0.001522"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${temperature.field}'">
-<kw name="Input text editmass row 4 (day warranty)" owner="input_text">
-<arg>${temperature.field}</arg>
-<arg>${temperature.value}</arg>
-<arg>${temperature.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:50.334393" elapsed="0.000286"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:50.334009" elapsed="0.000879"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${name_th.field}'">
-<kw name="Input text editmass row 4" owner="input_text">
-<arg>${name_th.field}</arg>
-<arg>${name_th.value}</arg>
-<arg>${name_th.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:50.335449" elapsed="0.000138"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:50.335140" elapsed="0.000577"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${tot_shelf_life.field}'">
-<kw name="Input text editmass row 4 (day warranty)" owner="input_text">
-<arg>${tot_shelf_life.field}</arg>
-<arg>${tot_shelf_life.value}</arg>
-<arg>${tot_shelf_life.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:50.336100" elapsed="0.000491"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:50.335831" elapsed="0.000938"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${tradmark.field}'">
-<kw name="Dropdown row 4" owner="drop_down">
-<arg>${tradmark.field}</arg>
-<arg>${tradmark.value}</arg>
-<arg>${tradmark.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:50.337207" elapsed="0.000189"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:50.336897" elapsed="0.000647"/>
-</branch>
-<status status="PASS" start="2025-01-22T10:34:43.289856" elapsed="7.047844"/>
-</if>
-<arg>อายุขั้นต่ำที่แนะนำให้รับสินค้า</arg>
-<status status="PASS" start="2025-01-22T10:34:43.289310" elapsed="7.048550"/>
-</kw>
-<kw name="No. 5 Edit field name (A2) :">
-<if>
-<branch type="IF" condition="'${field}' == '${profitable_product.field}'">
-<kw name="Input text editmass row 5" owner="input_text">
-<arg>${profitable_product.field}</arg>
-<arg>${profitable_product.value}</arg>
-<arg>${profitable_product.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:50.341941" elapsed="0.000144"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:50.340984" elapsed="0.001246"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${brand_type.field}'">
-<kw name="Dropdown row 5" owner="drop_down">
-<arg>${brand_type.field}</arg>
-<arg>${brand_type.value}</arg>
-<arg>${brand_type.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:50.343172" elapsed="0.000119"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:50.342342" elapsed="0.001059"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${seasonal_products.field}'">
-<kw name="Check box month row 5" owner="check_box">
-<arg>${seasonal_products.field}</arg>
-<arg>${seasonal_products.value}</arg>
-<arg>${seasonal_products.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:50.344215" elapsed="0.000115"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:50.343498" elapsed="0.000941"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${search_remark.field}'">
-<kw name="Input text editmass row 5" owner="input_text">
-<arg>${search_remark.field}</arg>
-<arg>${search_remark.value}</arg>
-<arg>${search_remark.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:50.346056" elapsed="0.000259"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:50.344535" elapsed="0.001938"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${product_transform.field}'">
-<kw name="Dropdown row 5" owner="drop_down">
-<arg>${product_transform.field}</arg>
-<arg>${product_transform.value}</arg>
-<arg>${product_transform.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:50.347600" elapsed="0.000156"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:50.346584" elapsed="0.001289"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${product_detail.field}'">
-<kw name="Input text editmass row 5" owner="input_text">
-<arg>${product_detail.field}</arg>
-<arg>${product_detail.value}</arg>
-<arg>${product_detail.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:50.348734" elapsed="0.000108"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:50.347976" elapsed="0.000966"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${sales_period.field}'">
-<kw name="Check box month row 5" owner="check_box">
-<arg>${sales_period.field}</arg>
-<arg>${sales_period.value}</arg>
-<arg>${sales_period.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:50.349713" elapsed="0.000106"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:50.349033" elapsed="0.000889"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${warranty_terms.field}'">
-<kw name="Input text editmass row 5 (section14)" owner="input_text">
-<kw name="Wait And Scroll Element Into View" owner="common_art">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Scroll Element Into View" owner="SeleniumLibrary">
-<arg>${locator}</arg>
-<doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" start="2025-01-22T10:34:50.354785" elapsed="0.356645"/>
-</kw>
-<arg>3x</arg>
-<arg>0.8s</arg>
-<arg>Scroll Element Into View</arg>
-<arg>${locator}</arg>
-<doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-01-22T10:34:50.353745" elapsed="0.358374"/>
-</kw>
-<arg>//*[text()=" เพิ่ม"]</arg>
-<status status="PASS" start="2025-01-22T10:34:50.352889" elapsed="0.360243"/>
-</kw>
-<kw name="Wait And Click Element" owner="common_art">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click Element with Delay" owner="common_art">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-01-22T10:34:50.719562" level="INFO">Clicking element '//*[text()=" เพิ่ม"]'.</msg>
-<arg>${locator}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-22T10:34:50.718496" elapsed="0.236599"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-22T10:34:51.957847" level="INFO">Slept 1 second.</msg>
-<arg>1s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-22T10:34:50.955798" elapsed="1.002740"/>
-</kw>
-<arg>${locator}</arg>
-<status status="PASS" start="2025-01-22T10:34:50.716238" elapsed="1.242912"/>
-</kw>
-<arg>3x</arg>
-<arg>0.8s</arg>
-<arg>Click Element with Delay</arg>
-<arg>${locator}</arg>
-<doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-01-22T10:34:50.715400" elapsed="1.244064"/>
-</kw>
-<arg>//*[text()=" เพิ่ม"]</arg>
-<status status="PASS" start="2025-01-22T10:34:50.714294" elapsed="1.245487"/>
-</kw>
-<kw name="Wait And Click Element" owner="common_art">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click Element with Delay" owner="common_art">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-01-22T10:34:51.965545" level="INFO">Clicking element '//div[@data-dx_placeholder="เลือกฟิลด์" and @class="dx-placeholder"]/preceding-sibling::input'.</msg>
-<arg>${locator}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-22T10:34:51.964789" elapsed="0.154669"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-22T10:34:53.121273" level="INFO">Slept 1 second.</msg>
-<arg>1s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-22T10:34:52.119747" elapsed="1.002236"/>
-</kw>
-<arg>${locator}</arg>
-<status status="PASS" start="2025-01-22T10:34:51.962926" elapsed="1.159644"/>
-</kw>
-<arg>3x</arg>
-<arg>0.8s</arg>
-<arg>Click Element with Delay</arg>
-<arg>${locator}</arg>
-<doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-01-22T10:34:51.961338" elapsed="1.161691"/>
-</kw>
-<arg>//div[@data-dx_placeholder="เลือกฟิลด์" and @class="dx-placeholder"]/preceding-sibling::input</arg>
-<status status="PASS" start="2025-01-22T10:34:51.960352" elapsed="1.163150"/>
-</kw>
-<kw name="Wait And Input Text with Delay" owner="common_art">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Input Text with Delay" owner="common_art">
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-01-22T10:34:53.129920" level="INFO">Typing text 'เงื่อนไขการรับประกัน' into text field '//div[@data-dx_placeholder="เลือกฟิลด์" and @class="dx-placeholder"]/preceding-sibling::input'.</msg>
-<arg>${locator}</arg>
-<arg>${text}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-22T10:34:53.128827" elapsed="0.087806"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-22T10:34:54.718753" level="INFO">Slept 1 second 500 milliseconds.</msg>
-<arg>1.5s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-22T10:34:53.216916" elapsed="1.502628"/>
-</kw>
-<arg>${locator}</arg>
-<arg>${text}</arg>
-<status status="PASS" start="2025-01-22T10:34:53.126495" elapsed="1.593627"/>
-</kw>
-<arg>3x</arg>
-<arg>0.8s</arg>
-<arg>Input Text with Delay</arg>
-<arg>${locator}</arg>
-<arg>${text}</arg>
-<doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-01-22T10:34:53.125684" elapsed="1.594928"/>
-</kw>
-<arg>//div[@data-dx_placeholder="เลือกฟิลด์" and @class="dx-placeholder"]/preceding-sibling::input</arg>
-<arg>${master_tabcols_id}</arg>
-<status status="PASS" start="2025-01-22T10:34:53.124335" elapsed="1.596598"/>
-</kw>
-<kw name="Wait And Press Keys" owner="common_art">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Press Key" owner="SeleniumLibrary">
-<arg>${locator}</arg>
-<arg>${keys}</arg>
-<doc>Simulates user pressing key on element identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-22T10:34:54.723270" elapsed="0.300346"/>
-</kw>
-<arg>3x</arg>
-<arg>0.8s</arg>
-<arg>Press Key</arg>
-<arg>${locator}</arg>
-<arg>${keys}</arg>
-<doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-01-22T10:34:54.722501" elapsed="0.301415"/>
-</kw>
-<arg>xpath=//div[7]/div/div/div/div/div/div/div/div/div/div/div/div/div/div/div[2]/div/div/div/div/div/div/div/input</arg>
-<arg>\\13</arg>
-<status status="PASS" start="2025-01-22T10:34:54.721496" elapsed="0.302654"/>
-</kw>
-<kw name="Wait And Click Element" owner="common_art">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Click Element with Delay" owner="common_art">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-01-22T10:34:55.025830" level="INFO">Clicking element '//*[@name="master_tabcols_id" and @value="24b50355-96f2-4409-ad6b-c57989a1ebc9"]/ancestor::div[6]/following-sibling::div[1]/descendant::div//*[@data-placeholder="ค่า (Value)"]'.</msg>
-<arg>${locator}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-22T10:34:55.025586" elapsed="0.129867"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-22T10:34:56.156698" level="INFO">Slept 1 second.</msg>
-<arg>1s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-22T10:34:55.155881" elapsed="1.001513"/>
-</kw>
-<arg>${locator}</arg>
-<status status="PASS" start="2025-01-22T10:34:55.025260" elapsed="1.132744"/>
-</kw>
-<arg>3x</arg>
-<arg>0.8s</arg>
-<arg>Click Element with Delay</arg>
-<arg>${locator}</arg>
-<doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-01-22T10:34:55.024950" elapsed="1.133507"/>
-</kw>
-<arg>//*[@name="master_tabcols_id" and @value="${new_uuid}"]/ancestor::div[6]/following-sibling::div[1]/descendant::div//*[@data-placeholder="ค่า (Value)"]</arg>
-<status status="PASS" start="2025-01-22T10:34:55.024489" elapsed="1.134475"/>
-</kw>
-<kw name="Wait And Input Text with Delay" owner="common_art">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Input Text with Delay" owner="common_art">
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-01-22T10:34:56.167139" level="INFO">Typing text 'เงื่อนไขการรับประกัน_editmass' into text field '//*[@name="master_tabcols_id" and @value="24b50355-96f2-4409-ad6b-c57989a1ebc9"]/ancestor::div[6]/following-sibling::div[1]/descendant::div//*[@data-placeholder="ค่า (Value)"]'.</msg>
-<arg>${locator}</arg>
-<arg>${text}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-22T10:34:56.165141" elapsed="0.211607"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-22T10:34:57.879641" level="INFO">Slept 1 second 500 milliseconds.</msg>
-<arg>1.5s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-22T10:34:56.377255" elapsed="1.503192"/>
-</kw>
-<arg>${locator}</arg>
-<arg>${text}</arg>
-<status status="PASS" start="2025-01-22T10:34:56.162590" elapsed="1.718458"/>
-</kw>
-<arg>3x</arg>
-<arg>0.8s</arg>
-<arg>Input Text with Delay</arg>
-<arg>${locator}</arg>
-<arg>${text}</arg>
-<doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-01-22T10:34:56.161676" elapsed="1.719860"/>
-</kw>
-<arg>//*[@name="master_tabcols_id" and @value="${new_uuid}"]/ancestor::div[6]/following-sibling::div[1]/descendant::div//*[@data-placeholder="ค่า (Value)"]</arg>
-<arg>${values_new}</arg>
-<status status="PASS" start="2025-01-22T10:34:56.159797" elapsed="1.722089"/>
-</kw>
-<arg>${warranty_terms.field}</arg>
-<arg>${warranty_terms.value}</arg>
-<arg>${warranty_terms.uuid}</arg>
-<status status="PASS" start="2025-01-22T10:34:50.350662" elapsed="7.531577"/>
-</kw>
-<status status="PASS" start="2025-01-22T10:34:50.350011" elapsed="7.532527"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${old_article.field}'">
-<kw name="Input text editmass row 5" owner="input_text">
-<arg>${old_article.field}</arg>
-<arg>${old_article.value}</arg>
-<arg>${old_article.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:57.883494" elapsed="0.000307"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:57.882806" elapsed="0.001265"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${recommended_minimum.field}'">
-<kw name="Input text editmass row 5 (day warranty)" owner="input_text">
-<arg>${recommended_minimum.field}</arg>
-<arg>${recommended_minimum.value}</arg>
-<arg>${recommended_minimum.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:57.884859" elapsed="0.000292"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:57.884314" elapsed="0.001098"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${customs_tariff.field}'">
-<kw name="Input text editmass row 5" owner="input_text">
-<arg>${customs_tariff.field}</arg>
-<arg>${customs_tariff.value}</arg>
-<arg>${customs_tariff.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:57.886162" elapsed="0.000744"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:57.885653" elapsed="0.001611"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${components.field}'">
-<kw name="Input text editmass row 5" owner="input_text">
-<arg>${components.field}</arg>
-<arg>${components.value}</arg>
-<arg>${components.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:57.888087" elapsed="0.000251"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:57.887579" elapsed="0.001008"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${content_unit.field}'">
-<kw name="Dropdown row 5" owner="drop_down">
-<arg>${content_unit.field}</arg>
-<arg>${content_unit.value}</arg>
-<arg>${content_unit.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:57.889322" elapsed="0.000494"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:57.888822" elapsed="0.001257"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${country_of_region.field}'">
-<kw name="Dropdown row 5" owner="drop_down">
-<arg>${country_of_region.field}</arg>
-<arg>${country_of_region.value}</arg>
-<arg>${country_of_region.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:57.892384" elapsed="0.000276"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:57.891654" elapsed="0.001257"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${first_sale_date.field}'">
-<kw name="Input text editmass row 5" owner="input_text">
-<arg>${first_sale_date.field}</arg>
-<arg>${first_sale_date.value}</arg>
-<arg>${first_sale_date.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:57.894073" elapsed="0.000287"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:57.893375" elapsed="0.001210"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${gross_contents.field}'">
-<kw name="Input text editmass row 5" owner="input_text">
-<arg>${gross_contents.field}</arg>
-<arg>${gross_contents.value}</arg>
-<arg>${gross_contents.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:57.895209" elapsed="0.000200"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:57.894776" elapsed="0.000817"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${hazardous_no.field}'">
-<kw name="Input text editmass row 5" owner="input_text">
-<arg>${hazardous_no.field}</arg>
-<arg>${hazardous_no.value}</arg>
-<arg>${hazardous_no.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:57.896102" elapsed="0.000178"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:57.895756" elapsed="0.000702"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${hb_nonhb.field}'">
-<kw name="Dropdown row 5" owner="drop_down">
-<arg>${hb_nonhb.field}</arg>
-<arg>${hb_nonhb.value}</arg>
-<arg>${hb_nonhb.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:57.896951" elapsed="0.000178"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:57.896615" elapsed="0.000682"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${production.field}'">
-<kw name="Dropdown row 5" owner="drop_down">
-<arg>${production.field}</arg>
-<arg>${production.value}</arg>
-<arg>${production.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:57.899013" elapsed="0.000407"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:57.898492" elapsed="0.001679"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${merchandise_category4.field}'">
-<kw name="Dropdown row 5" owner="drop_down">
-<arg>${merchandise_category4.field}</arg>
-<arg>${merchandise_category4.value}</arg>
-<arg>${merchandise_category4.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:57.901870" elapsed="0.000753"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:57.900849" elapsed="0.002130"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${merchandise_category3.field}'">
-<kw name="Dropdown row 5" owner="drop_down">
-<arg>${merchandise_category3.field}</arg>
-<arg>${merchandise_category3.value}</arg>
-<arg>${merchandise_category3.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:57.904666" elapsed="0.000356"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:57.903470" elapsed="0.001781"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${net_contents.field}'">
-<kw name="Dropdown row 5" owner="drop_down">
-<arg>${net_contents.field}</arg>
-<arg>${net_contents.value}</arg>
-<arg>${net_contents.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:57.906256" elapsed="0.001817"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:57.905438" elapsed="0.002904"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${price_band_cat.field}'">
-<kw name="Dropdown row 5" owner="drop_down">
-<arg>${price_band_cat.field}</arg>
-<arg>${price_band_cat.value}</arg>
-<arg>${price_band_cat.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:57.908882" elapsed="0.000164"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:57.908498" elapsed="0.000698"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${regions_origin.field}'">
-<kw name="Dropdown row 5" owner="drop_down">
-<arg>${regions_origin.field}</arg>
-<arg>${regions_origin.value}</arg>
-<arg>${regions_origin.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:57.909623" elapsed="0.000142"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:57.909327" elapsed="0.000575"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${rem_shelf_life.field}'">
-<kw name="Input text editmass row 5 (day warranty)" owner="input_text">
-<arg>${rem_shelf_life.field}</arg>
-<arg>${rem_shelf_life.value}</arg>
-<arg>${rem_shelf_life.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:57.910489" elapsed="0.000165"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:57.910034" elapsed="0.000855"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${repack.field}'">
-<kw name="Dropdown row 5" owner="drop_down">
-<arg>${repack.field}</arg>
-<arg>${repack.value}</arg>
-<arg>${repack.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:57.911381" elapsed="0.000169"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:57.911037" elapsed="0.000656"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${search_word.field}'">
-<kw name="Input text editmass row 5" owner="input_text">
-<arg>${search_word.field}</arg>
-<arg>${search_word.value}</arg>
-<arg>${search_word.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:57.912108" elapsed="0.000128"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:57.911815" elapsed="0.000538"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${site_artl_status.field}'">
-<kw name="Dropdown row 5" owner="drop_down">
-<arg>${site_artl_status.field}</arg>
-<arg>${site_artl_status.value}</arg>
-<arg>${site_artl_status.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:57.912687" elapsed="0.000117"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:57.912458" elapsed="0.000461"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${tax_class.field}'">
-<kw name="Dropdown row 5" owner="drop_down">
-<arg>${tax_class.field}</arg>
-<arg>${tax_class.value}</arg>
-<arg>${tax_class.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:57.913249" elapsed="0.000294"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:57.913023" elapsed="0.000641"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${temperature.field}'">
-<kw name="Input text editmass row 5 (day warranty)" owner="input_text">
-<arg>${temperature.field}</arg>
-<arg>${temperature.value}</arg>
-<arg>${temperature.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:57.914012" elapsed="0.000121"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:57.913774" elapsed="0.000473"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${name_th.field}'">
-<kw name="Input text editmass row 5" owner="input_text">
-<arg>${name_th.field}</arg>
-<arg>${name_th.value}</arg>
-<arg>${name_th.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:57.914576" elapsed="0.000118"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:57.914354" elapsed="0.000456"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${tot_shelf_life.field}'">
-<kw name="Input text editmass row 5 (day warranty)" owner="input_text">
-<arg>${tot_shelf_life.field}</arg>
-<arg>${tot_shelf_life.value}</arg>
-<arg>${tot_shelf_life.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:57.915135" elapsed="0.000117"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:57.914913" elapsed="0.000452"/>
-</branch>
-<branch type="ELSE IF" condition="'${field}' == '${tradmark.field}'">
-<kw name="Dropdown row 5" owner="drop_down">
-<arg>${tradmark.field}</arg>
-<arg>${tradmark.value}</arg>
-<arg>${tradmark.uuid}</arg>
-<status status="NOT RUN" start="2025-01-22T10:34:57.915695" elapsed="0.000402"/>
-</kw>
-<status status="NOT RUN" start="2025-01-22T10:34:57.915469" elapsed="0.000816"/>
-</branch>
-<status status="PASS" start="2025-01-22T10:34:50.340937" elapsed="7.575462"/>
-</if>
-<arg>เงื่อนไขการรับประกัน</arg>
-<status status="PASS" start="2025-01-22T10:34:50.339734" elapsed="7.576756"/>
-</kw>
-<status status="PASS" start="2025-01-22T10:33:46.731589" elapsed="71.185464"/>
+<arg>Categories</arg>
+<arg>${value}</arg>
+<status status="PASS" start="2025-01-24T09:56:05.304256" elapsed="6.187412"/>
+</kw>
+<arg>article_no=10337799
+10337394
+10337395</arg>
+<arg>value=C09020102</arg>
+<status status="PASS" start="2025-01-24T09:55:57.112657" elapsed="14.379011"/>
+</kw>
+<kw name="Refresh page" owner="common_art" type="TEARDOWN">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-01-24T09:56:11.493722" level="INFO">Executing JavaScript:
+location.reload()
+Without any arguments.</msg>
+<arg>location.reload()</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-01-24T09:56:11.493722" elapsed="0.979531"/>
+</kw>
+<status status="PASS" start="2025-01-24T09:56:11.492675" elapsed="0.981577"/>
+</kw>
+<status status="PASS" start="2025-01-24T09:55:57.110657" elapsed="15.364596"/>
 </test>
-<status status="PASS" start="2025-01-22T10:33:46.143959" elapsed="71.774542"/>
+<test id="s1-t2" name="Run Edit field Categories" line="16">
+<kw name="Edit field name Categories">
+<kw name="Search by article" owner="common_art">
+<kw name="Wait And Click Element" owner="common_art">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element with Delay" owner="common_art">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-24T09:56:12.483405" level="INFO">Clicking element '//input[@name="article_id"]'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-24T09:56:12.483405" elapsed="0.121189"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-24T09:56:13.606736" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-24T09:56:12.605596" elapsed="1.001140"/>
+</kw>
+<arg>${locator}</arg>
+<status status="PASS" start="2025-01-24T09:56:12.482439" elapsed="1.124297"/>
+</kw>
+<arg>3x</arg>
+<arg>0.8s</arg>
+<arg>Click Element with Delay</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-01-24T09:56:12.481410" elapsed="1.125326"/>
+</kw>
+<arg>//input[@name="article_id"]</arg>
+<status status="PASS" start="2025-01-24T09:56:12.481410" elapsed="1.125326"/>
+</kw>
+<kw name="Wait And Click Element" owner="common_art">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element with Delay" owner="common_art">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-24T09:56:13.607926" level="INFO">Clicking element '//textarea[@name="article"]'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-24T09:56:13.607926" elapsed="0.044500"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-24T09:56:14.653585" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-24T09:56:13.653427" elapsed="1.000158"/>
+</kw>
+<arg>${locator}</arg>
+<status status="PASS" start="2025-01-24T09:56:13.607926" elapsed="1.045659"/>
+</kw>
+<arg>3x</arg>
+<arg>0.8s</arg>
+<arg>Click Element with Delay</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-01-24T09:56:13.607926" elapsed="1.045659"/>
+</kw>
+<arg>//textarea[@name="article"]</arg>
+<status status="PASS" start="2025-01-24T09:56:13.606736" elapsed="1.047865"/>
+</kw>
+<for flavor="IN">
+<iter>
+<kw name="Get Value" owner="SeleniumLibrary">
+<msg time="2025-01-24T09:56:14.668035" level="INFO">${current_text} = </msg>
+<var>${current_text}</var>
+<arg>//textarea[@name="article"]</arg>
+<doc>Returns the value attribute of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-24T09:56:14.654601" elapsed="0.014939"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-01-24T09:56:14.669540" level="INFO">${new_text} = 
+10337395
+10337396
+10337397
+10337398
+10337399</msg>
+<var>${new_text}</var>
+<arg>${current_text}\n${article}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-01-24T09:56:14.669540" elapsed="0.000000"/>
+</kw>
+<kw name="Wait And Input Text with Delay" owner="common_art">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input Text with Delay" owner="common_art">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-24T09:56:14.671547" level="INFO">Typing text '
+10337395
+10337396
+10337397
+10337398
+10337399' into text field '//textarea[@name="article"]'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-24T09:56:14.671547" elapsed="0.105534"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-24T09:56:16.278416" level="INFO">Slept 1 second 500 milliseconds.</msg>
+<arg>1.5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-24T09:56:14.777081" elapsed="1.501335"/>
+</kw>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<status status="PASS" start="2025-01-24T09:56:14.671547" elapsed="1.606869"/>
+</kw>
+<arg>3x</arg>
+<arg>0.8s</arg>
+<arg>Input Text with Delay</arg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-01-24T09:56:14.670548" elapsed="1.607868"/>
+</kw>
+<arg>//textarea[@name="article"]</arg>
+<arg>${new_text}</arg>
+<status status="PASS" start="2025-01-24T09:56:14.670548" elapsed="1.607868"/>
+</kw>
+<var name="${article}">10337395
+10337396
+10337397
+10337398
+10337399</var>
+<status status="PASS" start="2025-01-24T09:56:14.654601" elapsed="1.623815"/>
+</iter>
+<var>${article}</var>
+<value>@{articles}</value>
+<status status="PASS" start="2025-01-24T09:56:14.654601" elapsed="1.623815"/>
+</for>
+<kw name="Wait And Click Element" owner="common_art">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element with Delay" owner="common_art">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-24T09:56:16.279421" level="INFO">Clicking element '//span[text()="ส่ง"]/parent::button'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-24T09:56:16.279421" elapsed="0.054549"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-24T09:56:17.334525" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-24T09:56:16.333970" elapsed="1.000555"/>
+</kw>
+<arg>${locator}</arg>
+<status status="PASS" start="2025-01-24T09:56:16.279421" elapsed="1.055104"/>
+</kw>
+<arg>3x</arg>
+<arg>0.8s</arg>
+<arg>Click Element with Delay</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-01-24T09:56:16.279421" elapsed="1.056216"/>
+</kw>
+<arg>//span[text()="ส่ง"]/parent::button</arg>
+<status status="PASS" start="2025-01-24T09:56:16.278416" elapsed="1.057221"/>
+</kw>
+<kw name="Wait And Click Element" owner="common_art">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element with Delay" owner="common_art">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-24T09:56:17.336617" level="INFO">Clicking element '//span[text()="ค้นหา"]/parent::button'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-24T09:56:17.336617" elapsed="0.062516"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-24T09:56:18.401489" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-24T09:56:17.400157" elapsed="1.001332"/>
+</kw>
+<arg>${locator}</arg>
+<status status="PASS" start="2025-01-24T09:56:17.336617" elapsed="1.064872"/>
+</kw>
+<arg>3x</arg>
+<arg>0.8s</arg>
+<arg>Click Element with Delay</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-01-24T09:56:17.335637" elapsed="1.066977"/>
+</kw>
+<arg>//span[text()="ค้นหา"]/parent::button</arg>
+<status status="PASS" start="2025-01-24T09:56:17.335637" elapsed="1.066977"/>
+</kw>
+<arg>${article_no}</arg>
+<doc>ค้นหา รหัสสินค้า ที่ต้องการแก้ไขฟิวด์</doc>
+<status status="PASS" start="2025-01-24T09:56:12.480409" elapsed="5.922205"/>
+</kw>
+<kw name="Click check box all article" owner="common_art">
+<kw name="Wait And Click Element" owner="common_art">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element with Delay" owner="common_art">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-24T09:56:18.405501" level="INFO">Clicking element '//span[text()="เลือกทั้งหมด"]/preceding-sibling::span'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-24T09:56:18.405501" elapsed="0.111654"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-24T09:56:19.517703" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-24T09:56:18.517155" elapsed="1.000548"/>
+</kw>
+<arg>${locator}</arg>
+<status status="PASS" start="2025-01-24T09:56:18.404506" elapsed="1.114310"/>
+</kw>
+<arg>3x</arg>
+<arg>0.8s</arg>
+<arg>Click Element with Delay</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-01-24T09:56:18.404506" elapsed="1.114310"/>
+</kw>
+<arg>//span[text()="เลือกทั้งหมด"]/preceding-sibling::span</arg>
+<status status="PASS" start="2025-01-24T09:56:18.403507" elapsed="1.115309"/>
+</kw>
+<doc>เลือกสินค้าทั้งหมด ใน dataGrid</doc>
+<status status="PASS" start="2025-01-24T09:56:18.403507" elapsed="1.115309"/>
+</kw>
+<kw name="Click button edit field" owner="common_art">
+<kw name="Wait And Click Element" owner="common_art">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element with Delay" owner="common_art">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-24T09:56:19.520885" level="INFO">Clicking element '//span[text()="แก้ไขค่าของฟิลด์"]/parent::button'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-24T09:56:19.520885" elapsed="0.048182"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-24T09:56:20.570314" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-24T09:56:19.569067" elapsed="1.001755"/>
+</kw>
+<arg>${locator}</arg>
+<status status="PASS" start="2025-01-24T09:56:19.519820" elapsed="1.051002"/>
+</kw>
+<arg>3x</arg>
+<arg>0.8s</arg>
+<arg>Click Element with Delay</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-01-24T09:56:19.519820" elapsed="1.051002"/>
+</kw>
+<arg>//span[text()="แก้ไขค่าของฟิลด์"]/parent::button</arg>
+<status status="PASS" start="2025-01-24T09:56:19.519820" elapsed="1.051002"/>
+</kw>
+<doc>คลิ๊กปุ่ม แก้ไขค่าของฟิลด์</doc>
+<status status="PASS" start="2025-01-24T09:56:19.518816" elapsed="1.053014"/>
+</kw>
+<kw name="No. 1 Edit field name (ฺB2C/A3/Data-Driven) :" owner="Edit_field_A3(B2C)">
+<if>
+<branch type="IF" condition="'${field}' == '${product_categories_level.field}'">
+<kw name="Dropdown row 1" owner="drop_down">
+<kw name="Wait And Click Element" owner="common_art">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element with Delay" owner="common_art">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-24T09:56:20.575908" level="INFO">Clicking element '//input[@name="master_tabcols_id"]/following-sibling::div/div/input'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-24T09:56:20.575908" elapsed="0.077189"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-24T09:56:21.654450" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-24T09:56:20.653097" elapsed="1.001353"/>
+</kw>
+<arg>${locator}</arg>
+<status status="PASS" start="2025-01-24T09:56:20.574934" elapsed="1.079516"/>
+</kw>
+<arg>3x</arg>
+<arg>0.8s</arg>
+<arg>Click Element with Delay</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-01-24T09:56:20.574934" elapsed="1.080619"/>
+</kw>
+<arg>//input[@name="master_tabcols_id"]/following-sibling::div/div/input</arg>
+<status status="PASS" start="2025-01-24T09:56:20.574934" elapsed="1.080619"/>
+</kw>
+<kw name="Wait And Input Text with Delay" owner="common_art">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input Text with Delay" owner="common_art">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-24T09:56:21.658587" level="INFO">Typing text 'Categories' into text field '//input[@name="master_tabcols_id"]/following-sibling::div/div/input'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-24T09:56:21.657460" elapsed="0.051454"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-24T09:56:23.209297" level="INFO">Slept 1 second 500 milliseconds.</msg>
+<arg>1.5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-24T09:56:21.708914" elapsed="1.500383"/>
+</kw>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<status status="PASS" start="2025-01-24T09:56:21.657460" elapsed="1.551837"/>
+</kw>
+<arg>3x</arg>
+<arg>0.8s</arg>
+<arg>Input Text with Delay</arg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-01-24T09:56:21.656505" elapsed="1.552792"/>
+</kw>
+<arg>//input[@name="master_tabcols_id"]/following-sibling::div/div/input</arg>
+<arg>${master_tabcols_id}</arg>
+<status status="PASS" start="2025-01-24T09:56:21.656505" elapsed="1.552792"/>
+</kw>
+<kw name="Wait And Press Keys" owner="common_art">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Press Key" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${keys}</arg>
+<doc>Simulates user pressing key on element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-24T09:56:23.210308" elapsed="0.103271"/>
+</kw>
+<arg>3x</arg>
+<arg>0.8s</arg>
+<arg>Press Key</arg>
+<arg>${locator}</arg>
+<arg>${keys}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-01-24T09:56:23.210308" elapsed="0.103271"/>
+</kw>
+<arg>//input[@name="master_tabcols_id"]/following-sibling::div/div/input</arg>
+<arg>\\13</arg>
+<status status="PASS" start="2025-01-24T09:56:23.209297" elapsed="0.104282"/>
+</kw>
+<kw name="Wait And Click Element" owner="common_art">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element with Delay" owner="common_art">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-24T09:56:23.315584" level="INFO">Clicking element '//input[@name="values_new"]/following-sibling::div/div/input'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-24T09:56:23.315584" elapsed="0.628792"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-24T09:56:24.945748" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-24T09:56:23.945376" elapsed="1.000372"/>
+</kw>
+<arg>${locator}</arg>
+<status status="PASS" start="2025-01-24T09:56:23.315584" elapsed="1.630164"/>
+</kw>
+<arg>3x</arg>
+<arg>0.8s</arg>
+<arg>Click Element with Delay</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-01-24T09:56:23.314581" elapsed="1.631757"/>
+</kw>
+<arg>//input[@name="values_new"]/following-sibling::div/div/input</arg>
+<status status="PASS" start="2025-01-24T09:56:23.314581" elapsed="1.631757"/>
+</kw>
+<kw name="Wait And Input Text with Delay" owner="common_art">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input Text with Delay" owner="common_art">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-24T09:56:24.947454" level="INFO">Typing text 'C09020101' into text field '//input[@name="values_new"]/following-sibling::div/div/input'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-24T09:56:24.947454" elapsed="0.053096"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-24T09:56:26.501920" level="INFO">Slept 1 second 500 milliseconds.</msg>
+<arg>1.5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-24T09:56:25.000550" elapsed="1.501370"/>
+</kw>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<status status="PASS" start="2025-01-24T09:56:24.946338" elapsed="1.555582"/>
+</kw>
+<arg>3x</arg>
+<arg>0.8s</arg>
+<arg>Input Text with Delay</arg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-01-24T09:56:24.946338" elapsed="1.555582"/>
+</kw>
+<arg>//input[@name="values_new"]/following-sibling::div/div/input</arg>
+<arg>${values_new}</arg>
+<status status="PASS" start="2025-01-24T09:56:24.946338" elapsed="1.555582"/>
+</kw>
+<kw name="Wait And Press Keys" owner="common_art">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Press Key" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${keys}</arg>
+<doc>Simulates user pressing key on element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-24T09:56:26.503934" elapsed="0.030239"/>
+</kw>
+<arg>3x</arg>
+<arg>0.8s</arg>
+<arg>Press Key</arg>
+<arg>${locator}</arg>
+<arg>${keys}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-01-24T09:56:26.503934" elapsed="0.030239"/>
+</kw>
+<arg>//input[@name="values_new"]/following-sibling::div/div/input</arg>
+<arg>\\13</arg>
+<status status="PASS" start="2025-01-24T09:56:26.502937" elapsed="0.031236"/>
+</kw>
+<arg>${product_categories_level.field}</arg>
+<arg>${value}</arg>
+<arg>${product_categories_level.uuid}</arg>
+<status status="PASS" start="2025-01-24T09:56:20.573830" elapsed="5.961346"/>
+</kw>
+<status status="PASS" start="2025-01-24T09:56:20.572835" elapsed="5.962341"/>
+</branch>
+<status status="PASS" start="2025-01-24T09:56:20.572835" elapsed="5.962341"/>
+</if>
+<arg>Categories</arg>
+<arg>${value}</arg>
+<status status="PASS" start="2025-01-24T09:56:20.571830" elapsed="5.963346"/>
+</kw>
+<arg>article_no=10337395
+10337396
+10337397
+10337398
+10337399</arg>
+<arg>value=C09020101</arg>
+<status status="PASS" start="2025-01-24T09:56:12.480409" elapsed="14.054767"/>
+</kw>
+<kw name="Refresh page" owner="common_art" type="TEARDOWN">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-01-24T09:56:26.538173" level="INFO">Executing JavaScript:
+location.reload()
+Without any arguments.</msg>
+<arg>location.reload()</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-01-24T09:56:26.537172" elapsed="0.205130"/>
+</kw>
+<status status="PASS" start="2025-01-24T09:56:26.537172" elapsed="0.206129"/>
+</kw>
+<status status="PASS" start="2025-01-24T09:56:12.478252" elapsed="14.265049"/>
+</test>
+<status status="PASS" start="2025-01-24T09:55:34.709098" elapsed="52.036201"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Edit field A2">Edit field A2</stat>
+<stat pass="2" fail="0" skip="0" id="s1" name="Editmass datadriven">Editmass datadriven</stat>
 </suite>
 </statistics>
 <errors>
+<msg time="2025-01-24T09:55:35.077306" level="ERROR">Error in file 'c:\Automate_WEB\Clone_Article\Clone_article_GR\art_editmass\testcases\Editmass_datadriven.robot' on line 6: Error in file 'c:\Automate_WEB\Clone_Article\Clone_article_GR\art_editmass\keywords\Edit_field_A1.robot' on line 183: Resource file with 'Test Cases' section is invalid.</msg>
+<msg time="2025-01-24T09:55:35.085555" level="ERROR">Error in file 'c:\Automate_WEB\Clone_Article\Clone_article_GR\art_editmass\testcases\Editmass_datadriven.robot' on line 7: Error in file 'c:\Automate_WEB\Clone_Article\Clone_article_GR\art_editmass\keywords\Edit_field_A2(B2C).robot' on line 183: Resource file with 'Test Cases' section is invalid.</msg>
+<msg time="2025-01-24T09:56:12.477253" level="WARN">Multiple tests with name 'Run Edit field Categories' executed in suite 'Editmass datadriven'.</msg>
 </errors>
 </robot>
