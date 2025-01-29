@@ -16,33 +16,33 @@ Variables    ../resources/field_A1.yaml
 No. 1 Edit field name (A1) :
     [Arguments]    ${field}
     IF         '${field}' == '${ownership_show.field}'
-        Dropdown row 1                          ${ownership_show.field}                   ${ownership_show.value}
+        Dropdown row 1                          ${ownership_show.field}                   ${ownership_show.value}           ${ownership_show.uuid} 
     ELSE IF    '${field}' == '${import_purchase.field}'   
-        Dropdown row 1                          ${import_purchase.field}                  ${import_purchase.value}
+        Dropdown row 1                          ${import_purchase.field}                  ${import_purchase.value}          ${import_purchase.uuid} 
     ELSE IF    '${field}' == '${product_status.field}'   
-        Dropdown row 1                          ${product_status.field}                   ${product_status.value}
+        Dropdown row 1                          ${product_status.field}                   ${product_status.value}           ${product_status.uuid} 
     ELSE IF    '${field}' == '${flag_batch_management.field}'   
         Check box row 1                         ${flag_batch_management.field}            ${flag_batch_management.value}    ${flag_batch_management.uuid}
     ELSE IF    '${field}' == '${product_role.field}'   
-        Dropdown row 1                          ${product_role.field}                     ${product_role.value}
+        Dropdown row 1                          ${product_role.field}                     ${product_role.value}             ${product_role.uuid}             
     ELSE IF    '${field}' == '${abc_indicator.field}'   
-        Dropdown row 1                          ${abc_indicator.field}                    ${abc_indicator.value}
+        Dropdown row 1                          ${abc_indicator.field}                    ${abc_indicator.value}            ${abc_indicator.uuid}
     ELSE IF    '${field}' == '${product_sub_role.field}'   
-        Dropdown row 1                          ${product_sub_role.field}                 ${product_sub_role.value}
+        Dropdown row 1                          ${product_sub_role.field}                 ${product_sub_role.value}         ${product_sub_role.uuid}
     ELSE IF    '${field}' == '${product_trend.field}'   
-        Dropdown row 1                          ${product_trend.field}                    ${product_trend.value}
+        Dropdown row 1                          ${product_trend.field}                    ${product_trend.value}            ${product_trend.uuid}
     ELSE IF    '${field}' == '${purchaser_group_no.field}'   
-        Dropdown row 1                          ${purchaser_group_no.field}               ${purchaser_group_no.value}
+        Dropdown row 1                          ${purchaser_group_no.field}               ${purchaser_group_no.value}       ${purchaser_group_no.uuid}
     ELSE IF    '${field}' == '${shipping_group.field}'   
-        Dropdown row 1                          ${shipping_group.field}                   ${shipping_group.value}
+        Dropdown row 1                          ${shipping_group.field}                   ${shipping_group.value}           ${shipping_group.uuid}
     ELSE IF    '${field}' == '${status_purchase.field}'   
-        Dropdown row 1                          ${status_purchase.field}                  ${status_purchase.value}
+        Dropdown row 1                          ${status_purchase.field}                  ${status_purchase.value}          ${status_purchase.uuid}
     ELSE IF    '${field}' == '${status_sale.field}'   
-        Dropdown row 1                          ${status_sale.field}                      ${status_sale.value}            
+        Dropdown row 1                          ${status_sale.field}                      ${status_sale.value}              ${status_sale.uuid}           
     ELSE IF    '${field}' == '${stock_show.field}'   
-        Dropdown row 1                          ${stock_show.field}                       ${stock_show.value}                   
+        Dropdown row 1                          ${stock_show.field}                       ${stock_show.value}               ${stock_show.uuid}                  
     ELSE IF    '${field}' == '${product_sub_indicator.field}'   
-        Dropdown row 1                          ${product_sub_indicator.field}            ${product_sub_indicator.value}
+        Dropdown row 1                          ${product_sub_indicator.field}            ${product_sub_indicator.value}    ${product_sub_indicator.uuid}
     END
 
 No. 2 Edit field name (A1) :
