@@ -4,6 +4,7 @@ Library    BuiltIn
 Library    OperatingSystem
 Library    Collections
 Library    DebugLibrary
+Library    String
 Resource    ../common_art.robot    
 
 
@@ -14,7 +15,9 @@ Dropdown row 1
     Wait And Input Text with Delay    //input[@name="master_tabcols_id"]/following-sibling::div/div/input    ${master_tabcols_id} 
     Wait And Press Keys    //input[@name="master_tabcols_id"]/following-sibling::div/div/input    \\13
     Wait And Click Element    //input[@name="values_new"]/following-sibling::div/div/input
-    Wait And Input Text with Delay    //input[@name="values_new"]/following-sibling::div/div/input    ${values_new} 
+    ${cleaned_text}=    Replace String    ${values_new}    ${SPACE}    ${EMPTY}
+    Wait And Input Text with Delay    //input[@name="values_new"]/following-sibling::div/div/input    ${cleaned_text} 
+    Sleep    0.5s
     Wait And Press Keys    //input[@name="values_new"]/following-sibling::div/div/input    \\13
 
 Dropdown row 2

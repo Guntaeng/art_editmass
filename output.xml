@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.1.1 (Python 3.11.5 on win32)" generated="2025-01-24T09:55:34.705065" rpa="false" schemaversion="5">
+<robot generator="Robot 7.1.1 (Python 3.11.5 on win32)" generated="2025-01-28T16:41:13.530752" rpa="false" schemaversion="5">
 <suite id="s1" name="Editmass datadriven" source="c:\Automate_WEB\Clone_Article\Clone_article_GR\art_editmass\testcases\Editmass_datadriven.robot">
 <kw name="Login dohome and click web art(Edit Mass) A3" owner="common_art" type="SETUP">
 <kw name="Open browser web url" owner="common_art">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-01-24T09:55:35.168880" level="INFO">Opening browser 'chrome' to base url 'https://web-dohome-center-uat.dohome.technology/app/home'.</msg>
+<msg time="2025-01-28T16:41:13.998857" level="INFO">Opening browser 'chrome' to base url 'https://web-dohome-center-uat.dohome.technology/app/home'.</msg>
 <arg>${url}</arg>
 <arg>browser=${browserName}</arg>
 <arg>options=binary_location=r"C:\\chrome-win64\\chrome.exe"</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-01-24T09:55:35.167798" elapsed="3.075509"/>
+<status status="PASS" start="2025-01-28T16:41:13.997856" elapsed="3.056887"/>
 </kw>
 <arg>${url_dohome}</arg>
 <arg>chrome</arg>
-<status status="PASS" start="2025-01-24T09:55:35.167798" elapsed="3.075509"/>
+<status status="PASS" start="2025-01-28T16:41:13.997856" elapsed="3.057889"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-01-24T09:55:38.244313" elapsed="0.044530"/>
+<status status="PASS" start="2025-01-28T16:41:17.055745" elapsed="0.044519"/>
 </kw>
 <kw name="Wait And Wait Until Element Contains" owner="common_art">
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
@@ -25,7 +25,7 @@
 <arg>${locator}</arg>
 <arg>${text}</arg>
 <doc>Waits until the element ``locator`` contains ``text``.</doc>
-<status status="PASS" start="2025-01-24T09:55:38.289847" elapsed="0.744093"/>
+<status status="PASS" start="2025-01-28T16:41:17.103262" elapsed="1.076493"/>
 </kw>
 <arg>3x</arg>
 <arg>1s</arg>
@@ -33,39 +33,39 @@
 <arg>${locator}</arg>
 <arg>${text}</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-01-24T09:55:38.288843" elapsed="0.745097"/>
+<status status="PASS" start="2025-01-28T16:41:17.102261" elapsed="1.078492"/>
 </kw>
 <arg>//button[text()='เข้าสู่ระบบ']</arg>
 <arg>เข้าสู่ระบบ</arg>
-<status status="PASS" start="2025-01-24T09:55:38.288843" elapsed="0.746104"/>
+<status status="PASS" start="2025-01-28T16:41:17.101263" elapsed="1.079490"/>
 </kw>
 <kw name="Wait And Click Element" owner="common_art">
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
 <kw name="Click Element with Delay" owner="common_art">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-01-24T09:55:39.037949" level="INFO">Clicking element '//button[text()='เข้าสู่ระบบ']'.</msg>
+<msg time="2025-01-28T16:41:18.182753" level="INFO">Clicking element '//button[text()='เข้าสู่ระบบ']'.</msg>
 <arg>${locator}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-24T09:55:39.037949" elapsed="0.405039"/>
+<status status="PASS" start="2025-01-28T16:41:18.182753" elapsed="0.274399"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-24T09:55:40.444099" level="INFO">Slept 1 second.</msg>
+<msg time="2025-01-28T16:41:19.457729" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-24T09:55:39.443994" elapsed="1.000613"/>
+<status status="PASS" start="2025-01-28T16:41:18.457152" elapsed="1.000577"/>
 </kw>
 <arg>${locator}</arg>
-<status status="PASS" start="2025-01-24T09:55:39.036949" elapsed="1.407658"/>
+<status status="PASS" start="2025-01-28T16:41:18.181753" elapsed="1.275976"/>
 </kw>
 <arg>3x</arg>
 <arg>0.8s</arg>
 <arg>Click Element with Delay</arg>
 <arg>${locator}</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-01-24T09:55:39.035950" elapsed="1.409665"/>
+<status status="PASS" start="2025-01-28T16:41:18.181753" elapsed="1.275976"/>
 </kw>
 <arg>//button[text()='เข้าสู่ระบบ']</arg>
-<status status="PASS" start="2025-01-24T09:55:39.034947" elapsed="1.410668"/>
+<status status="PASS" start="2025-01-28T16:41:18.180753" elapsed="1.276976"/>
 </kw>
 <kw name="Wait And Wait Until Element Contains" owner="common_art">
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
@@ -73,7 +73,7 @@
 <arg>${locator}</arg>
 <arg>${text}</arg>
 <doc>Waits until the element ``locator`` contains ``text``.</doc>
-<status status="PASS" start="2025-01-24T09:55:40.447624" elapsed="0.099590"/>
+<status status="PASS" start="2025-01-28T16:41:19.458740" elapsed="0.045001"/>
 </kw>
 <arg>3x</arg>
 <arg>1s</arg>
@@ -81,59 +81,59 @@
 <arg>${locator}</arg>
 <arg>${text}</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-01-24T09:55:40.446623" elapsed="0.101579"/>
+<status status="PASS" start="2025-01-28T16:41:19.458740" elapsed="0.045001"/>
 </kw>
 <arg>//*[@class="text-2xl text-primary font-bold"]</arg>
 <arg>เข้าสู่ระบบ</arg>
-<status status="PASS" start="2025-01-24T09:55:40.445615" elapsed="0.102587"/>
+<status status="PASS" start="2025-01-28T16:41:19.457729" elapsed="0.047014"/>
 </kw>
 <kw name="Wait And Click Element" owner="common_art">
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
 <kw name="Click Element with Delay" owner="common_art">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-01-24T09:55:40.550202" level="INFO">Clicking element '//input[@name="username"]'.</msg>
+<msg time="2025-01-28T16:41:19.508740" level="INFO">Clicking element '//input[@name="username"]'.</msg>
 <arg>${locator}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-24T09:55:40.549200" elapsed="0.118984"/>
+<status status="PASS" start="2025-01-28T16:41:19.507741" elapsed="0.089121"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-24T09:55:41.669462" level="INFO">Slept 1 second.</msg>
+<msg time="2025-01-28T16:41:20.596931" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-24T09:55:40.669184" elapsed="1.000278"/>
+<status status="PASS" start="2025-01-28T16:41:19.596862" elapsed="1.000069"/>
 </kw>
 <arg>${locator}</arg>
-<status status="PASS" start="2025-01-24T09:55:40.549200" elapsed="1.120770"/>
+<status status="PASS" start="2025-01-28T16:41:19.507741" elapsed="1.089190"/>
 </kw>
 <arg>3x</arg>
 <arg>0.8s</arg>
 <arg>Click Element with Delay</arg>
 <arg>${locator}</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-01-24T09:55:40.548202" elapsed="1.121768"/>
+<status status="PASS" start="2025-01-28T16:41:19.506742" elapsed="1.090189"/>
 </kw>
 <arg>//input[@name="username"]</arg>
-<status status="PASS" start="2025-01-24T09:55:40.548202" elapsed="1.121768"/>
+<status status="PASS" start="2025-01-28T16:41:19.505741" elapsed="1.091190"/>
 </kw>
 <kw name="Wait And Input Text with Delay" owner="common_art">
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
 <kw name="Input Text with Delay" owner="common_art">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-01-24T09:55:41.671977" level="INFO">Typing text '1046813' into text field '//input[@name="username"]'.</msg>
+<msg time="2025-01-28T16:41:20.600333" level="INFO">Typing text '1046813' into text field '//input[@name="username"]'.</msg>
 <arg>${locator}</arg>
 <arg>${text}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-24T09:55:41.671977" elapsed="0.106002"/>
+<status status="PASS" start="2025-01-28T16:41:20.600333" elapsed="0.207528"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-24T09:55:43.279402" level="INFO">Slept 1 second 500 milliseconds.</msg>
+<msg time="2025-01-28T16:41:22.309109" level="INFO">Slept 1 second 500 milliseconds.</msg>
 <arg>1.5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-24T09:55:41.778969" elapsed="1.500433"/>
+<status status="PASS" start="2025-01-28T16:41:20.808861" elapsed="1.500248"/>
 </kw>
 <arg>${locator}</arg>
 <arg>${text}</arg>
-<status status="PASS" start="2025-01-24T09:55:41.670977" elapsed="1.608425"/>
+<status status="PASS" start="2025-01-28T16:41:20.599325" elapsed="1.709784"/>
 </kw>
 <arg>3x</arg>
 <arg>0.8s</arg>
@@ -141,59 +141,59 @@
 <arg>${locator}</arg>
 <arg>${text}</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-01-24T09:55:41.670977" elapsed="1.608425"/>
+<status status="PASS" start="2025-01-28T16:41:20.599325" elapsed="1.709784"/>
 </kw>
 <arg>//input[@name="username"]</arg>
 <arg>${user_editmass_A3}</arg>
-<status status="PASS" start="2025-01-24T09:55:41.669970" elapsed="1.609432"/>
+<status status="PASS" start="2025-01-28T16:41:20.598275" elapsed="1.710834"/>
 </kw>
 <kw name="Wait And Click Element" owner="common_art">
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
 <kw name="Click Element with Delay" owner="common_art">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-01-24T09:55:43.280493" level="INFO">Clicking element '//input[@name="password"]'.</msg>
+<msg time="2025-01-28T16:41:22.311205" level="INFO">Clicking element '//input[@name="password"]'.</msg>
 <arg>${locator}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-24T09:55:43.280493" elapsed="0.056540"/>
+<status status="PASS" start="2025-01-28T16:41:22.310210" elapsed="0.065918"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-24T09:55:44.338400" level="INFO">Slept 1 second.</msg>
+<msg time="2025-01-28T16:41:23.377347" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-24T09:55:43.337033" elapsed="1.001367"/>
+<status status="PASS" start="2025-01-28T16:41:22.376128" elapsed="1.001219"/>
 </kw>
 <arg>${locator}</arg>
-<status status="PASS" start="2025-01-24T09:55:43.280493" elapsed="1.057907"/>
+<status status="PASS" start="2025-01-28T16:41:22.310210" elapsed="1.067137"/>
 </kw>
 <arg>3x</arg>
 <arg>0.8s</arg>
 <arg>Click Element with Delay</arg>
 <arg>${locator}</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-01-24T09:55:43.279402" elapsed="1.058998"/>
+<status status="PASS" start="2025-01-28T16:41:22.310210" elapsed="1.067137"/>
 </kw>
 <arg>//input[@name="password"]</arg>
-<status status="PASS" start="2025-01-24T09:55:43.279402" elapsed="1.059501"/>
+<status status="PASS" start="2025-01-28T16:41:22.309109" elapsed="1.068238"/>
 </kw>
 <kw name="Wait And Input Text with Delay" owner="common_art">
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
 <kw name="Input Text with Delay" owner="common_art">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-01-24T09:55:44.339908" level="INFO">Typing text 'D0h0me*1' into text field '//input[@name="password"]'.</msg>
+<msg time="2025-01-28T16:41:23.378488" level="INFO">Typing text 'D0h0me*1' into text field '//input[@name="password"]'.</msg>
 <arg>${locator}</arg>
 <arg>${text}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-24T09:55:44.339908" elapsed="0.106350"/>
+<status status="PASS" start="2025-01-28T16:41:23.378488" elapsed="0.069346"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-24T09:55:45.947934" level="INFO">Slept 1 second 500 milliseconds.</msg>
+<msg time="2025-01-28T16:41:24.958064" level="INFO">Slept 1 second 500 milliseconds.</msg>
 <arg>1.5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-24T09:55:44.446258" elapsed="1.501676"/>
+<status status="PASS" start="2025-01-28T16:41:23.447834" elapsed="1.511230"/>
 </kw>
 <arg>${locator}</arg>
 <arg>${text}</arg>
-<status status="PASS" start="2025-01-24T09:55:44.338903" elapsed="1.609031"/>
+<status status="PASS" start="2025-01-28T16:41:23.378488" elapsed="1.580576"/>
 </kw>
 <arg>3x</arg>
 <arg>0.8s</arg>
@@ -201,356 +201,354 @@
 <arg>${locator}</arg>
 <arg>${text}</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-01-24T09:55:44.338903" elapsed="1.609031"/>
+<status status="PASS" start="2025-01-28T16:41:23.378488" elapsed="1.581584"/>
 </kw>
 <arg>//input[@name="password"]</arg>
 <arg>${pass}</arg>
-<status status="PASS" start="2025-01-24T09:55:44.338903" elapsed="1.609031"/>
+<status status="PASS" start="2025-01-28T16:41:23.377347" elapsed="1.582725"/>
 </kw>
 <kw name="Wait And Click Element" owner="common_art">
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
 <kw name="Click Element with Delay" owner="common_art">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-01-24T09:55:45.949941" level="INFO">Clicking element '//button[@type="submit"][ text()='เข้าสู่ระบบ']'.</msg>
+<msg time="2025-01-28T16:41:24.963075" level="INFO">Clicking element '//button[@type="submit"][ text()='เข้าสู่ระบบ']'.</msg>
 <arg>${locator}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-24T09:55:45.949941" elapsed="0.061236"/>
+<status status="PASS" start="2025-01-28T16:41:24.963075" elapsed="0.207362"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-24T09:55:47.012730" level="INFO">Slept 1 second.</msg>
+<msg time="2025-01-28T16:41:26.177726" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-24T09:55:46.012175" elapsed="1.000555"/>
+<status status="PASS" start="2025-01-28T16:41:25.171437" elapsed="1.007289"/>
 </kw>
 <arg>${locator}</arg>
-<status status="PASS" start="2025-01-24T09:55:45.949035" elapsed="1.063695"/>
+<status status="PASS" start="2025-01-28T16:41:24.962072" elapsed="1.216654"/>
 </kw>
 <arg>3x</arg>
 <arg>0.8s</arg>
 <arg>Click Element with Delay</arg>
 <arg>${locator}</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-01-24T09:55:45.949035" elapsed="1.063695"/>
+<status status="PASS" start="2025-01-28T16:41:24.961071" elapsed="1.217655"/>
 </kw>
 <arg>//button[@type="submit"][ text()='เข้าสู่ระบบ']</arg>
-<status status="PASS" start="2025-01-24T09:55:45.947934" elapsed="1.064796"/>
+<status status="PASS" start="2025-01-28T16:41:24.961071" elapsed="1.217655"/>
 </kw>
 <kw name="Wait And Click Element" owner="common_art">
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
 <kw name="Click Element with Delay" owner="common_art">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-01-24T09:55:47.013737" level="INFO">Clicking element '//*[@aria-label="ระบบจัดการข้อมูลสินค้า"]'.</msg>
-<msg time="2025-01-24T09:55:48.599787" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2025-01-24T09:55:48.599787" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a class="relative inline-flex items-center tap-highlight-transparent outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 no-underline hover:opacity-80 active:opacity-disabled transition-opacity text-xs line-clamp-1 text-primary" aria-label="ระบบจัดการข้อมูลสินค้า" role="link" href="https://web-article-master-uat.dohome.technology/?i=19513fc01d41697f601a285089f90d38df5776eaf767c2a1b2c135815831e917N6nCE78z9iWVc+9VmAeiYqCMvwQsFwjmAS4rlAcgO+FT3KjpKbdahZgYWeNpcbrE/PGCDyc65uy7+/oIlPtdsNZNoagz1lyjghY0if7Yc+WdrJWDM48r4hF7CVKVe/ByCPl6ogQA3DqJCPeKr+PKOAMO+nPvILIeVJfPFaEARL7aEDIotEYlxvI8l6ogf2i0/Z6YDUT3tqdnxhocwjmgRn7VLoPVqPGS/hz8JEmWXww44g3fDDFzD2Sjzi9ZVPjq7skWHvZUhgQz7UDqxVhp/5tfxflIj16zrpr1QNnuQ8pGrRal4pI0UVjRL4cI7EXC0MUrau9qsO7kIXvLT+WWLXII3BrB1/PwZjrKlPeUiW6/o5KNI1KWOseDRaY0/uQrIS+8T3cKNnYFuJ8hqfhNvvM1zkp5ZqI0eg+8XR8m0w8lLE0dmsdqXaCrg5GjhXdM" target="_blank" tabindex="0"&gt;...&lt;/a&gt; is not clickable at point (546, 832). Other element would receive the click: &lt;div class="flex w-screen h-[100dvh] fixed inset-0 z-50 overflow-x-auto justify-center [--scale-enter:100%] [--scale-exit:100%] [--slide-enter:0px] [--slide-exit:80px] sm:[--scale-enter:100%] sm:[--scale-exit:103%] sm:[--slide-enter:0px] sm:[--slide-exit:0px] items-end sm:items-center" style="opacity: 1; transform: translateY(0px) scale(1.00442) translateZ(0px);"&gt;...&lt;/div&gt;
+<msg time="2025-01-28T16:41:26.181723" level="INFO">Clicking element '//*[@aria-label="ระบบจัดการข้อมูลสินค้า"]'.</msg>
+<msg time="2025-01-28T16:41:27.922758" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-326.png"&gt;&lt;img src="selenium-screenshot-326.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-01-28T16:41:27.923765" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a class="relative inline-flex items-center tap-highlight-transparent outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 no-underline hover:opacity-80 active:opacity-disabled transition-opacity text-xs line-clamp-1 text-primary" aria-label="ระบบจัดการข้อมูลสินค้า" role="link" href="https://web-article-master-uat.dohome.technology/?i=55bf84872cceb45f28e97adb3c10801a9b0678ad4763152767e1c320688bfe9f9UwwI6IMpspEwTXabGltXOcGKBkOPiUBafcIOdBwioDaSaSy80p+oFkj8gUlVwJ6DAQ6vbW1NUdsC8ut1Xpf8kcRvKuZFy44mv9lcUAiPkIAYpz9jJqNA7d8hlWiqnxGvf08lSbSnzRwI7Z7YPAkvrtYqsgc352zqnGMA2xMXoPsngCsNFDM4L09jRlD1bCb81BSyX3z1cKdq9RGXrpHC9IG/Q85dyhiQXl1D3tTXFS0EDXHOWiI04ktG2z8WIVpUJhJfLJ9jxOG3p2zobuXToOa0bX8Zr4RQiKsUgs/m2DmIjQiqiqYJ4Wyo0aYhqBlVE2tcEj1HypvcVX12z9AjPEvYWErsG84raf+o9zW3jPAhaqJSU2VAkYhlFzxA3njJdbfXoX0qTTBRtSDquGvpd8rJ/41y0Bhcg1FB9v08NzhNviOfcKNkeqkPYutssq+" target="_blank" tabindex="0"&gt;...&lt;/a&gt; is not clickable at point (546, 832). Other element would receive the click: &lt;div class="flex w-screen h-[100dvh] fixed inset-0 z-50 overflow-x-auto justify-center [--scale-enter:100%] [--scale-exit:100%] [--slide-enter:0px] [--slide-exit:80px] sm:[--scale-enter:100%] sm:[--scale-exit:103%] sm:[--slide-enter:0px] sm:[--slide-exit:0px] items-end sm:items-center" style="opacity: 1; transform: translateY(0px) scale(1.00556) translateZ(0px);"&gt;...&lt;/div&gt;
   (Session info: chrome=131.0.6778.87)
 Stacktrace:
-	GetHandleVerifier [0x00007FF6C7306CF5+28821]
-	(No symbol) [0x00007FF6C7273880]
-	(No symbol) [0x00007FF6C711578A]
-	(No symbol) [0x00007FF6C7170E8E]
-	(No symbol) [0x00007FF6C716E92C]
-	(No symbol) [0x00007FF6C716BAF6]
-	(No symbol) [0x00007FF6C716AA51]
-	(No symbol) [0x00007FF6C715CBA0]
-	(No symbol) [0x00007FF6C718F2FA]
-	(No symbol) [0x00007FF6C715C3F6]
-	(No symbol) [0x00007FF6C718F510]
-	(No symbol) [0x00007FF6C71AF412]
-	(No symbol) [0x00007FF6C718F0A3]
-	(No symbol) [0x00007FF6C715A778]
-	(No symbol) [0x00007FF6C715B8E1]
-	GetHandleVerifier [0x00007FF6C763FCED+3408013]
-	GetHandleVerifier [0x00007FF6C765745F+3504127]
-	GetHandleVerifier [0x00007FF6C764B63D+3455453]
-	GetHandleVerifier [0x00007FF6C73CBDFB+835995]
-	(No symbol) [0x00007FF6C727EB9F]
-	(No symbol) [0x00007FF6C727A854]
-	(No symbol) [0x00007FF6C727A9ED]
-	(No symbol) [0x00007FF6C726A1D9]
-	BaseThreadInitThunk [0x00007FFC06EBE8D7+23]
-	RtlUserThreadStart [0x00007FFC089DFBCC+44]
+	GetHandleVerifier [0x00007FF74A396CF5+28821]
+	(No symbol) [0x00007FF74A303880]
+	(No symbol) [0x00007FF74A1A578A]
+	(No symbol) [0x00007FF74A200E8E]
+	(No symbol) [0x00007FF74A1FE92C]
+	(No symbol) [0x00007FF74A1FBAF6]
+	(No symbol) [0x00007FF74A1FAA51]
+	(No symbol) [0x00007FF74A1ECBA0]
+	(No symbol) [0x00007FF74A21F2FA]
+	(No symbol) [0x00007FF74A1EC3F6]
+	(No symbol) [0x00007FF74A21F510]
+	(No symbol) [0x00007FF74A23F412]
+	(No symbol) [0x00007FF74A21F0A3]
+	(No symbol) [0x00007FF74A1EA778]
+	(No symbol) [0x00007FF74A1EB8E1]
+	GetHandleVerifier [0x00007FF74A6CFCED+3408013]
+	GetHandleVerifier [0x00007FF74A6E745F+3504127]
+	GetHandleVerifier [0x00007FF74A6DB63D+3455453]
+	GetHandleVerifier [0x00007FF74A45BDFB+835995]
+	(No symbol) [0x00007FF74A30EB9F]
+	(No symbol) [0x00007FF74A30A854]
+	(No symbol) [0x00007FF74A30A9ED]
+	(No symbol) [0x00007FF74A2FA1D9]
+	BaseThreadInitThunk [0x00007FFD887AE8D7+23]
+	RtlUserThreadStart [0x00007FFD89B9FBCC+44]
 </msg>
 <arg>${locator}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="FAIL" start="2025-01-24T09:55:47.013737" elapsed="1.590143">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a class="relative inline-flex items-center tap-highlight-transparent outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 no-underline hover:opacity-80 active:opacity-disabled transition-opacity text-xs line-clamp-1 text-primary" aria-label="ระบบจัดการข้อมูลสินค้า" role="link" href="https://web-article-master-uat.dohome.technology/?i=19513fc01d41697f601a285089f90d38df5776eaf767c2a1b2c135815831e917N6nCE78z9iWVc+9VmAeiYqCMvwQsFwjmAS4rlAcgO+FT3KjpKbdahZgYWeNpcbrE/PGCDyc65uy7+/oIlPtdsNZNoagz1lyjghY0if7Yc+WdrJWDM48r4hF7CVKVe/ByCPl6ogQA3DqJCPeKr+PKOAMO+nPvILIeVJfPFaEARL7aEDIotEYlxvI8l6ogf2i0/Z6YDUT3tqdnxhocwjmgRn7VLoPVqPGS/hz8JEmWXww44g3fDDFzD2Sjzi9ZVPjq7skWHvZUhgQz7UDqxVhp/5tfxflIj16zrpr1QNnuQ8pGrRal4pI0UVjRL4cI7EXC0MUrau9qsO7kIXvLT+WWLXII3BrB1/PwZjrKlPeUiW6/o5KNI1KWOseDRaY0/uQrIS+8T3cKNnYFuJ8hqfhNvvM1zkp5ZqI0eg+8XR8m0w8lLE0dmsdqXaCrg5GjhXdM" target="_blank" tabindex="0"&gt;...&lt;/a&gt; is not clickable at point (546, 832). Other element would receive the click: &lt;div class="flex w-screen h-[100dvh] fixed inset-0 z-50 overflow-x-auto justify-center [--scale-enter:100%] [--scale-exit:100%] [--slide-enter:0px] [--slide-exit:80px] sm:[--scale-enter:100%] sm:[--scale-exit:103%] sm:[--slide-enter:0px] sm:[--slide-exit:0px] items-end sm:items-center" style="opacity: 1; transform: translateY(0px) scale(1.00442) translateZ(0px);"&gt;...&lt;/div&gt;
+<status status="FAIL" start="2025-01-28T16:41:26.181723" elapsed="1.747044">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a class="relative inline-flex items-center tap-highlight-transparent outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 no-underline hover:opacity-80 active:opacity-disabled transition-opacity text-xs line-clamp-1 text-primary" aria-label="ระบบจัดการข้อมูลสินค้า" role="link" href="https://web-article-master-uat.dohome.technology/?i=55bf84872cceb45f28e97adb3c10801a9b0678ad4763152767e1c320688bfe9f9UwwI6IMpspEwTXabGltXOcGKBkOPiUBafcIOdBwioDaSaSy80p+oFkj8gUlVwJ6DAQ6vbW1NUdsC8ut1Xpf8kcRvKuZFy44mv9lcUAiPkIAYpz9jJqNA7d8hlWiqnxGvf08lSbSnzRwI7Z7YPAkvrtYqsgc352zqnGMA2xMXoPsngCsNFDM4L09jRlD1bCb81BSyX3z1cKdq9RGXrpHC9IG/Q85dyhiQXl1D3tTXFS0EDXHOWiI04ktG2z8WIVpUJhJfLJ9jxOG3p2zobuXToOa0bX8Zr4RQiKsUgs/m2DmIjQiqiqYJ4Wyo0aYhqBlVE2tcEj1HypvcVX12z9AjPEvYWErsG84raf+o9zW3jPAhaqJSU2VAkYhlFzxA3njJdbfXoX0qTTBRtSDquGvpd8rJ/41y0Bhcg1FB9v08NzhNviOfcKNkeqkPYutssq+" target="_blank" tabindex="0"&gt;...&lt;/a&gt; is not clickable at point (546, 832). Other element would receive the click: &lt;div class="flex w-screen h-[100dvh] fixed inset-0 z-50 overflow-x-auto justify-center [--scale-enter:100%] [--scale-exit:100%] [--slide-enter:0px] [--slide-exit:80px] sm:[--scale-enter:100%] sm:[--scale-exit:103%] sm:[--slide-enter:0px] sm:[--slide-exit:0px] items-end sm:items-center" style="opacity: 1; transform: translateY(0px) scale(1.00556) translateZ(0px);"&gt;...&lt;/div&gt;
     [ Message content over the limit has been removed. ]
-	(No symbol) [0x00007FF6C716BAF6]
-	(No symbol) [0x00007FF6C716AA51]
-	(No symbol) [0x00007FF6C715CBA0]
-	(No symbol) [0x00007FF6C718F2FA]
-	(No symbol) [0x00007FF6C715C3F6]
-	(No symbol) [0x00007FF6C718F510]
-	(No symbol) [0x00007FF6C71AF412]
-	(No symbol) [0x00007FF6C718F0A3]
-	(No symbol) [0x00007FF6C715A778]
-	(No symbol) [0x00007FF6C715B8E1]
-	GetHandleVerifier [0x00007FF6C763FCED+3408013]
-	GetHandleVerifier [0x00007FF6C765745F+3504127]
-	GetHandleVerifier [0x00007FF6C764B63D+3455453]
-	GetHandleVerifier [0x00007FF6C73CBDFB+835995]
-	(No symbol) [0x00007FF6C727EB9F]
-	(No symbol) [0x00007FF6C727A854]
-	(No symbol) [0x00007FF6C727A9ED]
-	(No symbol) [0x00007FF6C726A1D9]
-	BaseThreadInitThunk [0x00007FFC06EBE8D7+23]
-	RtlUserThreadStart [0x00007FFC089DFBCC+44]</status>
+	(No symbol) [0x00007FF74A1FBAF6]
+	(No symbol) [0x00007FF74A1FAA51]
+	(No symbol) [0x00007FF74A1ECBA0]
+	(No symbol) [0x00007FF74A21F2FA]
+	(No symbol) [0x00007FF74A1EC3F6]
+	(No symbol) [0x00007FF74A21F510]
+	(No symbol) [0x00007FF74A23F412]
+	(No symbol) [0x00007FF74A21F0A3]
+	(No symbol) [0x00007FF74A1EA778]
+	(No symbol) [0x00007FF74A1EB8E1]
+	GetHandleVerifier [0x00007FF74A6CFCED+3408013]
+	GetHandleVerifier [0x00007FF74A6E745F+3504127]
+	GetHandleVerifier [0x00007FF74A6DB63D+3455453]
+	GetHandleVerifier [0x00007FF74A45BDFB+835995]
+	(No symbol) [0x00007FF74A30EB9F]
+	(No symbol) [0x00007FF74A30A854]
+	(No symbol) [0x00007FF74A30A9ED]
+	(No symbol) [0x00007FF74A2FA1D9]
+	BaseThreadInitThunk [0x00007FFD887AE8D7+23]
+	RtlUserThreadStart [0x00007FFD89B9FBCC+44]</status>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" start="2025-01-24T09:55:48.604866" elapsed="0.000000"/>
+<status status="NOT RUN" start="2025-01-28T16:41:27.928767" elapsed="0.000000"/>
 </kw>
 <arg>${locator}</arg>
-<status status="FAIL" start="2025-01-24T09:55:47.013737" elapsed="1.591129">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a class="relative inline-flex items-center tap-highlight-transparent outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 no-underline hover:opacity-80 active:opacity-disabled transition-opacity text-xs line-clamp-1 text-primary" aria-label="ระบบจัดการข้อมูลสินค้า" role="link" href="https://web-article-master-uat.dohome.technology/?i=19513fc01d41697f601a285089f90d38df5776eaf767c2a1b2c135815831e917N6nCE78z9iWVc+9VmAeiYqCMvwQsFwjmAS4rlAcgO+FT3KjpKbdahZgYWeNpcbrE/PGCDyc65uy7+/oIlPtdsNZNoagz1lyjghY0if7Yc+WdrJWDM48r4hF7CVKVe/ByCPl6ogQA3DqJCPeKr+PKOAMO+nPvILIeVJfPFaEARL7aEDIotEYlxvI8l6ogf2i0/Z6YDUT3tqdnxhocwjmgRn7VLoPVqPGS/hz8JEmWXww44g3fDDFzD2Sjzi9ZVPjq7skWHvZUhgQz7UDqxVhp/5tfxflIj16zrpr1QNnuQ8pGrRal4pI0UVjRL4cI7EXC0MUrau9qsO7kIXvLT+WWLXII3BrB1/PwZjrKlPeUiW6/o5KNI1KWOseDRaY0/uQrIS+8T3cKNnYFuJ8hqfhNvvM1zkp5ZqI0eg+8XR8m0w8lLE0dmsdqXaCrg5GjhXdM" target="_blank" tabindex="0"&gt;...&lt;/a&gt; is not clickable at point (546, 832). Other element would receive the click: &lt;div class="flex w-screen h-[100dvh] fixed inset-0 z-50 overflow-x-auto justify-center [--scale-enter:100%] [--scale-exit:100%] [--slide-enter:0px] [--slide-exit:80px] sm:[--scale-enter:100%] sm:[--scale-exit:103%] sm:[--slide-enter:0px] sm:[--slide-exit:0px] items-end sm:items-center" style="opacity: 1; transform: translateY(0px) scale(1.00442) translateZ(0px);"&gt;...&lt;/div&gt;
+<status status="FAIL" start="2025-01-28T16:41:26.180724" elapsed="1.749043">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a class="relative inline-flex items-center tap-highlight-transparent outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 no-underline hover:opacity-80 active:opacity-disabled transition-opacity text-xs line-clamp-1 text-primary" aria-label="ระบบจัดการข้อมูลสินค้า" role="link" href="https://web-article-master-uat.dohome.technology/?i=55bf84872cceb45f28e97adb3c10801a9b0678ad4763152767e1c320688bfe9f9UwwI6IMpspEwTXabGltXOcGKBkOPiUBafcIOdBwioDaSaSy80p+oFkj8gUlVwJ6DAQ6vbW1NUdsC8ut1Xpf8kcRvKuZFy44mv9lcUAiPkIAYpz9jJqNA7d8hlWiqnxGvf08lSbSnzRwI7Z7YPAkvrtYqsgc352zqnGMA2xMXoPsngCsNFDM4L09jRlD1bCb81BSyX3z1cKdq9RGXrpHC9IG/Q85dyhiQXl1D3tTXFS0EDXHOWiI04ktG2z8WIVpUJhJfLJ9jxOG3p2zobuXToOa0bX8Zr4RQiKsUgs/m2DmIjQiqiqYJ4Wyo0aYhqBlVE2tcEj1HypvcVX12z9AjPEvYWErsG84raf+o9zW3jPAhaqJSU2VAkYhlFzxA3njJdbfXoX0qTTBRtSDquGvpd8rJ/41y0Bhcg1FB9v08NzhNviOfcKNkeqkPYutssq+" target="_blank" tabindex="0"&gt;...&lt;/a&gt; is not clickable at point (546, 832). Other element would receive the click: &lt;div class="flex w-screen h-[100dvh] fixed inset-0 z-50 overflow-x-auto justify-center [--scale-enter:100%] [--scale-exit:100%] [--slide-enter:0px] [--slide-exit:80px] sm:[--scale-enter:100%] sm:[--scale-exit:103%] sm:[--slide-enter:0px] sm:[--slide-exit:0px] items-end sm:items-center" style="opacity: 1; transform: translateY(0px) scale(1.00556) translateZ(0px);"&gt;...&lt;/div&gt;
     [ Message content over the limit has been removed. ]
-	(No symbol) [0x00007FF6C716BAF6]
-	(No symbol) [0x00007FF6C716AA51]
-	(No symbol) [0x00007FF6C715CBA0]
-	(No symbol) [0x00007FF6C718F2FA]
-	(No symbol) [0x00007FF6C715C3F6]
-	(No symbol) [0x00007FF6C718F510]
-	(No symbol) [0x00007FF6C71AF412]
-	(No symbol) [0x00007FF6C718F0A3]
-	(No symbol) [0x00007FF6C715A778]
-	(No symbol) [0x00007FF6C715B8E1]
-	GetHandleVerifier [0x00007FF6C763FCED+3408013]
-	GetHandleVerifier [0x00007FF6C765745F+3504127]
-	GetHandleVerifier [0x00007FF6C764B63D+3455453]
-	GetHandleVerifier [0x00007FF6C73CBDFB+835995]
-	(No symbol) [0x00007FF6C727EB9F]
-	(No symbol) [0x00007FF6C727A854]
-	(No symbol) [0x00007FF6C727A9ED]
-	(No symbol) [0x00007FF6C726A1D9]
-	BaseThreadInitThunk [0x00007FFC06EBE8D7+23]
-	RtlUserThreadStart [0x00007FFC089DFBCC+44]</status>
+	(No symbol) [0x00007FF74A1FBAF6]
+	(No symbol) [0x00007FF74A1FAA51]
+	(No symbol) [0x00007FF74A1ECBA0]
+	(No symbol) [0x00007FF74A21F2FA]
+	(No symbol) [0x00007FF74A1EC3F6]
+	(No symbol) [0x00007FF74A21F510]
+	(No symbol) [0x00007FF74A23F412]
+	(No symbol) [0x00007FF74A21F0A3]
+	(No symbol) [0x00007FF74A1EA778]
+	(No symbol) [0x00007FF74A1EB8E1]
+	GetHandleVerifier [0x00007FF74A6CFCED+3408013]
+	GetHandleVerifier [0x00007FF74A6E745F+3504127]
+	GetHandleVerifier [0x00007FF74A6DB63D+3455453]
+	GetHandleVerifier [0x00007FF74A45BDFB+835995]
+	(No symbol) [0x00007FF74A30EB9F]
+	(No symbol) [0x00007FF74A30A854]
+	(No symbol) [0x00007FF74A30A9ED]
+	(No symbol) [0x00007FF74A2FA1D9]
+	BaseThreadInitThunk [0x00007FFD887AE8D7+23]
+	RtlUserThreadStart [0x00007FFD89B9FBCC+44]</status>
 </kw>
 <kw name="Click Element with Delay" owner="common_art">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-01-24T09:55:49.405785" level="INFO">Clicking element '//*[@aria-label="ระบบจัดการข้อมูลสินค้า"]'.</msg>
+<msg time="2025-01-28T16:41:28.731403" level="INFO">Clicking element '//*[@aria-label="ระบบจัดการข้อมูลสินค้า"]'.</msg>
 <arg>${locator}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-24T09:55:49.405785" elapsed="0.135830"/>
+<status status="PASS" start="2025-01-28T16:41:28.731403" elapsed="0.117709"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-24T09:55:50.544182" level="INFO">Slept 1 second.</msg>
+<msg time="2025-01-28T16:41:29.850575" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-24T09:55:49.542630" elapsed="1.001552"/>
+<status status="PASS" start="2025-01-28T16:41:28.850112" elapsed="1.000463"/>
 </kw>
 <arg>${locator}</arg>
-<status status="PASS" start="2025-01-24T09:55:49.405270" elapsed="1.138912"/>
+<status status="PASS" start="2025-01-28T16:41:28.730397" elapsed="1.120178"/>
 </kw>
 <arg>3x</arg>
 <arg>0.8s</arg>
 <arg>Click Element with Delay</arg>
 <arg>${locator}</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-01-24T09:55:47.013737" elapsed="3.530445"/>
+<status status="PASS" start="2025-01-28T16:41:26.180724" elapsed="3.670863"/>
 </kw>
 <arg>//*[@aria-label="ระบบจัดการข้อมูลสินค้า"]</arg>
-<status status="PASS" start="2025-01-24T09:55:47.012730" elapsed="3.531452"/>
+<status status="PASS" start="2025-01-28T16:41:26.179737" elapsed="3.671850"/>
 </kw>
 <kw name="Switch Window" owner="SeleniumLibrary">
 <arg>New</arg>
 <doc>Switches to browser window matching ``locator``.</doc>
-<status status="PASS" start="2025-01-24T09:55:50.544182" elapsed="0.147075"/>
+<status status="PASS" start="2025-01-28T16:41:29.851587" elapsed="0.012139"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-01-24T09:55:50.691257" elapsed="0.023080"/>
+<status status="PASS" start="2025-01-28T16:41:29.863726" elapsed="0.006125"/>
 </kw>
 <kw name="Wait And Wait Until Element Is Visible" owner="common_art">
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${locator}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-01-24T09:55:50.716851" elapsed="0.254127"/>
+<status status="PASS" start="2025-01-28T16:41:29.871847" elapsed="0.047872"/>
 </kw>
 <arg>5x</arg>
 <arg>1s</arg>
 <arg>Wait Until Element Is Visible</arg>
 <arg>${locator}</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-01-24T09:55:50.715844" elapsed="0.255134"/>
+<status status="PASS" start="2025-01-28T16:41:29.870847" elapsed="0.048872"/>
 </kw>
 <arg>//h3[text()="Article Master"]</arg>
-<status status="PASS" start="2025-01-24T09:55:50.715844" elapsed="0.255134"/>
+<status status="PASS" start="2025-01-28T16:41:29.869851" elapsed="0.049868"/>
 </kw>
 <kw name="Wait And Click Element" owner="common_art">
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
 <kw name="Click Element with Delay" owner="common_art">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-01-24T09:55:50.976978" level="INFO">Clicking element '//p[text()='จัดการสินค้า']'.</msg>
+<msg time="2025-01-28T16:41:29.922716" level="INFO">Clicking element '//p[text()='จัดการสินค้า']'.</msg>
 <arg>${locator}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-24T09:55:50.974980" elapsed="0.128598"/>
+<status status="PASS" start="2025-01-28T16:41:29.921721" elapsed="0.119094"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-24T09:55:52.105183" level="INFO">Slept 1 second.</msg>
+<msg time="2025-01-28T16:41:31.042255" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-24T09:55:51.103578" elapsed="1.001605"/>
+<status status="PASS" start="2025-01-28T16:41:30.040815" elapsed="1.001952"/>
 </kw>
 <arg>${locator}</arg>
-<status status="PASS" start="2025-01-24T09:55:50.973983" elapsed="1.132423"/>
+<status status="PASS" start="2025-01-28T16:41:29.921721" elapsed="1.121046"/>
 </kw>
 <arg>3x</arg>
 <arg>0.8s</arg>
 <arg>Click Element with Delay</arg>
 <arg>${locator}</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-01-24T09:55:50.971977" elapsed="1.134429"/>
+<status status="PASS" start="2025-01-28T16:41:29.920719" elapsed="1.122048"/>
 </kw>
 <arg>//p[text()='จัดการสินค้า']</arg>
-<status status="PASS" start="2025-01-24T09:55:50.971977" elapsed="1.134429"/>
+<status status="PASS" start="2025-01-28T16:41:29.920719" elapsed="1.122048"/>
 </kw>
 <kw name="Wait And Click Element" owner="common_art">
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
 <kw name="Click Element with Delay" owner="common_art">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-01-24T09:55:52.108301" level="INFO">Clicking element '//p[text()='ขอเปลี่ยนแปลงข้อมูลสินค้า']/parent::span//parent::a[@href="/app/edit-mass-information"]'.</msg>
+<msg time="2025-01-28T16:41:31.044774" level="INFO">Clicking element '//p[text()='ขอเปลี่ยนแปลงข้อมูลสินค้า']/parent::span//parent::a[@href="/app/edit-mass-information"]'.</msg>
 <arg>${locator}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-24T09:55:52.108301" elapsed="0.072466"/>
+<status status="PASS" start="2025-01-28T16:41:31.043771" elapsed="0.071182"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-24T09:55:53.182431" level="INFO">Slept 1 second.</msg>
+<msg time="2025-01-28T16:41:32.115141" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-24T09:55:52.180767" elapsed="1.001664"/>
+<status status="PASS" start="2025-01-28T16:41:31.114953" elapsed="1.000188"/>
 </kw>
 <arg>${locator}</arg>
-<status status="PASS" start="2025-01-24T09:55:52.107302" elapsed="1.075129"/>
+<status status="PASS" start="2025-01-28T16:41:31.043771" elapsed="1.071876"/>
 </kw>
 <arg>3x</arg>
 <arg>0.8s</arg>
 <arg>Click Element with Delay</arg>
 <arg>${locator}</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-01-24T09:55:52.107302" elapsed="1.076141"/>
+<status status="PASS" start="2025-01-28T16:41:31.043771" elapsed="1.071876"/>
 </kw>
 <arg>//p[text()='ขอเปลี่ยนแปลงข้อมูลสินค้า']/parent::span//parent::a[@href="/app/edit-mass-information"]</arg>
-<status status="PASS" start="2025-01-24T09:55:52.106406" elapsed="1.077037"/>
+<status status="PASS" start="2025-01-28T16:41:31.042767" elapsed="1.072880"/>
 </kw>
 <kw name="Wait And Wait Until Element Is Visible" owner="common_art">
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${locator}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-01-24T09:55:53.183443" elapsed="3.927214"/>
+<status status="PASS" start="2025-01-28T16:41:32.116655" elapsed="0.025003"/>
 </kw>
 <arg>5x</arg>
 <arg>1s</arg>
 <arg>Wait Until Element Is Visible</arg>
 <arg>${locator}</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-01-24T09:55:53.183443" elapsed="3.927214"/>
+<status status="PASS" start="2025-01-28T16:41:32.116655" elapsed="0.026106"/>
 </kw>
 <arg>//input[@name="purchaser_group_no"]/following-sibling::div/div/input</arg>
-<status status="PASS" start="2025-01-24T09:55:53.183443" elapsed="3.927214"/>
+<status status="PASS" start="2025-01-28T16:41:32.115647" elapsed="0.027114"/>
 </kw>
-<status status="PASS" start="2025-01-24T09:55:35.167798" elapsed="21.942859"/>
+<status status="PASS" start="2025-01-28T16:41:13.996863" elapsed="18.145898"/>
 </kw>
-<test id="s1-t1" name="Run Edit field Categories" line="16">
+<test id="s1-t1" name="Run Edit field Categories" line="17">
 <kw name="Edit field name Categories">
 <kw name="Search by article" owner="common_art">
 <kw name="Wait And Click Element" owner="common_art">
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
 <kw name="Click Element with Delay" owner="common_art">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-01-24T09:55:57.114666" level="INFO">Clicking element '//input[@name="article_id"]'.</msg>
+<msg time="2025-01-28T16:41:32.147750" level="INFO">Clicking element '//input[@name="article_id"]'.</msg>
 <arg>${locator}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-24T09:55:57.113741" elapsed="0.156811"/>
+<status status="PASS" start="2025-01-28T16:41:32.147750" elapsed="0.127785"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-24T09:55:58.270910" level="INFO">Slept 1 second.</msg>
+<msg time="2025-01-28T16:41:33.277331" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-24T09:55:57.270552" elapsed="1.000971"/>
+<status status="PASS" start="2025-01-28T16:41:32.276538" elapsed="1.000793"/>
 </kw>
 <arg>${locator}</arg>
-<status status="PASS" start="2025-01-24T09:55:57.113741" elapsed="1.157782"/>
+<status status="PASS" start="2025-01-28T16:41:32.147750" elapsed="1.129581"/>
 </kw>
 <arg>3x</arg>
 <arg>0.8s</arg>
 <arg>Click Element with Delay</arg>
 <arg>${locator}</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-01-24T09:55:57.113741" elapsed="1.157782"/>
+<status status="PASS" start="2025-01-28T16:41:32.146653" elapsed="1.130678"/>
 </kw>
 <arg>//input[@name="article_id"]</arg>
-<status status="PASS" start="2025-01-24T09:55:57.112657" elapsed="1.158866"/>
+<status status="PASS" start="2025-01-28T16:41:32.146653" elapsed="1.130678"/>
 </kw>
 <kw name="Wait And Click Element" owner="common_art">
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
 <kw name="Click Element with Delay" owner="common_art">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-01-24T09:55:58.273530" level="INFO">Clicking element '//textarea[@name="article"]'.</msg>
+<msg time="2025-01-28T16:41:33.278427" level="INFO">Clicking element '//textarea[@name="article"]'.</msg>
 <arg>${locator}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-24T09:55:58.273530" elapsed="0.055860"/>
+<status status="PASS" start="2025-01-28T16:41:33.278427" elapsed="0.060838"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-24T09:55:59.330798" level="INFO">Slept 1 second.</msg>
+<msg time="2025-01-28T16:41:34.340516" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-24T09:55:58.329390" elapsed="1.001408"/>
+<status status="PASS" start="2025-01-28T16:41:33.339265" elapsed="1.001834"/>
 </kw>
 <arg>${locator}</arg>
-<status status="PASS" start="2025-01-24T09:55:58.272524" elapsed="1.058274"/>
+<status status="PASS" start="2025-01-28T16:41:33.278427" elapsed="1.062672"/>
 </kw>
 <arg>3x</arg>
 <arg>0.8s</arg>
 <arg>Click Element with Delay</arg>
 <arg>${locator}</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-01-24T09:55:58.272524" elapsed="1.058274"/>
+<status status="PASS" start="2025-01-28T16:41:33.277331" elapsed="1.063768"/>
 </kw>
 <arg>//textarea[@name="article"]</arg>
-<status status="PASS" start="2025-01-24T09:55:58.271523" elapsed="1.060308"/>
+<status status="PASS" start="2025-01-28T16:41:33.277331" elapsed="1.063768"/>
 </kw>
 <for flavor="IN">
 <iter>
 <kw name="Get Value" owner="SeleniumLibrary">
-<msg time="2025-01-24T09:55:59.346926" level="INFO">${current_text} = </msg>
+<msg time="2025-01-28T16:41:34.356025" level="INFO">${current_text} = </msg>
 <var>${current_text}</var>
 <arg>//textarea[@name="article"]</arg>
 <doc>Returns the value attribute of the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-24T09:55:59.331831" elapsed="0.015095"/>
+<status status="PASS" start="2025-01-28T16:41:34.341610" elapsed="0.014415"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-01-24T09:55:59.347935" level="INFO">${new_text} = 
-10337799
-10337394
-10337395</msg>
+<msg time="2025-01-28T16:41:34.357024" level="INFO">${new_text} = 
+10337454
+10337455</msg>
 <var>${new_text}</var>
 <arg>${current_text}\n${article}</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-01-24T09:55:59.346926" elapsed="0.001009"/>
+<status status="PASS" start="2025-01-28T16:41:34.356025" elapsed="0.000999"/>
 </kw>
 <kw name="Wait And Input Text with Delay" owner="common_art">
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
 <kw name="Input Text with Delay" owner="common_art">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-01-24T09:55:59.348934" level="INFO">Typing text '
-10337799
-10337394
-10337395' into text field '//textarea[@name="article"]'.</msg>
+<msg time="2025-01-28T16:41:34.358024" level="INFO">Typing text '
+10337454
+10337455' into text field '//textarea[@name="article"]'.</msg>
 <arg>${locator}</arg>
 <arg>${text}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-24T09:55:59.348934" elapsed="0.101682"/>
+<status status="PASS" start="2025-01-28T16:41:34.358024" elapsed="0.059000"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-24T09:56:00.952017" level="INFO">Slept 1 second 500 milliseconds.</msg>
+<msg time="2025-01-28T16:41:35.918403" level="INFO">Slept 1 second 500 milliseconds.</msg>
 <arg>1.5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-24T09:55:59.450616" elapsed="1.501401"/>
+<status status="PASS" start="2025-01-28T16:41:34.418015" elapsed="1.500388"/>
 </kw>
 <arg>${locator}</arg>
 <arg>${text}</arg>
-<status status="PASS" start="2025-01-24T09:55:59.347935" elapsed="1.604082"/>
+<status status="PASS" start="2025-01-28T16:41:34.357024" elapsed="1.561952"/>
 </kw>
 <arg>3x</arg>
 <arg>0.8s</arg>
@@ -558,144 +556,143 @@ Stacktrace:
 <arg>${locator}</arg>
 <arg>${text}</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-01-24T09:55:59.347935" elapsed="1.604082"/>
+<status status="PASS" start="2025-01-28T16:41:34.357024" elapsed="1.561952"/>
 </kw>
 <arg>//textarea[@name="article"]</arg>
 <arg>${new_text}</arg>
-<status status="PASS" start="2025-01-24T09:55:59.347935" elapsed="1.604082"/>
+<status status="PASS" start="2025-01-28T16:41:34.357024" elapsed="1.561952"/>
 </kw>
-<var name="${article}">10337799
-10337394
-10337395</var>
-<status status="PASS" start="2025-01-24T09:55:59.331831" elapsed="1.620186"/>
+<var name="${article}">10337454
+10337455</var>
+<status status="PASS" start="2025-01-28T16:41:34.341610" elapsed="1.577366"/>
 </iter>
 <var>${article}</var>
 <value>@{articles}</value>
-<status status="PASS" start="2025-01-24T09:55:59.331831" elapsed="1.620186"/>
+<status status="PASS" start="2025-01-28T16:41:34.341610" elapsed="1.577366"/>
 </for>
 <kw name="Wait And Click Element" owner="common_art">
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
 <kw name="Click Element with Delay" owner="common_art">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-01-24T09:56:00.954117" level="INFO">Clicking element '//span[text()="ส่ง"]/parent::button'.</msg>
+<msg time="2025-01-28T16:41:35.921983" level="INFO">Clicking element '//span[text()="ส่ง"]/parent::button'.</msg>
 <arg>${locator}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-24T09:56:00.953118" elapsed="0.076228"/>
+<status status="PASS" start="2025-01-28T16:41:35.921983" elapsed="0.060898"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-24T09:56:02.031465" level="INFO">Slept 1 second.</msg>
+<msg time="2025-01-28T16:41:36.983753" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-24T09:56:01.030843" elapsed="1.000622"/>
+<status status="PASS" start="2025-01-28T16:41:35.982881" elapsed="1.000872"/>
 </kw>
 <arg>${locator}</arg>
-<status status="PASS" start="2025-01-24T09:56:00.953118" elapsed="1.078347"/>
+<status status="PASS" start="2025-01-28T16:41:35.920982" elapsed="1.062771"/>
 </kw>
 <arg>3x</arg>
 <arg>0.8s</arg>
 <arg>Click Element with Delay</arg>
 <arg>${locator}</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-01-24T09:56:00.953118" elapsed="1.078347"/>
+<status status="PASS" start="2025-01-28T16:41:35.920982" elapsed="1.062771"/>
 </kw>
 <arg>//span[text()="ส่ง"]/parent::button</arg>
-<status status="PASS" start="2025-01-24T09:56:00.952017" elapsed="1.079448"/>
+<status status="PASS" start="2025-01-28T16:41:35.919982" elapsed="1.063771"/>
 </kw>
 <kw name="Wait And Click Element" owner="common_art">
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
 <kw name="Click Element with Delay" owner="common_art">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-01-24T09:56:02.032485" level="INFO">Clicking element '//span[text()="ค้นหา"]/parent::button'.</msg>
+<msg time="2025-01-28T16:41:36.986764" level="INFO">Clicking element '//span[text()="ค้นหา"]/parent::button'.</msg>
 <arg>${locator}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-24T09:56:02.032485" elapsed="0.074152"/>
+<status status="PASS" start="2025-01-28T16:41:36.986764" elapsed="0.075371"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-24T09:56:03.108293" level="INFO">Slept 1 second.</msg>
+<msg time="2025-01-28T16:41:38.063614" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-24T09:56:02.107639" elapsed="1.000654"/>
+<status status="PASS" start="2025-01-28T16:41:37.062135" elapsed="1.001479"/>
 </kw>
 <arg>${locator}</arg>
-<status status="PASS" start="2025-01-24T09:56:02.032485" elapsed="1.075808"/>
+<status status="PASS" start="2025-01-28T16:41:36.985765" elapsed="1.077849"/>
 </kw>
 <arg>3x</arg>
 <arg>0.8s</arg>
 <arg>Click Element with Delay</arg>
 <arg>${locator}</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-01-24T09:56:02.032485" elapsed="1.075808"/>
+<status status="PASS" start="2025-01-28T16:41:36.984766" elapsed="1.079977"/>
 </kw>
 <arg>//span[text()="ค้นหา"]/parent::button</arg>
-<status status="PASS" start="2025-01-24T09:56:02.031465" elapsed="1.077416"/>
+<status status="PASS" start="2025-01-28T16:41:36.984766" elapsed="1.079977"/>
 </kw>
 <arg>${article_no}</arg>
 <doc>ค้นหา รหัสสินค้า ที่ต้องการแก้ไขฟิวด์</doc>
-<status status="PASS" start="2025-01-24T09:55:57.112657" elapsed="5.996224"/>
+<status status="PASS" start="2025-01-28T16:41:32.145655" elapsed="5.919088"/>
 </kw>
 <kw name="Click check box all article" owner="common_art">
 <kw name="Wait And Click Element" owner="common_art">
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
 <kw name="Click Element with Delay" owner="common_art">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-01-24T09:56:03.109986" level="INFO">Clicking element '//span[text()="เลือกทั้งหมด"]/preceding-sibling::span'.</msg>
+<msg time="2025-01-28T16:41:38.066733" level="INFO">Clicking element '//span[text()="เลือกทั้งหมด"]/preceding-sibling::span'.</msg>
 <arg>${locator}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-24T09:56:03.109986" elapsed="0.134559"/>
+<status status="PASS" start="2025-01-28T16:41:38.066733" elapsed="0.115226"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-24T09:56:04.244937" level="INFO">Slept 1 second.</msg>
+<msg time="2025-01-28T16:41:39.183477" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-24T09:56:03.244545" elapsed="1.000392"/>
+<status status="PASS" start="2025-01-28T16:41:38.183045" elapsed="1.000432"/>
 </kw>
 <arg>${locator}</arg>
-<status status="PASS" start="2025-01-24T09:56:03.108881" elapsed="1.136056"/>
+<status status="PASS" start="2025-01-28T16:41:38.066733" elapsed="1.116744"/>
 </kw>
 <arg>3x</arg>
 <arg>0.8s</arg>
 <arg>Click Element with Delay</arg>
 <arg>${locator}</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-01-24T09:56:03.108881" elapsed="1.136056"/>
+<status status="PASS" start="2025-01-28T16:41:38.065735" elapsed="1.117742"/>
 </kw>
 <arg>//span[text()="เลือกทั้งหมด"]/preceding-sibling::span</arg>
-<status status="PASS" start="2025-01-24T09:56:03.108881" elapsed="1.136056"/>
+<status status="PASS" start="2025-01-28T16:41:38.065735" elapsed="1.118860"/>
 </kw>
 <doc>เลือกสินค้าทั้งหมด ใน dataGrid</doc>
-<status status="PASS" start="2025-01-24T09:56:03.108881" elapsed="1.136056"/>
+<status status="PASS" start="2025-01-28T16:41:38.064743" elapsed="1.119852"/>
 </kw>
 <kw name="Click button edit field" owner="common_art">
 <kw name="Wait And Click Element" owner="common_art">
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
 <kw name="Click Element with Delay" owner="common_art">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-01-24T09:56:04.245949" level="INFO">Clicking element '//span[text()="แก้ไขค่าของฟิลด์"]/parent::button'.</msg>
+<msg time="2025-01-28T16:41:39.187499" level="INFO">Clicking element '//span[text()="แก้ไขค่าของฟิลด์"]/parent::button'.</msg>
 <arg>${locator}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-24T09:56:04.245949" elapsed="0.057019"/>
+<status status="PASS" start="2025-01-28T16:41:39.187499" elapsed="0.054352"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-24T09:56:05.303144" level="INFO">Slept 1 second.</msg>
+<msg time="2025-01-28T16:41:40.242246" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-24T09:56:04.302968" elapsed="1.000176"/>
+<status status="PASS" start="2025-01-28T16:41:39.241851" elapsed="1.000395"/>
 </kw>
 <arg>${locator}</arg>
-<status status="PASS" start="2025-01-24T09:56:04.245949" elapsed="1.057195"/>
+<status status="PASS" start="2025-01-28T16:41:39.187499" elapsed="1.054747"/>
 </kw>
 <arg>3x</arg>
 <arg>0.8s</arg>
 <arg>Click Element with Delay</arg>
 <arg>${locator}</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-01-24T09:56:04.245949" elapsed="1.057195"/>
+<status status="PASS" start="2025-01-28T16:41:39.186496" elapsed="1.055750"/>
 </kw>
 <arg>//span[text()="แก้ไขค่าของฟิลด์"]/parent::button</arg>
-<status status="PASS" start="2025-01-24T09:56:04.245949" elapsed="1.058307"/>
+<status status="PASS" start="2025-01-28T16:41:39.185574" elapsed="1.056672"/>
 </kw>
 <doc>คลิ๊กปุ่ม แก้ไขค่าของฟิลด์</doc>
-<status status="PASS" start="2025-01-24T09:56:04.244937" elapsed="1.059319"/>
+<status status="PASS" start="2025-01-28T16:41:39.184595" elapsed="1.057651"/>
 </kw>
 <kw name="No. 1 Edit field name (ฺB2C/A3/Data-Driven) :" owner="Edit_field_A3(B2C)">
 <if>
@@ -705,49 +702,49 @@ Stacktrace:
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
 <kw name="Click Element with Delay" owner="common_art">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-01-24T09:56:05.309165" level="INFO">Clicking element '//input[@name="master_tabcols_id"]/following-sibling::div/div/input'.</msg>
+<msg time="2025-01-28T16:41:40.245255" level="INFO">Clicking element '//input[@name="master_tabcols_id"]/following-sibling::div/div/input'.</msg>
 <arg>${locator}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-24T09:56:05.309165" elapsed="0.105095"/>
+<status status="PASS" start="2025-01-28T16:41:40.245255" elapsed="0.126431"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-24T09:56:06.415693" level="INFO">Slept 1 second.</msg>
+<msg time="2025-01-28T16:41:41.373268" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-24T09:56:05.415330" elapsed="1.000363"/>
+<status status="PASS" start="2025-01-28T16:41:40.371686" elapsed="1.001582"/>
 </kw>
 <arg>${locator}</arg>
-<status status="PASS" start="2025-01-24T09:56:05.308290" elapsed="1.107403"/>
+<status status="PASS" start="2025-01-28T16:41:40.245255" elapsed="1.128013"/>
 </kw>
 <arg>3x</arg>
 <arg>0.8s</arg>
 <arg>Click Element with Delay</arg>
 <arg>${locator}</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-01-24T09:56:05.307160" elapsed="1.108533"/>
+<status status="PASS" start="2025-01-28T16:41:40.244255" elapsed="1.129013"/>
 </kw>
 <arg>//input[@name="master_tabcols_id"]/following-sibling::div/div/input</arg>
-<status status="PASS" start="2025-01-24T09:56:05.307160" elapsed="1.108533"/>
+<status status="PASS" start="2025-01-28T16:41:40.244255" elapsed="1.129013"/>
 </kw>
 <kw name="Wait And Input Text with Delay" owner="common_art">
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
 <kw name="Input Text with Delay" owner="common_art">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-01-24T09:56:06.416791" level="INFO">Typing text 'Categories' into text field '//input[@name="master_tabcols_id"]/following-sibling::div/div/input'.</msg>
+<msg time="2025-01-28T16:41:41.375379" level="INFO">Typing text 'Categories' into text field '//input[@name="master_tabcols_id"]/following-sibling::div/div/input'.</msg>
 <arg>${locator}</arg>
 <arg>${text}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-24T09:56:06.416791" elapsed="0.076400"/>
+<status status="PASS" start="2025-01-28T16:41:41.375379" elapsed="0.060567"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-24T09:56:07.994626" level="INFO">Slept 1 second 500 milliseconds.</msg>
+<msg time="2025-01-28T16:41:42.937505" level="INFO">Slept 1 second 500 milliseconds.</msg>
 <arg>1.5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-24T09:56:06.493191" elapsed="1.501435"/>
+<status status="PASS" start="2025-01-28T16:41:41.436949" elapsed="1.500556"/>
 </kw>
 <arg>${locator}</arg>
 <arg>${text}</arg>
-<status status="PASS" start="2025-01-24T09:56:06.416791" elapsed="1.578378"/>
+<status status="PASS" start="2025-01-28T16:41:41.374370" elapsed="1.563135"/>
 </kw>
 <arg>3x</arg>
 <arg>0.8s</arg>
@@ -755,11 +752,11 @@ Stacktrace:
 <arg>${locator}</arg>
 <arg>${text}</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-01-24T09:56:06.416791" elapsed="1.578378"/>
+<status status="PASS" start="2025-01-28T16:41:41.374370" elapsed="1.563135"/>
 </kw>
 <arg>//input[@name="master_tabcols_id"]/following-sibling::div/div/input</arg>
 <arg>${master_tabcols_id}</arg>
-<status status="PASS" start="2025-01-24T09:56:06.415693" elapsed="1.579476"/>
+<status status="PASS" start="2025-01-28T16:41:41.374370" elapsed="1.563135"/>
 </kw>
 <kw name="Wait And Press Keys" owner="common_art">
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
@@ -767,7 +764,7 @@ Stacktrace:
 <arg>${locator}</arg>
 <arg>${keys}</arg>
 <doc>Simulates user pressing key on element identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-24T09:56:07.996202" elapsed="0.133346"/>
+<status status="PASS" start="2025-01-28T16:41:42.938730" elapsed="0.102491"/>
 </kw>
 <arg>3x</arg>
 <arg>0.8s</arg>
@@ -775,59 +772,68 @@ Stacktrace:
 <arg>${locator}</arg>
 <arg>${keys}</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-01-24T09:56:07.996202" elapsed="0.134329"/>
+<status status="PASS" start="2025-01-28T16:41:42.938730" elapsed="0.102491"/>
 </kw>
 <arg>//input[@name="master_tabcols_id"]/following-sibling::div/div/input</arg>
 <arg>\\13</arg>
-<status status="PASS" start="2025-01-24T09:56:07.995169" elapsed="0.135362"/>
+<status status="PASS" start="2025-01-28T16:41:42.938730" elapsed="0.102491"/>
 </kw>
 <kw name="Wait And Click Element" owner="common_art">
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
 <kw name="Click Element with Delay" owner="common_art">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-01-24T09:56:08.134529" level="INFO">Clicking element '//input[@name="values_new"]/following-sibling::div/div/input'.</msg>
+<msg time="2025-01-28T16:41:43.043218" level="INFO">Clicking element '//input[@name="values_new"]/following-sibling::div/div/input'.</msg>
 <arg>${locator}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-24T09:56:08.133530" elapsed="0.743555"/>
+<status status="PASS" start="2025-01-28T16:41:43.043218" elapsed="0.648094"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-24T09:56:09.878550" level="INFO">Slept 1 second.</msg>
+<msg time="2025-01-28T16:41:44.692515" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-24T09:56:08.877085" elapsed="1.001465"/>
+<status status="PASS" start="2025-01-28T16:41:43.691312" elapsed="1.001203"/>
 </kw>
 <arg>${locator}</arg>
-<status status="PASS" start="2025-01-24T09:56:08.132536" elapsed="1.746014"/>
+<status status="PASS" start="2025-01-28T16:41:43.042220" elapsed="1.650295"/>
 </kw>
 <arg>3x</arg>
 <arg>0.8s</arg>
 <arg>Click Element with Delay</arg>
 <arg>${locator}</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-01-24T09:56:08.132536" elapsed="1.746014"/>
+<status status="PASS" start="2025-01-28T16:41:43.042220" elapsed="1.650295"/>
 </kw>
 <arg>//input[@name="values_new"]/following-sibling::div/div/input</arg>
-<status status="PASS" start="2025-01-24T09:56:08.131532" elapsed="1.747018"/>
+<status status="PASS" start="2025-01-28T16:41:43.041221" elapsed="1.651797"/>
+</kw>
+<kw name="Replace String" owner="String">
+<msg time="2025-01-28T16:41:44.693018" level="INFO">${cleaned_text} = C17020103</msg>
+<var>${cleaned_text}</var>
+<arg>${values_new}</arg>
+<arg>${SPACE}</arg>
+<arg>${EMPTY}</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="PASS" start="2025-01-28T16:41:44.693018" elapsed="0.001006"/>
 </kw>
 <kw name="Wait And Input Text with Delay" owner="common_art">
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
 <kw name="Input Text with Delay" owner="common_art">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-01-24T09:56:09.879557" level="INFO">Typing text 'C09020102' into text field '//input[@name="values_new"]/following-sibling::div/div/input'.</msg>
+<msg time="2025-01-28T16:41:44.696024" level="INFO">Typing text 'C17020103' into text field '//input[@name="values_new"]/following-sibling::div/div/input'.</msg>
 <arg>${locator}</arg>
 <arg>${text}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-24T09:56:09.879557" elapsed="0.078430"/>
+<status status="PASS" start="2025-01-28T16:41:44.695027" elapsed="0.057210"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-24T09:56:11.459092" level="INFO">Slept 1 second 500 milliseconds.</msg>
+<msg time="2025-01-28T16:41:46.253784" level="INFO">Slept 1 second 500 milliseconds.</msg>
 <arg>1.5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-24T09:56:09.958993" elapsed="1.500099"/>
+<status status="PASS" start="2025-01-28T16:41:44.753238" elapsed="1.500546"/>
 </kw>
 <arg>${locator}</arg>
 <arg>${text}</arg>
-<status status="PASS" start="2025-01-24T09:56:09.879557" elapsed="1.579535"/>
+<status status="PASS" start="2025-01-28T16:41:44.695027" elapsed="1.558757"/>
 </kw>
 <arg>3x</arg>
 <arg>0.8s</arg>
@@ -835,11 +841,17 @@ Stacktrace:
 <arg>${locator}</arg>
 <arg>${text}</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-01-24T09:56:09.879557" elapsed="1.579535"/>
+<status status="PASS" start="2025-01-28T16:41:44.695027" elapsed="1.558757"/>
 </kw>
 <arg>//input[@name="values_new"]/following-sibling::div/div/input</arg>
-<arg>${values_new}</arg>
-<status status="PASS" start="2025-01-24T09:56:09.878550" elapsed="1.580542"/>
+<arg>${cleaned_text}</arg>
+<status status="PASS" start="2025-01-28T16:41:44.694024" elapsed="1.559760"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-28T16:41:46.754355" level="INFO">Slept 500 milliseconds.</msg>
+<arg>0.5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-28T16:41:46.253784" elapsed="0.500571"/>
 </kw>
 <kw name="Wait And Press Keys" owner="common_art">
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
@@ -847,7 +859,7 @@ Stacktrace:
 <arg>${locator}</arg>
 <arg>${keys}</arg>
 <doc>Simulates user pressing key on element identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-24T09:56:11.459685" elapsed="0.031983"/>
+<status status="PASS" start="2025-01-28T16:41:46.755365" elapsed="0.028714"/>
 </kw>
 <arg>3x</arg>
 <arg>0.8s</arg>
@@ -855,148 +867,406 @@ Stacktrace:
 <arg>${locator}</arg>
 <arg>${keys}</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-01-24T09:56:11.459685" elapsed="0.031983"/>
+<status status="PASS" start="2025-01-28T16:41:46.754355" elapsed="0.030724"/>
 </kw>
 <arg>//input[@name="values_new"]/following-sibling::div/div/input</arg>
 <arg>\\13</arg>
-<status status="PASS" start="2025-01-24T09:56:11.459685" elapsed="0.031983"/>
+<status status="PASS" start="2025-01-28T16:41:46.754355" elapsed="0.030724"/>
 </kw>
 <arg>${product_categories_level.field}</arg>
 <arg>${value}</arg>
 <arg>${product_categories_level.uuid}</arg>
-<status status="PASS" start="2025-01-24T09:56:05.305162" elapsed="6.186506"/>
+<status status="PASS" start="2025-01-28T16:41:40.243257" elapsed="6.541822"/>
 </kw>
-<status status="PASS" start="2025-01-24T09:56:05.304256" elapsed="6.187412"/>
+<status status="PASS" start="2025-01-28T16:41:40.243257" elapsed="6.541822"/>
 </branch>
-<status status="PASS" start="2025-01-24T09:56:05.304256" elapsed="6.187412"/>
+<status status="PASS" start="2025-01-28T16:41:40.243257" elapsed="6.542822"/>
 </if>
 <arg>Categories</arg>
 <arg>${value}</arg>
-<status status="PASS" start="2025-01-24T09:56:05.304256" elapsed="6.187412"/>
+<status status="PASS" start="2025-01-28T16:41:40.243257" elapsed="6.542822"/>
 </kw>
-<arg>article_no=10337799
-10337394
-10337395</arg>
-<arg>value=C09020102</arg>
-<status status="PASS" start="2025-01-24T09:55:57.112657" elapsed="14.379011"/>
+<kw name="Click button Confirm edit field" owner="common_art">
+<kw name="Wait And Click Element" owner="common_art">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element with Delay" owner="common_art">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-28T16:41:46.788138" level="INFO">Clicking element '//span[text()="ยืนยัน"]/parent::button'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-28T16:41:46.788138" elapsed="0.125059"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-28T16:41:47.914701" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-28T16:41:46.913197" elapsed="1.001504"/>
+</kw>
+<arg>${locator}</arg>
+<status status="PASS" start="2025-01-28T16:41:46.787083" elapsed="1.127618"/>
+</kw>
+<arg>3x</arg>
+<arg>0.8s</arg>
+<arg>Click Element with Delay</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-01-28T16:41:46.787083" elapsed="1.127618"/>
+</kw>
+<arg>//span[text()="ยืนยัน"]/parent::button</arg>
+<status status="PASS" start="2025-01-28T16:41:46.787083" elapsed="1.127618"/>
+</kw>
+<kw name="Wait And Wait Until Element Is Visible" owner="common_art">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-01-28T16:41:47.915707" elapsed="0.015026"/>
+</kw>
+<arg>5x</arg>
+<arg>1s</arg>
+<arg>Wait Until Element Is Visible</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-01-28T16:41:47.915707" elapsed="0.015026"/>
+</kw>
+<arg>//span[text()="ขออนุมัติแก้ไข"]/parent::button</arg>
+<status status="PASS" start="2025-01-28T16:41:47.914701" elapsed="0.017127"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-28T16:41:50.932019" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-28T16:41:47.931828" elapsed="3.000191"/>
+</kw>
+<doc>คลิ๊กยืนยันแก้ไข step 1</doc>
+<status status="PASS" start="2025-01-28T16:41:46.786079" elapsed="4.145940"/>
+</kw>
+<kw name="Click button Approve edit field" owner="common_art">
+<kw name="Wait And Click Element" owner="common_art">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element with Delay" owner="common_art">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-28T16:41:50.933314" level="INFO">Clicking element '//span[text()="ขออนุมัติแก้ไข"]/parent::button'.</msg>
+<msg time="2025-01-28T16:41:52.187415" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-327.png"&gt;&lt;img src="selenium-screenshot-327.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-01-28T16:41:52.187415" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;button class="MuiButtonBase-root MuiButton-root MuiButton-text jss99" tabindex="0" type="button"&gt;...&lt;/button&gt; is not clickable at point (1808, 671). Other element would receive the click: &lt;div class="dx-overlay-wrapper jss120 dx-popup-wrapper dx-overlay-shader" data-bind="dxControlsDescendantBindings: true" style="z-index: 1502; position: absolute; left: 0px; top: 0px; transform: translate(0px, 0px); transition: all; overflow: visible;"&gt;...&lt;/div&gt;
+  (Session info: chrome=131.0.6778.87)
+Stacktrace:
+	GetHandleVerifier [0x00007FF74A396CF5+28821]
+	(No symbol) [0x00007FF74A303880]
+	(No symbol) [0x00007FF74A1A578A]
+	(No symbol) [0x00007FF74A200E8E]
+	(No symbol) [0x00007FF74A1FE92C]
+	(No symbol) [0x00007FF74A1FBAF6]
+	(No symbol) [0x00007FF74A1FAA51]
+	(No symbol) [0x00007FF74A1ECBA0]
+	(No symbol) [0x00007FF74A21F2FA]
+	(No symbol) [0x00007FF74A1EC3F6]
+	(No symbol) [0x00007FF74A21F510]
+	(No symbol) [0x00007FF74A23F412]
+	(No symbol) [0x00007FF74A21F0A3]
+	(No symbol) [0x00007FF74A1EA778]
+	(No symbol) [0x00007FF74A1EB8E1]
+	GetHandleVerifier [0x00007FF74A6CFCED+3408013]
+	GetHandleVerifier [0x00007FF74A6E745F+3504127]
+	GetHandleVerifier [0x00007FF74A6DB63D+3455453]
+	GetHandleVerifier [0x00007FF74A45BDFB+835995]
+	(No symbol) [0x00007FF74A30EB9F]
+	(No symbol) [0x00007FF74A30A854]
+	(No symbol) [0x00007FF74A30A9ED]
+	(No symbol) [0x00007FF74A2FA1D9]
+	BaseThreadInitThunk [0x00007FFD887AE8D7+23]
+	RtlUserThreadStart [0x00007FFD89B9FBCC+44]
+</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2025-01-28T16:41:50.933314" elapsed="1.255185">ElementClickInterceptedException: Message: element click intercepted: Element &lt;button class="MuiButtonBase-root MuiButton-root MuiButton-text jss99" tabindex="0" type="button"&gt;...&lt;/button&gt; is not clickable at point (1808, 671). Other element would receive the click: &lt;div class="dx-overlay-wrapper jss120 dx-popup-wrapper dx-overlay-shader" data-bind="dxControlsDescendantBindings: true" style="z-index: 1502; position: absolute; left: 0px; top: 0px; transform: translate(0px, 0px); transition: all; overflow: visible;"&gt;...&lt;/div&gt;
+  (Session info: chrome=131.0.6778.87)
+Stacktrace:
+	GetHandleVerifier [0x00007FF74A396CF5+28821]
+	(No symbol) [0x00007FF74A303880]
+	(No symbol) [0x00007FF74A1A578A]
+	(No symbol) [0x00007FF74A200E8E]
+	(No symbol) [0x00007FF74A1FE92C]
+	(No symbol) [0x00007FF74A1FBAF6]
+	(No symbol) [0x00007FF74A1FAA51]
+	(No symbol) [0x00007FF74A1ECBA0]
+	(No symbol) [0x00007FF74A21F2FA]
+	(No symbol) [0x00007FF74A1EC3F6]
+	(No symbol) [0x00007FF74A21F510]
+	(No symbol) [0x00007FF74A23F412]
+	(No symbol) [0x00007FF74A21F0A3]
+	(No symbol) [0x00007FF74A1EA778]
+	(No symbol) [0x00007FF74A1EB8E1]
+	GetHandleVerifier [0x00007FF74A6CFCED+3408013]
+	GetHandleVerifier [0x00007FF74A6E745F+3504127]
+	GetHandleVerifier [0x00007FF74A6DB63D+3455453]
+	GetHandleVerifier [0x00007FF74A45BDFB+835995]
+	(No symbol) [0x00007FF74A30EB9F]
+	(No symbol) [0x00007FF74A30A854]
+	(No symbol) [0x00007FF74A30A9ED]
+	(No symbol) [0x00007FF74A2FA1D9]
+	BaseThreadInitThunk [0x00007FFD887AE8D7+23]
+	RtlUserThreadStart [0x00007FFD89B9FBCC+44]
+</status>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-01-28T16:41:52.189507" elapsed="0.000000"/>
+</kw>
+<arg>${locator}</arg>
+<status status="FAIL" start="2025-01-28T16:41:50.933314" elapsed="1.256193">ElementClickInterceptedException: Message: element click intercepted: Element &lt;button class="MuiButtonBase-root MuiButton-root MuiButton-text jss99" tabindex="0" type="button"&gt;...&lt;/button&gt; is not clickable at point (1808, 671). Other element would receive the click: &lt;div class="dx-overlay-wrapper jss120 dx-popup-wrapper dx-overlay-shader" data-bind="dxControlsDescendantBindings: true" style="z-index: 1502; position: absolute; left: 0px; top: 0px; transform: translate(0px, 0px); transition: all; overflow: visible;"&gt;...&lt;/div&gt;
+  (Session info: chrome=131.0.6778.87)
+Stacktrace:
+	GetHandleVerifier [0x00007FF74A396CF5+28821]
+	(No symbol) [0x00007FF74A303880]
+	(No symbol) [0x00007FF74A1A578A]
+	(No symbol) [0x00007FF74A200E8E]
+	(No symbol) [0x00007FF74A1FE92C]
+	(No symbol) [0x00007FF74A1FBAF6]
+	(No symbol) [0x00007FF74A1FAA51]
+	(No symbol) [0x00007FF74A1ECBA0]
+	(No symbol) [0x00007FF74A21F2FA]
+	(No symbol) [0x00007FF74A1EC3F6]
+	(No symbol) [0x00007FF74A21F510]
+	(No symbol) [0x00007FF74A23F412]
+	(No symbol) [0x00007FF74A21F0A3]
+	(No symbol) [0x00007FF74A1EA778]
+	(No symbol) [0x00007FF74A1EB8E1]
+	GetHandleVerifier [0x00007FF74A6CFCED+3408013]
+	GetHandleVerifier [0x00007FF74A6E745F+3504127]
+	GetHandleVerifier [0x00007FF74A6DB63D+3455453]
+	GetHandleVerifier [0x00007FF74A45BDFB+835995]
+	(No symbol) [0x00007FF74A30EB9F]
+	(No symbol) [0x00007FF74A30A854]
+	(No symbol) [0x00007FF74A30A9ED]
+	(No symbol) [0x00007FF74A2FA1D9]
+	BaseThreadInitThunk [0x00007FFD887AE8D7+23]
+	RtlUserThreadStart [0x00007FFD89B9FBCC+44]
+</status>
+</kw>
+<kw name="Click Element with Delay" owner="common_art">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-28T16:41:53.101568" level="INFO">Clicking element '//span[text()="ขออนุมัติแก้ไข"]/parent::button'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-28T16:41:53.100566" elapsed="0.349809"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-28T16:41:54.451801" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-28T16:41:53.450375" elapsed="1.001426"/>
+</kw>
+<arg>${locator}</arg>
+<status status="PASS" start="2025-01-28T16:41:53.098567" elapsed="1.353234"/>
+</kw>
+<arg>3x</arg>
+<arg>0.8s</arg>
+<arg>Click Element with Delay</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-01-28T16:41:50.933314" elapsed="3.518487"/>
+</kw>
+<arg>//span[text()="ขออนุมัติแก้ไข"]/parent::button</arg>
+<status status="PASS" start="2025-01-28T16:41:50.932019" elapsed="3.519782"/>
+</kw>
+<kw name="Wait And Click Element" owner="common_art">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element with Delay" owner="common_art">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-28T16:41:54.454199" level="INFO">Clicking element '//span[text()="ยกเลิก"]/ancestor::div[2]/following-sibling::div//button'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-28T16:41:54.454199" elapsed="0.077226"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-28T16:41:55.531938" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-28T16:41:54.531425" elapsed="1.000513"/>
+</kw>
+<arg>${locator}</arg>
+<status status="PASS" start="2025-01-28T16:41:54.453120" elapsed="1.078818"/>
+</kw>
+<arg>3x</arg>
+<arg>0.8s</arg>
+<arg>Click Element with Delay</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-01-28T16:41:54.453120" elapsed="1.078818"/>
+</kw>
+<arg>//span[text()="ยกเลิก"]/ancestor::div[2]/following-sibling::div//button</arg>
+<status status="PASS" start="2025-01-28T16:41:54.451801" elapsed="1.080137"/>
+</kw>
+<kw name="Wait And Click Element" owner="common_art">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element with Delay" owner="common_art">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-28T16:41:55.533054" level="INFO">Clicking element '//span[text()="ยืนยัน"]/parent::button'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-28T16:41:55.533054" elapsed="0.056064"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-28T16:41:56.590721" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-28T16:41:55.590119" elapsed="1.001112"/>
+</kw>
+<arg>${locator}</arg>
+<status status="PASS" start="2025-01-28T16:41:55.533054" elapsed="1.058177"/>
+</kw>
+<arg>3x</arg>
+<arg>0.8s</arg>
+<arg>Click Element with Delay</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-01-28T16:41:55.533054" elapsed="1.058177"/>
+</kw>
+<arg>//span[text()="ยืนยัน"]/parent::button</arg>
+<status status="PASS" start="2025-01-28T16:41:55.531938" elapsed="1.059293"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>อนุมัติแก้ไขสำเร็จ</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-01-28T16:41:56.591231" elapsed="1.805405"/>
+</kw>
+<doc>คลิ๊กยืนยันแก้ไข step 2 ส่งข้อมูลไปเมนูรออนุมัติ</doc>
+<status status="PASS" start="2025-01-28T16:41:50.932019" elapsed="7.464617"/>
+</kw>
+<arg>article_no=10337454
+10337455</arg>
+<arg>value=C17020103</arg>
+<status status="PASS" start="2025-01-28T16:41:32.145655" elapsed="26.250981"/>
 </kw>
 <kw name="Refresh page" owner="common_art" type="TEARDOWN">
 <kw name="Execute Javascript" owner="SeleniumLibrary">
-<msg time="2025-01-24T09:56:11.493722" level="INFO">Executing JavaScript:
+<msg time="2025-01-28T16:41:58.398638" level="INFO">Executing JavaScript:
 location.reload()
 Without any arguments.</msg>
 <arg>location.reload()</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="PASS" start="2025-01-24T09:56:11.493722" elapsed="0.979531"/>
+<status status="PASS" start="2025-01-28T16:41:58.398638" elapsed="0.241230"/>
 </kw>
-<status status="PASS" start="2025-01-24T09:56:11.492675" elapsed="0.981577"/>
+<status status="PASS" start="2025-01-28T16:41:58.397730" elapsed="0.243139"/>
 </kw>
-<status status="PASS" start="2025-01-24T09:55:57.110657" elapsed="15.364596"/>
+<status status="PASS" start="2025-01-28T16:41:32.142761" elapsed="26.498108"/>
 </test>
-<test id="s1-t2" name="Run Edit field Categories" line="16">
+<test id="s1-t2" name="Run Edit field Categories" line="17">
 <kw name="Edit field name Categories">
 <kw name="Search by article" owner="common_art">
 <kw name="Wait And Click Element" owner="common_art">
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
 <kw name="Click Element with Delay" owner="common_art">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-01-24T09:56:12.483405" level="INFO">Clicking element '//input[@name="article_id"]'.</msg>
+<msg time="2025-01-28T16:41:58.645954" level="INFO">Clicking element '//input[@name="article_id"]'.</msg>
+<msg time="2025-01-28T16:41:59.020745" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-328.png"&gt;&lt;img src="selenium-screenshot-328.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-01-28T16:41:59.021746" level="FAIL">Element with locator '//input[@name="article_id"]' not found.</msg>
 <arg>${locator}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-24T09:56:12.483405" elapsed="0.121189"/>
+<status status="FAIL" start="2025-01-28T16:41:58.645954" elapsed="0.376791">Element with locator '//input[@name="article_id"]' not found.</status>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-24T09:56:13.606736" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-24T09:56:12.605596" elapsed="1.001140"/>
+<status status="NOT RUN" start="2025-01-28T16:41:59.023746" elapsed="0.000000"/>
 </kw>
 <arg>${locator}</arg>
-<status status="PASS" start="2025-01-24T09:56:12.482439" elapsed="1.124297"/>
+<status status="FAIL" start="2025-01-28T16:41:58.645954" elapsed="0.377792">Element with locator '//input[@name="article_id"]' not found.</status>
+</kw>
+<kw name="Click Element with Delay" owner="common_art">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-28T16:41:59.825552" level="INFO">Clicking element '//input[@name="article_id"]'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-28T16:41:59.824451" elapsed="0.090943"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-28T16:42:00.916547" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-28T16:41:59.915394" elapsed="1.001153"/>
+</kw>
+<arg>${locator}</arg>
+<status status="PASS" start="2025-01-28T16:41:59.824451" elapsed="1.092096"/>
 </kw>
 <arg>3x</arg>
 <arg>0.8s</arg>
 <arg>Click Element with Delay</arg>
 <arg>${locator}</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-01-24T09:56:12.481410" elapsed="1.125326"/>
+<status status="PASS" start="2025-01-28T16:41:58.645954" elapsed="2.271609"/>
 </kw>
 <arg>//input[@name="article_id"]</arg>
-<status status="PASS" start="2025-01-24T09:56:12.481410" elapsed="1.125326"/>
+<status status="PASS" start="2025-01-28T16:41:58.644865" elapsed="2.272698"/>
 </kw>
 <kw name="Wait And Click Element" owner="common_art">
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
 <kw name="Click Element with Delay" owner="common_art">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-01-24T09:56:13.607926" level="INFO">Clicking element '//textarea[@name="article"]'.</msg>
+<msg time="2025-01-28T16:42:00.919556" level="INFO">Clicking element '//textarea[@name="article"]'.</msg>
 <arg>${locator}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-24T09:56:13.607926" elapsed="0.044500"/>
+<status status="PASS" start="2025-01-28T16:42:00.919556" elapsed="0.046717"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-24T09:56:14.653585" level="INFO">Slept 1 second.</msg>
+<msg time="2025-01-28T16:42:01.967545" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-24T09:56:13.653427" elapsed="1.000158"/>
+<status status="PASS" start="2025-01-28T16:42:00.967272" elapsed="1.000273"/>
 </kw>
 <arg>${locator}</arg>
-<status status="PASS" start="2025-01-24T09:56:13.607926" elapsed="1.045659"/>
+<status status="PASS" start="2025-01-28T16:42:00.918557" elapsed="1.048988"/>
 </kw>
 <arg>3x</arg>
 <arg>0.8s</arg>
 <arg>Click Element with Delay</arg>
 <arg>${locator}</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-01-24T09:56:13.607926" elapsed="1.045659"/>
+<status status="PASS" start="2025-01-28T16:42:00.918557" elapsed="1.050047"/>
 </kw>
 <arg>//textarea[@name="article"]</arg>
-<status status="PASS" start="2025-01-24T09:56:13.606736" elapsed="1.047865"/>
+<status status="PASS" start="2025-01-28T16:42:00.917563" elapsed="1.051041"/>
 </kw>
 <for flavor="IN">
 <iter>
 <kw name="Get Value" owner="SeleniumLibrary">
-<msg time="2025-01-24T09:56:14.668035" level="INFO">${current_text} = </msg>
+<msg time="2025-01-28T16:42:01.980946" level="INFO">${current_text} = </msg>
 <var>${current_text}</var>
 <arg>//textarea[@name="article"]</arg>
 <doc>Returns the value attribute of the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-24T09:56:14.654601" elapsed="0.014939"/>
+<status status="PASS" start="2025-01-28T16:42:01.969643" elapsed="0.011303"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-01-24T09:56:14.669540" level="INFO">${new_text} = 
-10337395
-10337396
-10337397
-10337398
-10337399</msg>
+<msg time="2025-01-28T16:42:01.981953" level="INFO">${new_text} = 
+10337748</msg>
 <var>${new_text}</var>
 <arg>${current_text}\n${article}</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-01-24T09:56:14.669540" elapsed="0.000000"/>
+<status status="PASS" start="2025-01-28T16:42:01.981953" elapsed="0.000000"/>
 </kw>
 <kw name="Wait And Input Text with Delay" owner="common_art">
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
 <kw name="Input Text with Delay" owner="common_art">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-01-24T09:56:14.671547" level="INFO">Typing text '
-10337395
-10337396
-10337397
-10337398
-10337399' into text field '//textarea[@name="article"]'.</msg>
+<msg time="2025-01-28T16:42:01.983954" level="INFO">Typing text '
+10337748' into text field '//textarea[@name="article"]'.</msg>
 <arg>${locator}</arg>
 <arg>${text}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-24T09:56:14.671547" elapsed="0.105534"/>
+<status status="PASS" start="2025-01-28T16:42:01.983954" elapsed="0.046979"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-24T09:56:16.278416" level="INFO">Slept 1 second 500 milliseconds.</msg>
+<msg time="2025-01-28T16:42:03.532327" level="INFO">Slept 1 second 500 milliseconds.</msg>
 <arg>1.5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-24T09:56:14.777081" elapsed="1.501335"/>
+<status status="PASS" start="2025-01-28T16:42:02.030933" elapsed="1.501394"/>
 </kw>
 <arg>${locator}</arg>
 <arg>${text}</arg>
-<status status="PASS" start="2025-01-24T09:56:14.671547" elapsed="1.606869"/>
+<status status="PASS" start="2025-01-28T16:42:01.982954" elapsed="1.549373"/>
 </kw>
 <arg>3x</arg>
 <arg>0.8s</arg>
@@ -1004,146 +1274,142 @@ Without any arguments.</msg>
 <arg>${locator}</arg>
 <arg>${text}</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-01-24T09:56:14.670548" elapsed="1.607868"/>
+<status status="PASS" start="2025-01-28T16:42:01.982954" elapsed="1.549373"/>
 </kw>
 <arg>//textarea[@name="article"]</arg>
 <arg>${new_text}</arg>
-<status status="PASS" start="2025-01-24T09:56:14.670548" elapsed="1.607868"/>
+<status status="PASS" start="2025-01-28T16:42:01.981953" elapsed="1.551483"/>
 </kw>
-<var name="${article}">10337395
-10337396
-10337397
-10337398
-10337399</var>
-<status status="PASS" start="2025-01-24T09:56:14.654601" elapsed="1.623815"/>
+<var name="${article}">10337748</var>
+<status status="PASS" start="2025-01-28T16:42:01.968604" elapsed="1.564832"/>
 </iter>
 <var>${article}</var>
 <value>@{articles}</value>
-<status status="PASS" start="2025-01-24T09:56:14.654601" elapsed="1.623815"/>
+<status status="PASS" start="2025-01-28T16:42:01.968604" elapsed="1.564832"/>
 </for>
 <kw name="Wait And Click Element" owner="common_art">
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
 <kw name="Click Element with Delay" owner="common_art">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-01-24T09:56:16.279421" level="INFO">Clicking element '//span[text()="ส่ง"]/parent::button'.</msg>
+<msg time="2025-01-28T16:42:03.535422" level="INFO">Clicking element '//span[text()="ส่ง"]/parent::button'.</msg>
 <arg>${locator}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-24T09:56:16.279421" elapsed="0.054549"/>
+<status status="PASS" start="2025-01-28T16:42:03.534424" elapsed="0.056691"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-24T09:56:17.334525" level="INFO">Slept 1 second.</msg>
+<msg time="2025-01-28T16:42:04.591322" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-24T09:56:16.333970" elapsed="1.000555"/>
+<status status="PASS" start="2025-01-28T16:42:03.591115" elapsed="1.000207"/>
 </kw>
 <arg>${locator}</arg>
-<status status="PASS" start="2025-01-24T09:56:16.279421" elapsed="1.055104"/>
+<status status="PASS" start="2025-01-28T16:42:03.534424" elapsed="1.056898"/>
 </kw>
 <arg>3x</arg>
 <arg>0.8s</arg>
 <arg>Click Element with Delay</arg>
 <arg>${locator}</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-01-24T09:56:16.279421" elapsed="1.056216"/>
+<status status="PASS" start="2025-01-28T16:42:03.534424" elapsed="1.056898"/>
 </kw>
 <arg>//span[text()="ส่ง"]/parent::button</arg>
-<status status="PASS" start="2025-01-24T09:56:16.278416" elapsed="1.057221"/>
+<status status="PASS" start="2025-01-28T16:42:03.533436" elapsed="1.057886"/>
 </kw>
 <kw name="Wait And Click Element" owner="common_art">
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
 <kw name="Click Element with Delay" owner="common_art">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-01-24T09:56:17.336617" level="INFO">Clicking element '//span[text()="ค้นหา"]/parent::button'.</msg>
+<msg time="2025-01-28T16:42:04.592335" level="INFO">Clicking element '//span[text()="ค้นหา"]/parent::button'.</msg>
 <arg>${locator}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-24T09:56:17.336617" elapsed="0.062516"/>
+<status status="PASS" start="2025-01-28T16:42:04.592335" elapsed="0.064259"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-24T09:56:18.401489" level="INFO">Slept 1 second.</msg>
+<msg time="2025-01-28T16:42:05.658068" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-24T09:56:17.400157" elapsed="1.001332"/>
+<status status="PASS" start="2025-01-28T16:42:04.657581" elapsed="1.000487"/>
 </kw>
 <arg>${locator}</arg>
-<status status="PASS" start="2025-01-24T09:56:17.336617" elapsed="1.064872"/>
+<status status="PASS" start="2025-01-28T16:42:04.592335" elapsed="1.066240"/>
 </kw>
 <arg>3x</arg>
 <arg>0.8s</arg>
 <arg>Click Element with Delay</arg>
 <arg>${locator}</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-01-24T09:56:17.335637" elapsed="1.066977"/>
+<status status="PASS" start="2025-01-28T16:42:04.592335" elapsed="1.066240"/>
 </kw>
 <arg>//span[text()="ค้นหา"]/parent::button</arg>
-<status status="PASS" start="2025-01-24T09:56:17.335637" elapsed="1.066977"/>
+<status status="PASS" start="2025-01-28T16:42:04.591322" elapsed="1.067253"/>
 </kw>
 <arg>${article_no}</arg>
 <doc>ค้นหา รหัสสินค้า ที่ต้องการแก้ไขฟิวด์</doc>
-<status status="PASS" start="2025-01-24T09:56:12.480409" elapsed="5.922205"/>
+<status status="PASS" start="2025-01-28T16:41:58.644865" elapsed="7.013710"/>
 </kw>
 <kw name="Click check box all article" owner="common_art">
 <kw name="Wait And Click Element" owner="common_art">
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
 <kw name="Click Element with Delay" owner="common_art">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-01-24T09:56:18.405501" level="INFO">Clicking element '//span[text()="เลือกทั้งหมด"]/preceding-sibling::span'.</msg>
+<msg time="2025-01-28T16:42:05.662585" level="INFO">Clicking element '//span[text()="เลือกทั้งหมด"]/preceding-sibling::span'.</msg>
 <arg>${locator}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-24T09:56:18.405501" elapsed="0.111654"/>
+<status status="PASS" start="2025-01-28T16:42:05.661636" elapsed="0.144089"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-24T09:56:19.517703" level="INFO">Slept 1 second.</msg>
+<msg time="2025-01-28T16:42:06.806930" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-24T09:56:18.517155" elapsed="1.000548"/>
+<status status="PASS" start="2025-01-28T16:42:05.805725" elapsed="1.001205"/>
 </kw>
 <arg>${locator}</arg>
-<status status="PASS" start="2025-01-24T09:56:18.404506" elapsed="1.114310"/>
+<status status="PASS" start="2025-01-28T16:42:05.661636" elapsed="1.145802"/>
 </kw>
 <arg>3x</arg>
 <arg>0.8s</arg>
 <arg>Click Element with Delay</arg>
 <arg>${locator}</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-01-24T09:56:18.404506" elapsed="1.114310"/>
+<status status="PASS" start="2025-01-28T16:42:05.660757" elapsed="1.146681"/>
 </kw>
 <arg>//span[text()="เลือกทั้งหมด"]/preceding-sibling::span</arg>
-<status status="PASS" start="2025-01-24T09:56:18.403507" elapsed="1.115309"/>
+<status status="PASS" start="2025-01-28T16:42:05.659585" elapsed="1.147853"/>
 </kw>
 <doc>เลือกสินค้าทั้งหมด ใน dataGrid</doc>
-<status status="PASS" start="2025-01-24T09:56:18.403507" elapsed="1.115309"/>
+<status status="PASS" start="2025-01-28T16:42:05.659585" elapsed="1.147853"/>
 </kw>
 <kw name="Click button edit field" owner="common_art">
 <kw name="Wait And Click Element" owner="common_art">
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
 <kw name="Click Element with Delay" owner="common_art">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-01-24T09:56:19.520885" level="INFO">Clicking element '//span[text()="แก้ไขค่าของฟิลด์"]/parent::button'.</msg>
+<msg time="2025-01-28T16:42:06.809446" level="INFO">Clicking element '//span[text()="แก้ไขค่าของฟิลด์"]/parent::button'.</msg>
 <arg>${locator}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-24T09:56:19.520885" elapsed="0.048182"/>
+<status status="PASS" start="2025-01-28T16:42:06.808447" elapsed="0.053602"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-24T09:56:20.570314" level="INFO">Slept 1 second.</msg>
+<msg time="2025-01-28T16:42:07.863490" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-24T09:56:19.569067" elapsed="1.001755"/>
+<status status="PASS" start="2025-01-28T16:42:06.862049" elapsed="1.001441"/>
 </kw>
 <arg>${locator}</arg>
-<status status="PASS" start="2025-01-24T09:56:19.519820" elapsed="1.051002"/>
+<status status="PASS" start="2025-01-28T16:42:06.808447" elapsed="1.055043"/>
 </kw>
 <arg>3x</arg>
 <arg>0.8s</arg>
 <arg>Click Element with Delay</arg>
 <arg>${locator}</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-01-24T09:56:19.519820" elapsed="1.051002"/>
+<status status="PASS" start="2025-01-28T16:42:06.808447" elapsed="1.055043"/>
 </kw>
 <arg>//span[text()="แก้ไขค่าของฟิลด์"]/parent::button</arg>
-<status status="PASS" start="2025-01-24T09:56:19.519820" elapsed="1.051002"/>
+<status status="PASS" start="2025-01-28T16:42:06.808447" elapsed="1.055043"/>
 </kw>
 <doc>คลิ๊กปุ่ม แก้ไขค่าของฟิลด์</doc>
-<status status="PASS" start="2025-01-24T09:56:19.518816" elapsed="1.053014"/>
+<status status="PASS" start="2025-01-28T16:42:06.807438" elapsed="1.056052"/>
 </kw>
 <kw name="No. 1 Edit field name (ฺB2C/A3/Data-Driven) :" owner="Edit_field_A3(B2C)">
 <if>
@@ -1153,49 +1419,49 @@ Without any arguments.</msg>
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
 <kw name="Click Element with Delay" owner="common_art">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-01-24T09:56:20.575908" level="INFO">Clicking element '//input[@name="master_tabcols_id"]/following-sibling::div/div/input'.</msg>
+<msg time="2025-01-28T16:42:07.867494" level="INFO">Clicking element '//input[@name="master_tabcols_id"]/following-sibling::div/div/input'.</msg>
 <arg>${locator}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-24T09:56:20.575908" elapsed="0.077189"/>
+<status status="PASS" start="2025-01-28T16:42:07.867494" elapsed="0.090063"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-24T09:56:21.654450" level="INFO">Slept 1 second.</msg>
+<msg time="2025-01-28T16:42:08.958863" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-24T09:56:20.653097" elapsed="1.001353"/>
+<status status="PASS" start="2025-01-28T16:42:07.958555" elapsed="1.000308"/>
 </kw>
 <arg>${locator}</arg>
-<status status="PASS" start="2025-01-24T09:56:20.574934" elapsed="1.079516"/>
+<status status="PASS" start="2025-01-28T16:42:07.867494" elapsed="1.091369"/>
 </kw>
 <arg>3x</arg>
 <arg>0.8s</arg>
 <arg>Click Element with Delay</arg>
 <arg>${locator}</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-01-24T09:56:20.574934" elapsed="1.080619"/>
+<status status="PASS" start="2025-01-28T16:42:07.867494" elapsed="1.091369"/>
 </kw>
 <arg>//input[@name="master_tabcols_id"]/following-sibling::div/div/input</arg>
-<status status="PASS" start="2025-01-24T09:56:20.574934" elapsed="1.080619"/>
+<status status="PASS" start="2025-01-28T16:42:07.866503" elapsed="1.092360"/>
 </kw>
 <kw name="Wait And Input Text with Delay" owner="common_art">
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
 <kw name="Input Text with Delay" owner="common_art">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-01-24T09:56:21.658587" level="INFO">Typing text 'Categories' into text field '//input[@name="master_tabcols_id"]/following-sibling::div/div/input'.</msg>
+<msg time="2025-01-28T16:42:08.960956" level="INFO">Typing text 'Categories' into text field '//input[@name="master_tabcols_id"]/following-sibling::div/div/input'.</msg>
 <arg>${locator}</arg>
 <arg>${text}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-24T09:56:21.657460" elapsed="0.051454"/>
+<status status="PASS" start="2025-01-28T16:42:08.960956" elapsed="0.059619"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-24T09:56:23.209297" level="INFO">Slept 1 second 500 milliseconds.</msg>
+<msg time="2025-01-28T16:42:10.521737" level="INFO">Slept 1 second 500 milliseconds.</msg>
 <arg>1.5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-24T09:56:21.708914" elapsed="1.500383"/>
+<status status="PASS" start="2025-01-28T16:42:09.021583" elapsed="1.500154"/>
 </kw>
 <arg>${locator}</arg>
 <arg>${text}</arg>
-<status status="PASS" start="2025-01-24T09:56:21.657460" elapsed="1.551837"/>
+<status status="PASS" start="2025-01-28T16:42:08.959946" elapsed="1.561791"/>
 </kw>
 <arg>3x</arg>
 <arg>0.8s</arg>
@@ -1203,11 +1469,11 @@ Without any arguments.</msg>
 <arg>${locator}</arg>
 <arg>${text}</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-01-24T09:56:21.656505" elapsed="1.552792"/>
+<status status="PASS" start="2025-01-28T16:42:08.959946" elapsed="1.562398"/>
 </kw>
 <arg>//input[@name="master_tabcols_id"]/following-sibling::div/div/input</arg>
 <arg>${master_tabcols_id}</arg>
-<status status="PASS" start="2025-01-24T09:56:21.656505" elapsed="1.552792"/>
+<status status="PASS" start="2025-01-28T16:42:08.959946" elapsed="1.562398"/>
 </kw>
 <kw name="Wait And Press Keys" owner="common_art">
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
@@ -1215,7 +1481,7 @@ Without any arguments.</msg>
 <arg>${locator}</arg>
 <arg>${keys}</arg>
 <doc>Simulates user pressing key on element identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-24T09:56:23.210308" elapsed="0.103271"/>
+<status status="PASS" start="2025-01-28T16:42:10.522344" elapsed="0.087075"/>
 </kw>
 <arg>3x</arg>
 <arg>0.8s</arg>
@@ -1223,59 +1489,68 @@ Without any arguments.</msg>
 <arg>${locator}</arg>
 <arg>${keys}</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-01-24T09:56:23.210308" elapsed="0.103271"/>
+<status status="PASS" start="2025-01-28T16:42:10.522344" elapsed="0.087075"/>
 </kw>
 <arg>//input[@name="master_tabcols_id"]/following-sibling::div/div/input</arg>
 <arg>\\13</arg>
-<status status="PASS" start="2025-01-24T09:56:23.209297" elapsed="0.104282"/>
+<status status="PASS" start="2025-01-28T16:42:10.522344" elapsed="0.087075"/>
 </kw>
 <kw name="Wait And Click Element" owner="common_art">
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
 <kw name="Click Element with Delay" owner="common_art">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-01-24T09:56:23.315584" level="INFO">Clicking element '//input[@name="values_new"]/following-sibling::div/div/input'.</msg>
+<msg time="2025-01-28T16:42:10.611346" level="INFO">Clicking element '//input[@name="values_new"]/following-sibling::div/div/input'.</msg>
 <arg>${locator}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-24T09:56:23.315584" elapsed="0.628792"/>
+<status status="PASS" start="2025-01-28T16:42:10.611346" elapsed="0.083354"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-24T09:56:24.945748" level="INFO">Slept 1 second.</msg>
+<msg time="2025-01-28T16:42:11.696023" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-24T09:56:23.945376" elapsed="1.000372"/>
+<status status="PASS" start="2025-01-28T16:42:10.695700" elapsed="1.000323"/>
 </kw>
 <arg>${locator}</arg>
-<status status="PASS" start="2025-01-24T09:56:23.315584" elapsed="1.630164"/>
+<status status="PASS" start="2025-01-28T16:42:10.610390" elapsed="1.085633"/>
 </kw>
 <arg>3x</arg>
 <arg>0.8s</arg>
 <arg>Click Element with Delay</arg>
 <arg>${locator}</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-01-24T09:56:23.314581" elapsed="1.631757"/>
+<status status="PASS" start="2025-01-28T16:42:10.610390" elapsed="1.085633"/>
 </kw>
 <arg>//input[@name="values_new"]/following-sibling::div/div/input</arg>
-<status status="PASS" start="2025-01-24T09:56:23.314581" elapsed="1.631757"/>
+<status status="PASS" start="2025-01-28T16:42:10.609419" elapsed="1.087731"/>
+</kw>
+<kw name="Replace String" owner="String">
+<msg time="2025-01-28T16:42:11.698120" level="INFO">${cleaned_text} = C09010306</msg>
+<var>${cleaned_text}</var>
+<arg>${values_new}</arg>
+<arg>${SPACE}</arg>
+<arg>${EMPTY}</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="PASS" start="2025-01-28T16:42:11.697150" elapsed="0.001906"/>
 </kw>
 <kw name="Wait And Input Text with Delay" owner="common_art">
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
 <kw name="Input Text with Delay" owner="common_art">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-01-24T09:56:24.947454" level="INFO">Typing text 'C09020101' into text field '//input[@name="values_new"]/following-sibling::div/div/input'.</msg>
+<msg time="2025-01-28T16:42:11.701044" level="INFO">Typing text 'C09010306' into text field '//input[@name="values_new"]/following-sibling::div/div/input'.</msg>
 <arg>${locator}</arg>
 <arg>${text}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-24T09:56:24.947454" elapsed="0.053096"/>
+<status status="PASS" start="2025-01-28T16:42:11.701044" elapsed="0.058385"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-24T09:56:26.501920" level="INFO">Slept 1 second 500 milliseconds.</msg>
+<msg time="2025-01-28T16:42:13.259958" level="INFO">Slept 1 second 500 milliseconds.</msg>
 <arg>1.5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-24T09:56:25.000550" elapsed="1.501370"/>
+<status status="PASS" start="2025-01-28T16:42:11.759429" elapsed="1.500529"/>
 </kw>
 <arg>${locator}</arg>
 <arg>${text}</arg>
-<status status="PASS" start="2025-01-24T09:56:24.946338" elapsed="1.555582"/>
+<status status="PASS" start="2025-01-28T16:42:11.700050" elapsed="1.560517"/>
 </kw>
 <arg>3x</arg>
 <arg>0.8s</arg>
@@ -1283,11 +1558,17 @@ Without any arguments.</msg>
 <arg>${locator}</arg>
 <arg>${text}</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-01-24T09:56:24.946338" elapsed="1.555582"/>
+<status status="PASS" start="2025-01-28T16:42:11.699056" elapsed="1.561511"/>
 </kw>
 <arg>//input[@name="values_new"]/following-sibling::div/div/input</arg>
-<arg>${values_new}</arg>
-<status status="PASS" start="2025-01-24T09:56:24.946338" elapsed="1.555582"/>
+<arg>${cleaned_text}</arg>
+<status status="PASS" start="2025-01-28T16:42:11.699056" elapsed="1.561511"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-28T16:42:13.760875" level="INFO">Slept 500 milliseconds.</msg>
+<arg>0.5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-28T16:42:13.260567" elapsed="0.500308"/>
 </kw>
 <kw name="Wait And Press Keys" owner="common_art">
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
@@ -1295,7 +1576,7 @@ Without any arguments.</msg>
 <arg>${locator}</arg>
 <arg>${keys}</arg>
 <doc>Simulates user pressing key on element identified by ``locator``.</doc>
-<status status="PASS" start="2025-01-24T09:56:26.503934" elapsed="0.030239"/>
+<status status="PASS" start="2025-01-28T16:42:13.761888" elapsed="0.028705"/>
 </kw>
 <arg>3x</arg>
 <arg>0.8s</arg>
@@ -1303,47 +1584,293 @@ Without any arguments.</msg>
 <arg>${locator}</arg>
 <arg>${keys}</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-01-24T09:56:26.503934" elapsed="0.030239"/>
+<status status="PASS" start="2025-01-28T16:42:13.761888" elapsed="0.028705"/>
 </kw>
 <arg>//input[@name="values_new"]/following-sibling::div/div/input</arg>
 <arg>\\13</arg>
-<status status="PASS" start="2025-01-24T09:56:26.502937" elapsed="0.031236"/>
+<status status="PASS" start="2025-01-28T16:42:13.761888" elapsed="0.029923"/>
 </kw>
 <arg>${product_categories_level.field}</arg>
 <arg>${value}</arg>
 <arg>${product_categories_level.uuid}</arg>
-<status status="PASS" start="2025-01-24T09:56:20.573830" elapsed="5.961346"/>
+<status status="PASS" start="2025-01-28T16:42:07.864496" elapsed="5.927315"/>
 </kw>
-<status status="PASS" start="2025-01-24T09:56:20.572835" elapsed="5.962341"/>
+<status status="PASS" start="2025-01-28T16:42:07.864496" elapsed="5.927315"/>
 </branch>
-<status status="PASS" start="2025-01-24T09:56:20.572835" elapsed="5.962341"/>
+<status status="PASS" start="2025-01-28T16:42:07.864496" elapsed="5.927315"/>
 </if>
 <arg>Categories</arg>
 <arg>${value}</arg>
-<status status="PASS" start="2025-01-24T09:56:20.571830" elapsed="5.963346"/>
+<status status="PASS" start="2025-01-28T16:42:07.863490" elapsed="5.928321"/>
 </kw>
-<arg>article_no=10337395
-10337396
-10337397
-10337398
-10337399</arg>
-<arg>value=C09020101</arg>
-<status status="PASS" start="2025-01-24T09:56:12.480409" elapsed="14.054767"/>
+<kw name="Click button Confirm edit field" owner="common_art">
+<kw name="Wait And Click Element" owner="common_art">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element with Delay" owner="common_art">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-28T16:42:13.793815" level="INFO">Clicking element '//span[text()="ยืนยัน"]/parent::button'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-28T16:42:13.793815" elapsed="0.169588"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-28T16:42:14.964065" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-28T16:42:13.963403" elapsed="1.000662"/>
+</kw>
+<arg>${locator}</arg>
+<status status="PASS" start="2025-01-28T16:42:13.793815" elapsed="1.170250"/>
+</kw>
+<arg>3x</arg>
+<arg>0.8s</arg>
+<arg>Click Element with Delay</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-01-28T16:42:13.792806" elapsed="1.172273"/>
+</kw>
+<arg>//span[text()="ยืนยัน"]/parent::button</arg>
+<status status="PASS" start="2025-01-28T16:42:13.792806" elapsed="1.172273"/>
+</kw>
+<kw name="Wait And Wait Until Element Is Visible" owner="common_art">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-01-28T16:42:14.966078" elapsed="0.013095"/>
+</kw>
+<arg>5x</arg>
+<arg>1s</arg>
+<arg>Wait Until Element Is Visible</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-01-28T16:42:14.966078" elapsed="0.013095"/>
+</kw>
+<arg>//span[text()="ขออนุมัติแก้ไข"]/parent::button</arg>
+<status status="PASS" start="2025-01-28T16:42:14.965079" elapsed="0.014094"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-28T16:42:17.980679" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-28T16:42:14.980261" elapsed="3.001594"/>
+</kw>
+<doc>คลิ๊กยืนยันแก้ไข step 1</doc>
+<status status="PASS" start="2025-01-28T16:42:13.791811" elapsed="4.191033"/>
+</kw>
+<kw name="Click button Approve edit field" owner="common_art">
+<kw name="Wait And Click Element" owner="common_art">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element with Delay" owner="common_art">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-28T16:42:17.984930" level="INFO">Clicking element '//span[text()="ขออนุมัติแก้ไข"]/parent::button'.</msg>
+<msg time="2025-01-28T16:42:19.431078" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-329.png"&gt;&lt;img src="selenium-screenshot-329.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-01-28T16:42:19.431078" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;button class="MuiButtonBase-root MuiButton-root MuiButton-text jss96" tabindex="0" type="button"&gt;...&lt;/button&gt; is not clickable at point (1825, 635). Other element would receive the click: &lt;div class="dx-overlay-wrapper jss117 dx-popup-wrapper dx-overlay-shader" data-bind="dxControlsDescendantBindings: true" style="z-index: 1502; position: absolute; left: 0px; top: 0px; transform: translate(0px, 0px); transition: all; overflow: visible;"&gt;...&lt;/div&gt;
+  (Session info: chrome=131.0.6778.87)
+Stacktrace:
+	GetHandleVerifier [0x00007FF74A396CF5+28821]
+	(No symbol) [0x00007FF74A303880]
+	(No symbol) [0x00007FF74A1A578A]
+	(No symbol) [0x00007FF74A200E8E]
+	(No symbol) [0x00007FF74A1FE92C]
+	(No symbol) [0x00007FF74A1FBAF6]
+	(No symbol) [0x00007FF74A1FAA51]
+	(No symbol) [0x00007FF74A1ECBA0]
+	(No symbol) [0x00007FF74A21F2FA]
+	(No symbol) [0x00007FF74A1EC3F6]
+	(No symbol) [0x00007FF74A21F510]
+	(No symbol) [0x00007FF74A23F412]
+	(No symbol) [0x00007FF74A21F0A3]
+	(No symbol) [0x00007FF74A1EA778]
+	(No symbol) [0x00007FF74A1EB8E1]
+	GetHandleVerifier [0x00007FF74A6CFCED+3408013]
+	GetHandleVerifier [0x00007FF74A6E745F+3504127]
+	GetHandleVerifier [0x00007FF74A6DB63D+3455453]
+	GetHandleVerifier [0x00007FF74A45BDFB+835995]
+	(No symbol) [0x00007FF74A30EB9F]
+	(No symbol) [0x00007FF74A30A854]
+	(No symbol) [0x00007FF74A30A9ED]
+	(No symbol) [0x00007FF74A2FA1D9]
+	BaseThreadInitThunk [0x00007FFD887AE8D7+23]
+	RtlUserThreadStart [0x00007FFD89B9FBCC+44]
+</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2025-01-28T16:42:17.984930" elapsed="1.448154">ElementClickInterceptedException: Message: element click intercepted: Element &lt;button class="MuiButtonBase-root MuiButton-root MuiButton-text jss96" tabindex="0" type="button"&gt;...&lt;/button&gt; is not clickable at point (1825, 635). Other element would receive the click: &lt;div class="dx-overlay-wrapper jss117 dx-popup-wrapper dx-overlay-shader" data-bind="dxControlsDescendantBindings: true" style="z-index: 1502; position: absolute; left: 0px; top: 0px; transform: translate(0px, 0px); transition: all; overflow: visible;"&gt;...&lt;/div&gt;
+  (Session info: chrome=131.0.6778.87)
+Stacktrace:
+	GetHandleVerifier [0x00007FF74A396CF5+28821]
+	(No symbol) [0x00007FF74A303880]
+	(No symbol) [0x00007FF74A1A578A]
+	(No symbol) [0x00007FF74A200E8E]
+	(No symbol) [0x00007FF74A1FE92C]
+	(No symbol) [0x00007FF74A1FBAF6]
+	(No symbol) [0x00007FF74A1FAA51]
+	(No symbol) [0x00007FF74A1ECBA0]
+	(No symbol) [0x00007FF74A21F2FA]
+	(No symbol) [0x00007FF74A1EC3F6]
+	(No symbol) [0x00007FF74A21F510]
+	(No symbol) [0x00007FF74A23F412]
+	(No symbol) [0x00007FF74A21F0A3]
+	(No symbol) [0x00007FF74A1EA778]
+	(No symbol) [0x00007FF74A1EB8E1]
+	GetHandleVerifier [0x00007FF74A6CFCED+3408013]
+	GetHandleVerifier [0x00007FF74A6E745F+3504127]
+	GetHandleVerifier [0x00007FF74A6DB63D+3455453]
+	GetHandleVerifier [0x00007FF74A45BDFB+835995]
+	(No symbol) [0x00007FF74A30EB9F]
+	(No symbol) [0x00007FF74A30A854]
+	(No symbol) [0x00007FF74A30A9ED]
+	(No symbol) [0x00007FF74A2FA1D9]
+	BaseThreadInitThunk [0x00007FFD887AE8D7+23]
+	RtlUserThreadStart [0x00007FFD89B9FBCC+44]
+</status>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-01-28T16:42:19.433084" elapsed="0.000000"/>
+</kw>
+<arg>${locator}</arg>
+<status status="FAIL" start="2025-01-28T16:42:17.984930" elapsed="1.449195">ElementClickInterceptedException: Message: element click intercepted: Element &lt;button class="MuiButtonBase-root MuiButton-root MuiButton-text jss96" tabindex="0" type="button"&gt;...&lt;/button&gt; is not clickable at point (1825, 635). Other element would receive the click: &lt;div class="dx-overlay-wrapper jss117 dx-popup-wrapper dx-overlay-shader" data-bind="dxControlsDescendantBindings: true" style="z-index: 1502; position: absolute; left: 0px; top: 0px; transform: translate(0px, 0px); transition: all; overflow: visible;"&gt;...&lt;/div&gt;
+  (Session info: chrome=131.0.6778.87)
+Stacktrace:
+	GetHandleVerifier [0x00007FF74A396CF5+28821]
+	(No symbol) [0x00007FF74A303880]
+	(No symbol) [0x00007FF74A1A578A]
+	(No symbol) [0x00007FF74A200E8E]
+	(No symbol) [0x00007FF74A1FE92C]
+	(No symbol) [0x00007FF74A1FBAF6]
+	(No symbol) [0x00007FF74A1FAA51]
+	(No symbol) [0x00007FF74A1ECBA0]
+	(No symbol) [0x00007FF74A21F2FA]
+	(No symbol) [0x00007FF74A1EC3F6]
+	(No symbol) [0x00007FF74A21F510]
+	(No symbol) [0x00007FF74A23F412]
+	(No symbol) [0x00007FF74A21F0A3]
+	(No symbol) [0x00007FF74A1EA778]
+	(No symbol) [0x00007FF74A1EB8E1]
+	GetHandleVerifier [0x00007FF74A6CFCED+3408013]
+	GetHandleVerifier [0x00007FF74A6E745F+3504127]
+	GetHandleVerifier [0x00007FF74A6DB63D+3455453]
+	GetHandleVerifier [0x00007FF74A45BDFB+835995]
+	(No symbol) [0x00007FF74A30EB9F]
+	(No symbol) [0x00007FF74A30A854]
+	(No symbol) [0x00007FF74A30A9ED]
+	(No symbol) [0x00007FF74A2FA1D9]
+	BaseThreadInitThunk [0x00007FFD887AE8D7+23]
+	RtlUserThreadStart [0x00007FFD89B9FBCC+44]
+</status>
+</kw>
+<kw name="Click Element with Delay" owner="common_art">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-28T16:42:20.234441" level="INFO">Clicking element '//span[text()="ขออนุมัติแก้ไข"]/parent::button'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-28T16:42:20.234441" elapsed="0.096095"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-28T16:42:21.332070" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-28T16:42:20.331762" elapsed="1.000308"/>
+</kw>
+<arg>${locator}</arg>
+<status status="PASS" start="2025-01-28T16:42:20.234441" elapsed="1.097629"/>
+</kw>
+<arg>3x</arg>
+<arg>0.8s</arg>
+<arg>Click Element with Delay</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-01-28T16:42:17.984930" elapsed="3.347140"/>
+</kw>
+<arg>//span[text()="ขออนุมัติแก้ไข"]/parent::button</arg>
+<status status="PASS" start="2025-01-28T16:42:17.983842" elapsed="3.348228"/>
+</kw>
+<kw name="Wait And Click Element" owner="common_art">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element with Delay" owner="common_art">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-28T16:42:21.333233" level="INFO">Clicking element '//span[text()="ยกเลิก"]/ancestor::div[2]/following-sibling::div//button'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-28T16:42:21.333233" elapsed="0.075003"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-28T16:42:22.409427" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-28T16:42:21.409235" elapsed="1.000192"/>
+</kw>
+<arg>${locator}</arg>
+<status status="PASS" start="2025-01-28T16:42:21.333233" elapsed="1.076194"/>
+</kw>
+<arg>3x</arg>
+<arg>0.8s</arg>
+<arg>Click Element with Delay</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-01-28T16:42:21.333233" elapsed="1.076194"/>
+</kw>
+<arg>//span[text()="ยกเลิก"]/ancestor::div[2]/following-sibling::div//button</arg>
+<status status="PASS" start="2025-01-28T16:42:21.332070" elapsed="1.077357"/>
+</kw>
+<kw name="Wait And Click Element" owner="common_art">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element with Delay" owner="common_art">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-28T16:42:22.411434" level="INFO">Clicking element '//span[text()="ยืนยัน"]/parent::button'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-28T16:42:22.411434" elapsed="0.049993"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-28T16:42:23.462841" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-28T16:42:22.462572" elapsed="1.000269"/>
+</kw>
+<arg>${locator}</arg>
+<status status="PASS" start="2025-01-28T16:42:22.410433" elapsed="1.052408"/>
+</kw>
+<arg>3x</arg>
+<arg>0.8s</arg>
+<arg>Click Element with Delay</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-01-28T16:42:22.410433" elapsed="1.052408"/>
+</kw>
+<arg>//span[text()="ยืนยัน"]/parent::button</arg>
+<status status="PASS" start="2025-01-28T16:42:22.410433" elapsed="1.052408"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>อนุมัติแก้ไขสำเร็จ</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-01-28T16:42:23.463851" elapsed="0.629713"/>
+</kw>
+<doc>คลิ๊กยืนยันแก้ไข step 2 ส่งข้อมูลไปเมนูรออนุมัติ</doc>
+<status status="PASS" start="2025-01-28T16:42:17.982844" elapsed="6.110720"/>
+</kw>
+<arg>article_no=10337748</arg>
+<arg>value=C09010306</arg>
+<status status="PASS" start="2025-01-28T16:41:58.644865" elapsed="25.448699"/>
 </kw>
 <kw name="Refresh page" owner="common_art" type="TEARDOWN">
 <kw name="Execute Javascript" owner="SeleniumLibrary">
-<msg time="2025-01-24T09:56:26.538173" level="INFO">Executing JavaScript:
+<msg time="2025-01-28T16:42:24.095564" level="INFO">Executing JavaScript:
 location.reload()
 Without any arguments.</msg>
 <arg>location.reload()</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="PASS" start="2025-01-24T09:56:26.537172" elapsed="0.205130"/>
+<status status="PASS" start="2025-01-28T16:42:24.094563" elapsed="0.202989"/>
 </kw>
-<status status="PASS" start="2025-01-24T09:56:26.537172" elapsed="0.206129"/>
+<status status="PASS" start="2025-01-28T16:42:24.094563" elapsed="0.202989"/>
 </kw>
-<status status="PASS" start="2025-01-24T09:56:12.478252" elapsed="14.265049"/>
+<status status="PASS" start="2025-01-28T16:41:58.642865" elapsed="25.654687"/>
 </test>
-<status status="PASS" start="2025-01-24T09:55:34.709098" elapsed="52.036201"/>
+<status status="PASS" start="2025-01-28T16:41:13.535058" elapsed="70.764800"/>
 </suite>
 <statistics>
 <total>
@@ -1356,8 +1883,8 @@ Without any arguments.</msg>
 </suite>
 </statistics>
 <errors>
-<msg time="2025-01-24T09:55:35.077306" level="ERROR">Error in file 'c:\Automate_WEB\Clone_Article\Clone_article_GR\art_editmass\testcases\Editmass_datadriven.robot' on line 6: Error in file 'c:\Automate_WEB\Clone_Article\Clone_article_GR\art_editmass\keywords\Edit_field_A1.robot' on line 183: Resource file with 'Test Cases' section is invalid.</msg>
-<msg time="2025-01-24T09:55:35.085555" level="ERROR">Error in file 'c:\Automate_WEB\Clone_Article\Clone_article_GR\art_editmass\testcases\Editmass_datadriven.robot' on line 7: Error in file 'c:\Automate_WEB\Clone_Article\Clone_article_GR\art_editmass\keywords\Edit_field_A2(B2C).robot' on line 183: Resource file with 'Test Cases' section is invalid.</msg>
-<msg time="2025-01-24T09:56:12.477253" level="WARN">Multiple tests with name 'Run Edit field Categories' executed in suite 'Editmass datadriven'.</msg>
+<msg time="2025-01-28T16:41:13.903738" level="ERROR">Error in file 'c:\Automate_WEB\Clone_Article\Clone_article_GR\art_editmass\testcases\Editmass_datadriven.robot' on line 6: Error in file 'c:\Automate_WEB\Clone_Article\Clone_article_GR\art_editmass\keywords\Edit_field_A1.robot' on line 183: Resource file with 'Test Cases' section is invalid.</msg>
+<msg time="2025-01-28T16:41:13.912588" level="ERROR">Error in file 'c:\Automate_WEB\Clone_Article\Clone_article_GR\art_editmass\testcases\Editmass_datadriven.robot' on line 7: Error in file 'c:\Automate_WEB\Clone_Article\Clone_article_GR\art_editmass\keywords\Edit_field_A2(B2C).robot' on line 183: Resource file with 'Test Cases' section is invalid.</msg>
+<msg time="2025-01-28T16:41:58.641864" level="WARN">Multiple tests with name 'Run Edit field Categories' executed in suite 'Editmass datadriven'.</msg>
 </errors>
 </robot>
