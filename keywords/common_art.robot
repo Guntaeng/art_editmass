@@ -235,9 +235,9 @@ Login dohome and click web art(Edit Mass) A2
 
 
 Login dohome and click web art(Edit Mass) A3
-    #Open browser web url    ${url_dohome}    headlesschrome
+    Open browser web url    ${url_dohome}    headlesschrome
     #Open browser web url for mac             ${url_dohome}                                     chrome     
-    Open browser web url                     ${url_dohome}                                     chrome        
+    #Open browser web url                     ${url_dohome}                                     chrome        
     #Set Window Size    1920    1080
     Maximize Browser Window
     Wait And Wait Until Element Contains     //button[text()='เข้าสู่ระบบ']                       เข้าสู่ระบบ       
