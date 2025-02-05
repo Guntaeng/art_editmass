@@ -6,7 +6,7 @@ Resource         ../keywords/common_art.robot
 Resource         ../keywords/Edit_field_A1.robot
 Resource         ../keywords/Edit_field_A2(B2C).robot
 Resource         ../keywords/Edit_field_A3(B2C).robot
-Library          DataDriver    file=../resources/data_driven/art_barcode.csv  dialect=excel    encoding=utf-8
+Library          DataDriver    file=../resources/sd_csv_2.csv  dialect=excel    encoding=utf-8
 Suite Setup      Login dohome and click web art(Edit Mass) A3
 Test Template    Edit field name Categories
 Test Teardown    Refresh page

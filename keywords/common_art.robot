@@ -85,6 +85,10 @@ Wait And Wait Until Element Contains
     [Arguments]    ${locator}    ${text}
     Wait until keyword succeeds    3x   1s    Wait Until Element Contains     ${locator}    ${text}    
 
+Wait and Wait Until Page Contains
+    [Arguments]     ${text}
+    Wait Until Keyword Succeeds    6x    2s     ${text}
+
 
 Open browser web url	#ชื่อที่จะนำไปใช้
     [Documentation]    
@@ -135,7 +139,8 @@ Click button Approve edit field
     Wait And Click Element    //span[text()="ขออนุมัติแก้ไข"]/parent::button
     Wait And Click Element    //span[text()="ยกเลิก"]/ancestor::div[2]/following-sibling::div//button
     Wait And Click Element    //span[text()="ยืนยัน"]/parent::button
-    Wait Until Page Contains    อนุมัติแก้ไขสำเร็จ    timeout=10s
+    Sleep    10s
+    Wait Until Page Contains    อนุมัติแก้ไขสำเร็จ    
 
 Check value article
     [Documentation]    ตรวจสอบรหัสสินค้าใน dataGrid ก่อนแก้ไข ว่ามีอยู่จริงหรือไม่
@@ -235,9 +240,9 @@ Login dohome and click web art(Edit Mass) A2
 
 
 Login dohome and click web art(Edit Mass) A3
-    Open browser web url    ${url_dohome}    headlesschrome
+    #Open browser web url    ${url_dohome}    headlesschrome
     #Open browser web url for mac             ${url_dohome}                                     chrome     
-    #Open browser web url                     ${url_dohome}                                     chrome        
+    Open browser web url                     ${url_dohome}                                     chrome        
     #Set Window Size    1920    1080
     Maximize Browser Window
     Wait And Wait Until Element Contains     //button[text()='เข้าสู่ระบบ']                       เข้าสู่ระบบ       
